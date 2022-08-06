@@ -24,16 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	// Установка ширины стандартного скроллбара
 	document.documentElement.style.setProperty('--scroll_width', widthScroll() + 'px')
-
-
-	// Моб. версия
-	firstResize = false
-
-	if (document.body.clientWidth < 375) {
-		document.getElementsByTagName('meta')['viewport'].content = 'width=375, user-scalable=no'
-
-		firstResize = true
-	}
 })
 
 

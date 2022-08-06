@@ -6,4 +6,13 @@
     <path d="M23.4248 9.48006C23.7978 10.5852 24 11.769 24 13C24 19.0751 19.0751 24 13 24C6.92487 24 2 19.0751 2 13C2 6.92487 6.92487 2 13 2C14.8313 2 16.5581 2.44751 18.0769 3.23913" stroke="currentColor" stroke-opacity="0.55" stroke-width="2" stroke-linecap="round" fill="none"></path>
     <path d="M6 9.17647L11.9608 17L25 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"></path>
   </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21" id="ic_close">
+    <rect x="2.12109" width="26" height="3" transform="rotate(45 2.12109 0)" fill="currentColor"></rect>
+    <rect width="26" height="3" transform="matrix(-0.707107 0.707107 0.707107 0.707107 18.5059 0)" fill="currentColor"></rect>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 20" id="ic_menu">
+    <rect y="0.5" width="26" height="3" fill="currentColor"></rect>
+    <rect y="8.5" width="26" height="3" fill="currentColor"></rect>
+    <rect y="16.5" width="26" height="3" fill="currentColor"></rect>
+  </symbol>
 </svg>

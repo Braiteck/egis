@@ -1,0 +1,599 @@
+@media (max-width: 539px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 16px;
+        --font_size_title: 22px;
+    }
+
+
+    .cont
+    {
+        padding: 0 16px;
+    }
+
+
+    .block
+    {
+        margin-bottom: 50px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        padding: 10px 0;
+    }
+
+
+    header .logo img
+    {
+        width: 59px;
+    }
+
+
+    header .test_btn
+    {
+        display: none;
+    }
+
+
+
+    /*-----------------
+        Breadcrumbs
+    -----------------*/
+    .breadcrumbs
+    {
+        font-size: 12px;
+        line-height: 18px;
+
+        padding: 20px 0;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head .title br
+    {
+        display: none;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block
+    {
+        line-height: 125%;
+    }
+
+
+    .text_block ol li
+    {
+        padding-left: 53px;
+    }
+
+    .text_block ol li + li
+    {
+        margin-top: 22px;
+    }
+
+    .text_block ol li:before
+    {
+        font-size: 40px;
+        line-height: 42px;
+
+        width: 45px;
+
+        text-align: center;
+    }
+
+
+
+    /*------------------
+        Service head
+    ------------------*/
+    .service_head
+    {
+        margin-bottom: 109px;
+        padding-top: 71px;
+        padding-bottom: 256px;
+    }
+
+
+    .service_head .data
+    {
+        width: 100%;
+    }
+
+
+    .service_head .data .title
+    {
+        font-size: 26px;
+        line-height: 125%;
+    }
+
+
+    .service_head .data .desc
+    {
+        font-size: 16px;
+        line-height: 125%;
+
+        width: 256px;
+        margin-top: 15px;
+    }
+
+
+    .service_head .data .btn
+    {
+        width: 100%;
+        margin-top: 27px;
+        padding: 14px 14 15px;
+    }
+
+
+    .service_head .anchors
+    {
+        padding: 30px 0;
+    }
+
+
+    .service_head .anchors .row
+    {
+        display: block;
+
+        margin: 0;
+    }
+
+
+    .service_head .anchors .row > *
+    {
+        width: 100%;
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+
+    .service_head .anchors .row > * + *
+    {
+        margin-top: 23px;
+        margin-left: 0;
+    }
+
+
+    .service_head .anchors .btn
+    {
+        font-size: 16px;
+        line-height: 125%;
+
+        padding-left: 28px;
+    }
+
+    .service_head .anchors .btn .icon
+    {
+        display: block;
+    }
+
+
+
+    /*-------------
+        Why how
+    -------------*/
+    .why_how .info
+    {
+        margin-top: 55px;
+        padding: 39px 13px 39px;
+    }
+
+
+    .why_how .info .icon
+    {
+        top: -29px;
+        right: 0;
+        bottom: auto;
+        left: 0;
+
+        width: 50px;
+        height: 50px;
+        padding: 8px;
+
+        border-width: 4px;
+    }
+
+
+    .why_how .info .title
+    {
+        line-height: 125%;
+    }
+
+
+
+    /*------------------
+        Which doctor
+    ------------------*/
+    .which_doctor .data
+    {
+        width: calc(100% + 32px);
+        margin-right: -16px;
+        margin-left: -16px;
+        padding: 253px 16px 50px;
+    }
+
+
+    .which_doctor .block_head
+    {
+        width: 100%;
+    }
+
+
+    .which_doctor .bg
+    {
+        left: 0;
+
+        min-width: 200px;
+        height: 223px;
+    }
+
+
+    .which_doctor .data:after
+    {
+        width: calc(100% - 196px);
+
+        background: linear-gradient(270.24deg, #f8f8f8 50%, rgba(248, 248, 248, 0) 99.79%);
+    }
+
+
+
+    /*-----------------
+        How prepare
+    -----------------*/
+    .how_prepare .video_link
+    {
+        margin-top: 28px;
+    }
+
+
+    .how_prepare .video_link .thumb
+    {
+        width: 100%;
+        height: auto;
+        padding-bottom: 62.06%;
+    }
+
+
+    .how_prepare .video_link .thumb + *
+    {
+        width: 100%;
+        padding-top: 18px;
+    }
+
+
+    .how_prepare .video_link .title
+    {
+        font-size: 18px;
+        line-height: 125%;
+    }
+
+    .how_prepare .video_link .author
+    {
+        font-size: 12px;
+        line-height: 125%;
+    }
+
+
+
+    /*------------------
+        Action block
+    ------------------*/
+    .action_block
+    {
+        padding: 50px 0;
+    }
+
+
+    .action_block .title
+    {
+        font-size: 22px;
+
+        width: 100%;
+    }
+
+
+    .action_block .test_btn
+    {
+        font-size: 14px;
+        line-height: 16px;
+
+        margin-top: 40px;
+        margin-right: auto;
+        margin-left: 0;
+        padding: 14px 30px 15px;
+    }
+
+
+
+    /*-----------------
+        Preparation
+    -----------------*/
+    .preparation .row
+    {
+        margin-bottom: -35px;
+    }
+
+    .preparation .row > *
+    {
+        margin-bottom: 35px;
+    }
+
+
+    .preparation .item
+    {
+        line-height: 125%;
+    }
+
+
+    .preparation .item .icon
+    {
+        width: 50px;
+        height: 50px;
+    }
+
+    .preparation .item .icon + *
+    {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+
+
+    /*-------------
+        Results
+    -------------*/
+    .results
+    {
+        padding: 50px 0;
+    }
+
+
+    .results .block_head
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .results .swiper-button-next,
+    .results .swiper-button-prev
+    {
+        display: none;
+    }
+
+
+    .results .row > *
+    {
+        width: 100%;
+    }
+
+    .results .row > * + *
+    {
+        margin-top: 25px;
+    }
+
+
+    .results .item
+    {
+        padding: 25px 20px 20px;
+    }
+
+
+    .results .exp
+    {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+
+
+    /*-----------------------
+        Treatment control
+    -----------------------*/
+    .treatment_control .video_link
+    {
+        margin-top: 28px;
+    }
+
+
+    .treatment_control .video_link .thumb
+    {
+        width: 100%;
+        height: auto;
+        padding-bottom: 62.06%;
+    }
+
+
+    .treatment_control .video_link .thumb + *
+    {
+        width: 100%;
+        padding-top: 18px;
+    }
+
+
+    .treatment_control .video_link .title
+    {
+        font-size: 18px;
+        line-height: 125%;
+    }
+
+    .treatment_control .video_link .author
+    {
+        font-size: 12px;
+        line-height: 125%;
+    }
+
+
+
+    /*----------
+        Test
+    ----------*/
+    .test
+    {
+        padding: 50px 0;
+    }
+
+
+    .test .data
+    {
+        margin-bottom: 29px;
+        padding: 0;
+    }
+
+
+    .test .data .pre_title
+    {
+        margin-bottom: 5px;
+    }
+
+
+    .test .data .title
+    {
+        font-size: 22px;
+    }
+
+
+    .test .data .desc
+    {
+        font-size: 16px;
+        line-height: 120%;
+    }
+
+
+    .test .question
+    {
+        font-size: 16px;
+
+        padding: 32px 24px;
+    }
+
+
+    .test .answers
+    {
+        padding: 40px 24px;
+    }
+
+
+    .test .total
+    {
+        padding: 15px 24px;
+    }
+
+    .test .total .exp
+    {
+        font-size: 14px;
+
+        width: 140px;
+    }
+
+    .test .total .value span
+    {
+        font-size: 32px;
+    }
+
+
+    .test:before
+    {
+        display: none;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .swiper-slide
+    {
+        width: 100%;
+    }
+
+    .articles .swiper-slide + .swiper-slide
+    {
+        margin-top: 38px;
+    }
+
+    .articles .swiper-button-next,
+    .articles .swiper-button-prev
+    {
+        display: none;
+    }
+
+
+    .articles .row > *
+    {
+        width: 100%;
+    }
+
+
+    .articles .article
+    {
+        position: relative;
+    }
+
+    .articles .article .thumb
+    {
+        height: 220px;
+        padding: 0;
+    }
+
+    .articles .article .info
+    {
+        position: absolute;
+        bottom: 13px;
+        left: 0;
+
+        width: 100%;
+        padding: 13px 16px 14px;
+
+        background: rgba(242, 230, 246, .6);
+
+        backdrop-filter: blur(10px);
+    }
+
+
+
+    /*-----------------------
+        Contraindications
+    -----------------------*/
+    .contraindications
+    {
+        font-size: 20px;
+    }
+
+
+    .contraindications span
+    {
+        font-size: 26px;
+        line-height: 90%;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .logo img
+    {
+        width: 64px;
+    }
+
+
+    footer .text
+    {
+        margin-top: 20px;
+    }
+}

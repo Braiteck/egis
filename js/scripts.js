@@ -3,36 +3,38 @@ $(() => {
 	WW = $(window).width()
 
 
-	// Статьи
-	if ($('.articles .swiper').length) {
-		new Swiper('.articles .swiper', {
-			loop: false,
-			speed: 500,
-			watchSlidesProgress: true,
-			slideActiveClass: 'active',
-			slideVisibleClass: 'visible',
-			slidesPerView: 'auto',
-			preloadImages: false,
-			lazy: {
-				enabled: true,
-				checkInView: true,
-				loadOnTransitionStart: true,
-				loadPrevNext: true
-			},
-			navigation: {
-				nextEl: '.swiper-button-next',
-				prevEl: '.swiper-button-prev'
-			},
-			breakpoints: {
-				0: {
-					spaceBetween: 22
-				},
-				768: {
-					spaceBetween: 40
-				}
-			}
-		})
-	}
+	// Тест
+	let currentStep = 1
+
+	$('.test .btns .next_btn').click(function (e) {
+		e.preventDefault()
+
+		let parent = $(this).closest('.step')
+
+		parent.hide().next().fadeIn(300)
+
+		currentStep++
+		$('.test .progress .count .current').text(currentStep)
+	})
+
+	$('.test .btns .prev_btn').click(function (e) {
+		e.preventDefault()
+
+		let parent = $(this).closest('.step')
+
+		parent.hide().prev().fadeIn(300)
+
+		currentStep = currentStep - 1
+		$('.test .progress .count .current').text(currentStep)
+	})
+
+
+	// Кнопка 'Вверх'
+	$('.buttonUp button').click((e) => {
+		e.preventDefault()
+
+		$('body, html').stop(false, false).animate({ scrollTop: 0 }, 1000)
+	})
 
 
 	// Fancybox
@@ -49,23 +51,36 @@ $(() => {
 
 
 	// Моб. меню
-	$('.mob_header .mob_menu_btn').click((e) => {
+	$('header .menu_btn, header .menu .close_btn').click((e) => {
 		e.preventDefault()
 
-		$('.mob_header .mob_menu_btn').addClass('active')
-		$('body').addClass('menu_open')
-		$('header').addClass('show')
-		$('.overlay').fadeIn(300)
+		$('.mob_header .mob_menu_btn').toggleClass('active')
+		$('body').toggleClass('menu_open')
+		$('header .menu').toggleClass('show')
+
+		$('.mob_header .mob_menu_btn').hasClass('active')
+			? $('.overlay').fadeIn(300)
+			: $('.overlay').fadeOut(200)
 	})
 
-	$('header .mob_close_btn, .overlay').click((e) => {
-		e.preventDefault()
 
-		$('.mob_header .mob_menu_btn').removeClass('active')
-		$('body').removeClass('menu_open')
-		$('header').removeClass('show')
-		$('.overlay').fadeOut(300)
-	})
+	// Плавная прокрутка к якорю
+	const scrollBtns = document.querySelectorAll('.scroll_btn')
+
+	if (scrollBtns) {
+		scrollBtns.forEach(element => {
+			element.addEventListener('click', e => {
+				e.preventDefault()
+
+				let anchor = element.getAttribute('data-anchor')
+
+				document.getElementById(anchor).scrollIntoView({
+					behavior: 'smooth',
+					block: 'start'
+				}, 1000)
+			})
+		})
+	}
 
 
 	if (is_touch_device()) {
@@ -105,12 +120,15 @@ $(() => {
 
 			if ($('body').hasClass('menu_open') && ts > te + 50) {
 				// Свайп справо на лево
-				$('.mob_header .mob_menu_btn').removeClass('active')
-				$('body').removeClass('menu_open')
-				$('header').removeClass('show')
-				$('.overlay').fadeOut(300)
 			} else if (ts < te - 50) {
 				// Свайп слева на право
+				$('.mob_header .mob_menu_btn').toggleClass('active')
+				$('body').toggleClass('menu_open')
+				$('header .menu').toggleClass('show')
+
+				$('.mob_header .mob_menu_btn').hasClass('active')
+					? $('.overlay').fadeIn(300)
+					: $('.overlay').fadeOut(200)
 			}
 		})
 	}
@@ -118,20 +136,130 @@ $(() => {
 
 
 
+$(window).on('load', () => {
+	// Интерпретация результатов
+	initResultsSliders()
+
+	// Статьи
+	initArticlesSliders()
+})
+
+
+
 $(window).on('resize', () => {
 	if (typeof WW !== 'undefined' && WW != $(window).width()) {
-		// Моб. версия
-		if (!firstResize) {
-			$('meta[name=viewport]').attr('content', 'width=device-width, initial-scale=1, maximum-scale=1')
-			if ($(window).width() < 375) $('meta[name=viewport]').attr('content', 'width=375, user-scalable=no')
-
-			firstResize = true
-		} else {
-			firstResize = false
-		}
-
-
 		// Перезапись ширины окна
 		WW = $(window).width()
+
+		// Интерпретация результатов
+		initResultsSliders()
+
+		// Статьи
+		initArticlesSliders()
 	}
 })
+
+
+
+$(window).on('scroll', () => {
+	// Кнопка 'Вверх'
+	$(window).scrollTop() > $(window).innerHeight()
+		? $('.buttonUp').fadeIn(300)
+		: $('.buttonUp').fadeOut(200)
+})
+
+
+
+// Интерпретация результатов
+resultsSliders = []
+
+function initResultsSliders() {
+	if (window.outerWidth < 1024 && window.outerWidth > 539) {
+		if ($('.results .row').length) {
+			$('.results .row > *').addClass('swiper-slide')
+			$('.results .row').addClass('swiper-wrapper').removeClass('row')
+
+			$('.results .swiper').each(function (i) {
+				$(this).addClass('results_s' + i)
+
+				let options = {
+					loop: false,
+					speed: 500,
+					watchSlidesProgress: true,
+					slideActiveClass: 'active',
+					slideVisibleClass: 'visible',
+					slidesPerView: 'auto',
+					navigation: {
+						nextEl: '.swiper-button-next',
+						prevEl: '.swiper-button-prev'
+					},
+					breakpoints: {
+						0: {
+							spaceBetween: 30
+						},
+						1024: {
+							spaceBetween: 40
+						}
+					}
+				}
+
+				resultsSliders.push(new Swiper('.results_s' + i, options))
+			})
+		}
+	} else {
+		resultsSliders.forEach(element => element.destroy(true, true))
+
+		resultsSliders = []
+
+		$('.results .swiper-wrapper').addClass('row').removeClass('swiper-wrapper')
+		$('.results .row > *').removeClass('swiper-slide')
+	}
+}
+
+
+
+// Статьи
+articlesSliders = []
+
+function initArticlesSliders() {
+	if (window.outerWidth > 539) {
+		if ($('.articles .row').length) {
+			$('.articles .row > *').addClass('swiper-slide')
+			$('.articles .row').addClass('swiper-wrapper').removeClass('row')
+
+			$('.articles .swiper').each(function (i) {
+				$(this).addClass('articles_s' + i)
+
+				let options = {
+					loop: false,
+					speed: 500,
+					watchSlidesProgress: true,
+					slideActiveClass: 'active',
+					slideVisibleClass: 'visible',
+					slidesPerView: 'auto',
+					navigation: {
+						nextEl: '.swiper-button-next',
+						prevEl: '.swiper-button-prev'
+					},
+					breakpoints: {
+						0: {
+							spaceBetween: 30
+						},
+						1024: {
+							spaceBetween: 40
+						}
+					}
+				}
+
+				articlesSliders.push(new Swiper('.articles_s' + i, options))
+			})
+		}
+	} else {
+		articlesSliders.forEach(element => element.destroy(true, true))
+
+		articlesSliders = []
+
+		$('.articles .swiper-wrapper').addClass('row').removeClass('swiper-wrapper')
+		$('.articles .row > *').removeClass('swiper-slide')
+	}
+}

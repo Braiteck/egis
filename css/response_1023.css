@@ -4,15 +4,16 @@
     /*-------------------
         Global styles
     -------------------*/
-
-
-
-    /*--------------
-        Fancybox
-    --------------*/
-    .fancybox__slide
+    :root
     {
-        padding: 24px;
+        --font_size: 18px;
+        --font_size_title: 30px;
+    }
+
+
+    .block
+    {
+        margin-bottom: 80px;
     }
 
 
@@ -22,109 +23,595 @@
     ------------*/
     header
     {
-        position: fixed;
-        z-index: 101;
-        top: 0;
-        left: 0;
-
-        width: 310px;
-        height: 100%;
-        min-height: -moz-available;
-        min-height: -webkit-fill-available;
-        min-height:         fill-available;
-        margin: 0;
-        padding: 0;
-
-        transition: transform .3s linear;
-        transform: translateX(-100%);
-
-        background: #fff;
-    }
-
-    header.show
-    {
-        transform: translateX(0);
-    }
-
-
-    header .mob_scroll
-    {
-        display: flex;
-        overflow: auto;
-
-        height: 100%;
-        min-height: -moz-available;
-        min-height: -webkit-fill-available;
-        min-height:         fill-available;
-        padding: 20px 0;
-
-        justify-content: flex-start;
-        align-items: flex-start;
-        align-content: flex-start;
-        flex-wrap: wrap;
-        overscroll-behavior-y: contain;
-    }
-
-    header .mob_scroll > *
-    {
-        width: 100%;
+        padding: 12px 0;
     }
 
 
 
     /*-----------------
-        Mob. header
+        Breadcrumbs
     -----------------*/
-    .mob_header
+    .breadcrumbs
     {
-        display: block;
+        padding: 30px 0;
     }
-
-
-
-    /*-------------
-        Sidebar
-    -------------*/
-
-
-
-    /*---------------
-        Page head
-    ---------------*/
 
 
 
     /*----------------
         Block head
     ----------------*/
+    .block_head
+    {
+        margin-bottom: 40px;
+    }
 
 
-
-    /*------------------
-        Form elements
-    ------------------*/
+    .block_head .desc
+    {
+        margin-top: 20px;
+    }
 
 
 
     /*----------------
         Typography
     ----------------*/
+    .text_block > *
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .text_block ol li
+    {
+        padding-left: 68px;
+    }
+
+
+
+    /*------------------
+        Service head
+    ------------------*/
+    .service_head
+    {
+        margin-bottom: 80px;
+        padding-top: 128px;
+        padding-bottom: 129px;
+    }
+
+
+    .service_head .data
+    {
+        width: 430px;
+    }
+
+
+    .service_head .data .title
+    {
+        font-size: 36px;
+        line-height: 110%;
+    }
+
+
+    .service_head .data .desc
+    {
+        font-size: 20px;
+        line-height: 125%;
+
+        width: 320px;
+        margin-top: 22px;
+    }
+
+
+    .service_head .data .btn
+    {
+        font-size: 14px;
+
+        margin-top: 38px;
+        padding: 16px 30px 17px;
+    }
+
+
+    .service_head .anchors
+    {
+        font-size: 14px;
+        line-height: 125%;
+
+        padding: 24px 0 23px;
+    }
+
+
+    .service_head .anchors .row
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 48px);
+        margin: 0 -24px;
+        padding: 0 24px;
+
+        white-space: nowrap;
+
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .service_head .anchors .row::-webkit-scrollbar
+    {
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .service_head .anchors .row::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .service_head .anchors .row > *
+    {
+        display: inline-block;
+
+        max-width: none;
+        margin: 0;
+
+        vertical-align: top;
+    }
+
+    .service_head .anchors .row > * + *
+    {
+        margin-left: 36px;
+    }
+
+
+
+    /*-------------
+        Why how
+    -------------*/
+    .why_how
+    {
+        padding: 0 60px;
+    }
+
+
+    .why_how .text_block
+    {
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+    .why_how .info
+    {
+        width: 399px;
+        margin-top: 40px;
+        margin-left: 0;
+        padding: 26px 26px 25px;
+
+        box-shadow: inset 0 0 0 2px #fff;
+    }
+
+
+    .why_how .info .icon
+    {
+        top: 0;
+        right: -40px;
+        bottom: 0;
+        left: auto;
+
+        width: 73px;
+        height: 73px;
+        padding: 13px;
+
+        border-width: 6px;
+    }
+
+
+    .why_how .info .title
+    {
+        font-size: 18px;
+        line-height: 140%;
+    }
+
+
+    .why_how .info .btn
+    {
+        font-size: 14px;
+
+        margin-top: 16px;
+        padding: 16px 30px 17px;
+    }
+
+
+
+    /*------------------
+        Which doctor
+    ------------------*/
+    .which_doctor .data
+    {
+        width: calc(100% + 48px);
+        margin-right: -24px;
+        margin-left: -24px;
+        padding: 80px 75px;
+    }
+
+
+    .which_doctor .block_head
+    {
+        width: 413px;
+    }
 
 
 
     /*-----------------
-        Main slider
+        How prepare
     -----------------*/
+    .how_prepare
+    {
+        padding: 0 60px;
+    }
+
+
+    .how_prepare .text_block
+    {
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+    .how_prepare .video_link
+    {
+        display: flex;
+
+        width: 100%;
+        margin-top: 60px;
+
+        justify-content: space-between;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+
+    .how_prepare .video_link .thumb
+    {
+        width: 280px;
+        height: 180px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .how_prepare .video_link .thumb + *
+    {
+        width: calc(100% - 310px);
+        padding-top: 20px;
+    }
+
+
+
+    /*------------------
+        Action block
+    ------------------*/
+    .action_block
+    {
+        padding: 80px 16px 80px 26px;
+    }
+
+
+    .action_block .title
+    {
+        font-size: 30px;
+        line-height: 115%;
+
+        width: 350px;
+    }
+
+
+    .action_block .test_btn
+    {
+        margin-left: auto;
+    }
+
+
+
+    /*-----------------
+        Preparation
+    -----------------*/
+    .preparation
+    {
+        padding: 0 60px;
+    }
+
+
+    .preparation .block_head
+    {
+        margin-bottom: 54px;
+    }
+
+    .preparation .block_head .desc
+    {
+        font-size: 20px;
+
+        width: 100%;
+        margin-top: 40px;
+    }
+
+
+    .preparation .row
+    {
+        margin-bottom: -35px;
+        margin-left: 0;
+    }
+
+    .preparation .row > *
+    {
+        width: 100%;
+        margin-bottom: 35px;
+        margin-left: 0;
+    }
+
+
+    .preparation .item .icon
+    {
+        width: 54px;
+    }
+
+    .preparation .item .icon + *
+    {
+        width: calc(100% - 81px);
+    }
+
+
+
+    /*-------------
+        Results
+    -------------*/
+    .results
+    {
+        padding: 80px 0 60px;
+    }
+
+
+    .results .block_head
+    {
+        margin-bottom: 52px;
+    }
+
+
+    .results .swiper
+    {
+        width: calc(100% + 48px);
+        margin-right: -24px;
+        margin-left: -24px;
+        padding: 0 24px;
+    }
+
+    .results .swiper-slide
+    {
+        width: 297px;
+    }
+
+    .results .swiper-button-next,
+    .results .swiper-button-prev
+    {
+        display: flex;
+    }
+
+
+    .results .row
+    {
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+
+    .results .row > *
+    {
+        width: 297px;
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+
+
+    .results .item
+    {
+        padding: 20px;
+    }
+
+
+    .results .exp
+    {
+        width: 608px;
+        margin-top: 20px;
+        padding: 0 20px;
+    }
+
+
+
+    /*-----------------------
+        Treatment control
+    -----------------------*/
+    .treatment_control
+    {
+        padding: 0 60px;
+    }
+
+
+    .treatment_control .text_block
+    {
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+    .treatment_control .video_link
+    {
+        display: flex;
+
+        width: 100%;
+        margin-top: 60px;
+
+        justify-content: space-between;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+
+    .treatment_control .video_link .thumb
+    {
+        width: 280px;
+        height: 180px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .treatment_control .video_link .thumb + *
+    {
+        width: calc(100% - 310px);
+        padding-top: 20px;
+    }
+
+
+
+    /*----------
+        Test
+    ----------*/
+    .test
+    {
+        padding: 80px 60px;
+    }
+
+
+    .test .data
+    {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 52px;
+        margin-left: 0;
+    }
+
+
+    .test .data .title
+    {
+        font-size: 30px;
+        line-height: 115%;
+    }
+
+
+    .test .data .desc
+    {
+        font-size: 20px;
+        line-height: 120%;
+
+        margin-top: 20px;
+    }
+
+
+    .test form
+    {
+        width: 100%;
+        margin-right: 0;
+    }
+
+
+    .test .question
+    {
+        padding: 32px 50px;
+    }
+
+
+    .test .answers
+    {
+        padding: 40px 50px;
+    }
+
+
+    .test .btns
+    {
+        padding-top: 0;
+
+        border: none;
+    }
+
+
+    .test .total
+    {
+        padding: 26px 50px;
+    }
+
+    .test .total .exp
+    {
+        width: 256px;
+    }
+
+
+    .test:before
+    {
+        bottom: -302px;
+
+        margin-left: -624px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .swiper-slide
+    {
+        width: 227px;
+    }
+
+
+    .articles .article .thumb
+    {
+        margin-bottom: 18px;
+    }
+
+
+    .articles .article .name
+    {
+        line-height: 125%;
+    }
+
+
+    .articles .article .desc
+    {
+        font-size: 14px;
+        line-height: 130%;
+
+        margin-top: 10px;
+    }
+
+
+
+    /*-----------------------
+        Contraindications
+    -----------------------*/
+    .contraindications
+    {
+        font-size: 20px;
+    }
+
+
+    .contraindications span
+    {
+        font-size: 37px;
+    }
 
 
 
     /*------------
         Footer
     ------------*/
+    footer .text
+    {
+        width: 100%;
+        margin-top: 30px;
 
-
-
-    /*-----------
-        PopUp
-    -----------*/
+        order: 2;
+    }
 }

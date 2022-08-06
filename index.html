@@ -32,10 +32,10 @@
 		<link rel="stylesheet" href="css/fancybox.css" async>
 		<link rel="stylesheet" href="css/styles.css" async>
 
-		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)" async>
+		<link rel="stylesheet" href="css/response_1187.css" media="print, (max-width: 1187px)" async>
 		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)" async>
 		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)" async>
-		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)" async>
+		<link rel="stylesheet" href="css/response_539.css" media="(max-width: 539px)" async>
 	</head>
 
 	<body>
@@ -47,53 +47,65 @@
 							<img src="images/logo.svg" alt="">
 						</div>
 
-						<nav class="menu row">
-							<div class="menu_item">
-								<a href="/">Железо в организме</a>
-							</div>
+						<nav class="menu">
+							<button class="close_btn">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+							</button>
 
-							<div class="menu_item">
-								<a href="/" class="sub_link">
-									<span>Дефицит железа</span>
-									<span class="arr"></span>
-								</a>
-
-								<div class="sub_menu">
-									<div><a href="/"></a></div>
+							<div class="row">
+								<div class="menu_item">
+									<a href="/">Железо в организме</a>
 								</div>
-							</div>
 
-							<div class="menu_item">
-								<a href="/">Симптомы</a>
-							</div>
+								<div class="menu_item">
+									<a href="/" class="sub_link">
+										<span>Дефицит железа</span>
+										<span class="arr"></span>
+									</a>
 
-							<div class="menu_item">
-								<a href="/" class="sub_link">
-									<span>Диагностика и лечение</span>
-									<span class="arr"></span>
-								</a>
-
-								<div class="sub_menu">
-									<div><a href="/"></a></div>
+									<div class="sub_menu">
+										<div><a href="/">Дефицит железа</a></div>
+										<div><a href="/">Реальные истории</a></div>
+										<div><a href="/">Мнение врачей</a></div>
+									</div>
 								</div>
-							</div>
 
-							<div class="menu_item">
-								<a href="/" class="sub_link">
-									<span>Беременность</span>
-									<span class="arr"></span>
-								</a>
+								<div class="menu_item">
+									<a href="/">Симптомы</a>
+								</div>
 
-								<div class="sub_menu">
-									<div><a href="/"></a></div>
+								<div class="menu_item">
+									<a href="/" class="sub_link">
+										<span>Диагностика и лечение</span>
+										<span class="arr"></span>
+									</a>
+
+									<div class="sub_menu">
+										<div><a href="/"></a></div>
+									</div>
+								</div>
+
+								<div class="menu_item">
+									<a href="/" class="sub_link">
+										<span>Беременность</span>
+										<span class="arr"></span>
+									</a>
+
+									<div class="sub_menu">
+										<div><a href="/"></a></div>
+									</div>
 								</div>
 							</div>
 						</nav>
 
-						<button class="test_btn">
+						<button class="test_btn scroll_btn" data-anchor="anchor4">
 							<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
 							<span>Пройди онлайн тест</span>
 						</button>
+
+						<buttom class="menu_btn">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu"></use></svg>
+						</buttom>
 					</div>
 				</header>
 
@@ -125,20 +137,32 @@
 
 							<div class="desc">Узнай, какие анализы надо сдать и что они означают</div>
 
-							<a href="/" class="link">Памятка по сдаче анализов</a>
+							<button class="btn scroll_btn" data-anchor="anchor2">Памятка по сдаче анализов</button>
 						</div>
 					</div>
 
 					<div class="anchors">
 						<div class="cont">
 							<div class="row">
-								<div><button class="btn scroll_btn" data-anchor="anchor1">Депо железа</button></div>
+								<div><button class="btn scroll_btn" data-anchor="anchor1">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+									<span>Депо железа</span>
+								</button></div>
 
-								<div><button class="btn scroll_btn" data-anchor="anchor2">Памятка по сдаче анализов</button></div>
+								<div><button class="btn scroll_btn" data-anchor="anchor2">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+									<span>Памятка по сдаче анализов</span>
+								</button></div>
 
-								<div><button class="btn scroll_btn" data-anchor="anchor3">Интерпретация результатов</button></div>
+								<div><button class="btn scroll_btn" data-anchor="anchor3">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+									<span>Интерпретация результатов</span>
+								</button></div>
 
-								<div><button class="btn scroll_btn" data-anchor="anchor4">Онлайн-тест на дефицит железа</button></div>
+								<div><button class="btn scroll_btn" data-anchor="anchor4">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+									<span>Онлайн-тест на дефицит железа</span>
+								</button></div>
 							</div>
 						</div>
 					</div>
@@ -147,7 +171,7 @@
 				</section>
 
 
-				<section class="why_how block">
+				<section class="why_how block" id="anchor1">
 					<div class="cont">
 						<div class="block_head">
 							<div class="title">Зачем и как сдавать анализ<br> на ферритин (депо железа)</div>
@@ -167,9 +191,9 @@
 									<img data-src="images/ic_why_how.svg" alt="" class="lazyload">
 								</div>
 
-								<div class="title">Уже сдали анализы?<br> Узнайте, что они означают</div>
+								<div class="title"><b>Уже сдали анализы?</b><br> Узнайте, что они означают</div>
 
-								<a href="/" class="link">Интерпретация результатов</a>
+								<button class="btn scroll_btn" data-anchor="anchor3">Интерпретация результатов</button>
 							</div>
 						</div>
 					</div>
@@ -193,7 +217,7 @@
 				</section>
 
 
-				<section class="how_prepare block">
+				<section class="how_prepare block" id="anchor2">
 					<div class="cont">
 						<div class="block_head">
 							<div class="title">Как подготовиться к приему у врача</div>
@@ -218,9 +242,11 @@
 									<div class="icon"></div>
 								</div>
 
-								<div class="title">Какие анализы нужно сдать женщине, чтобы выявить скрытый дефицит железа?</div>
+								<div>
+									<div class="title">Какие анализы нужно сдать женщине, чтобы выявить скрытый дефицит железа?</div>
 
-								<div class="author">Стуклов Николай Игоревич</div>
+									<div class="author">Стуклов Николай Игоревич</div>
+								</div>
 							</a>
 						</div>
 					</div>
@@ -231,7 +257,7 @@
 					<div class="cont row">
 						<div class="title">Пройди онлайн диагностику дефицита железа</div>
 
-						<button class="test_btn">
+						<button class="test_btn scroll_btn" data-anchor="anchor4">
 							<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
 							<span>Пройди онлайн тест</span>
 						</button>
@@ -284,77 +310,93 @@
 				</section>
 
 
-				<section class="results block">
+				<section class="results block" id="anchor3">
 					<div class="cont">
 						<div class="block_head">
-							<div class="title">Интерпретация результатов </div>
+							<div class="title">Интерпретация результатов</div>
 						</div>
 
-						<div class="row">
-							<div class="item">
-								<div class="name">
-									<span>Железодефицитная анемия:</span>
+						<div class="swiper">
+							<div class="row">
+								<div>
+									<div class="item">
+										<div class="name">
+											<span>Железодефицитная анемия:</span>
 
-									<div class="icon">
-										<img data-src="images/ic_results1.svg" alt="" class="lazyload">
+											<div class="icon">
+												<img data-src="images/ic_results1.svg" alt="" class="lazyload">
+											</div>
+										</div>
+
+										<div class="features">
+											<div>
+												<div class="label">Уровень гемоглобина</div>
+												<div class="val">&lt;120 г/л</div>
+											</div>
+
+											<div>
+												<div class="label">Уровень ферритина</div>
+												<div class="val">&lt;30 мкг/л</div>
+											</div>
+										</div>
 									</div>
 								</div>
 
-								<div class="features">
-									<div>
-										<div class="label">Уровень гемоглобина</div>
-										<div class="val">&lt;120 г/л</div>
-									</div>
+								<div>
+									<div class="item">
+										<div class="name">
+											<span>Латентный (скрытый) дефицит железа</span>
 
-									<div>
-										<div class="label">Уровень ферритина</div>
-										<div class="val">&lt;30 мкг/л</div>
+											<div class="icon">
+												<img data-src="images/ic_results2.svg" alt="" class="lazyload">
+											</div>
+										</div>
+
+										<div class="features">
+											<div>
+												<div class="label">Уровень гемоглобина</div>
+												<div class="val">&gt;120 г/л</div>
+											</div>
+
+											<div>
+												<div class="label">Уровень ферритина</div>
+												<div class="val">&lt;30 мкг/л</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div>
+									<div class="item">
+										<div class="name">
+											<span>Отсутствие дефицита железа</span>
+
+											<div class="icon">
+												<img data-src="images/ic_results3.svg" alt="" class="lazyload">
+											</div>
+										</div>
+
+										<div class="features">
+											<div>
+												<div class="label">Уровень гемоглобина</div>
+												<div class="val">&gt;120 г/л</div>
+											</div>
+
+											<div>
+												<div class="label">Уровень ферритина</div>
+												<div class="val">&gt;30 мкг/л</div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
 
-							<div class="item">
-								<div class="name">
-									<span>Латентный (скрытый) дефицит железа</span>
-
-									<div class="icon">
-										<img data-src="images/ic_results2.svg" alt="" class="lazyload">
-									</div>
-								</div>
-
-								<div class="features">
-									<div>
-										<div class="label">Уровень гемоглобина</div>
-										<div class="val">&gt;120 г/л</div>
-									</div>
-
-									<div>
-										<div class="label">Уровень ферритина</div>
-										<div class="val">&lt;30 мкг/л</div>
-									</div>
-								</div>
+							<div class="swiper-button-prev">
+								<div><svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg></div>
 							</div>
 
-							<div class="item">
-								<div class="name">
-									<span>Отсутствие дефицита железа</span>
-
-									<div class="icon">
-										<img data-src="images/ic_results3.svg" alt="" class="lazyload">
-									</div>
-								</div>
-
-								<div class="features">
-									<div>
-										<div class="label">Уровень гемоглобина</div>
-										<div class="val">&gt;120 г/л</div>
-									</div>
-
-									<div>
-										<div class="label">Уровень ферритина</div>
-										<div class="val">&gt;30 мкг/л</div>
-									</div>
-								</div>
+							<div class="swiper-button-next">
+								<div><svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg></div>
 							</div>
 						</div>
 
@@ -385,16 +427,18 @@
 									<div class="icon"></div>
 								</div>
 
-								<div class="title">Как понять пациенту, что ему помогает лечение?</div>
+								<div>
+									<div class="title">Как понять пациенту, что ему помогает лечение?</div>
 
-								<div class="author">Стуклов Николай Игоревич</div>
+									<div class="author">Стуклов Николай Игоревич</div>
+								</div>
 							</a>
 						</div>
 					</div>
 				</section>
 
 
-				<section class="test block">
+				<section class="test block" id="anchor4">
 					<div class="cont row">
 						<div class="data">
 							<div class="pre_title">Примерное время прохождения: 2 минуты</div>
@@ -403,6 +447,1476 @@
 
 							<div class="desc">Оцени свои симптомы и узнай вероятность железодефецита</div>
 						</div>
+
+						<form action="">
+							<div class="progress">
+								<div class="bar"><div style="width: 0%;"></div></div>
+
+								<div class="count"><span class="current">1</span>/28</div>
+							</div>
+
+							<div class="info">
+								<div class="step" style="display: block;">
+									<div class="question">1. Слабость, повышенная утомляемость</div>
+
+									<div class="answers">
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Нет</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Редко, слабо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Периодически, терпимо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Часто, умеренно</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Постоянно, выражено</div>
+											</label>
+										</div>
+
+										<div class="btns">
+											<button type="button" class="next_btn">Далее</button>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="step">
+									<div class="question">2. Раздражительность, психологическая лабильность</div>
+
+									<div class="answers">
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Нет</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Редко, слабо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Периодически, терпимо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Часто, умеренно</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Постоянно, выражено</div>
+											</label>
+										</div>
+
+										<div class="btns">
+											<button type="button" class="prev_btn">Назад</button>
+											<button type="button" class="next_btn">Далее</button>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="step">
+									<div class="question">3. Недостаточная концентрация внимания</div>
+
+									<div class="answers">
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Нет</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Редко, слабо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Периодически, терпимо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Часто, умеренно</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Постоянно, выражено</div>
+											</label>
+										</div>
+
+										<div class="btns">
+											<button type="button" class="prev_btn">Назад</button>
+											<button type="button" class="next_btn">Далее</button>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="step">
+									<div class="question">4. Депрессивное настроение</div>
+
+									<div class="answers">
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Нет</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Редко, слабо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Периодически, терпимо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Часто, умеренно</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Постоянно, выражено</div>
+											</label>
+										</div>
+
+										<div class="btns">
+											<button type="button" class="prev_btn">Назад</button>
+											<button type="button" class="next_btn">Далее</button>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="step">
+									<div class="question">5. Снижение трудоспособности, снижение толерантности к физическим нагрузкам</div>
+
+									<div class="answers">
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Нет</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Редко, слабо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Периодически, терпимо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Часто, умеренно</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Постоянно, выражено</div>
+											</label>
+										</div>
+
+										<div class="btns">
+											<button type="button" class="prev_btn">Назад</button>
+											<button type="button" class="next_btn">Далее</button>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="step">
+									<div class="question">6. Дневная сонливость</div>
+
+									<div class="answers">
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Нет</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Редко, слабо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Периодически, терпимо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Часто, умеренно</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Постоянно, выражено</div>
+											</label>
+										</div>
+
+										<div class="btns">
+											<button type="button" class="prev_btn">Назад</button>
+											<button type="button" class="next_btn">Далее</button>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="step">
+									<div class="question">7. Головные боли по утрам</div>
+
+									<div class="answers">
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Нет</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Редко, слабо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Периодически, терпимо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Часто, умеренно</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Постоянно, выражено</div>
+											</label>
+										</div>
+
+										<div class="btns">
+											<button type="button" class="prev_btn">Назад</button>
+											<button type="button" class="next_btn">Далее</button>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="step">
+									<div class="question">8. Гипотония, головокружение, шум в ушах, склонность к обморокам в душной обстановке</div>
+
+									<div class="answers">
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Нет</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Редко, слабо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Периодически, терпимо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Часто, умеренно</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Постоянно, выражено</div>
+											</label>
+										</div>
+
+										<div class="btns">
+											<button type="button" class="prev_btn">Назад</button>
+											<button type="button" class="next_btn">Далее</button>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="step">
+									<div class="question">9. Пониженный аппетит</div>
+
+									<div class="answers">
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Нет</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Редко, слабо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Периодически, терпимо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Часто, умеренно</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Постоянно, выражено</div>
+											</label>
+										</div>
+
+										<div class="btns">
+											<button type="button" class="prev_btn">Назад</button>
+											<button type="button" class="next_btn">Далее</button>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="step">
+									<div class="question">10. Отвращение к некоторым продуктам питания (мясо, шоколад, сладости, лед) и непищевым веществам (глина, шерсть)</div>
+
+									<div class="answers">
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Нет</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Редко, слабо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Периодически, терпимо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Часто, умеренно</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Постоянно, выражено</div>
+											</label>
+										</div>
+
+										<div class="btns">
+											<button type="button" class="prev_btn">Назад</button>
+											<button type="button" class="next_btn">Далее</button>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="step">
+									<div class="question">11. Извращение вкуса – непреодолимое желание есть что-либо необычное (зубной порошок, мел, глину, песок, фарш, крупу)</div>
+
+									<div class="answers">
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Нет</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Редко, слабо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Периодически, терпимо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Часто, умеренно</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Постоянно, выражено</div>
+											</label>
+										</div>
+
+										<div class="btns">
+											<button type="button" class="prev_btn">Назад</button>
+											<button type="button" class="next_btn">Далее</button>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="step">
+									<div class="question">12. Извращение обоняния – пристрастие к запахам (бензин, керосин, ацетон, запах лаков, красок)</div>
+
+									<div class="answers">
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Нет</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Редко, слабо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Периодически, терпимо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Часто, умеренно</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Постоянно, выражено</div>
+											</label>
+										</div>
+
+										<div class="btns">
+											<button type="button" class="prev_btn">Назад</button>
+											<button type="button" class="next_btn">Далее</button>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="step">
+									<div class="question">13. Тяжесть в пояснице/боли в конце рабочего дня</div>
+
+									<div class="answers">
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Нет</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Редко, слабо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Периодически, терпимо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Часто, умеренно</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Постоянно, выражено</div>
+											</label>
+										</div>
+
+										<div class="btns">
+											<button type="button" class="prev_btn">Назад</button>
+											<button type="button" class="next_btn">Далее</button>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="step">
+									<div class="question">14. Непроизвольное желание шевелить/двигать ногами перед засыпанием</div>
+
+									<div class="answers">
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Нет</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Редко, слабо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Периодически, терпимо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Часто, умеренно</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Постоянно, выражено</div>
+											</label>
+										</div>
+
+										<div class="btns">
+											<button type="button" class="prev_btn">Назад</button>
+											<button type="button" class="next_btn">Далее</button>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="step">
+									<div class="question">15. Повышенная предрасположенность к инфекциям (герпес, фурункулез, ИППП, частые ОРВИ, ОРЗ)</div>
+
+									<div class="answers">
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Нет</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Редко, слабо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Периодически, терпимо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Часто, умеренно</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Постоянно, выражено</div>
+											</label>
+										</div>
+
+										<div class="btns">
+											<button type="button" class="prev_btn">Назад</button>
+											<button type="button" class="next_btn">Далее</button>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="step">
+									<div class="question">16. Обильные менструальные кровопотери</div>
+
+									<div class="answers">
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Нет</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Редко, слабо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Периодически, терпимо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Часто, умеренно</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Постоянно, выражено</div>
+											</label>
+										</div>
+
+										<div class="btns">
+											<button type="button" class="prev_btn">Назад</button>
+											<button type="button" class="next_btn">Далее</button>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="step">
+									<div class="question">17. Одышка и сердцебиение при обычных физических нагрузках</div>
+
+									<div class="answers">
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Нет</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Редко, слабо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Периодически, терпимо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Часто, умеренно</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Постоянно, выражено</div>
+											</label>
+										</div>
+
+										<div class="btns">
+											<button type="button" class="prev_btn">Назад</button>
+											<button type="button" class="next_btn">Далее</button>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="step">
+									<div class="question">18. Зябкость рук, ног, немотивированный субфебрилитет</div>
+
+									<div class="answers">
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Нет</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Редко, слабо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Периодически, терпимо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Часто, умеренно</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Постоянно, выражено</div>
+											</label>
+										</div>
+
+										<div class="btns">
+											<button type="button" class="prev_btn">Назад</button>
+											<button type="button" class="next_btn">Далее</button>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="step">
+									<div class="question">19. Сухость кожи, шелушение, сухие локти, трещины кожи пяток, пальцев, локализованный или генерализованный кожный зуд, коричневые пятна на тыльной поверхности кистей и лица</div>
+
+									<div class="answers">
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Нет</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Редко, слабо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Периодически, терпимо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Часто, умеренно</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Постоянно, выражено</div>
+											</label>
+										</div>
+
+										<div class="btns">
+											<button type="button" class="prev_btn">Назад</button>
+											<button type="button" class="next_btn">Далее</button>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="step">
+									<div class="question">20. Стоматит – трещины, «заеды» в углах рта; глоссит – чувство распирания, боли в языке, покраснение его кончика, «лакированный», «географический язык»; хейлит – покраснение, шелушение, отек губ; пародонтоз, кариес</div>
+
+									<div class="answers">
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Нет</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Редко, слабо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Периодически, терпимо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Часто, умеренно</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Постоянно, выражено</div>
+											</label>
+										</div>
+
+										<div class="btns">
+											<button type="button" class="prev_btn">Назад</button>
+											<button type="button" class="next_btn">Далее</button>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="step">
+									<div class="question">21. Ломкость, тусклость, истончение и исчерченность ногтей, ложкообразная вогнутость ногтей</div>
+
+									<div class="answers">
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Нет</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Редко, слабо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Периодически, терпимо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Часто, умеренно</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Постоянно, выражено</div>
+											</label>
+										</div>
+
+										<div class="btns">
+											<button type="button" class="prev_btn">Назад</button>
+											<button type="button" class="next_btn">Далее</button>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="step">
+									<div class="question">22. Тусклость, ломкость, выпадение волос, ранняя седина</div>
+
+									<div class="answers">
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Нет</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Редко, слабо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Периодически, терпимо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Часто, умеренно</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Постоянно, выражено</div>
+											</label>
+										</div>
+
+										<div class="btns">
+											<button type="button" class="prev_btn">Назад</button>
+											<button type="button" class="next_btn">Далее</button>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="step">
+									<div class="question">23. Голубоватый оттенок склер (белочная оболочка глаза)</div>
+
+									<div class="answers">
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Нет</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Редко, слабо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Периодически, терпимо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Часто, умеренно</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Постоянно, выражено</div>
+											</label>
+										</div>
+
+										<div class="btns">
+											<button type="button" class="prev_btn">Назад</button>
+											<button type="button" class="next_btn">Далее</button>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="step">
+									<div class="question">24. Снижение остроты зрения в темноте</div>
+
+									<div class="answers">
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Нет</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Редко, слабо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Периодически, терпимо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Часто, умеренно</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Постоянно, выражено</div>
+											</label>
+										</div>
+
+										<div class="btns">
+											<button type="button" class="prev_btn">Назад</button>
+											<button type="button" class="next_btn">Далее</button>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="step">
+									<div class="question">25. Трудности при проглатывании твердой пищи, таблеток, капсул</div>
+
+									<div class="answers">
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Нет</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Редко, слабо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Периодически, терпимо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Часто, умеренно</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Постоянно, выражено</div>
+											</label>
+										</div>
+
+										<div class="btns">
+											<button type="button" class="prev_btn">Назад</button>
+											<button type="button" class="next_btn">Далее</button>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="step">
+									<div class="question">26. Снижение мышечного тонуса, мышечная слабость</div>
+
+									<div class="answers">
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Нет</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Редко, слабо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Периодически, терпимо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Часто, умеренно</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Постоянно, выражено</div>
+											</label>
+										</div>
+
+										<div class="btns">
+											<button type="button" class="prev_btn">Назад</button>
+											<button type="button" class="next_btn">Далее</button>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="step">
+									<div class="question">27. Императивные позывы на мочеиспускание, недержание мочи при смехе и чихании, ночные позывы к мочеиспусканию</div>
+
+									<div class="answers">
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Нет</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Редко, слабо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Периодически, терпимо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Часто, умеренно</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Постоянно, выражено</div>
+											</label>
+										</div>
+
+										<div class="btns">
+											<button type="button" class="prev_btn">Назад</button>
+											<button type="button" class="next_btn">Далее</button>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="step">
+									<div class="question">28. Неустойчивый стул, снижение желудочной секреции, атрофический гастрит, запоры</div>
+
+									<div class="answers">
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Нет</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Редко, слабо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Периодически, терпимо</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Часто, умеренно</div>
+											</label>
+										</div>
+
+										<div class="field">
+											<label>
+												<input type="radio" name="question1">
+												<div class="check"></div>
+												<div>Постоянно, выражено</div>
+											</label>
+										</div>
+
+										<div class="btns">
+											<button type="button" class="prev_btn">Назад</button>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="total">
+									<div class="exp">Вероятен дефицит железа, <u>необходимо дообследование</u></div>
+
+									<div class="value"><span>42</span> балла</div>
+								</div>
+							</div>
+						</form>
 					</div>
 				</section>
 
@@ -414,60 +1928,68 @@
 						</div>
 
 						<div class="swiper">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide">
+							<div class="row">
+								<div>
 									<div class="article">
 										<a href="/" class="thumb">
-											<img data-src="images/tmp/article_thumb.jpg" alt="" class="swiper-lazy">
+											<img src="images/tmp/article_thumb.jpg" alt="">
 										</a>
 
-										<div class="name">
-											<a href="/">Заголовок</a>
-										</div>
+										<div class="info">
+											<div class="name">
+												<a href="/">Заголовок</a>
+											</div>
 
-										<div class="desc">При скрытом железодефиците уровень гемоглобина сохраняется в пределах нормы,</div>
+											<div class="desc">При скрытом железодефиците уровень гемоглобина сохраняется в пределах нормы,</div>
+										</div>
 									</div>
 								</div>
 
 								<div class="swiper-slide">
 									<div class="article">
 										<a href="/" class="thumb">
-											<img data-src="images/tmp/article_thumb.jpg" alt="" class="swiper-lazy">
+											<img src="images/tmp/article_thumb.jpg" alt="">
 										</a>
 
-										<div class="name">
-											<a href="/">Заголовок</a>
-										</div>
+										<div class="info">
+											<div class="name">
+												<a href="/">Заголовок</a>
+											</div>
 
-										<div class="desc">При скрытом железодефиците уровень гемоглобина сохраняется в пределах нормы,</div>
+											<div class="desc">При скрытом железодефиците уровень гемоглобина сохраняется в пределах нормы,</div>
+										</div>
 									</div>
 								</div>
 
 								<div class="swiper-slide">
 									<div class="article">
 										<a href="/" class="thumb">
-											<img data-src="images/tmp/article_thumb.jpg" alt="" class="swiper-lazy">
+											<img src="images/tmp/article_thumb.jpg" alt="">
 										</a>
 
-										<div class="name">
-											<a href="/">Заголовок</a>
-										</div>
+										<div class="info">
+											<div class="name">
+												<a href="/">Заголовок</a>
+											</div>
 
-										<div class="desc">При скрытом железодефиците уровень гемоглобина сохраняется в пределах нормы,</div>
+											<div class="desc">При скрытом железодефиците уровень гемоглобина сохраняется в пределах нормы,</div>
+										</div>
 									</div>
 								</div>
 
 								<div class="swiper-slide">
 									<div class="article">
 										<a href="/" class="thumb">
-											<img data-src="images/tmp/article_thumb.jpg" alt="" class="swiper-lazy">
+											<img src="images/tmp/article_thumb.jpg" alt="">
 										</a>
 
-										<div class="name">
-											<a href="/">Заголовок</a>
-										</div>
+										<div class="info">
+											<div class="name">
+												<a href="/">Заголовок</a>
+											</div>
 
-										<div class="desc">При скрытом железодефиците уровень гемоглобина сохраняется в пределах нормы,</div>
+											<div class="desc">При скрытом железодефиците уровень гемоглобина сохраняется в пределах нормы,</div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -523,6 +2045,10 @@
 
 
 			<div class="overlay"></div>
+
+			<div class="buttonUp">
+				<button></button>
+			</div>
 		</div>
 
 

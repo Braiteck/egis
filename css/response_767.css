@@ -4,68 +4,644 @@
     /*-------------------
         Global styles
     -------------------*/
-
-
-
-    /*--------------
-        Fancybox
-    --------------*/
-    .fancybox__slide
+    :root
     {
-        padding: 20px;
+        --font_size: 17px;
+        --font_size_title: 25px;
+    }
+
+
+    .cont
+    {
+        padding: 0 32px;
+    }
+
+
+    .block
+    {
+        margin-bottom: 70px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        padding: 14px 0;
+    }
+
+
+
+    header .logo img
+    {
+        width: 80px;
+    }
+
+
+
+    header .test_btn
+    {
+        font-size: 12px;
+        line-height: 15px;
+
+        padding: 14px 21px;
+
+        box-shadow: 0 8px 19px rgba(148, 110, 163, .53);
+    }
+
+    header .test_btn .icon
+    {
+        display: none;
+    }
+
+
+
+    header .menu_btn
+    {
+        margin-left: 29px;
     }
 
 
 
     /*-----------------
-        Mob. header
+        Breadcrumbs
     -----------------*/
-
-
-
-    /*-------------
-        Sidebar
-    -------------*/
-
-
-
-    /*---------------
-        Page head
-    ---------------*/
+    .breadcrumbs
+    {
+        padding: 33px 0;
+    }
 
 
 
     /*----------------
         Block head
     ----------------*/
+    .block_head
+    {
+        margin-bottom: 30px;
+    }
 
 
-
-    /*------------------
-        Form elements
-    ------------------*/
+    .block_head .desc
+    {
+        margin-top: 20px;
+    }
 
 
 
     /*----------------
         Typography
     ----------------*/
+    .text_block
+    {
+        line-height: 130%;
+    }
+
+
+    .text_block ol li
+    {
+        padding-left: 68px;
+    }
+
+
+
+    /*------------------
+        Service head
+    ------------------*/
+    .service_head
+    {
+        overflow: visible;
+
+        margin-bottom: 120px;
+        padding-top: 76px;
+        padding-bottom: 151px;
+    }
+
+
+    .service_head .breadcrumbs
+    {
+        top: 100%;
+    }
+
+
+    .service_head .data
+    {
+        width: 356px;
+    }
+
+
+    .service_head .data .title
+    {
+        font-size: 30px;
+    }
+
+
+    .service_head .data .desc
+    {
+        font-size: 18px;
+        line-height: 110%;
+
+        width: 288px;
+        margin-top: 17px;
+    }
+
+
+    .service_head .data .btn
+    {
+        font-size: 14px;
+
+        margin-top: 34px;
+        padding: 14px 30px 15px;
+
+        box-shadow: 0 18px 27px rgba(188, 157, 198, .28);
+    }
+
+
+    .service_head .anchors
+    {
+        padding: 25px 0;
+    }
+
+
+    .service_head .anchors .row
+    {
+        display: flex;
+        overflow: visible;
+
+        width: 100%;
+        margin: 0 0 -20px -20px;
+        padding: 0;
+
+        white-space: normal;
+    }
+
+
+    .service_head .anchors .row > *
+    {
+        display: block;
+
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+    .service_head .anchors .row > * + *
+    {
+        margin-left: 20px;
+    }
+
+
+    .service_head .anchors .btn
+    {
+        font-size: 14px;
+        line-height: 125%;
+    }
+
+
+
+    /*-------------
+        Why how
+    -------------*/
+    .why_how
+    {
+        padding: 0;
+    }
+
+
+    .why_how .info
+    {
+        margin-top: 30px;
+    }
+
+
+
+    /*------------------
+        Which doctor
+    ------------------*/
+    .which_doctor .data
+    {
+        width: calc(100% + 64px);
+        margin-right: -32px;
+        margin-left: -32px;
+        padding: 70px 32px;
+    }
+
+
+    .which_doctor .block_head
+    {
+        width: 290px;
+    }
+
+
+    .which_doctor .bg
+    {
+        left: -60px;
+
+        min-width: 200px;
+    }
 
 
 
     /*-----------------
-        Main slider
+        How prepare
     -----------------*/
+    .how_prepare
+    {
+        padding: 0;
+    }
+
+
+    .how_prepare .video_link
+    {
+        margin-top: 34px;
+    }
+
+
+    .how_prepare .video_link .thumb
+    {
+        width: 213px;
+        height: 137px;
+    }
+
+
+    .how_prepare .video_link .thumb .icon
+    {
+        width: 47px;
+        height: 47px;
+    }
+
+    .how_prepare .video_link .thumb .icon:after
+    {
+        left: 4px;
+
+        width: 20px;
+        height: 22px;
+
+        border-top-width: 11px;
+        border-bottom-width: 11px;
+        border-left-width: 20px;
+    }
+
+
+    .how_prepare .video_link .thumb + *
+    {
+        width: calc(100% - 233px);
+        padding-top: 10px;
+    }
+
+
+    .how_prepare .video_link .title
+    {
+        font-size: 16px;
+    }
+
+    .how_prepare .video_link .author
+    {
+        font-size: 14px;
+    }
 
 
 
-    /*------------
-        Footer
-    ------------*/
+    /*------------------
+        Action block
+    ------------------*/
+    .action_block
+    {
+        padding: 40px 0;
+    }
+
+
+    .action_block .title
+    {
+        font-size: 25px;
+        line-height: 125%;
+
+        width: 305px;
+    }
+
+
+    .action_block .test_btn
+    {
+        font-size: 12px;
+        line-height: 125%;
+
+        padding: 14px 20px 15px 21px;
+    }
+
+    .action_block .test_btn .icon
+    {
+        display: none;
+    }
 
 
 
-    /*-----------
-        PopUp
-    -----------*/
+    /*-----------------
+        Preparation
+    -----------------*/
+    .preparation
+    {
+        padding: 0;
+    }
+
+
+    .preparation .block_head
+    {
+        margin-bottom: 30px;
+    }
+
+    .preparation .block_head .desc
+    {
+        font-size: 18px;
+        line-height: 125%;
+
+        margin-top: 30px;
+    }
+
+
+    .preparation .row
+    {
+        margin-bottom: -30px;
+    }
+
+    .preparation .row > *
+    {
+        margin-bottom: 30px;
+    }
+
+
+    .preparation .item
+    {
+        font-size: 16px;
+        line-height: 140%;
+    }
+
+
+    .preparation .item .icon
+    {
+        width: 42px;
+    }
+
+    .preparation .item .icon + *
+    {
+        width: calc(100% - 62px);
+    }
+
+
+
+    /*-------------
+        Results
+    -------------*/
+    .results
+    {
+        padding: 70px 0 50px;
+    }
+
+
+    .results .block_head
+    {
+        margin-bottom: 37px;
+    }
+
+
+    .results .swiper
+    {
+        width: calc(100% + 64px);
+        margin-right: -32px;
+        margin-left: -32px;
+        padding: 0 32px;
+    }
+
+    .results .swiper-slide
+    {
+        width: 260px;
+    }
+
+
+    .results .item
+    {
+        padding: 30px 20px 25px;
+    }
+
+
+    .results .item .name
+    {
+        font-size: 16px;
+        line-height: 130%;
+
+        margin-bottom: 20px;
+    }
+
+    .results .item .name span
+    {
+        width: calc(100% - 44px);
+    }
+
+    .results .item .icon
+    {
+        width: 24px;
+        height: 35px;
+    }
+
+
+    .results .item .features > *
+    {
+        font-size: 14px;
+    }
+
+    .results .item .features > * + *
+    {
+        margin-top: 4px;
+    }
+
+    .results .item .features .val
+    {
+        font-size: 16px;
+    }
+
+
+    .results .exp
+    {
+        font-size: 12px;
+        line-height: 120%;
+
+        width: 420px;
+        padding: 0;
+    }
+
+
+
+    /*-----------------------
+        Treatment control
+    -----------------------*/
+    .treatment_control
+    {
+        padding: 0;
+    }
+
+
+    .treatment_control .text_block
+    {
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+    .treatment_control .video_link
+    {
+        margin-top: 34px;
+    }
+
+
+    .treatment_control .video_link .thumb
+    {
+        width: 213px;
+        height: 137px;
+    }
+
+
+    .treatment_control .video_link .thumb .icon
+    {
+        width: 47px;
+        height: 47px;
+    }
+
+    .treatment_control .video_link .thumb .icon:after
+    {
+        left: 4px;
+
+        width: 20px;
+        height: 22px;
+
+        border-top-width: 11px;
+        border-bottom-width: 11px;
+        border-left-width: 20px;
+    }
+
+
+    .treatment_control .video_link .thumb + *
+    {
+        width: calc(100% - 233px);
+        padding-top: 10px;
+    }
+
+
+    .treatment_control .video_link .title
+    {
+        font-size: 16px;
+    }
+
+    .treatment_control .video_link .author
+    {
+        font-size: 14px;
+    }
+
+
+
+    /*----------
+        Test
+    ----------*/
+    .test
+    {
+        padding: 70px 0;
+    }
+
+
+    .test .data
+    {
+        margin-bottom: 45px;
+        padding: 0 28px;
+    }
+
+
+    .test .data .pre_title
+    {
+        font-size: 12px;
+        line-height: 24px;
+
+        margin-bottom: 0;
+    }
+
+
+    .test .data .title
+    {
+        font-size: 25px;
+        line-height: 125%;
+
+        width: 250px;
+        max-width: 100%;
+    }
+
+
+    .test .data .desc
+    {
+        font-size: 17px;
+        line-height: 130%;
+    }
+
+
+    .test .question
+    {
+        padding: 32px 35px;
+    }
+
+
+    .test .answers
+    {
+        padding: 40px 45px;
+    }
+
+    .test .answers .field + .field
+    {
+        margin-top: 18px;
+    }
+
+
+    .test .total
+    {
+        padding: 26px 35px;
+    }
+
+
+    .test:before
+    {
+        top: -58px;
+        right: 50%;
+        bottom: auto;
+        left: auto;
+
+        width: 211px;
+        height: 210px;
+        margin-right: -365px;
+        margin-left: 0;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .swiper-slide
+    {
+        width: 229px;
+    }
+
+
+
+    /*-----------------------
+        Contraindications
+    -----------------------*/
+    .contraindications
+    {
+        font-size: 13px;
+        line-height: 102%;
+    }
+
+
+    .contraindications span
+    {
+        font-size: 24px;
+        line-height: 90%;
+    }
 }

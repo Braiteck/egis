@@ -1,0 +1,509 @@
+@media print,
+(max-width: 1187px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 20px;
+        --font_size_title: 36px;
+    }
+
+
+    html.custom_scroll ::-webkit-scrollbar
+    {
+        width: 5px;
+        height: 5px;
+    }
+
+
+    .block
+    {
+        margin-bottom: 130px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .logo
+    {
+        margin-right: auto;
+    }
+
+
+    header .menu
+    {
+        position: fixed;
+        z-index: 101;
+        top: 0;
+        left: 100%;
+
+        width: 264px;
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        margin: 0;
+        padding: 0;
+
+        transition: transform .3s linear;
+
+        background: #fff;
+    }
+
+    header .menu.show
+    {
+        transform: translateX(-100%);
+    }
+
+
+    header .menu .row
+    {
+        display: flex;
+        overflow: auto;
+
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        padding: 60px 34px 60px 39px;
+
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        overscroll-behavior-y: contain;
+    }
+
+    header .menu .row > *
+    {
+        width: 100%;
+    }
+
+
+    header .menu_item + .menu_item
+    {
+        margin-top: 28px;
+        margin-left: 0;
+    }
+
+
+    header .menu_item > a
+    {
+        justify-content: flex-start;
+    }
+
+
+    header .menu_item .sub_menu,
+    header .menu_item:hover .sub_menu
+    {
+        position: relative;
+        top: 0;
+        left: 0;
+
+        display: none;
+        visibility: hidden;
+
+        padding: 28px 0 0;
+
+        pointer-events: auto;
+
+        opacity: 1;
+        background: none;
+        box-shadow: none;
+    }
+
+    header .menu_item .sub_menu:before
+    {
+        display: none;
+    }
+
+
+    header .menu_item > a.touch_link + .sub_menu.show
+    {
+        display: block;
+        visibility: visible;
+    }
+
+
+    header .sub_menu > * + *
+    {
+        margin-top: 28px;
+    }
+
+    header .sub_menu a
+    {
+        padding: 0 20px;
+    }
+
+
+    header .menu .close_btn
+    {
+        display: flex;
+    }
+
+
+    header .menu_btn
+    {
+        display: flex;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head .desc
+    {
+        margin-top: 40px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block ol li
+    {
+        padding-left: 68px;
+    }
+
+
+
+    /*------------------
+        Service head
+    ------------------*/
+    .service_head
+    {
+        margin-bottom: 130px;
+        padding-top: 153px;
+        padding-bottom: 153px;
+    }
+
+
+    .service_head .data
+    {
+        width: 500px;
+    }
+
+
+    .service_head .data .title
+    {
+        font-size: 42px;
+    }
+
+
+    .service_head .data .desc
+    {
+        font-size: 24px;
+
+        width: 384px;
+        margin-top: 20px;
+    }
+
+
+    .service_head .data .btn
+    {
+        margin-top: 45px;
+    }
+
+
+    .service_head .anchors
+    {
+        bottom: 0;
+    }
+
+
+    .service_head .anchors .row
+    {
+        margin-left: 0;
+
+        justify-content: space-between;
+    }
+
+    .service_head .anchors .row > *
+    {
+        margin-left: 0;
+    }
+
+
+
+    /*-------------
+        Why how
+    -------------*/
+    .why_how .text_block
+    {
+        width: 500px;
+        max-width: calc(100% - 392px);
+    }
+
+
+    .why_how .info
+    {
+        width: 320px;
+        margin-top: 45px;
+        padding: 77px 20px 76px;
+
+        box-shadow: inset 0 0 0 4px #fff;
+    }
+
+
+    .why_how .info .title
+    {
+        font-size: 20px;
+    }
+
+
+    .why_how .info .btn
+    {
+        margin-top: 25px;
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+
+
+
+    /*------------------
+        Which doctor
+    ------------------*/
+    .which_doctor .data
+    {
+        padding: 80px;
+    }
+
+
+    .which_doctor .block_head
+    {
+        width: 536px;
+    }
+
+
+
+    /*------------------
+        Action block
+    ------------------*/
+    .action_block
+    {
+        padding: 80px 0;
+    }
+
+
+    .action_block .test_btn
+    {
+        margin-left: 63px;
+    }
+
+
+
+    /*-----------------
+        Preparation
+    -----------------*/
+    .preparation .row
+    {
+        margin-left: -80px;
+    }
+
+    .preparation .row > *
+    {
+        width: calc(50% - 80px);
+        margin-left: 80px;
+    }
+
+
+    .preparation .item .icon
+    {
+        width: 49px;
+    }
+
+    .preparation .item .icon + *
+    {
+        width: calc(100% - 84px);
+    }
+
+
+
+    /*-------------
+        Results
+    -------------*/
+    .results
+    {
+        padding: 130px 0 80px;
+    }
+
+
+    .results .row
+    {
+        margin-bottom: -34px;
+        margin-left: -34px;
+    }
+
+    .results .row > *
+    {
+        width: calc(33.333% - 34px);
+        margin-bottom: 34px;
+        margin-left: 34px;
+    }
+
+
+    .results .item
+    {
+        padding: 25px 20px;
+    }
+
+
+    .results .item .name
+    {
+        font-size: 18px;
+    }
+
+
+    .results .item .features > * + *
+    {
+        margin-top: 9px;
+    }
+
+    .results .item .features .val
+    {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+
+    .results .exp
+    {
+        width: 297px;
+        padding: 0;
+    }
+
+
+
+    /*-----------------------
+        Treatment control
+    -----------------------*/
+    .treatment_control .text_block
+    {
+        width: 547px;
+    }
+
+
+
+    /*----------
+        Test
+    ----------*/
+    .test
+    {
+        padding-bottom: 135px;
+    }
+
+
+    .test .data
+    {
+        width: 360px;
+        margin-top: 134px;
+        margin-left: 40px;
+    }
+
+
+    .test .data .title
+    {
+        font-size: 32px;
+    }
+
+
+
+    .test form
+    {
+        width: 424px;
+        margin-right: 57px;
+    }
+
+
+    .test .question
+    {
+        padding: 32px 46px;
+    }
+
+
+    .test .answers
+    {
+        padding: 40px 46px;
+    }
+
+
+    .test .btns
+    {
+        padding-top: 0;
+
+        border: none;
+    }
+
+
+    .test .total
+    {
+        padding: 26px 46px;
+    }
+
+    .test .total .exp
+    {
+        font-size: 18px;
+
+        width: 197px;
+    }
+
+
+    .test:before
+    {
+        bottom: -366px;
+
+        margin-left: -840px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .article .desc
+    {
+        margin-top: 13px;
+    }
+
+
+
+    /*-----------------------
+        Contraindications
+    -----------------------*/
+    .contraindications
+    {
+        font-size: 26px;
+    }
+
+
+    .contraindications span
+    {
+        font-size: 49px;
+
+        display: block;
+
+        margin-top: 5px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .logo img
+    {
+        width: 128px;
+    }
+
+
+    footer .text
+    {
+        width: calc(100% - 318px);
+    }
+}
