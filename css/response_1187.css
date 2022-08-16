@@ -173,6 +173,329 @@
 
 
 
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section
+    {
+        padding: 149px 0 121px;
+    }
+
+
+    .first_section .title
+    {
+        font-size: 42px;
+    }
+
+
+    .first_section .desc
+    {
+        font-size: 24px;
+
+        margin-top: 5px;
+    }
+
+
+    .first_section .actions
+    {
+        margin-top: 50px;
+    }
+
+
+    .first_section .actions .item
+    {
+        font-size: 14px;
+
+        width: 130px;
+        height: 130px;
+        padding: 17px 0;
+    }
+
+
+    .first_section .actions .icon
+    {
+        height: 43px;
+        margin-bottom: 9px;
+    }
+
+
+
+    /*-------------------
+        Why important
+    -------------------*/
+    .why_important .data
+    {
+        width: 634px;
+    }
+
+
+    .why_important .data .link
+    {
+        margin-top: 60px;
+    }
+
+
+    .why_important .stats
+    {
+        font-size: 18px;
+
+        width: 250px;
+        height: 250px;
+        padding: 22px;
+    }
+
+    .why_important .stats .val
+    {
+        font-size: 45px;
+    }
+
+    .why_important .stats .title
+    {
+        font-size: 20px;
+    }
+
+
+
+    /*--------------
+        Symptoms
+    --------------*/
+    .symptoms
+    {
+        padding: 130px 0 131px;
+    }
+
+
+    .symptoms .row
+    {
+        margin-bottom: -43px;
+        margin-left: -35px;
+    }
+
+    .symptoms .row > *
+    {
+        width: calc(33.333% - 35px);
+        margin-bottom: 43px;
+        margin-left: 35px;
+    }
+
+
+    .symptoms .item
+    {
+        line-height: 130%;
+    }
+
+
+    .symptoms .item .icon
+    {
+        width: 50px;
+        height: 50px;
+    }
+
+    .symptoms .item .icon + *
+    {
+        width: calc(100% - 84px);
+        padding: 0;
+    }
+
+
+    .symptoms .spoler_btn
+    {
+        margin-top: 67px;
+    }
+
+
+    .symptoms .link
+    {
+        margin-top: 60px;
+    }
+
+
+
+    /*---------------
+        Influence
+    ---------------*/
+    .influence .row
+    {
+        margin-bottom: -29px;
+        margin-left: -29px;
+    }
+
+    .influence .row > *
+    {
+        width: calc(33.333% - 29px);
+        margin-bottom: 29px;
+        margin-left: 29px;
+    }
+
+
+    .influence .item .thumb
+    {
+        padding-bottom: 260px;
+    }
+
+
+    .influence .item .title
+    {
+        padding: 31px 20px 34px;
+    }
+
+
+    .influence .item .info
+    {
+        padding: 47px 30px;
+    }
+
+
+    .influence .item .info .desc
+    {
+        display: -webkit-box;
+        overflow-y: hidden;
+
+        -webkit-line-clamp: 7;
+        -webkit-box-orient: vertical;
+    }
+
+
+
+    /*-------------
+        Deficit
+    -------------*/
+    .deficit .data
+    {
+        width: 554px;
+    }
+
+    .deficit .data .link
+    {
+        margin-top: 60px;
+    }
+
+
+    .deficit .img
+    {
+        width: 177px;
+        margin-right: 63px;
+    }
+
+
+
+    /*------------
+        Yniron
+    ------------*/
+    .yuniron .info
+    {
+        width: 626px;
+        padding-right: 40px;
+    }
+
+
+    .yuniron .bottom
+    {
+        margin-top: 60px;
+    }
+
+
+    .yuniron .bg
+    {
+        left: -20px;
+    }
+
+
+
+    /*--------------------
+        Expert opinion
+    --------------------*/
+    .expert_opinion .video
+    {
+        margin-top: 70px;
+    }
+
+
+    .expert_opinion .video .play_btn .icon
+    {
+        width: 77px;
+        height: 77px;
+    }
+
+
+    .expert_opinion .row
+    {
+        margin-top: 70px;
+        margin-bottom: -30px;
+        margin-left: -30px;
+    }
+
+    .expert_opinion .row > *
+    {
+        width: calc(33.333% - 30px);
+        margin-bottom: 30px;
+        margin-left: 30px;
+    }
+
+
+    .expert_opinion .item .photo
+    {
+        width: 70px;
+        height: 70px;
+    }
+
+    .expert_opinion .item .name
+    {
+        width: calc(100% - 90px);
+        margin-bottom: 9px;
+    }
+
+
+    .expert_opinion .item .quote
+    {
+        padding-right: 22px;
+    }
+
+
+    .expert_opinion .link
+    {
+        margin-top: 60px;
+    }
+
+
+
+    /*----------------------
+        During pregnancy
+    ----------------------*/
+    .during_pregnancy
+    {
+        margin-bottom: 226px;
+        padding-top: 130px;
+    }
+
+
+    .during_pregnancy .desc
+    {
+        width: 579px;
+    }
+
+
+    .during_pregnancy .articles
+    {
+        margin-top: 60px;
+        margin-bottom: -136px;
+    }
+
+
+    .during_pregnancy .anemia
+    {
+        width: 276px;
+        padding: 30px 0 30px 45px;
+    }
+
+
+    .during_pregnancy .bg
+    {
+        right: -190px;
+    }
+
+
+
     /*------------------
         Service head
     ------------------*/

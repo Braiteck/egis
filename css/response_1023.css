@@ -47,9 +47,35 @@
     }
 
 
+    .block_head .icon.tablet_show
+    {
+        display: block;
+    }
+
+    .block_head .icon
+    {
+        width: 54px;
+    }
+
+    .block_head .icon:not(.tablet_show) + .title,
+    .block_head .icon.tablet_show + .title
+    {
+        width: calc(100% - 79px);
+    }
+
+
     .block_head .desc
     {
         margin-top: 20px;
+    }
+
+
+
+    .block_head .link a
+    {
+        font-size: 14px;
+
+        padding: 16px 35px;
     }
 
 
@@ -66,6 +92,603 @@
     .text_block ol li
     {
         padding-left: 68px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section
+    {
+        padding: 100px 0 54px;
+    }
+
+
+    .first_section .title
+    {
+        font-size: 36px;
+    }
+
+
+    .first_section .desc
+    {
+        font-size: 20px;
+
+        margin-top: 10px;
+    }
+
+
+    .first_section .actions
+    {
+        width: 320px;
+        max-width: 100%;
+        margin-top: 96px;
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+
+    .first_section .actions > * + *
+    {
+        margin-top: 14px !important;
+    }
+
+
+    .first_section .actions .item
+    {
+        color: #000;
+        line-height: 100%;
+
+        display: flex;
+
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+
+        text-align: left;
+
+        border-radius: 52px;
+        background: rgba(242, 230, 246, .6);
+        box-shadow: 0 4px 13px rgba(0, 0, 0, .1);
+
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        backdrop-filter: blur(10px);
+    }
+
+
+    .first_section .actions .icon
+    {
+        width: 48px;
+        height: 48px;
+        margin: 0;
+        padding: 8px;
+
+        border-radius: 50%;
+        background: #c997dd;
+    }
+
+    .first_section .actions .icon + *
+    {
+        width: calc(100% - 66px);
+    }
+
+    .first_section .actions br
+    {
+        display: none;
+    }
+
+
+    .first_section .bg
+    {
+        object-position: 70% 100%;
+    }
+
+
+
+    /*-------------------
+        Why important
+    -------------------*/
+    .why_important
+    {
+        padding: 0 60px;
+    }
+
+
+    .why_important .block_head .icon
+    {
+        width: 54px;
+    }
+
+    .why_important .block_head .icon + .title
+    {
+        width: calc(100% - 79px);
+
+        align-self: center;
+    }
+
+    .why_important .block_head .title br
+    {
+        display: none;
+    }
+
+
+    .why_important .data
+    {
+        width: 100%;
+    }
+
+
+    .why_important .data .sub_title
+    {
+        font-size: 18px;
+        line-height: 140%;
+    }
+
+
+    .why_important .data .link
+    {
+        margin-top: 50px;
+    }
+
+    .why_important .data .link a
+    {
+        font-size: 14px;
+
+        padding: 16px 35px;
+    }
+
+
+    .why_important .stats
+    {
+        color: #792582;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 145%;
+
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+        padding: 22px;
+
+        border: none;
+        border-radius: 0;
+        background: rgba(237, 226, 255, .8);
+        box-shadow: none;
+
+        backdrop-filter: blur(5px);
+    }
+
+    .why_important .stats .val
+    {
+        color: #792582;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 145%;
+
+        margin-right: 6px;
+    }
+
+    .why_important .stats .title
+    {
+        color: #792582;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 145%;
+    }
+
+    .why_important .stats .desc
+    {
+        width: auto;
+        margin-left: 6px;
+    }
+
+    .why_important .stats br
+    {
+        display: none;
+    }
+
+
+
+    /*--------------
+        Symptoms
+    --------------*/
+    .symptoms
+    {
+        padding: 80px 60px;
+    }
+
+
+    .symptoms .block_head
+    {
+        margin-bottom: 40px;
+    }
+
+    .symptoms .block_head .desc
+    {
+        font-size: 20px;
+        line-height: 125%;
+
+        width: 545px;
+        margin-top: 65px;
+    }
+
+
+    .symptoms .row
+    {
+        margin-bottom: -46px;
+        margin-left: -40px;
+    }
+
+    .symptoms .row > *
+    {
+        width: calc(50% - 40px);
+        margin-bottom: 46px;
+        margin-left: 40px;
+    }
+
+
+    .symptoms .item
+    {
+        font-size: 17px;
+        line-height: 140%;
+    }
+
+
+    .symptoms .item .icon
+    {
+        width: 54px;
+        height: 54px;
+    }
+
+    .symptoms .item .icon + *
+    {
+        width: calc(100% - 74px);
+
+        align-self: center;
+    }
+
+
+    .symptoms .spoler_btn
+    {
+        font-size: 14px;
+
+        margin-top: 50px;
+    }
+
+    .symptoms .spoler_btn div
+    {
+        padding: 0 50px;
+    }
+
+    .symptoms .link a
+    {
+        font-size: 14px;
+
+        padding: 16px 35px;
+    }
+
+
+    .symptoms .link
+    {
+        margin-top: 50px;
+    }
+
+
+
+    /*---------------
+        Influence
+    ---------------*/
+    .influence .swiper
+    {
+        padding-bottom: 47px;
+    }
+
+    .influence .swiper-slide
+    {
+        width: 300px;
+    }
+
+
+    .influence .item .thumb
+    {
+        padding-bottom: 260px;
+    }
+
+
+    .influence .item .title
+    {
+        display: none;
+    }
+
+
+    .influence .item .info
+    {
+        position: relative;
+
+        height: auto;
+        padding: 18px 20px 46px;
+
+        pointer-events: auto;
+
+        opacity: 1;
+        background: none;
+    }
+
+    .influence .item .info .sub_title
+    {
+        font-size: 18px;
+        line-height: 125%;
+    }
+
+
+    .influence .item .info .desc
+    {
+        display: block;
+        overflow-y: visible;
+
+        -webkit-line-clamp: 0;
+    }
+
+
+    .influence .item .info .link
+    {
+        margin-top: 15px;
+    }
+
+    .influence .item .info .link a
+    {
+        text-decoration: underline;
+    }
+
+
+
+    /*-------------
+        Deficit
+    -------------*/
+    .deficit
+    {
+        padding: 0 60px;
+    }
+
+
+    .deficit .block_head
+    {
+        margin-bottom: 65px;
+    }
+
+
+    .deficit .data .sub_title
+    {
+        font-size: 18px;
+    }
+
+
+    .deficit .data .link
+    {
+        margin-top: 50px;
+    }
+
+    .deficit .data .link a
+    {
+        font-size: 14px;
+
+        padding: 16px 35px;
+    }
+
+
+    .deficit .img
+    {
+        display: none;
+    }
+
+
+
+    /*------------
+        Yniron
+    ------------*/
+    .yuniron .data
+    {
+        padding: 120px 0 79px;
+    }
+
+
+    .yuniron .info
+    {
+        width: 484px;
+        padding-right: 0;
+    }
+
+
+    .yuniron .bottom
+    {
+        margin-top: 50px;
+    }
+
+
+    .yuniron .test_btn
+    {
+        font-size: 14px;
+
+        padding: 9px 35px 9px 36px;
+    }
+
+
+    .yuniron .bg
+    {
+        left: -40px;
+    }
+
+
+
+    .yuniron .hashtag
+    {
+        font-size: 36px;
+
+        padding: 35px;
+    }
+
+
+
+    /*--------------------
+        Expert opinion
+    --------------------*/
+    .expert_opinion .sub_title
+    {
+        width: 544px;
+        margin-bottom: 20px;
+    }
+
+
+    .expert_opinion .video
+    {
+        margin-top: 60px;
+    }
+
+
+    .expert_opinion .video .play_btn .icon
+    {
+        width: 58px;
+        height: 58px;
+    }
+
+
+    .expert_opinion .row
+    {
+        margin-top: 60px;
+        margin-bottom: -30px;
+        margin-left: -20px;
+    }
+
+    .expert_opinion .row > *
+    {
+        width: calc(33.333% - 20px);
+        margin-bottom: 30px;
+        margin-left: 20px;
+    }
+
+
+    .expert_opinion .item .photo
+    {
+        width: 54px;
+        height: 54px;
+    }
+
+    .expert_opinion .item .name
+    {
+        font-size: 16px;
+
+        width: calc(100% - 69px);
+        margin-bottom: 0;
+
+        align-self: center;
+    }
+
+    .expert_opinion .item .name br
+    {
+        display: none;
+    }
+
+
+    .expert_opinion .item .desc
+    {
+        margin-top: 18px;
+    }
+
+
+    .expert_opinion .item .quote
+    {
+        font-size: 15px;
+
+        padding: 20px 12px 20px 26px;
+    }
+
+
+    .expert_opinion .link
+    {
+        margin-top: 50px;
+    }
+
+    .expert_opinion .link a
+    {
+        font-size: 14px;
+
+        padding: 16px 35px;
+    }
+
+
+
+    /*----------------------
+        During pregnancy
+    ----------------------*/
+    .during_pregnancy
+    {
+        margin-bottom: 175px;
+        padding-top: 58px;
+    }
+
+
+    .during_pregnancy .desc
+    {
+        width: 514px;
+    }
+
+
+    .during_pregnancy .articles
+    {
+        margin-top: 63px;
+        margin-bottom: -124px;
+        margin-left: -30px;
+    }
+
+
+    .during_pregnancy .article
+    {
+        width: 284px;
+        max-width: calc(100% - 30px);
+        margin-bottom: 30px;
+        margin-left: 30px;
+        padding: 22px 20px 24px 20px;
+    }
+
+    .during_pregnancy .article .title
+    {
+        font-size: 18px;
+    }
+
+    .during_pregnancy .article .btn
+    {
+        font-size: 14px;
+
+        margin-top: 36px;
+        padding: 16px 35px;
+    }
+
+    .during_pregnancy .article .img
+    {
+        right: -50px;
+    }
+
+
+    .during_pregnancy .anemia
+    {
+        width: calc(100% - 99px);
+        margin-top: 40px;
+        margin-left: -24px;
+        padding: 20px 24px;
+    }
+
+    .during_pregnancy .anemia:after
+    {
+        display: none;
+    }
+
+    .during_pregnancy .anemia br
+    {
+        display: none;
     }
 
 
@@ -423,7 +1046,7 @@
 
     .results .exp
     {
-        width: 608px;
+        width: 618px;
         margin-top: 20px;
         padding: 0 20px;
     }

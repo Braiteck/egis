@@ -3,8 +3,20 @@ $(() => {
 	WW = $(window).width()
 
 
+	// Симптомы
+	$('.symptoms .spoler_btn').click(function (e) {
+		e.preventDefault()
+
+		$(this).toggleClass('active')
+		$('.symptoms .item.hide').toggleClass('show')
+	})
+
+
 	// Тест
-	let currentStep = 1
+	let currentStep = 1,
+		totalQuestions = $('.test .step').length
+
+	$('.test .progress .bar div').width(currentStep / totalQuestions * 100 + '%')
 
 	$('.test .btns .next_btn').click(function (e) {
 		e.preventDefault()
@@ -15,6 +27,7 @@ $(() => {
 
 		currentStep++
 		$('.test .progress .count .current').text(currentStep)
+		$('.test .progress .bar div').width(currentStep / totalQuestions * 100 + '%')
 	})
 
 	$('.test .btns .prev_btn').click(function (e) {
@@ -26,6 +39,7 @@ $(() => {
 
 		currentStep = currentStep - 1
 		$('.test .progress .count .current').text(currentStep)
+		$('.test .progress .bar div').width(currentStep / totalQuestions * 100 + '%')
 	})
 
 
@@ -122,13 +136,15 @@ $(() => {
 				// Свайп справо на лево
 			} else if (ts < te - 50) {
 				// Свайп слева на право
-				$('.mob_header .mob_menu_btn').toggleClass('active')
-				$('body').toggleClass('menu_open')
-				$('header .menu').toggleClass('show')
+				if ($('body').hasClass('menu_open')) {
+					$('.mob_header .mob_menu_btn').toggleClass('active')
+					$('body').toggleClass('menu_open')
+					$('header .menu').toggleClass('show')
 
-				$('.mob_header .mob_menu_btn').hasClass('active')
-					? $('.overlay').fadeIn(300)
-					: $('.overlay').fadeOut(200)
+					$('.mob_header .mob_menu_btn').hasClass('active')
+						? $('.overlay').fadeIn(300)
+						: $('.overlay').fadeOut(200)
+				}
 			}
 		})
 	}
@@ -137,17 +153,53 @@ $(() => {
 
 
 $(window).on('load', () => {
+	// Фикс. шапка
+	headerInit = true,
+		headerHeight = $('header').outerHeight()
+
+	$('header').wrap('<div class="header_wrap"></div>')
+	$('.header_wrap').height(headerHeight)
+
+	headerInit && $(window).scrollTop() > 0
+		? $('header').addClass('fixed')
+		: $('header').removeClass('fixed')
+
+
 	// Интерпретация результатов
 	initResultsSliders()
 
 	// Статьи
 	initArticlesSliders()
+
+	// Как дефицит железа влияет на жизнь
+	initInfluenceSliders()
+
+	// Выравнивание элементов в сетке
+	$('.expert_opinion .row').each(function () {
+		expertOpinionHeight($(this), parseInt($(this).css('--expert_opinion_count')))
+	})
 })
 
 
 
 $(window).on('resize', () => {
 	if (typeof WW !== 'undefined' && WW != $(window).width()) {
+		// Фикс. шапка
+		headerInit = false
+		$('.header_wrap').height('auto')
+
+		setTimeout(() => {
+			headerInit = true
+			headerHeight = $('header').outerHeight()
+
+			$('.header_wrap').height(headerHeight)
+
+			headerInit && $(window).scrollTop() > 0
+				? $('header').addClass('fixed')
+				: $('header').removeClass('fixed')
+		}, 100)
+
+
 		// Перезапись ширины окна
 		WW = $(window).width()
 
@@ -156,6 +208,14 @@ $(window).on('resize', () => {
 
 		// Статьи
 		initArticlesSliders()
+
+		// Как дефицит железа влияет на жизнь
+		initInfluenceSliders()
+
+		// Выравнивание элементов в сетке
+		$('.expert_opinion .row').each(function () {
+			expertOpinionHeight($(this), parseInt($(this).css('--expert_opinion_count')))
+		})
 	}
 })
 
@@ -166,6 +226,12 @@ $(window).on('scroll', () => {
 	$(window).scrollTop() > $(window).innerHeight()
 		? $('.buttonUp').fadeIn(300)
 		: $('.buttonUp').fadeOut(200)
+
+
+	// Фикс. шапка
+	typeof headerInit !== 'undefined' && headerInit && $(window).scrollTop() > 0
+		? $('header').addClass('fixed')
+		: $('header').removeClass('fixed')
 })
 
 
@@ -262,4 +328,73 @@ function initArticlesSliders() {
 		$('.articles .swiper-wrapper').addClass('row').removeClass('swiper-wrapper')
 		$('.articles .row > *').removeClass('swiper-slide')
 	}
+}
+
+
+
+// Как дефицит железа влияет на жизнь
+influenceSliders = []
+
+function initInfluenceSliders() {
+	if (window.outerWidth < 1024) {
+		if ($('.influence .row').length) {
+			$('.influence .row > *').addClass('swiper-slide')
+			$('.influence .row').addClass('swiper-wrapper').removeClass('row')
+
+			$('.influence .swiper').each(function (i) {
+				$(this).addClass('influence_s' + i)
+
+				let options = {
+					loop: false,
+					speed: 500,
+					watchSlidesProgress: true,
+					slideActiveClass: 'active',
+					slideVisibleClass: 'visible',
+					slidesPerView: 'auto',
+					pagination: {
+						el: '.swiper-pagination',
+						type: 'bullets',
+						clickable: true,
+						bulletActiveClass: 'active'
+					},
+					breakpoints: {
+						0: {
+							spaceBetween: 15
+						},
+						540: {
+							spaceBetween: 25
+						}
+					}
+				}
+
+				influenceSliders.push(new Swiper('.influence_s' + i, options))
+			})
+		}
+	} else {
+		influenceSliders.forEach(element => element.destroy(true, true))
+
+		influenceSliders = []
+
+		$('.influence .swiper-wrapper').addClass('row').removeClass('swiper-wrapper')
+		$('.influence .row > *').removeClass('swiper-slide')
+	}
+}
+
+
+
+// Выравнивание Мнений экспертов
+function expertOpinionHeight(context, step) {
+	let start = 0,
+		finish = step,
+		$items = context.find('.item')
+
+	$items.find('.desc, .quote').height('auto')
+
+	$items.each(function () {
+		setHeight($items.slice(start, finish).find('.desc'))
+		setHeight($items.slice(start, finish).find('.quote'))
+
+		start = start + step
+		finish = finish + step
+	})
 }

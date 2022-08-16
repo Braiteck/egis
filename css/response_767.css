@@ -13,7 +13,7 @@
 
     .cont
     {
-        padding: 0 32px;
+        padding: 0 30px;
     }
 
 
@@ -90,6 +90,24 @@
     }
 
 
+    .block_head .icon
+    {
+        width: 42px;
+    }
+
+    .block_head .icon:not(.tablet_show) + .title,
+    .block_head .icon.tablet_show + .title
+    {
+        width: calc(100% - 62px);
+    }
+
+
+    .block_head .link
+    {
+        display: none;
+    }
+
+
 
     /*----------------
         Typography
@@ -103,6 +121,426 @@
     .text_block ol li
     {
         padding-left: 68px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section
+    {
+        padding: 52px 0 34px;
+    }
+
+
+    .first_section .title
+    {
+        font-size: 30px;
+    }
+
+
+    .first_section .desc
+    {
+        font-size: 18px;
+    }
+
+
+    .first_section .actions
+    {
+        width: 299px;
+        margin-top: 30px;
+    }
+
+
+    .first_section .actions .icon
+    {
+        width: 44px;
+        height: 44px;
+    }
+
+    .first_section .actions .icon + *
+    {
+        width: calc(100% - 54px);
+    }
+
+
+    .first_section .bg
+    {
+        object-position: 70% 100%;
+    }
+
+
+
+    /*-------------------
+        Why important
+    -------------------*/
+    .why_important
+    {
+        padding: 0;
+    }
+
+
+    .why_important .block_head .icon
+    {
+        width: 42px;
+    }
+
+
+    .why_important .data .link a
+    {
+        padding: 14px 40px;
+    }
+
+
+    .why_important .stats
+    {
+        padding: 10px 20px;
+    }
+
+
+
+    /*--------------
+        Symptoms
+    --------------*/
+    .symptoms
+    {
+        padding: 80px 0;
+    }
+
+
+    .symptoms .block_head .desc
+    {
+        font-size: 18px;
+
+        width: 408px;
+        margin-top: 40px;
+    }
+
+
+    .symptoms .row
+    {
+        margin-bottom: -30px;
+        margin-left: -22px;
+    }
+
+    .symptoms .row > *
+    {
+        width: calc(50% - 22px);
+        margin-bottom: 30px;
+        margin-left: 22px;
+    }
+
+
+    .symptoms .item
+    {
+        font-size: 15px;
+        line-height: 125%;
+    }
+
+
+    .symptoms .item .icon
+    {
+        width: 42px;
+        height: 42px;
+    }
+
+    .symptoms .item .icon + *
+    {
+        width: calc(100% - 52px);
+    }
+
+
+    .symptoms .spoler_btn div
+    {
+        padding: 0 40px;
+    }
+
+
+    .symptoms .link a
+    {
+        font-size: 14px;
+
+        padding: 14px 40px;
+    }
+
+
+
+    /*---------------
+        Influence
+    ---------------*/
+    .influence .item .thumb
+    {
+        padding-bottom: 260px;
+    }
+
+
+    .influence .item .title
+    {
+        padding: 31px 20px 34px;
+    }
+
+
+    .influence .item .info
+    {
+        padding: 47px 30px;
+    }
+
+
+    .influence .item .info .desc
+    {
+        display: -webkit-box;
+        overflow-y: hidden;
+
+        -webkit-line-clamp: 7;
+        -webkit-box-orient: vertical;
+    }
+
+
+    .influence .mob_link
+    {
+        display: block;
+    }
+
+
+
+    /*-------------
+        Deficit
+    -------------*/
+    .deficit
+    {
+        padding: 0;
+    }
+
+
+    .deficit .block_head
+    {
+        margin-bottom: 44px;
+    }
+
+
+    .deficit .data .sub_title
+    {
+        font-size: 17px;
+        line-height: 125%;
+    }
+
+
+    .deficit .data .link a
+    {
+        font-size: 14px;
+
+        padding: 14px 40px;
+    }
+
+
+
+    /*------------
+        Yniron
+    ------------*/
+    .yuniron .data
+    {
+        padding: 56px 9px 39px;
+    }
+
+
+    .yuniron .info
+    {
+        width: 320px;
+    }
+
+
+    .yuniron .bottom
+    {
+        margin-top: 32px;
+    }
+
+
+    .yuniron .test_btn
+    {
+        padding: 7px 20px 7px 15px;
+    }
+
+
+    .yuniron .exp
+    {
+        font-size: 12px;
+
+        margin-left: 22px;
+    }
+
+
+    .yuniron .bg
+    {
+        left: 0;
+    }
+
+
+
+    .yuniron .hashtag
+    {
+        font-size: 30px;
+
+        padding: 30px;
+    }
+
+
+
+    /*--------------------
+        Expert opinion
+    --------------------*/
+    .expert_opinion .sub_title
+    {
+        font-size: 20px;
+        line-height: 125%;
+
+        width: 100%;
+    }
+
+
+    .expert_opinion .video
+    {
+        margin-top: 50px;
+    }
+
+
+    .expert_opinion .row
+    {
+        margin-top: 50px;
+        margin-bottom: -50px;
+        margin-left: 0;
+    }
+
+    .expert_opinion .row > *
+    {
+        width: 100%;
+        margin-bottom: 50px;
+        margin-left: 0;
+    }
+
+
+    .expert_opinion .item
+    {
+        position: relative;
+
+        padding-left: 85px;
+    }
+
+
+    .expert_opinion .item .photo
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 55px;
+        height: 55px;
+    }
+
+    .expert_opinion .item .name
+    {
+        width: 100%;
+    }
+
+
+    .expert_opinion .item .desc
+    {
+        margin-top: 5px;
+    }
+
+
+    .expert_opinion .item .quote
+    {
+        font-size: 14px;
+        line-height: 115%;
+
+        height: auto !important;
+        padding: 10px 30px;
+    }
+
+    .expert_opinion .item .quote br
+    {
+        display: none;
+    }
+
+    .expert_opinion .item .quote:before
+    {
+        top: -8px;
+        left: -8px;
+
+        width: 26px;
+        height: 21px;
+    }
+
+
+    .expert_opinion .link a
+    {
+        padding: 14px 40px;
+    }
+
+
+
+    /*----------------------
+        During pregnancy
+    ----------------------*/
+    .during_pregnancy
+    {
+        margin-bottom: 117px;
+        padding-top: 85px;
+    }
+
+
+    .during_pregnancy .desc
+    {
+        width: 100%;
+    }
+
+
+    .during_pregnancy .articles
+    {
+        margin-top: 40px;
+        margin-bottom: -55px;
+        margin-left: -20px;
+    }
+
+
+    .during_pregnancy .article
+    {
+        width: calc(50% - 20px);
+        max-width: calc(100% - 20px);
+        margin-bottom: 20px;
+        margin-left: 20px;
+        padding: 30px 20px;
+    }
+
+    .during_pregnancy .article .title
+    {
+        font-size: 16px;
+    }
+
+    .during_pregnancy .article .btn
+    {
+        margin-top: 30px;
+        padding: 10px 40px;
+    }
+
+    .during_pregnancy .article .img
+    {
+        right: -10px;
+    }
+
+
+    .during_pregnancy .anemia
+    {
+        width: 100%;
+        margin-left: 0;
+        padding: 16px 20px;
+    }
+
+
+    .during_pregnancy .bg
+    {
+        display: none;
     }
 
 
