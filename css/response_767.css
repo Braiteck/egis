@@ -856,6 +856,12 @@
         width: 260px;
     }
 
+    .results .swiper-button-next,
+    .results .swiper-button-prev
+    {
+        display: none !important;
+    }
+
 
     .results .item
     {

@@ -445,6 +445,7 @@ header
     padding: 22px 0;
 
     transition: .2s linear;
+    transition-property: padding-top, padding-bottom;
 
     background: #fff;
 }
@@ -456,6 +457,11 @@ header.fixed
     padding: 10px 0;
 
     box-shadow: 4px 12px 22px rgba(0, 0, 0, .16);
+}
+
+.compensate-for-scrollbar header.fixed
+{
+    padding-right: var(--scroll_width);
 }
 
 
@@ -1550,11 +1556,14 @@ header .menu_btn .icon
     font-size: 16px;
     line-height: 110%;
 
+    display: block;
+
     width: 150px;
     height: 150px;
     padding: 20px 0;
 
     text-align: center;
+    text-decoration: none;
 
     border-radius: 50%;
     background: #c997dd;
@@ -1783,7 +1792,8 @@ header .menu_btn .icon
 .symptoms .item .icon + *
 {
     width: calc(100% - 98px);
-    padding: 10px 0;
+
+    align-self: center;
 }
 
 
@@ -2295,9 +2305,15 @@ header .menu_btn .icon
 
 .expert_opinion .video
 {
+    color: var(--text_color);
+
     position: relative;
 
+    display: block;
+
     margin-top: 100px;
+
+    text-decoration: none;
 }
 
 

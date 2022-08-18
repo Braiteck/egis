@@ -294,7 +294,6 @@
     .symptoms .item .icon + *
     {
         width: calc(100% - 84px);
-        padding: 0;
     }
 
 

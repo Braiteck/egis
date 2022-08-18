@@ -347,8 +347,6 @@
     .symptoms .item .icon + *
     {
         width: calc(100% - 74px);
-
-        align-self: center;
     }
 
 
