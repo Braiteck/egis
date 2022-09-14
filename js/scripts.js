@@ -3,6 +3,99 @@ $(() => {
 	WW = $(window).width()
 
 
+	// Слайдер мнений врачей
+	const opinionsBigSliders = []
+
+	$('.expert_opinion .swiper.big').each(function (i) {
+		$(this).addClass('opinions_big_s' + i)
+
+		let options = {
+			loop: true,
+			speed: 500,
+			watchSlidesProgress: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev'
+			},
+			preloadImages: false,
+			lazy: {
+				enabled: true,
+				checkInView: true,
+				loadOnTransitionStart: true,
+				loadPrevNext: true
+			},
+			spaceBetween: 24,
+			slidesPerView: 1,
+			autoHeight: true
+		}
+
+		opinionsBigSliders.push(new Swiper('.opinions_big_s' + i, options))
+	})
+
+
+	// Карусель мнений врачей
+	const opinionsSliders = []
+
+	$('.expert_opinion .swiper.carousel').each(function (i) {
+		$(this).addClass('opinions_s' + i)
+
+		let options = {
+			loop: true,
+			speed: 500,
+			watchSlidesProgress: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev'
+			},
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+				bulletActiveClass: 'active'
+			},
+			preloadImages: false,
+			lazy: {
+				enabled: true,
+				checkInView: true,
+				loadOnTransitionStart: true,
+				loadPrevNext: true
+			},
+			breakpoints: {
+				0: {
+					spaceBetween: 24,
+					slidesPerView: 'auto'
+				},
+				1024: {
+					spaceBetween: 24,
+					slidesPerView: 3
+				},
+				1280: {
+					spaceBetween: 30,
+					slidesPerView: 3
+				}
+			},
+			on: {
+				init: swiper => {
+					setTimeout(() => {
+						expertOpinionHeight($(swiper.$el), $(swiper.$el).find('.item').length)
+					})
+				},
+				resize: swiper => {
+					setTimeout(() => {
+						expertOpinionHeight($(swiper.$el), $(swiper.$el).find('.item').length)
+					})
+				}
+			}
+		}
+
+		opinionsSliders.push(new Swiper('.opinions_s' + i, options))
+	})
+
+
 	// Симптомы
 	$('.symptoms .spoler_btn').click(function (e) {
 		e.preventDefault()
@@ -95,6 +188,24 @@ $(() => {
 			})
 		})
 	}
+
+
+	// Аккордион
+	$('body').on('click', '.accordion .accordion_item .head', function(e) {
+		e.preventDefault()
+
+		const $item      = $(this).closest('.accordion_item'),
+				$accordion = $(this).closest('.accordion')
+
+		if ($item.hasClass('active')) {
+			$item.removeClass('active').find('.data').slideUp(300)
+		} else {
+			$accordion.find('.accordion_item').removeClass('active')
+			$accordion.find('.data').slideUp(300)
+
+			$item.addClass('active').find('.data').slideDown(300)
+		}
+	})
 
 
 	if (is_touch_device()) {
@@ -387,12 +498,15 @@ function expertOpinionHeight(context, step) {
 	let start = 0,
 		finish = step,
 		$items = context.find('.item')
-
-	$items.find('.desc, .quote').height('auto')
+	
+	$items.height('auto')
+	$items.find('.desc, .quote, .quote > *:first').height('auto')
 
 	$items.each(function () {
 		setHeight($items.slice(start, finish).find('.desc'))
+		setHeight($items.slice(start, finish).find('.quote > *:first'))
 		setHeight($items.slice(start, finish).find('.quote'))
+		setHeight($items.slice(start, finish))
 
 		start = start + step
 		finish = finish + step

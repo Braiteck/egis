@@ -73,9 +73,9 @@
 
     .block_head .link a
     {
-        font-size: 14px;
-
         padding: 16px 35px;
+
+        font-size: 14px;
     }
 
 
@@ -113,9 +113,9 @@
 
     .first_section .desc
     {
-        font-size: 20px;
-
         margin-top: 10px;
+
+        font-size: 20px;
     }
 
 
@@ -136,10 +136,11 @@
 
     .first_section .actions .item
     {
-        color: #000;
-        line-height: 100%;
-
         display: flex;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
 
         width: 100%;
         height: auto;
@@ -148,14 +149,13 @@
 
         text-align: left;
 
+        color: #000;
         border-radius: 52px;
         background: rgba(242, 230, 246, .6);
         box-shadow: 0 4px 13px rgba(0, 0, 0, .1);
 
-        justify-content: space-between;
-        align-items: center;
-        align-content: center;
-        flex-wrap: wrap;
+        line-height: 100%;
+
         backdrop-filter: blur(10px);
     }
 
@@ -205,9 +205,9 @@
 
     .why_important .block_head .icon + .title
     {
-        width: calc(100% - 79px);
-
         align-self: center;
+
+        width: calc(100% - 79px);
     }
 
     .why_important .block_head .title br
@@ -236,45 +236,47 @@
 
     .why_important .data .link a
     {
-        font-size: 14px;
-
         padding: 16px 35px;
+
+        font-size: 14px;
     }
 
 
     .why_important .stats
     {
-        color: #792582;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 145%;
-
         width: 100%;
         height: auto;
         margin-top: 30px;
         padding: 22px;
 
+        color: #792582;
         border: none;
         border-radius: 0;
         background: rgba(237, 226, 255, .8);
         box-shadow: none;
+
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 145%;
 
         backdrop-filter: blur(5px);
     }
 
     .why_important .stats .val
     {
+        margin-right: 6px;
+
         color: #792582;
+
         font-size: 16px;
         font-weight: 500;
         line-height: 145%;
-
-        margin-right: 6px;
     }
 
     .why_important .stats .title
     {
         color: #792582;
+
         font-size: 16px;
         font-weight: 500;
         line-height: 145%;
@@ -309,11 +311,11 @@
 
     .symptoms .block_head .desc
     {
-        font-size: 20px;
-        line-height: 125%;
-
         width: 545px;
         margin-top: 65px;
+
+        font-size: 20px;
+        line-height: 125%;
     }
 
 
@@ -352,9 +354,9 @@
 
     .symptoms .spoler_btn
     {
-        font-size: 14px;
-
         margin-top: 50px;
+
+        font-size: 14px;
     }
 
     .symptoms .spoler_btn div
@@ -364,9 +366,9 @@
 
     .symptoms .link a
     {
-        font-size: 14px;
-
         padding: 16px 35px;
+
+        font-size: 14px;
     }
 
 
@@ -472,9 +474,9 @@
 
     .deficit .data .link a
     {
-        font-size: 14px;
-
         padding: 16px 35px;
+
+        font-size: 14px;
     }
 
 
@@ -509,9 +511,9 @@
 
     .yuniron .test_btn
     {
-        font-size: 14px;
-
         padding: 9px 35px 9px 36px;
+
+        font-size: 14px;
     }
 
 
@@ -524,9 +526,9 @@
 
     .yuniron .hashtag
     {
-        font-size: 36px;
-
         padding: 35px;
+
+        font-size: 36px;
     }
 
 
@@ -534,6 +536,90 @@
     /*--------------------
         Expert opinion
     --------------------*/
+    .expert_opinion .big .doctor
+    {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .expert_opinion .big .doctor .photo
+    {
+        width: 160px;
+        height: 160px;
+        margin-bottom: 24px;
+    }
+
+    .expert_opinion .big .doctor .desc
+    {
+        margin-top: 16px;
+
+        font-size: 14px;
+    }
+
+    .expert_opinion .big .doctor + *
+    {
+        order: 3;
+
+        width: 100%;
+    }
+
+
+    .expert_opinion .big .swiper-button-prev
+    {
+        right: 50%;
+
+        margin-right: 120px;
+    }
+
+    .expert_opinion .big .swiper-button-next
+    {
+        right: 0;
+        left: 50%;
+
+        margin-left: 120px;
+    }
+
+
+    .expert_opinion .big .text
+    {
+        width: 100%;
+
+        font-size: 17px;
+    }
+
+
+    .expert_opinion .carousel
+    {
+        margin-top: 60px;
+        padding-bottom: 40px;
+    }
+
+    .expert_opinion .carousel .swiper-slide
+    {
+        width: 320px;
+    }
+
+    .expert_opinion .carousel .swiper-button-prev,
+    .expert_opinion .carousel .swiper-button-next
+    {
+        display: none;
+    }
+    
+    .expert_opinion .carousel .swiper-pagination
+    {
+        display: flex !important;
+    }
+
+
+    .expert_opinion .item .title
+    {
+        margin-bottom: 20px;
+
+        font-size: 18px;
+    }
+
+
+
     .expert_opinion .sub_title
     {
         width: 544px;
@@ -577,12 +663,12 @@
 
     .expert_opinion .item .name
     {
-        font-size: 16px;
+        align-self: center;
 
         width: calc(100% - 69px);
         margin-bottom: 0;
 
-        align-self: center;
+        font-size: 16px;
     }
 
     .expert_opinion .item .name br
@@ -599,9 +685,9 @@
 
     .expert_opinion .item .quote
     {
-        font-size: 15px;
-
         padding: 20px 12px 20px 26px;
+
+        font-size: 15px;
     }
 
 
@@ -612,9 +698,9 @@
 
     .expert_opinion .link a
     {
-        font-size: 14px;
-
         padding: 16px 35px;
+
+        font-size: 14px;
     }
 
 
@@ -659,10 +745,10 @@
 
     .during_pregnancy .article .btn
     {
-        font-size: 14px;
-
         margin-top: 36px;
         padding: 16px 35px;
+
+        font-size: 14px;
     }
 
     .during_pregnancy .article .img
@@ -696,6 +782,10 @@
     ------------------*/
     .service_head
     {
+        align-content: flex-start;
+        align-items: flex-start;
+
+        min-height: 494px;
         margin-bottom: 80px;
         padding-top: 128px;
         padding-bottom: 129px;
@@ -717,33 +807,34 @@
 
     .service_head .data .desc
     {
-        font-size: 20px;
-        line-height: 125%;
-
         width: 320px;
         margin-top: 22px;
+
+        font-size: 20px;
+        line-height: 125%;
     }
 
 
     .service_head .data .btn
     {
-        font-size: 14px;
-
         margin-top: 38px;
         padding: 16px 30px 17px;
+
+        font-size: 14px;
     }
 
 
     .service_head .anchors
     {
+        padding: 24px 0 23px;
+
         font-size: 14px;
         line-height: 125%;
-
-        padding: 24px 0 23px;
     }
 
 
-    .service_head .anchors .row
+    .service_head .anchors .row,
+    .service_head .anchors .row.alignleft
     {
         display: block;
         overflow: auto;
@@ -772,7 +863,8 @@
     }
 
 
-    .service_head .anchors .row > *
+    .service_head .anchors .row > *,
+    .service_head .anchors .row.alignleft > *
     {
         display: inline-block;
 
@@ -782,7 +874,8 @@
         vertical-align: top;
     }
 
-    .service_head .anchors .row > * + *
+    .service_head .anchors .row > * + *,
+    .service_head .anchors .row.alignleft > * + *
     {
         margin-left: 36px;
     }
@@ -840,10 +933,10 @@
 
     .why_how .info .btn
     {
-        font-size: 14px;
-
         margin-top: 16px;
         padding: 16px 30px 17px;
+
+        font-size: 14px;
     }
 
 
@@ -886,14 +979,13 @@
     .how_prepare .video_link
     {
         display: flex;
+        align-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: space-between;
 
         width: 100%;
         margin-top: 60px;
-
-        justify-content: space-between;
-        align-items: flex-start;
-        align-content: flex-start;
-        flex-wrap: wrap;
     }
 
 
@@ -924,10 +1016,10 @@
 
     .action_block .title
     {
+        width: 350px;
+
         font-size: 30px;
         line-height: 115%;
-
-        width: 350px;
     }
 
 
@@ -954,10 +1046,10 @@
 
     .preparation .block_head .desc
     {
-        font-size: 20px;
-
         width: 100%;
         margin-top: 40px;
+
+        font-size: 20px;
     }
 
 
@@ -1070,14 +1162,13 @@
     .treatment_control .video_link
     {
         display: flex;
+        align-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: space-between;
 
         width: 100%;
         margin-top: 60px;
-
-        justify-content: space-between;
-        align-items: flex-start;
-        align-content: flex-start;
-        flex-wrap: wrap;
     }
 
 
@@ -1124,10 +1215,10 @@
 
     .test .data .desc
     {
+        margin-top: 20px;
+
         font-size: 20px;
         line-height: 120%;
-
-        margin-top: 20px;
     }
 
 
@@ -1201,10 +1292,10 @@
 
     .articles .article .desc
     {
+        margin-top: 10px;
+
         font-size: 14px;
         line-height: 130%;
-
-        margin-top: 10px;
     }
 
 
@@ -1225,14 +1316,71 @@
 
 
 
+    /*-------------
+        Lecture
+    -------------*/
+    .lecture .block_head
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .lecture .sub_title
+    {
+        width: 544px;
+        margin-bottom: 20px;
+
+        font-size: 20px;
+        line-height: 125%;
+    }
+
+
+    .lecture .video
+    {
+        margin-top: 60px;
+    }
+
+    .lecture .video .play_btn .icon
+    {
+        width: 58px;
+        height: 58px;
+    }
+
+
+    .lecture .videos
+    {
+        margin-top: 60px;
+    }
+
+    .lecture .videos .sub_title
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .lecture .videos .row
+    {
+        margin-bottom: -40px;
+        margin-left: -44px;
+    }
+
+    .lecture .videos .row > *
+    {
+        width: calc(50% - 44px);
+        margin-bottom: 40px;
+        margin-left: 44px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/
     footer .text
     {
+        order: 2;
+
         width: 100%;
         margin-top: 30px;
-
-        order: 2;
     }
 }

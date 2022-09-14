@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Изменение цвета панели моб. браузера -->
+		<meta name="msapplication-TileColor" content="#A67DB6">
+		<meta name="theme-color" content="#A67DB6">
+
+		<!-- Подключение шрифтов с гугла -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/swiper-bundle.min.css" async>
+		<link rel="stylesheet" href="css/swiper.css" async>
+		<link rel="stylesheet" href="css/fancybox.css" async>
+		<link rel="stylesheet" href="css/styles.css" async>
+
+		<link rel="stylesheet" href="css/response_1187.css" media="print, (max-width: 1187px)" async>
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)" async>
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)" async>
+		<link rel="stylesheet" href="css/response_539.css" media="(max-width: 539px)" async>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<header>
+					<div class="cont row">
+						<a href="/" class="logo">
+							<img src="images/logo.svg" alt="">
+						</a>
+
+						<nav class="menu">
+							<button class="close_btn">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+							</button>
+
+							<div class="row">
+								<div class="menu_item">
+									<a href="/">Железо в организме</a>
+								</div>
+
+								<div class="menu_item">
+									<a href="/" class="sub_link">
+										<span>Дефицит железа</span>
+										<span class="arr"></span>
+									</a>
+
+									<div class="sub_menu">
+										<div><a href="/">Дефицит железа</a></div>
+										<div><a href="/">Реальные истории</a></div>
+										<div><a href="/">Мнение врачей</a></div>
+									</div>
+								</div>
+
+								<div class="menu_item">
+									<a href="/">Симптомы</a>
+								</div>
+
+								<div class="menu_item">
+									<a href="/" class="sub_link">
+										<span>Диагностика и лечение</span>
+										<span class="arr"></span>
+									</a>
+
+									<div class="sub_menu">
+										<div><a href="/"></a></div>
+									</div>
+								</div>
+
+								<div class="menu_item">
+									<a href="/" class="sub_link">
+										<span>Беременность</span>
+										<span class="arr"></span>
+									</a>
+
+									<div class="sub_menu">
+										<div><a href="/"></a></div>
+									</div>
+								</div>
+							</div>
+						</nav>
+
+						<a href="/" class="test_btn">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+							<span>Пройди онлайн тест</span>
+						</a>
+
+						<buttom class="menu_btn">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu"></use></svg>
+						</buttom>
+					</div>
+				</header>
+
+
+				<section class="mob_header">
+					<div class="cont row">
+						<div class="logo">
+							<img src="images/logo.png" alt="">
+						</div>
+
+						<button class="mob_menu_btn">
+							<span></span>
+						</button>
+					</div>
+				</section>
+
+
+				<section class="service_head">
+					<div class="breadcrumbs">
+						<div class="cont">
+							<a href="/">Диагностика и лечение</a> <span class="sep">/</span>
+							<a href="/">Дефицит железа</a> <span class="sep">/</span>
+							<span class="current">Мнение врачей</span>
+						</div>
+					</div>
+
+					<div class="cont">
+						<div class="data pad_r">
+							<div class="title">Мнение специалистов</div>
+
+							<div class="desc big_w">Почему важно следить за уровнем железа</div>
+						</div>
+					</div>
+
+					<div class="anchors">
+						<div class="cont">
+							<div class="row alignleft">
+								<div><button class="btn scroll_btn" data-anchor="anchor1">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+									<span>Истории врачей</span>
+								</button></div>
+
+								<div><button class="btn scroll_btn" data-anchor="anchor2">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+									<span>Видео-лекции о дефиците железа</span>
+								</button></div>
+							</div>
+						</div>
+					</div>
+
+					<img data-src="images/tmp/bg_service_head2.jpg" alt="" class="bg lazyload">
+				</section>
+
+
+				<section class="expert_opinion block" id="anchor1">
+					<div class="cont">
+						<div class="block_head">
+							<div class="title">Что говорят врачи</div>
+						</div>
+
+						<div class="swiper big">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="doctor">
+										<div class="photo">
+											<img data-src="images/tmp/doctor_photo_big.jpg" alt="" class="swiper-lazy">
+										</div>
+
+										<div class="name">Митина Татьяна Алексеевна</div>
+
+										<div class="desc">Врач - гематолог, д.м.н., руководитель отделения клинической гематологии и иммунотерапии МОНИКИ, ведущий научный сотрудник, врач высшей категории. г. Москва</div>
+									</div>
+
+									<div>
+										<div class="quote">
+											Я направляю их на анализы, и тут выясняется – низкий ферритин
+										</div>
+
+										<div class="text">У моих пациентов очень низкий уровень знания о дефиците железа. Женщины приходят и жалуются, что уже обошли нескольких разных специалистов, пробовали разное лечение, разные клиники. В итоге после череды неудач в лечении и без ощутимых результатов они методом исключения попадают ко мне. Я направляю их на анализы,и тут выясняется – низкий ферритин. Вот, откуда все проблемы. Зато как приятно видеть тех же пациентов, но после лечения. Энергичные, радостные, довольные. <b>Те же люди, но уже совсем другие!</b></div>
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="doctor">
+										<div class="photo">
+											<img data-src="images/tmp/doctor_photo_big.jpg" alt="" class="swiper-lazy">
+										</div>
+
+										<div class="name">Митина Татьяна Алексеевна</div>
+
+										<div class="desc">Врач - гематолог, д.м.н., руководитель отделения клинической гематологии и иммунотерапии МОНИКИ, ведущий научный сотрудник, врач высшей категории. г. Москва</div>
+									</div>
+
+									<div>
+										<div class="quote">
+											Я направляю их на анализы, и тут выясняется – низкий ферритин
+										</div>
+
+										<div class="text">У моих пациентов очень низкий уровень знания о дефиците железа. Женщины приходят и жалуются, что уже обошли нескольких разных специалистов, пробовали разное лечение, разные клиники. В итоге после череды неудач в лечении и без ощутимых результатов они методом исключения попадают ко мне. Я направляю их на анализы,и тут выясняется – низкий ферритин. Вот, откуда все проблемы. Зато как приятно видеть тех же пациентов, но после лечения. Энергичные, радостные, довольные. <b>Те же люди, но уже совсем другие!</b></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-button-prev">
+								<div><svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg></div>
+							</div>
+
+							<div class="swiper-button-next">
+								<div><svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg></div>
+							</div>
+						</div>
+
+						<div class="swiper carousel">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="item">
+										<div class="photo">
+											<img data-src="images/tmp/doctor_photo2.jpg" alt="" class="swiper-lazy">
+										</div>
+	
+										<div class="title">Жалуются на очень общие симптомы, сложно поставить диагноз</div>
+	
+										<div class="name">Мухин Алексей Валентинович</div>
+	
+										<div class="desc">Врач - терапевт, заведующий отделения, врач первой категории. г. Санкт-Петербург</div>
+	
+										<div class="link">
+											<a href="/">Читать</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="item">
+										<div class="photo">
+											<img data-src="images/tmp/doctor_photo3.jpg" alt="" class="swiper-lazy">
+										</div>
+	
+										<div class="title">Я рекомендую сдать анализ крови на уровень гемоглобина и ферритина</div>
+	
+										<div class="name">Белозерова Елена Михайловна</div>
+	
+										<div class="desc">Гинеколог - акушер, специалист УЗИ. г. Москва</div>
+	
+										<div class="link">
+											<a href="/">Читать</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="item">
+										<div class="photo">
+											<img data-src="images/tmp/doctor_photo_big.jpg" alt="" class="swiper-lazy">
+										</div>
+	
+										<div class="title">Пациенты попадают ко мне методом исключения</div>
+	
+										<div class="name">Митина Татьяна Алексеевна</div>
+	
+										<div class="desc">Врач - гематолог, д.м.н., руководитель отделения клинической гематологии и иммунотерапии МОНИКИ, ведущий научный сотрудник, врач высшей категории.</div>
+	
+										<div class="link">
+											<a href="/">Читать</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="item">
+										<div class="photo">
+											<img data-src="images/tmp/doctor_photo2.jpg" alt="" class="swiper-lazy">
+										</div>
+	
+										<div class="title">Жалуются на очень общие симптомы, сложно поставить диагноз</div>
+	
+										<div class="name">Мухин Алексей Валентинович</div>
+	
+										<div class="desc">Врач - терапевт, заведующий отделения, врач первой категории. г. Санкт-Петербург</div>
+	
+										<div class="link">
+											<a href="/">Читать</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="item">
+										<div class="photo">
+											<img data-src="images/tmp/doctor_photo3.jpg" alt="" class="swiper-lazy">
+										</div>
+	
+										<div class="title">Я рекомендую сдать анализ крови на уровень гемоглобина и ферритина</div>
+	
+										<div class="name">Белозерова Елена Михайловна</div>
+	
+										<div class="desc">Гинеколог - акушер, специалист УЗИ. г. Москва</div>
+	
+										<div class="link">
+											<a href="/">Читать</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="item">
+										<div class="photo">
+											<img data-src="images/tmp/doctor_photo_big.jpg" alt="" class="swiper-lazy">
+										</div>
+	
+										<div class="title">Пациенты попадают ко мне методом исключения</div>
+	
+										<div class="name">Митина Татьяна Алексеевна</div>
+	
+										<div class="desc">Врач - гематолог, д.м.н., руководитель отделения клинической гематологии и иммунотерапии МОНИКИ, ведущий научный сотрудник, врач высшей категории.</div>
+	
+										<div class="link">
+											<a href="/">Читать</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-button-prev">
+								<div><svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg></div>
+							</div>
+
+							<div class="swiper-button-next">
+								<div><svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg></div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="lecture block" id="anchor2">
+					<div class="cont">
+						<div class="block_head">
+							<div class="title">Видео-лекции о дефиците железа</div>
+						</div>
+
+						<div class="data">
+							<div class="sub_title">Какие анализы нужно сдать женщине, чтобы выявить скрытый дефицит железа?</div>
+
+							<div class="text_block">
+								<p><a href="/"><b>Стуклов Николай Игоревич</b></a> - врач-гематолог, доктор медицинских наук, профессор, руководитель курса гематологии кафедры госпитальной терапии с курсами эндокринологии, гематологии и клинической лабораторной диагностики медицинского факультета РУДН</p>
+							</div>
+
+							<a href="https://youtu.be/hMcBBFEPabA" data-fancybox class="video">
+								<div class="thumb">
+									<img data-src="images/tmp/opinion_video_thumb.jpg" alt="" class="lazyload">
+								</div>
+
+								<button class="play_btn">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_video_play"></use></svg>
+								</button>
+							</a>
+						</div>
+
+						<div class="videos">
+							<div class="sub_title">Ещё больше видео о проблеме железодефицита</div>
+
+							<div class="row">
+								<a href="https://youtu.be/hMcBBFEPabA" data-fancybox class="video_link">
+									<div class="thumb">
+										<img data-src="images/tmp/video_thumb.jpg" alt="" class="lazyload">
+										<div class="icon"></div>
+									</div>
+
+									<div>
+										<div class="title">Как понять пациенту, что ему помогает лечение?</div>
+
+										<div class="author">Стуклов Николай Игоревич</div>
+									</div>
+								</a>
+
+								<a href="https://youtu.be/hMcBBFEPabA" data-fancybox class="video_link">
+									<div class="thumb">
+										<img data-src="images/tmp/video_thumb.jpg" alt="" class="lazyload">
+										<div class="icon"></div>
+									</div>
+
+									<div>
+										<div class="title">Как понять пациенту, что ему помогает лечение?</div>
+
+										<div class="author">Стуклов Николай Игоревич</div>
+									</div>
+								</a>
+
+								<a href="https://youtu.be/hMcBBFEPabA" data-fancybox class="video_link">
+									<div class="thumb">
+										<img data-src="images/tmp/video_thumb.jpg" alt="" class="lazyload">
+										<div class="icon"></div>
+									</div>
+
+									<div>
+										<div class="title">Как понять пациенту, что ему помогает лечение?</div>
+
+										<div class="author">Стуклов Николай Игоревич</div>
+									</div>
+								</a>
+
+								<a href="https://youtu.be/hMcBBFEPabA" data-fancybox class="video_link">
+									<div class="thumb">
+										<img data-src="images/tmp/video_thumb.jpg" alt="" class="lazyload">
+										<div class="icon"></div>
+									</div>
+
+									<div>
+										<div class="title">Как понять пациенту, что ему помогает лечение?</div>
+
+										<div class="author">Стуклов Николай Игоревич</div>
+									</div>
+								</a>
+
+								<a href="https://youtu.be/hMcBBFEPabA" data-fancybox class="video_link">
+									<div class="thumb">
+										<img data-src="images/tmp/video_thumb.jpg" alt="" class="lazyload">
+										<div class="icon"></div>
+									</div>
+
+									<div>
+										<div class="title">Как понять пациенту, что ему помогает лечение?</div>
+
+										<div class="author">Стуклов Николай Игоревич</div>
+									</div>
+								</a>
+
+								<a href="https://youtu.be/hMcBBFEPabA" data-fancybox class="video_link">
+									<div class="thumb">
+										<img data-src="images/tmp/video_thumb.jpg" alt="" class="lazyload">
+										<div class="icon"></div>
+									</div>
+
+									<div>
+										<div class="title">Как понять пациенту, что ему помогает лечение?</div>
+
+										<div class="author">Стуклов Николай Игоревич</div>
+									</div>
+								</a>
+							</div>
+
+							<div class="load_more">
+								<button class="btn">Показать ещё</button>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="contraindications">
+					<div class="cont">
+						<div>Информация, содержащаяся на сайте, не заменяет консультацию врача</div>
+						<div><span>Имеются противопоказания. Проконсультируйтесь со специалистом</span></div>
+					</div>
+				</section>
+			</div>
+
+
+			<footer>
+				<div class="cont row">
+					<div class="logo">
+						<img src="images/egis_logo.svg" alt="">
+					</div>
+
+					<div class="text">
+						<div>000000958545 ООО «ЭГИС-РУС» ОГРН 5077746558160 121552, г. Москва, ул. Ярцевская, д.19, блок В, этаж 13 Телефон: +7 (495) 363-39-66 Телефакс: +7 (495) 789-66-31</div>
+
+						<div>Если Вам стало известно о нежелательной реакции при использовании продукта из портфеля ООО «ЭГИС-РУС», пожалуйста, сообщите эту информацию через любую из удобных для вас форм связи:</div>
+
+						<div class="contacts">
+							<div>1. E-mail: <a href="mailto:pharmacovigilance@egis.ru">pharmacovigilance@egis.ru</a></div>
+							<div>2. Телефон: (495) 363-39-66</div>
+							<div>3. Заполнить форму на <a href="/"><b>сайте</b></a></div>
+						</div>
+
+						<div>Все права защищены. Права на данный сайт принадлежат компании ООО «ЭГИС-РУС»</div>
+
+						<div><a href="/"><b>Политика организации обработки и обеспечения безопасности персональных данных в ООО «ЭГИС-РУС»</b></a></div>
+					</div>
+
+					<div class="logo">
+						<img src="images/logo.svg" alt="">
+					</div>
+				</div>
+			</footer>
+
+
+			<div class="overlay"></div>
+
+			<div class="buttonUp">
+				<button></button>
+			</div>
+		</div>
+
+
+		<div class="supports_error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/fancybox.min.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

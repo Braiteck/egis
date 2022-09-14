@@ -24,6 +24,24 @@
 
 
 
+    /*---------------
+        Load more
+    ---------------*/
+    .load_more
+    {
+        margin-top: 40px;
+    }
+
+
+    .load_more .btn
+    {
+        padding: 14px 32px;
+
+        font-size: 14px;
+    }
+
+
+
     /*------------
         Header
     ------------*/
@@ -43,12 +61,12 @@
 
     header .test_btn
     {
-        font-size: 12px;
-        line-height: 15px;
-
         padding: 14px 21px;
 
         box-shadow: 0 8px 19px rgba(148, 110, 163, .53);
+
+        font-size: 12px;
+        line-height: 15px;
     }
 
     header .test_btn .icon
@@ -211,10 +229,10 @@
 
     .symptoms .block_head .desc
     {
-        font-size: 18px;
-
         width: 408px;
         margin-top: 40px;
+
+        font-size: 18px;
     }
 
 
@@ -259,9 +277,9 @@
 
     .symptoms .link a
     {
-        font-size: 14px;
-
         padding: 14px 40px;
+
+        font-size: 14px;
     }
 
 
@@ -291,9 +309,9 @@
     {
         display: -webkit-box;
         overflow-y: hidden;
+        -webkit-box-orient: vertical;
 
         -webkit-line-clamp: 7;
-        -webkit-box-orient: vertical;
     }
 
 
@@ -328,9 +346,9 @@
 
     .deficit .data .link a
     {
-        font-size: 14px;
-
         padding: 14px 40px;
+
+        font-size: 14px;
     }
 
 
@@ -364,9 +382,9 @@
 
     .yuniron .exp
     {
-        font-size: 12px;
-
         margin-left: 22px;
+
+        font-size: 12px;
     }
 
 
@@ -379,9 +397,9 @@
 
     .yuniron .hashtag
     {
-        font-size: 30px;
-
         padding: 30px;
+
+        font-size: 30px;
     }
 
 
@@ -389,12 +407,23 @@
     /*--------------------
         Expert opinion
     --------------------*/
+    .expert_opinion .big .doctor
+    {
+        margin-bottom: 24px;
+    }
+
+    .expert_opinion .big .text
+    {
+        font-size: 16px;
+    }
+
+
     .expert_opinion .sub_title
     {
+        width: 100%;
+
         font-size: 20px;
         line-height: 125%;
-
-        width: 100%;
     }
 
 
@@ -423,18 +452,27 @@
     {
         position: relative;
 
-        padding-left: 85px;
+        padding-left: 116px;
     }
 
 
     .expert_opinion .item .photo
     {
         position: absolute;
-        top: 0;
-        left: 0;
+        top: 24px;
+        left: 24px;
 
         width: 55px;
         height: 55px;
+    }
+
+    .expert_opinion .item .photo:before
+    {
+        top: -4px;
+        right: -16px;
+
+        width: 28px;
+        height: 24px;
     }
 
     .expert_opinion .item .name
@@ -451,11 +489,11 @@
 
     .expert_opinion .item .quote
     {
-        font-size: 14px;
-        line-height: 115%;
-
         height: auto !important;
         padding: 10px 30px;
+
+        font-size: 14px;
+        line-height: 115%;
     }
 
     .expert_opinion .item .quote br
@@ -472,6 +510,11 @@
         height: 21px;
     }
 
+
+    .expert_opinion .item .link
+    {
+        margin-top: 20px;
+    }
 
     .expert_opinion .link a
     {
@@ -552,6 +595,7 @@
     {
         overflow: visible;
 
+        min-height: 428px;
         margin-bottom: 120px;
         padding-top: 76px;
         padding-bottom: 151px;
@@ -578,22 +622,22 @@
 
     .service_head .data .desc
     {
-        font-size: 18px;
-        line-height: 110%;
-
         width: 288px;
         margin-top: 17px;
+
+        font-size: 18px;
+        line-height: 110%;
     }
 
 
     .service_head .data .btn
     {
-        font-size: 14px;
-
         margin-top: 34px;
         padding: 14px 30px 15px;
 
         box-shadow: 0 18px 27px rgba(188, 157, 198, .28);
+
+        font-size: 14px;
     }
 
 
@@ -603,7 +647,8 @@
     }
 
 
-    .service_head .anchors .row
+    .service_head .anchors .row,
+    .service_head .anchors .row.alignleft
     {
         display: flex;
         overflow: visible;
@@ -616,7 +661,8 @@
     }
 
 
-    .service_head .anchors .row > *
+    .service_head .anchors .row > *,
+    .service_head .anchors .row.alignleft > *
     {
         display: block;
 
@@ -625,7 +671,8 @@
         margin-left: 20px;
     }
 
-    .service_head .anchors .row > * + *
+    .service_head .anchors .row > * + *,
+    .service_head .anchors .row.alignleft > * + *
     {
         margin-left: 20px;
     }
@@ -753,19 +800,19 @@
 
     .action_block .title
     {
+        width: 305px;
+
         font-size: 25px;
         line-height: 125%;
-
-        width: 305px;
     }
 
 
     .action_block .test_btn
     {
+        padding: 14px 20px 15px 21px;
+
         font-size: 12px;
         line-height: 125%;
-
-        padding: 14px 20px 15px 21px;
     }
 
     .action_block .test_btn .icon
@@ -791,10 +838,10 @@
 
     .preparation .block_head .desc
     {
+        margin-top: 30px;
+
         font-size: 18px;
         line-height: 125%;
-
-        margin-top: 30px;
     }
 
 
@@ -871,10 +918,10 @@
 
     .results .item .name
     {
+        margin-bottom: 20px;
+
         font-size: 16px;
         line-height: 130%;
-
-        margin-bottom: 20px;
     }
 
     .results .item .name span
@@ -907,11 +954,11 @@
 
     .results .exp
     {
-        font-size: 12px;
-        line-height: 120%;
-
         width: 420px;
         padding: 0;
+
+        font-size: 12px;
+        line-height: 120%;
     }
 
 
@@ -1001,20 +1048,20 @@
 
     .test .data .pre_title
     {
+        margin-bottom: 0;
+
         font-size: 12px;
         line-height: 24px;
-
-        margin-bottom: 0;
     }
 
 
     .test .data .title
     {
-        font-size: 25px;
-        line-height: 125%;
-
         width: 250px;
         max-width: 100%;
+
+        font-size: 25px;
+        line-height: 125%;
     }
 
 
@@ -1087,5 +1134,46 @@
     {
         font-size: 24px;
         line-height: 90%;
+    }
+
+
+
+    /*-------------
+        Lecture
+    -------------*/
+    .lecture
+    {
+        padding: 80px 0;
+    }
+
+    
+    .lecture .videos .row
+    {
+        margin-left: -24px;
+    }
+
+    .lecture .videos .row > *
+    {
+        width: calc(50% - 24px);
+        margin-left: 24px;
+    }
+
+
+    .lecture .video_link .thumb .icon
+    {
+        width: 47px;
+        height: 47px;
+    }
+
+    .lecture .video_link .thumb .icon:after
+    {
+        left: 4px;
+
+        width: 20px;
+        height: 22px;
+
+        border-top-width: 11px;
+        border-bottom-width: 11px;
+        border-left-width: 20px;
     }
 }

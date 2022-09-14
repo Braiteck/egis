@@ -61,10 +61,10 @@
     -----------------*/
     .breadcrumbs
     {
+        padding: 20px 0;
+
         font-size: 12px;
         line-height: 18px;
-
-        padding: 20px 0;
     }
 
 
@@ -102,15 +102,15 @@
 
     .text_block ol li:before
     {
-        font-size: 40px;
-        line-height: 42px;
-
         bottom: auto;
 
         width: 45px;
         margin: 0;
 
         text-align: center;
+
+        font-size: 40px;
+        line-height: 42px;
     }
 
 
@@ -292,9 +292,9 @@
     {
         display: -webkit-box;
         overflow-y: hidden;
+        -webkit-box-orient: vertical;
 
         -webkit-line-clamp: 7;
-        -webkit-box-orient: vertical;
     }
 
 
@@ -368,9 +368,9 @@
 
     .yuniron .hashtag
     {
-        font-size: 24px;
-
         padding: 18px;
+
+        font-size: 24px;
     }
 
 
@@ -378,6 +378,25 @@
     /*--------------------
         Expert opinion
     --------------------*/
+    .expert_opinion .big .quote
+    {
+        padding: 20px 20px 20px 0;
+    }
+
+    .expert_opinion .big .text
+    {
+        font-size: 15px;
+    }
+
+
+
+    .expert_opinion .item .link
+    {
+        margin-top: 16px;
+    }
+
+
+
     .expert_opinion .sub_title
     {
         font-size: 18px;
@@ -404,23 +423,14 @@
 
     .expert_opinion .item
     {
-        position: relative;
-
-        padding-left: 0;
+        padding: 24px;
     }
-
 
     .expert_opinion .item .photo
     {
         position: relative;
-
-        width: 42px;
-        height: 42px;
-    }
-
-    .expert_opinion .item .name
-    {
-        width: calc(100% - 52px);
+        top: 0;
+        left: 0;
     }
 
 
@@ -514,15 +524,27 @@
     ------------------*/
     .service_head
     {
+        min-height: 428px;
         margin-bottom: 109px;
         padding-top: 71px;
         padding-bottom: 256px;
     }
 
 
+    .service_head .bg
+    {
+        object-position: 60% 50%;
+    }
+
+
     .service_head .data
     {
         width: 100%;
+    }
+
+    .service_head .data.pad_r
+    {
+        padding-right: 36px;
     }
 
 
@@ -535,11 +557,11 @@
 
     .service_head .data .desc
     {
-        font-size: 16px;
-        line-height: 125%;
-
         width: 256px;
         margin-top: 15px;
+
+        font-size: 16px;
+        line-height: 125%;
     }
 
 
@@ -557,7 +579,8 @@
     }
 
 
-    .service_head .anchors .row
+    .service_head .anchors .row,
+    .service_head .anchors .row.alignleft
     {
         display: block;
 
@@ -565,14 +588,16 @@
     }
 
 
-    .service_head .anchors .row > *
+    .service_head .anchors .row > *,
+    .service_head .anchors .row.alignleft > *
     {
         width: 100%;
         margin-bottom: 0;
         margin-left: 0;
     }
 
-    .service_head .anchors .row > * + *
+    .service_head .anchors .row > * + *,
+    .service_head .anchors .row.alignleft > * + *
     {
         margin-top: 23px;
         margin-left: 0;
@@ -581,12 +606,12 @@
 
     .service_head .anchors .btn
     {
-        font-size: 16px;
-        line-height: 125%;
-
         padding-left: 28px;
 
         text-decoration: none;
+
+        font-size: 16px;
+        line-height: 125%;
     }
 
     .service_head .anchors .btn .icon
@@ -718,21 +743,21 @@
 
     .action_block .title
     {
-        font-size: 22px;
-
         width: 100%;
+
+        font-size: 22px;
     }
 
 
     .action_block .test_btn
     {
-        font-size: 14px;
-        line-height: 16px;
-
         margin-top: 40px;
         margin-right: auto;
         margin-left: 0;
         padding: 14px 30px 15px;
+
+        font-size: 14px;
+        line-height: 16px;
     }
 
 
@@ -893,9 +918,9 @@
 
     .test .question
     {
-        font-size: 16px;
-
         padding: 32px 24px;
+
+        font-size: 16px;
     }
 
 
@@ -912,9 +937,9 @@
 
     .test .total .exp
     {
-        font-size: 14px;
-
         width: 140px;
+
+        font-size: 14px;
     }
 
     .test .total .value span
@@ -996,6 +1021,41 @@
     {
         font-size: 26px;
         line-height: 90%;
+    }
+
+
+
+    /*-------------
+        Lecture
+    -------------*/
+    .lecture .sub_title
+    {
+        font-size: 18px;
+    }
+
+
+    .lecture .video .play_btn .icon
+    {
+        width: 47px;
+        height: 47px;
+    }
+
+
+    .lecture .videos .sub_title
+    {
+        margin-bottom: 30px;
+    }
+
+
+    .lecture .videos .row
+    {
+        margin-left: 0;
+    }
+
+    .lecture .videos .row > *
+    {
+        width: 100%;
+        margin-left: 0;
     }
 
 

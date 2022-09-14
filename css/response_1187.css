@@ -64,6 +64,10 @@
     {
         display: flex;
         overflow: auto;
+        align-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: flex-start;
 
         height: 100%;
         min-height: -moz-available;
@@ -71,10 +75,6 @@
         min-height:         fill-available;
         padding: 60px 34px 60px 39px;
 
-        justify-content: flex-start;
-        align-items: flex-start;
-        align-content: flex-start;
-        flex-wrap: wrap;
         overscroll-behavior-y: contain;
     }
 
@@ -190,9 +190,9 @@
 
     .first_section .desc
     {
-        font-size: 24px;
-
         margin-top: 5px;
+
+        font-size: 24px;
     }
 
 
@@ -204,11 +204,11 @@
 
     .first_section .actions .item
     {
-        font-size: 14px;
-
         width: 130px;
         height: 130px;
         padding: 17px 0;
+
+        font-size: 14px;
     }
 
 
@@ -237,11 +237,11 @@
 
     .why_important .stats
     {
-        font-size: 18px;
-
         width: 250px;
         height: 250px;
         padding: 22px;
+
+        font-size: 18px;
     }
 
     .why_important .stats .val
@@ -349,9 +349,9 @@
     {
         display: -webkit-box;
         overflow-y: hidden;
+        -webkit-box-orient: vertical;
 
         -webkit-line-clamp: 7;
-        -webkit-box-orient: vertical;
     }
 
 
@@ -404,6 +404,113 @@
     /*--------------------
         Expert opinion
     --------------------*/
+    .expert_opinion .swiper.big
+    {
+        margin-top: 0;
+        padding: 0;
+    }
+
+
+    .expert_opinion .swiper-button-prev
+    {
+        left: 0;
+    }
+
+    .expert_opinion .swiper-button-next
+    {
+        right: 0;
+    }
+
+    .expert_opinion .big .swiper-button-prev,
+    .expert_opinion .big .swiper-button-next
+    {
+        top: 59px;
+    }
+
+    .expert_opinion .big .swiper-button-prev
+    {
+        right: 238px;
+    }
+
+
+    .expert_opinion .big .doctor
+    {
+        width: 280px;
+    }
+
+    .expert_opinion .big .doctor .photo
+    {
+        width: 152px;
+        height: 152px;
+        margin-bottom: 24px;
+    }
+
+    .expert_opinion .big .doctor .desc
+    {
+        margin-top: 8px;
+
+        font-size: 15px;
+    }
+
+    .expert_opinion .big .doctor + *
+    {
+        width: calc(100% - 340px);
+        padding-top: 20px;
+    }
+
+
+    .expert_opinion .big .quote
+    {
+        padding: 28px 104px 28px 0;
+
+        line-height: 150%;
+    }
+
+    .expert_opinion .big .quote:before
+    {
+        left: 0;
+    }
+
+
+    .expert_opinion .big .text
+    {
+        margin-top: 24px;
+
+        font-size: 18px;
+    }
+
+
+    .expert_opinion .carousel
+    {
+        margin-top: 90px;
+    }
+
+    .expert_opinion .carousel .swiper-button-prev,
+    .expert_opinion .carousel .swiper-button-next
+    {
+        top: 0;
+
+        width: 90px;
+        height: 100%;
+        padding: 24px;
+    }
+
+    .expert_opinion .carousel .swiper-button-next
+    {
+        right: -24px;
+
+        background: linear-gradient(270deg, #fff 18.77%, #fff0 100%);
+    }
+
+    .expert_opinion .carousel .swiper-button-prev
+    {
+        left: -24px;
+
+        background: linear-gradient(90deg, #fff 18.77%, #fff0 100%);
+    }
+
+
+
     .expert_opinion .video
     {
         margin-top: 70px;
@@ -500,6 +607,7 @@
     ------------------*/
     .service_head
     {
+        min-height: 591px;
         margin-bottom: 130px;
         padding-top: 153px;
         padding-bottom: 153px;
@@ -520,10 +628,10 @@
 
     .service_head .data .desc
     {
-        font-size: 24px;
-
         width: 384px;
         margin-top: 20px;
+
+        font-size: 24px;
     }
 
 
@@ -541,14 +649,27 @@
 
     .service_head .anchors .row
     {
-        margin-left: 0;
-
         justify-content: space-between;
+
+        margin-left: 0;
     }
 
     .service_head .anchors .row > *
     {
         margin-left: 0;
+    }
+
+
+    .service_head .anchors .row.alignleft
+    {
+        justify-content: flex-start;
+
+        margin-left: -52px;
+    }
+
+    .service_head .anchors .row.alignleft > *
+    {
+        margin-left: 52px;
     }
 
 
@@ -770,9 +891,9 @@
 
     .test .total .exp
     {
-        font-size: 18px;
-
         width: 197px;
+
+        font-size: 18px;
     }
 
 
@@ -806,11 +927,103 @@
 
     .contraindications span
     {
-        font-size: 49px;
-
         display: block;
 
         margin-top: 5px;
+
+        font-size: 49px;
+    }
+
+
+
+    /*-------------
+        Lecture
+    -------------*/
+    .lecture
+    {
+        padding: 100px 0;
+    }
+
+
+    .lecture .block_head
+    {
+        margin-bottom: 50px;
+    }
+
+
+    .lecture .sub_title
+    {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 32px;
+    }
+
+
+    .lecture .video
+    {
+        margin-top: 70px;
+    }
+
+    .lecture .video .play_btn .icon
+    {
+        width: 76px;
+        height: 76px;
+    }
+
+
+    .lecture .videos:after
+    {
+        display: none;
+    }
+
+
+    .lecture .videos .sub_title
+    {
+        margin-bottom: 45px;
+
+        font-weight: 700;
+    }
+
+
+    .lecture .videos .row
+    {
+        margin-left: -30px;
+    }
+
+    .lecture .videos .row > *
+    {
+        width: calc(33.333% - 30px);
+        margin-left: 30px;
+    }
+
+
+    .lecture .video_link .title
+    {
+        font-size: 18px;
+    }
+
+    .lecture .video_link .author
+    {
+        font-size: 12px;
+    }
+
+
+    .expert_opinion .item
+    {
+        padding: 32px 24px;
+    }
+
+    .expert_opinion .item .name
+    {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .expert_opinion .item .title
+    {
+        margin-bottom: 24px;
+
+        font-size: 20px;
     }
 
 
