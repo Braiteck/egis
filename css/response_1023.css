@@ -16,6 +16,11 @@
         margin-bottom: 80px;
     }
 
+    .block.min_margin
+    {
+        margin-bottom: 60px;
+    }
+
 
 
     /*------------
@@ -73,9 +78,9 @@
 
     .block_head .link a
     {
-        padding: 16px 35px;
-
         font-size: 14px;
+
+        padding: 16px 35px;
     }
 
 
@@ -83,15 +88,44 @@
     /*----------------
         Typography
     ----------------*/
+    .text_block
+    {
+        line-height: 140%;
+    }
+
+
     .text_block > *
     {
         margin-bottom: 20px;
+    }
+
+    .text_block.min_offset > *
+    {
+        margin-bottom: 12px;
     }
 
 
     .text_block ol li
     {
         padding-left: 68px;
+    }
+
+
+    .text_block ul li
+    {
+        padding-left: 25px;
+    }
+
+    .text_block ul li:before
+    {
+        top: 8px;
+    }
+
+
+    .text_block sup
+    {
+        font-size: 10px;
+        line-height: 16px;
     }
 
 
@@ -113,9 +147,9 @@
 
     .first_section .desc
     {
-        margin-top: 10px;
-
         font-size: 20px;
+
+        margin-top: 10px;
     }
 
 
@@ -136,6 +170,8 @@
 
     .first_section .actions .item
     {
+        line-height: 100%;
+
         display: flex;
         align-content: center;
         align-items: center;
@@ -153,8 +189,6 @@
         border-radius: 52px;
         background: rgba(242, 230, 246, .6);
         box-shadow: 0 4px 13px rgba(0, 0, 0, .1);
-
-        line-height: 100%;
 
         backdrop-filter: blur(10px);
     }
@@ -236,14 +270,18 @@
 
     .why_important .data .link a
     {
-        padding: 16px 35px;
-
         font-size: 14px;
+
+        padding: 16px 35px;
     }
 
 
     .why_important .stats
     {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 145%;
+
         width: 100%;
         height: auto;
         margin-top: 30px;
@@ -255,31 +293,27 @@
         background: rgba(237, 226, 255, .8);
         box-shadow: none;
 
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 145%;
-
         backdrop-filter: blur(5px);
     }
 
     .why_important .stats .val
     {
-        margin-right: 6px;
-
-        color: #792582;
-
         font-size: 16px;
         font-weight: 500;
         line-height: 145%;
+
+        margin-right: 6px;
+
+        color: #792582;
     }
 
     .why_important .stats .title
     {
-        color: #792582;
-
         font-size: 16px;
         font-weight: 500;
         line-height: 145%;
+
+        color: #792582;
     }
 
     .why_important .stats .desc
@@ -311,11 +345,11 @@
 
     .symptoms .block_head .desc
     {
-        width: 545px;
-        margin-top: 65px;
-
         font-size: 20px;
         line-height: 125%;
+
+        width: 545px;
+        margin-top: 65px;
     }
 
 
@@ -354,9 +388,9 @@
 
     .symptoms .spoler_btn
     {
-        margin-top: 50px;
-
         font-size: 14px;
+
+        margin-top: 50px;
     }
 
     .symptoms .spoler_btn div
@@ -366,9 +400,9 @@
 
     .symptoms .link a
     {
-        padding: 16px 35px;
-
         font-size: 14px;
+
+        padding: 16px 35px;
     }
 
 
@@ -474,9 +508,9 @@
 
     .deficit .data .link a
     {
-        padding: 16px 35px;
-
         font-size: 14px;
+
+        padding: 16px 35px;
     }
 
 
@@ -511,9 +545,9 @@
 
     .yuniron .test_btn
     {
-        padding: 9px 35px 9px 36px;
-
         font-size: 14px;
+
+        padding: 9px 35px 9px 36px;
     }
 
 
@@ -526,9 +560,9 @@
 
     .yuniron .hashtag
     {
-        padding: 35px;
-
         font-size: 36px;
+
+        padding: 35px;
     }
 
 
@@ -551,9 +585,9 @@
 
     .expert_opinion .big .doctor .desc
     {
-        margin-top: 16px;
-
         font-size: 14px;
+
+        margin-top: 16px;
     }
 
     .expert_opinion .big .doctor + *
@@ -582,9 +616,9 @@
 
     .expert_opinion .big .text
     {
-        width: 100%;
-
         font-size: 17px;
+
+        width: 100%;
     }
 
 
@@ -604,7 +638,7 @@
     {
         display: none;
     }
-    
+
     .expert_opinion .carousel .swiper-pagination
     {
         display: flex !important;
@@ -613,9 +647,9 @@
 
     .expert_opinion .item .title
     {
-        margin-bottom: 20px;
-
         font-size: 18px;
+
+        margin-bottom: 20px;
     }
 
 
@@ -663,12 +697,12 @@
 
     .expert_opinion .item .name
     {
+        font-size: 16px;
+
         align-self: center;
 
         width: calc(100% - 69px);
         margin-bottom: 0;
-
-        font-size: 16px;
     }
 
     .expert_opinion .item .name br
@@ -685,9 +719,9 @@
 
     .expert_opinion .item .quote
     {
-        padding: 20px 12px 20px 26px;
-
         font-size: 15px;
+
+        padding: 20px 12px 20px 26px;
     }
 
 
@@ -698,9 +732,9 @@
 
     .expert_opinion .link a
     {
-        padding: 16px 35px;
-
         font-size: 14px;
+
+        padding: 16px 35px;
     }
 
 
@@ -745,10 +779,10 @@
 
     .during_pregnancy .article .btn
     {
+        font-size: 14px;
+
         margin-top: 36px;
         padding: 16px 35px;
-
-        font-size: 14px;
     }
 
     .during_pregnancy .article .img
@@ -797,6 +831,11 @@
         width: 430px;
     }
 
+    .service_head .data .desc.middle_w
+    {
+        width: 487px;
+    }
+
 
     .service_head .data .title
     {
@@ -807,29 +846,29 @@
 
     .service_head .data .desc
     {
-        width: 320px;
-        margin-top: 22px;
-
         font-size: 20px;
         line-height: 125%;
+
+        width: 320px;
+        margin-top: 22px;
     }
 
 
     .service_head .data .btn
     {
+        font-size: 14px;
+
         margin-top: 38px;
         padding: 16px 30px 17px;
-
-        font-size: 14px;
     }
 
 
     .service_head .anchors
     {
-        padding: 24px 0 23px;
-
         font-size: 14px;
         line-height: 125%;
+
+        padding: 24px 0 23px;
     }
 
 
@@ -933,10 +972,10 @@
 
     .why_how .info .btn
     {
+        font-size: 14px;
+
         margin-top: 16px;
         padding: 16px 30px 17px;
-
-        font-size: 14px;
     }
 
 
@@ -1016,10 +1055,10 @@
 
     .action_block .title
     {
-        width: 350px;
-
         font-size: 30px;
         line-height: 115%;
+
+        width: 350px;
     }
 
 
@@ -1046,10 +1085,10 @@
 
     .preparation .block_head .desc
     {
+        font-size: 20px;
+
         width: 100%;
         margin-top: 40px;
-
-        font-size: 20px;
     }
 
 
@@ -1215,10 +1254,10 @@
 
     .test .data .desc
     {
-        margin-top: 20px;
-
         font-size: 20px;
         line-height: 120%;
+
+        margin-top: 20px;
     }
 
 
@@ -1292,10 +1331,10 @@
 
     .articles .article .desc
     {
-        margin-top: 10px;
-
         font-size: 14px;
         line-height: 130%;
+
+        margin-top: 10px;
     }
 
 
@@ -1327,11 +1366,11 @@
 
     .lecture .sub_title
     {
-        width: 544px;
-        margin-bottom: 20px;
-
         font-size: 20px;
         line-height: 125%;
+
+        width: 544px;
+        margin-bottom: 20px;
     }
 
 
@@ -1369,6 +1408,735 @@
         width: calc(50% - 44px);
         margin-bottom: 40px;
         margin-left: 44px;
+    }
+
+
+
+    /*----------------
+        Every 10th
+    ----------------*/
+    .every_10th .data
+    {
+        background-position: -104px 50%;
+    }
+
+
+    .every_10th .data .title
+    {
+        font-size: 24px;
+
+        width: 254px;
+        padding: 66px 30px;
+    }
+
+    .every_10th .data .title small
+    {
+        font-size: 18px;
+    }
+
+
+    .every_10th .data .desc
+    {
+        font-size: 18px;
+        line-height: 140%;
+
+        width: calc(100% - 264px);
+        padding: 30px 30px 30px 54px;
+    }
+
+    .every_10th .data .desc sup
+    {
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+
+    .every_10th .exp
+    {
+        font-size: 18px;
+        line-height: 140%;
+
+        margin-top: 18px;
+    }
+
+
+
+    /*---------------
+        Role iron
+    ---------------*/
+    .role_iron
+    {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
+
+    .role_iron .data
+    {
+        width: 490px;
+    }
+
+
+    .role_iron .data .desc
+    {
+        font-size: 20px;
+    }
+
+
+    .role_iron .data .exp
+    {
+        line-height: 140%;
+
+        margin-top: 60px;
+    }
+
+
+    .role_iron .text
+    {
+        font-size: 18px;
+        line-height: 140%;
+
+        width: 655px;
+        margin-top: 18px;
+        margin-right: 0;
+        margin-left: -54px;
+        padding: 18px 54px;
+    }
+
+    .role_iron .text:after
+    {
+        display: none;
+    }
+
+
+
+    /*----------------------
+        Article symptoms
+    ----------------------*/
+    .article_symptoms .block_head
+    {
+        width: 603px;
+        margin-bottom: 60px;
+    }
+
+
+    .article_symptoms .block_head .desc
+    {
+        margin-top: 15px;
+    }
+
+    .article_symptoms .block_head .desc br
+    {
+        display: none;
+    }
+
+
+    .article_symptoms .row .items
+    {
+        width: 320px;
+        max-width: calc(100% - 323px);
+    }
+
+    .article_symptoms .row + .items
+    {
+        margin-top: 50px;
+    }
+
+
+    .article_symptoms .items .title
+    {
+        font-size: 18px;
+        line-height: 125%;
+
+        margin-bottom: 24px;
+    }
+
+
+    .article_symptoms .message
+    {
+        font-size: 18px;
+        line-height: 140%;
+
+        width: 272px;
+        margin-right: 3px;
+        padding: 24px 44px;
+    }
+
+    .article_symptoms .message .icon
+    {
+        top: 0;
+        right: -40px;
+        bottom: 0;
+        left: auto;
+
+        width: 73px;
+        height: 72px;
+    }
+
+
+    .article_symptoms .items .row
+    {
+        margin-bottom: -24px;
+        margin-left: -20px;
+    }
+
+    .article_symptoms .items .row > *
+    {
+        width: calc(50% - 20px);
+        margin-bottom: 24px;
+        margin-left: 20px;
+    }
+
+
+    .article_symptoms .items .item
+    {
+        font-size: 18px;
+        line-height: 140%;
+    }
+
+    .article_symptoms .items .item .icon
+    {
+        width: 50px;
+        height: 50px;
+    }
+
+    .article_symptoms .items .item .icon + *
+    {
+        width: calc(100% - 70px);
+    }
+
+    .article_symptoms .items .item sup
+    {
+        font-size: 10px;
+    }
+
+
+    .article_symptoms .text_block
+    {
+        width: 714px;
+        margin-top: 50px;
+    }
+
+    .article_symptoms .text_block .bg:after
+    {
+        width: 30px;
+    }
+
+
+
+    /*-------------
+        Reasons
+    -------------*/
+    .reasons
+    {
+        padding: 90px 28px;
+    }
+
+
+    .reasons .block_head .desc
+    {
+        width: 490px;
+        margin-top: 15px;
+    }
+
+
+    .reasons .accordion_item + .accordion_item
+    {
+        margin-top: 40px;
+    }
+
+
+    .reasons .accordion_item .head .icon img
+    {
+        width: 50px;
+        height: 50px;
+    }
+
+    .reasons .accordion_item .head .title
+    {
+        font-size: 24px;
+
+        width: calc(100% - 70px);
+    }
+
+
+    .reasons .accordion_item .data
+    {
+        padding-right: 113px;
+        padding-left: 70px;
+    }
+
+
+
+    /*---------------
+        Treatment
+    ---------------*/
+    .treatment .block_head
+    {
+        margin-bottom: 60px;
+    }
+
+
+    .treatment .block_head .desc
+    {
+        width: 450px;
+    }
+
+
+    .treatment .data
+    {
+        padding: 30px;
+    }
+
+    .treatment .data .text_block
+    {
+        width: 490px;
+    }
+
+
+    .treatment .exp
+    {
+        font-size: 18px;
+        line-height: 140%;
+
+        width: 602px;
+        margin-top: 18px;
+    }
+
+
+
+    .treatment .tableted
+    {
+        margin-top: 60px;
+    }
+
+
+    .treatment .tableted .title
+    {
+        font-size: 24px;
+
+        margin-bottom: 15px;
+    }
+
+
+    .treatment .tableted .text
+    {
+        font-size: 20px;
+
+        width: 660px;
+    }
+
+
+
+    .treatment .combination
+    {
+        margin-top: 40px;
+    }
+
+    .treatment .combination .title
+    {
+        font-size: 18px;
+
+        width: 660px;
+        margin-bottom: 18px;
+    }
+
+
+    .treatment .combination ul
+    {
+        margin-bottom: -12px;
+        margin-left: 0;
+    }
+
+    .treatment .combination ul li
+    {
+        font-size: 18px;
+        line-height: 140%;
+
+        width: 100%;
+        margin-bottom: 12px;
+        margin-left: 0;
+        padding-left: 25px;
+    }
+
+    .treatment .combination ul li:before
+    {
+        top: 8px;
+    }
+
+
+
+    .treatment .information
+    {
+        margin-top: 18px;
+
+        background-position: -208px 50%;
+    }
+
+    .treatment .information .title
+    {
+        font-size: 18px;
+        line-height: 140%;
+
+        width: 254px;
+        padding: 30px;
+    }
+
+    .treatment .information .desc
+    {
+        font-size: 18px;
+        line-height: 140%;
+
+        width: calc(100% - 264px);
+        padding: 55px 30px 55px 54px;
+    }
+
+    .treatment .information .desc sup
+    {
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+
+
+    .treatment .portability
+    {
+        margin-top: 40px;
+    }
+
+
+    .treatment .portability .title
+    {
+        font-size: 18px;
+        line-height: 140%;
+
+        margin-bottom: 18px;
+    }
+
+    .treatment .portability .title,
+    .treatment .portability .text_block
+    {
+        width: 660px;
+    }
+
+
+
+    .treatment .relieve_effects
+    {
+        margin-top: 40px;
+    }
+
+    .treatment .relieve_effects .title
+    {
+        font-size: 18px;
+        line-height: 140%;
+
+        width: 660px;
+        margin-bottom: 18px;
+    }
+
+
+
+    .treatment .relieve_effects .row
+    {
+        margin-bottom: -20px;
+        margin-left: -20px;
+    }
+
+    .treatment .relieve_effects .row > *
+    {
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+
+    .treatment .relieve_effects .item
+    {
+        min-height: 228px;
+        padding: 24px;
+    }
+
+    .treatment .relieve_effects .item .name
+    {
+        margin-bottom: 18px;
+    }
+
+
+
+    /*----------------------
+        Intravenous iron
+    ----------------------*/
+    .intravenous_iron .block_title
+    {
+        font-size: 24px;
+        line-height: 125%;
+    }
+
+    .intravenous_iron .block_desc
+    {
+        font-size: 20px;
+
+        margin-top: 15px;
+    }
+
+
+    .intravenous_iron .data
+    {
+        width: 377px;
+    }
+
+
+    .intravenous_iron .notice
+    {
+        font-size: 16px;
+        line-height: 150%;
+
+        width: 258px;
+        height: 258px;
+        padding: 12px;
+    }
+
+
+    .intravenous_iron .side_effects
+    {
+        width: 660px;
+        margin-top: 40px;
+    }
+
+    .intravenous_iron .side_effects .title
+    {
+        font-size: 18px;
+
+        margin-bottom: 18px;
+    }
+
+
+
+    /*----------
+        Diet
+    ----------*/
+    .diet .block_title
+    {
+        font-size: 24px;
+    }
+
+    .diet .block_desc
+    {
+        font-size: 20px;
+
+        margin-top: 15px;
+    }
+
+
+    .diet .information
+    {
+        margin-top: 40px;
+        padding: 30px 30px 0;
+    }
+
+
+    .diet .information .text_block
+    {
+        width: 500px;
+    }
+
+
+    .diet .information .exp
+    {
+        font-size: 18px;
+        line-height: 140%;
+
+        position: relative;
+        right: 0;
+        bottom: 0;
+
+        width: calc(100% + 60px);
+        max-width: calc(100% + 60px);
+        margin-top: 18px;
+        margin-right: -30px;
+        margin-left: -30px;
+        padding: 30px;
+    }
+
+
+
+    .diet .foods
+    {
+        margin-top: 40px;
+    }
+
+    .diet .foods .title
+    {
+        font-size: 18px;
+
+        margin-bottom: 18px;
+    }
+
+
+
+    /*--------------
+        Criteria
+    --------------*/
+    .criteria .block_title
+    {
+        font-size: 24px;
+    }
+
+
+    .criteria .block_desc
+    {
+        font-size: 20px;
+
+        width: 547px;
+        margin-top: 15px;
+    }
+
+
+    .criteria .key_criteria
+    {
+        margin-top: 40px;
+    }
+
+
+    .criteria .key_criteria .title
+    {
+        font-size: 20px;
+
+        margin-bottom: 18px;
+    }
+
+
+    .criteria .key_criteria .row
+    {
+        margin-bottom: -20px;
+        margin-left: -20px;
+    }
+
+    .criteria .key_criteria .row > *
+    {
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+
+    .criteria .key_criteria .item
+    {
+        padding: 24px;
+    }
+
+    .criteria .key_criteria .item .name
+    {
+        margin-bottom: 18px;
+    }
+
+
+    .criteria .key_criteria .text_block
+    {
+        margin-top: 18px;
+    }
+
+
+
+    /*------------------
+        Why not work
+    ------------------*/
+    .why_not_work .block_title
+    {
+        font-size: 24px;
+
+        margin-bottom: 40px;
+    }
+
+    .why_not_work .block_title sup
+    {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+    .why_not_work .information
+    {
+        margin-top: 18px;
+
+        background-position: -152px 50%;
+    }
+
+    .why_not_work .information .title
+    {
+        font-size: 18px;
+        line-height: 140%;
+
+        width: 254px;
+        padding: 30px;
+    }
+
+    .why_not_work .information .desc
+    {
+        font-size: 18px;
+        line-height: 140%;
+
+        width: calc(100% - 264px);
+        padding: 42px 30px 30px 54px;
+    }
+
+
+    .why_not_work .information + .text_block
+    {
+        margin-top: 18px;
+    }
+
+
+
+    /*----------------
+        Prevention
+    ----------------*/
+    .prevention
+    {
+        padding: 90px 28px;
+    }
+
+
+    .prevention .block_head .title br
+    {
+        display: none;
+    }
+
+
+    .prevention .block_title
+    {
+        font-size: 24px;
+    }
+
+    .prevention .block_desc
+    {
+        font-size: 20px;
+
+        width: 547px;
+        margin-top: 15px;
+    }
+
+    .prevention .text_block
+    {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+
+    .prevention .section
+    {
+        margin-top: 60px;
+    }
+
+
+    .prevention .exp
+    {
+        width: calc(100% + 52px);
+        max-width: calc(100% + 52px);
+        margin-top: 18px;
+        margin-right: -52px;
+        padding-right: 52px;
     }
 
 

@@ -190,9 +190,9 @@
 
     .first_section .desc
     {
-        margin-top: 5px;
-
         font-size: 24px;
+
+        margin-top: 5px;
     }
 
 
@@ -204,11 +204,11 @@
 
     .first_section .actions .item
     {
+        font-size: 14px;
+
         width: 130px;
         height: 130px;
         padding: 17px 0;
-
-        font-size: 14px;
     }
 
 
@@ -237,11 +237,11 @@
 
     .why_important .stats
     {
+        font-size: 18px;
+
         width: 250px;
         height: 250px;
         padding: 22px;
-
-        font-size: 18px;
     }
 
     .why_important .stats .val
@@ -447,9 +447,9 @@
 
     .expert_opinion .big .doctor .desc
     {
-        margin-top: 8px;
-
         font-size: 15px;
+
+        margin-top: 8px;
     }
 
     .expert_opinion .big .doctor + *
@@ -461,9 +461,9 @@
 
     .expert_opinion .big .quote
     {
-        padding: 28px 104px 28px 0;
-
         line-height: 150%;
+
+        padding: 28px 104px 28px 0;
     }
 
     .expert_opinion .big .quote:before
@@ -474,9 +474,9 @@
 
     .expert_opinion .big .text
     {
-        margin-top: 24px;
-
         font-size: 18px;
+
+        margin-top: 24px;
     }
 
 
@@ -619,6 +619,11 @@
         width: 500px;
     }
 
+    .service_head .data.tablet_big
+    {
+        width: 676px;
+    }
+
 
     .service_head .data .title
     {
@@ -628,10 +633,10 @@
 
     .service_head .data .desc
     {
+        font-size: 24px;
+
         width: 384px;
         margin-top: 20px;
-
-        font-size: 24px;
     }
 
 
@@ -670,6 +675,50 @@
     .service_head .anchors .row.alignleft > *
     {
         margin-left: 52px;
+    }
+
+
+    .service_head .anchors .row.step_below
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 48px);
+        margin: 0 -24px;
+        padding: 0 24px;
+
+        white-space: nowrap;
+
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .service_head .anchors .row.step_below::-webkit-scrollbar
+    {
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .service_head .anchors .row.step_below::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+    .service_head .anchors .row.step_below > *
+    {
+        display: inline-block;
+
+        max-width: none;
+        margin: 0;
+
+        vertical-align: top;
+    }
+
+    .service_head .anchors .row.step_below > * + *
+    {
+        margin-left: 48px;
     }
 
 
@@ -891,9 +940,9 @@
 
     .test .total .exp
     {
-        width: 197px;
-
         font-size: 18px;
+
+        width: 197px;
     }
 
 
@@ -927,11 +976,11 @@
 
     .contraindications span
     {
+        font-size: 49px;
+
         display: block;
 
         margin-top: 5px;
-
-        font-size: 49px;
     }
 
 
@@ -979,9 +1028,9 @@
 
     .lecture .videos .sub_title
     {
-        margin-bottom: 45px;
-
         font-weight: 700;
+
+        margin-bottom: 45px;
     }
 
 
@@ -1021,9 +1070,457 @@
 
     .expert_opinion .item .title
     {
-        margin-bottom: 24px;
-
         font-size: 20px;
+
+        margin-bottom: 24px;
+    }
+
+
+
+    /*----------------
+        Every 10th
+    ----------------*/
+    .every_10th .data
+    {
+        background-position: -56px 50%;
+    }
+
+
+    .every_10th .data .title
+    {
+        width: 395px;
+        padding: 78px 83px;
+    }
+
+    .every_10th .data .desc
+    {
+        width: calc(100% - 405px);
+        padding: 29px 49px 29px 61px;
+    }
+
+
+    .every_10th .exp
+    {
+        width: 855px;
+        padding: 0 28px;
+    }
+
+
+
+    /*---------------
+        Role iron
+    ---------------*/
+    .role_iron
+    {
+        padding-top: 130px;
+        padding-right: 28px;
+        padding-bottom: 42px;
+        padding-left: 28px;
+    }
+
+
+    .role_iron .data
+    {
+        width: 596px;
+    }
+
+    .role_iron .data .block_head .title br
+    {
+        display: block;
+    }
+
+
+    .role_iron .text
+    {
+        width: 313px;
+        margin-top: 344px;
+        margin-right: -45px;
+        padding: 30px 24px 30px 45px;
+    }
+
+
+
+    /*----------------------
+        Article symptoms
+    ----------------------*/
+    .article_symptoms
+    {
+        padding: 0 28px;
+    }
+
+
+    .article_symptoms .block_head
+    {
+        width: 596px;
+        margin-bottom: 20px;
+    }
+
+
+    .article_symptoms .row .items
+    {
+        width: 519px;
+        max-width: calc(100% - 336px);
+    }
+
+    .article_symptoms .items .title
+    {
+        width: 519px;
+    }
+
+
+    .article_symptoms .message
+    {
+        width: 321px;
+        padding: 75px 15px 50px;
+    }
+
+
+    .article_symptoms .items .row
+    {
+        margin-left: -14px;
+    }
+
+    .article_symptoms .items .row > *
+    {
+        width: calc(33.333% - 14px);
+        margin-left: 14px;
+    }
+
+
+    .article_symptoms .items .item .icon
+    {
+        width: 61px;
+        height: 61px;
+    }
+
+    .article_symptoms .items .item .icon + *
+    {
+        width: calc(100% - 91px);
+    }
+
+
+    .article_symptoms .text_block
+    {
+        width: 750px;
+    }
+
+    .article_symptoms .text_block .bg:after
+    {
+        width: 60px;
+    }
+
+
+
+    /*-------------
+        Reasons
+    -------------*/
+    .reasons
+    {
+        padding: 130px 28px;
+    }
+
+
+    .reasons .block_head .desc
+    {
+        margin-top: 20px;
+    }
+
+
+    .reasons .accordion_item .head .icon img
+    {
+        width: 61px;
+        height: 61px;
+    }
+
+    .reasons .accordion_item .head .title
+    {
+        width: calc(100% - 76px);
+    }
+
+
+    .reasons .accordion_item .data
+    {
+        padding-right: 154px;
+        padding-left: 76px;
+    }
+
+
+
+    /*---------------
+        Treatment
+    ---------------*/
+    .treatment
+    {
+        padding-right: 28px;
+        padding-left: 28px;
+    }
+
+
+    .treatment .data
+    {
+        margin-right: -28px;
+        margin-left: -28px;
+        padding-right: 62px;
+        padding-left: 62px;
+    }
+
+    .treatment .data .text_block
+    {
+        width: 653px;
+    }
+
+
+    .treatment .exp
+    {
+        width: 750px;
+    }
+
+
+
+    .treatment .tableted .text
+    {
+        width: 750px;
+    }
+
+
+
+    .treatment .combination .title
+    {
+        width: 797px;
+    }
+
+
+    .treatment .combination ul
+    {
+        margin-left: -40px;
+    }
+
+    .treatment .combination ul li
+    {
+        width: calc(50% - 40px);
+        margin-left: 40px;
+        padding-left: 32px;
+    }
+
+
+
+    .treatment .information
+    {
+        margin-right: -28px;
+        margin-left: -28px;
+
+        background-position: -56px 50%;
+    }
+
+    .treatment .information .title
+    {
+        width: 395px;
+        padding: 29px 56px;
+    }
+
+    .treatment .information .desc
+    {
+        width: calc(100% - 405px);
+        padding: 45px 49px 45px 61px;
+    }
+
+
+
+    .treatment .portability .title,
+    .treatment .portability .text_block
+    {
+        width: 750px;
+    }
+
+
+
+    .treatment .relieve_effects .row
+    {
+        margin-bottom: -30px;
+    }
+
+    .treatment .relieve_effects .row > *
+    {
+        margin-bottom: 30px;
+    }
+
+
+    .treatment .relieve_effects .item
+    {
+        min-height: 326px;
+    }
+
+
+
+    /*----------------------
+        Intravenous iron
+    ----------------------*/
+    .intravenous_iron
+    {
+        padding: 0 28px;
+    }
+
+
+    .intravenous_iron .data
+    {
+        width: 519px;
+    }
+
+
+    .intravenous_iron .side_effects
+    {
+        width: 750px;
+    }
+
+
+
+    /*----------
+        Diet
+    ----------*/
+    .diet
+    {
+        padding: 0 28px;
+    }
+
+    .diet .block_title,
+    .diet .block_desc
+    {
+        width: 750px;
+    }
+
+
+    .diet .information
+    {
+        margin-right: -28px;
+        margin-left: -28px;
+        padding: 50px;
+    }
+
+
+    .diet .information .text_block
+    {
+        width: 469px;
+    }
+
+
+    .diet .information .exp
+    {
+        right: -40px;
+
+        width: 348px;
+        padding: 30px 87px 30px 45px;
+    }
+
+
+
+    /*--------------
+        Criteria
+    --------------*/
+    .criteria
+    {
+        padding: 0 28px;
+    }
+
+
+    .criteria .block_desc
+    {
+        width: 750px;
+    }
+
+
+    .criteria .key_criteria .row
+    {
+        margin-bottom: -30px;
+    }
+
+    .criteria .key_criteria .row > *
+    {
+        margin-bottom: 30px;
+    }
+
+
+    .criteria .key_criteria .item
+    {
+        padding: 30px;
+    }
+
+
+    .criteria .key_criteria .text_block
+    {
+        width: 797px;
+    }
+
+
+
+    /*------------------
+        Why not work
+    ------------------*/
+    .why_not_work
+    {
+        padding: 0 28px;
+    }
+
+
+    .why_not_work .block_title
+    {
+        width: 596px;
+    }
+
+
+    .why_not_work .information
+    {
+        margin-right: -28px;
+        margin-left: -28px;
+
+        background-position: -56px 50%;
+    }
+
+    .why_not_work .information .title
+    {
+        width: 395px;
+        padding: 29px 56px;
+    }
+
+    .why_not_work .information .desc
+    {
+        width: calc(100% - 405px);
+        padding: 29px 49px 29px 61px;
+    }
+
+
+
+    /*----------------
+        Prevention
+    ----------------*/
+    .prevention
+    {
+        padding: 130px 28px;
+    }
+
+
+    .prevention .block_head .title br
+    {
+        display: block;
+    }
+
+
+    .prevention .block_desc,
+    .prevention .text_block
+    {
+        width: 750px;
+    }
+
+
+    .prevention .section
+    {
+        margin-top: 100px;
+    }
+
+
+    .prevention .exp
+    {
+        width: 810px;
+        padding-right: 60px;
     }
 
 

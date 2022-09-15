@@ -35,9 +35,9 @@
 
     .load_more .btn
     {
-        padding: 14px 32px;
-
         font-size: 14px;
+
+        padding: 14px 32px;
     }
 
 
@@ -61,12 +61,12 @@
 
     header .test_btn
     {
+        font-size: 12px;
+        line-height: 15px;
+
         padding: 14px 21px;
 
         box-shadow: 0 8px 19px rgba(148, 110, 163, .53);
-
-        font-size: 12px;
-        line-height: 15px;
     }
 
     header .test_btn .icon
@@ -229,10 +229,10 @@
 
     .symptoms .block_head .desc
     {
+        font-size: 18px;
+
         width: 408px;
         margin-top: 40px;
-
-        font-size: 18px;
     }
 
 
@@ -277,9 +277,9 @@
 
     .symptoms .link a
     {
-        padding: 14px 40px;
-
         font-size: 14px;
+
+        padding: 14px 40px;
     }
 
 
@@ -346,9 +346,9 @@
 
     .deficit .data .link a
     {
-        padding: 14px 40px;
-
         font-size: 14px;
+
+        padding: 14px 40px;
     }
 
 
@@ -382,9 +382,9 @@
 
     .yuniron .exp
     {
-        margin-left: 22px;
-
         font-size: 12px;
+
+        margin-left: 22px;
     }
 
 
@@ -397,9 +397,9 @@
 
     .yuniron .hashtag
     {
-        padding: 30px;
-
         font-size: 30px;
+
+        padding: 30px;
     }
 
 
@@ -420,10 +420,10 @@
 
     .expert_opinion .sub_title
     {
-        width: 100%;
-
         font-size: 20px;
         line-height: 125%;
+
+        width: 100%;
     }
 
 
@@ -489,11 +489,11 @@
 
     .expert_opinion .item .quote
     {
-        height: auto !important;
-        padding: 10px 30px;
-
         font-size: 14px;
         line-height: 115%;
+
+        height: auto !important;
+        padding: 10px 30px;
     }
 
     .expert_opinion .item .quote br
@@ -608,7 +608,9 @@
     }
 
 
-    .service_head .data
+    .service_head .data,
+    .service_head .data.tablet_big,
+    .service_head .data .desc.middle_w
     {
         width: 356px;
     }
@@ -622,22 +624,22 @@
 
     .service_head .data .desc
     {
-        width: 288px;
-        margin-top: 17px;
-
         font-size: 18px;
         line-height: 110%;
+
+        width: 288px;
+        margin-top: 17px;
     }
 
 
     .service_head .data .btn
     {
+        font-size: 14px;
+
         margin-top: 34px;
         padding: 14px 30px 15px;
 
         box-shadow: 0 18px 27px rgba(188, 157, 198, .28);
-
-        font-size: 14px;
     }
 
 
@@ -800,19 +802,19 @@
 
     .action_block .title
     {
-        width: 305px;
-
         font-size: 25px;
         line-height: 125%;
+
+        width: 305px;
     }
 
 
     .action_block .test_btn
     {
-        padding: 14px 20px 15px 21px;
-
         font-size: 12px;
         line-height: 125%;
+
+        padding: 14px 20px 15px 21px;
     }
 
     .action_block .test_btn .icon
@@ -838,10 +840,10 @@
 
     .preparation .block_head .desc
     {
-        margin-top: 30px;
-
         font-size: 18px;
         line-height: 125%;
+
+        margin-top: 30px;
     }
 
 
@@ -918,10 +920,10 @@
 
     .results .item .name
     {
-        margin-bottom: 20px;
-
         font-size: 16px;
         line-height: 130%;
+
+        margin-bottom: 20px;
     }
 
     .results .item .name span
@@ -954,11 +956,11 @@
 
     .results .exp
     {
-        width: 420px;
-        padding: 0;
-
         font-size: 12px;
         line-height: 120%;
+
+        width: 420px;
+        padding: 0;
     }
 
 
@@ -1048,20 +1050,20 @@
 
     .test .data .pre_title
     {
-        margin-bottom: 0;
-
         font-size: 12px;
         line-height: 24px;
+
+        margin-bottom: 0;
     }
 
 
     .test .data .title
     {
-        width: 250px;
-        max-width: 100%;
-
         font-size: 25px;
         line-height: 125%;
+
+        width: 250px;
+        max-width: 100%;
     }
 
 
@@ -1146,7 +1148,7 @@
         padding: 80px 0;
     }
 
-    
+
     .lecture .videos .row
     {
         margin-left: -24px;
@@ -1175,5 +1177,497 @@
         border-top-width: 11px;
         border-bottom-width: 11px;
         border-left-width: 20px;
+    }
+
+
+
+    /*----------------
+        Every 10th
+    ----------------*/
+    .every_10th .data
+    {
+        margin-right: -15px;
+        margin-left: -15px;
+
+        background: none;
+    }
+
+
+    .every_10th .data .title
+    {
+        width: 100%;
+        padding: 24px;
+
+        text-align: center;
+
+        background: #792582;
+    }
+
+
+    .every_10th .data .desc
+    {
+        width: 100%;
+        padding: 24px;
+
+        background: #a67db6;
+    }
+
+    .every_10th .data .desc sup
+    {
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+
+    .every_10th .exp
+    {
+        padding: 0 15px;
+    }
+
+
+
+    /*---------------
+        Role iron
+    ---------------*/
+    .role_iron
+    {
+        padding-top: 70px;
+        padding-right: 0;
+        padding-bottom: 0;
+        padding-left: 0;
+    }
+
+
+    .role_iron .data
+    {
+        width: 100%;
+    }
+
+
+    .role_iron .data .block_head
+    {
+        margin-bottom: 15px;
+    }
+
+    .role_iron .data .desc
+    {
+        width: 397px;
+    }
+
+
+    .role_iron .text
+    {
+        width: calc(100% + 60px);
+        max-width: calc(100% + 60px);
+        margin-top: 18px;
+        margin-right: -30px;
+        margin-left: -30px;
+        padding: 18px 30px;
+    }
+
+
+
+    /*----------------------
+        Article symptoms
+    ----------------------*/
+    .article_symptoms
+    {
+        padding: 0;
+    }
+
+
+    .article_symptoms .block_head
+    {
+        width: 100%;
+    }
+
+
+    .article_symptoms .block_head .desc
+    {
+        font-size: 20px;
+    }
+
+
+    .article_symptoms .row .items
+    {
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+    .article_symptoms .message
+    {
+        width: 100%;
+        margin-top: 40px;
+        margin-right: 28px;
+    }
+
+
+    .article_symptoms .items .row
+    {
+        margin-bottom: -18px;
+        margin-left: 0;
+    }
+
+    .article_symptoms .items .row > *
+    {
+        width: 100%;
+        margin-bottom: 18px;
+        margin-left: 0;
+    }
+
+
+    .article_symptoms .text_block
+    {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .article_symptoms .text_block .bg
+    {
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+
+
+
+    /*-------------
+        Reasons
+    -------------*/
+    .reasons
+    {
+        padding: 70px 0;
+    }
+
+
+    .reasons .block_head .desc
+    {
+        font-size: 20px;
+
+        width: 100%;
+    }
+
+
+    .reasons .accordion_item + .accordion_item
+    {
+        margin-top: 30px;
+    }
+
+
+    .reasons .accordion_item .data
+    {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+
+
+    /*---------------
+        Treatment
+    ---------------*/
+    .treatment
+    {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+
+    .treatment .block_head .desc
+    {
+        font-size: 20px;
+
+        width: 100%;
+        margin-top: 15px;
+    }
+
+
+    .treatment .data
+    {
+        margin-right: -30px;
+        margin-left: -30px;
+    }
+
+    .treatment .data .text_block
+    {
+        width: 100%;
+    }
+
+
+
+    .treatment .information
+    {
+        margin-right: -30px;
+        margin-left: -30px;
+
+        background: none;
+    }
+
+    .treatment .information .title
+    {
+        width: 100%;
+        padding: 24px;
+
+        background: #792582;
+    }
+
+    .treatment .information .desc
+    {
+        width: 100%;
+        padding: 24px;
+
+        background: #a67db6;
+    }
+
+    .treatment .information .desc sup
+    {
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+
+    .treatment .relieve_effects .row
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 60px);
+        margin: 0 -30px;
+        padding: 0 30px 10px;
+
+        white-space: nowrap;
+
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .treatment .relieve_effects .row::-webkit-scrollbar
+    {
+        width: 6px !important;
+        height: 6px !important;
+
+        background-color: #ede2ff !important;
+    }
+
+    .treatment .relieve_effects .row::-webkit-scrollbar-thumb
+    {
+        background-color: #a67db6 !important;
+    }
+
+
+    .treatment .relieve_effects .row > *
+    {
+        display: inline-block;
+
+        width: 300px;
+        max-width: none;
+        margin: 0;
+
+        vertical-align: top;
+        white-space: normal;
+    }
+
+    .treatment .relieve_effects .row > * + *
+    {
+        margin-left: 16px;
+    }
+
+
+    .treatment .relieve_effects .item
+    {
+        min-height: 280px;
+    }
+
+
+
+    /*----------------------
+        Intravenous iron
+    ----------------------*/
+    .intravenous_iron
+    {
+        padding: 0;
+    }
+
+
+    .intravenous_iron .data
+    {
+        width: 100%;
+    }
+
+
+    .intravenous_iron .notice
+    {
+        margin-top: 18px;
+        margin-left: 0;
+    }
+
+
+    .intravenous_iron .side_effects
+    {
+        width: 100%;
+    }
+
+
+
+    /*----------
+        Diet
+    ----------*/
+    .diet
+    {
+        padding: 0;
+    }
+
+
+    .diet .information
+    {
+        margin-right: -30px;
+        margin-left: -30px;
+    }
+
+
+    .diet .information .text_block
+    {
+        width: calc(100% - 60px);
+    }
+
+
+
+    /*--------------
+        Criteria
+    --------------*/
+    .criteria
+    {
+        padding: 0;
+    }
+
+
+    .criteria .block_desc
+    {
+        width: 100%;
+    }
+
+
+    .criteria .key_criteria
+    {
+        margin-top: 40px;
+    }
+
+
+    .criteria .key_criteria .row
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 60px);
+        margin: 0 -30px;
+        padding: 0 30px 10px;
+
+        white-space: nowrap;
+
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .criteria .key_criteria .row::-webkit-scrollbar
+    {
+        width: 6px !important;
+        height: 6px !important;
+
+        background-color: #ede2ff !important;
+    }
+
+    .criteria .key_criteria .row::-webkit-scrollbar-thumb
+    {
+        background-color: #a67db6 !important;
+    }
+
+
+    .criteria .key_criteria .row > *
+    {
+        display: inline-block;
+
+        width: 300px;
+        max-width: none;
+        margin: 0;
+
+        vertical-align: top;
+        white-space: normal;
+    }
+
+    .criteria .key_criteria .row > * + *
+    {
+        margin-left: 16px;
+    }
+
+
+    .criteria .key_criteria .item
+    {
+        min-height: 300px;
+    }
+
+
+
+    /*------------------
+        Why not work
+    ------------------*/
+    .why_not_work
+    {
+        padding: 0;
+    }
+
+
+    .why_not_work .information
+    {
+        margin-right: -30px;
+        margin-left: -30px;
+
+        background: none;
+    }
+
+    .why_not_work .information .title
+    {
+        width: 100%;
+        padding: 24px;
+
+        background: #792582;
+    }
+
+    .why_not_work .information .desc
+    {
+        width: 100%;
+        padding: 24px;
+
+        background: #a67db6;
+    }
+
+
+
+    /*----------------
+        Prevention
+    ----------------*/
+    .prevention
+    {
+        padding: 70px 0;
+    }
+
+
+    .prevention .block_desc
+    {
+        width: 100%;
+    }
+
+
+    .prevention .section
+    {
+        margin-top: 100px;
+    }
+
+
+    .prevention .exp
+    {
+        width: calc(100% + 30px);
+        max-width: calc(100% + 30px);
+        margin-right: -30px;
+        padding: 18px 30px 18px 0;
+        padding-right: 30px;
     }
 }

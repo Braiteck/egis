@@ -2268,6 +2268,7 @@ header .menu_btn .icon
     display: block;
 
     width: auto;
+    min-width: 200px;
     height: 100%;
 
     pointer-events: none;
@@ -4665,6 +4666,11 @@ header .menu_btn .icon
     margin-bottom: 20px;
 }
 
+.role_iron .data .block_head .title br
+{
+    display: none;
+}
+
 .role_iron .data .desc
 {
     font-size: 24px;
@@ -4675,7 +4681,6 @@ header .menu_btn .icon
 
 .role_iron .data .exp
 {
-    font-size: 20px;
     line-height: 32px;
 
     margin-top: 80px;
@@ -4826,10 +4831,16 @@ header .menu_btn .icon
 
 .article_symptoms .items .item .icon
 {
-    display: block;
-
     width: 68px;
     height: 68px;
+}
+
+.article_symptoms .items .item .icon img
+{
+    display: block;
+
+    width: 100%;
+    height: 100%;
 }
 
 .article_symptoms .items .item .icon + *
@@ -4871,7 +4882,6 @@ header .menu_btn .icon
 
 .article_symptoms .message
 {
-    font-size: 20px;
     line-height: 160%;
 
     position: relative;
@@ -4902,6 +4912,14 @@ header .menu_btn .icon
     width: 95px;
     height: 95px;
     margin: auto;
+}
+
+.article_symptoms .message .icon img
+{
+    display: block;
+
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -4968,11 +4986,6 @@ header .menu_btn .icon
 }
 
 
-.reasons .block_head
-{
-    margin-bottom: 50px;
-}
-
 .reasons .block_head .desc
 {
     margin-top: 80px;
@@ -5010,7 +5023,7 @@ header .menu_btn .icon
 }
 
 
-.reasons .accordion_item .head .icon
+.reasons .accordion_item .head .icon img
 {
     display: block;
 
@@ -5220,7 +5233,7 @@ header .menu_btn .icon
 .treatment .combination ul li:before
 {
     position: absolute;
-    top: 10px;
+    top: 13px;
     left: 0;
 
     display: block;
@@ -5815,6 +5828,12 @@ header .menu_btn .icon
     padding: 150px 0;
 
     background: #f8f8f8;
+}
+
+
+.prevention .block_head .title br
+{
+    display: none;
 }
 
 
