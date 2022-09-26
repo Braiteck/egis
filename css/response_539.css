@@ -3,13 +3,6 @@
     /*-------------------
         Global styles
     -------------------*/
-    :root
-    {
-        --font_size: 15px;
-        --font_size_title: 22px;
-    }
-
-
     .cont
     {
         padding: 0 15px;
@@ -114,6 +107,12 @@
     }
 
 
+    .text_block ul li:before
+    {
+        top: 5px;
+    }
+
+
 
     /*-------------------
         First section
@@ -141,12 +140,15 @@
     .first_section .actions
     {
         width: 100%;
-        margin-top: 40px;
+        margin-top: 22px;
+        margin-bottom: 20px;
     }
 
 
     .first_section .actions .item
     {
+        padding: 2px 0;
+
         background: #f2e6f6;
         box-shadow: none;
     }
@@ -194,7 +196,7 @@
     }
 
 
-    .why_important .stats
+    .why_important .mob_stats
     {
         padding: 10px;
     }
@@ -264,12 +266,6 @@
     /*---------------
         Influence
     ---------------*/
-    .influence .swiper-slide
-    {
-        width: 290px;
-    }
-
-
     .influence .item .thumb
     {
         padding-bottom: 260px;
@@ -279,12 +275,6 @@
     .influence .item .title
     {
         padding: 31px 20px 34px;
-    }
-
-
-    .influence .item .info
-    {
-        padding: 47px 30px;
     }
 
 
@@ -307,10 +297,9 @@
         margin-bottom: 30px;
     }
 
-
-    .deficit .data .sub_title
+    .deficit .block_head .title
     {
-        font-size: 16px;
+        width: calc(100% - 62px);
     }
 
 
@@ -389,14 +378,6 @@
     }
 
 
-
-    .expert_opinion .item .link
-    {
-        margin-top: 16px;
-    }
-
-
-
     .expert_opinion .sub_title
     {
         font-size: 18px;
@@ -415,6 +396,12 @@
     }
 
 
+    .expert_opinion .carousel .swiper-slide
+    {
+        width: 290px;
+    }
+
+
     .expert_opinion .row
     {
         margin-top: 40px;
@@ -426,30 +413,17 @@
         padding: 24px;
     }
 
-    .expert_opinion .item .photo
+    .expert_opinion .item .title
     {
-        position: relative;
-        top: 0;
-        left: 0;
-    }
+        font-size: 18px;
+        line-height: 125%;
 
+        margin-bottom: 32px;
+    }
 
     .expert_opinion .item .desc
     {
-        margin-top: 20px;
-    }
-
-
-    .expert_opinion .item .quote
-    {
-        margin-top: 25px;
-        padding: 10px 20px;
-    }
-
-
-    .expert_opinion .link
-    {
-        margin-top: 40px;
+        margin-bottom: 18px;
     }
 
 
@@ -526,8 +500,8 @@
     {
         min-height: 428px;
         margin-bottom: 109px;
-        padding-top: 71px;
-        padding-bottom: 256px;
+        padding-top: 50px;
+        padding-bottom: 250px;
     }
 
 
@@ -550,14 +524,13 @@
 
     .service_head .data .title
     {
-        font-size: 26px;
+        font-size: 30px;
         line-height: 125%;
     }
 
 
     .service_head .data .desc
     {
-        font-size: 16px;
         line-height: 125%;
 
         width: 256px;
@@ -569,7 +542,9 @@
     {
         width: 100%;
         margin-top: 27px;
-        padding: 14px 14 15px;
+        padding: 14px 14px 15px;
+
+        text-align: center;
     }
 
 
@@ -681,6 +656,11 @@
         left: 0;
 
         min-width: 200px;
+        height: 223px;
+    }
+
+    .which_doctor .mob_bg
+    {
         height: 223px;
     }
 
@@ -810,6 +790,11 @@
         margin-bottom: 40px;
     }
 
+    .results .block_head .title
+    {
+        font-size: 22px;
+    }
+
 
     .results .swiper-button-next,
     .results .swiper-button-prev
@@ -837,8 +822,8 @@
 
     .results .exp
     {
-        width: 100%;
         margin-top: 15px;
+        padding: 0 15px;
     }
 
 
@@ -1103,6 +1088,26 @@
 
 
 
+    /*----------------------
+        Article symptoms
+    ----------------------*/
+    .article_symptoms .message
+    {
+        margin-right: 0;
+        margin-bottom: 31px;
+        padding: 29px 15px 49px;
+    }
+
+    .article_symptoms .message .icon
+    {
+        top: auto;
+        right: 0;
+        bottom: -34px;
+        left: 0;
+    }
+
+
+
     /*-------------
         Reasons
     -------------*/
@@ -1238,6 +1243,262 @@
         margin-right: -15px;
         padding: 18px 15px 18px 0;
         padding-right: 15px;
+    }
+
+
+
+    /*----------------
+        Story info
+    ----------------*/
+    .story_info .thumb,
+    .story_info .data + .author .thumb
+    {
+        height: 228px;
+    }
+
+
+
+    /*-------------
+        Stories
+    -------------*/
+    .stories .item
+    {
+        padding: 24px 40px 24px 24px;
+    }
+
+
+
+    /*----------------
+        Story data
+    ----------------*/
+    .story_data .title
+    {
+        line-height: 115%;
+    }
+
+
+
+    /*--------------------
+        Ferritin about
+    --------------------*/
+    .ferritin_about .message
+    {
+        margin-right: 0;
+        margin-bottom: 31px;
+        padding: 29px 15px 49px;
+    }
+
+    .ferritin_about .message .icon
+    {
+        top: auto;
+        right: 0;
+        bottom: -34px;
+        left: 0;
+    }
+
+
+
+    /*---------------------
+        Ferritin normal
+    ---------------------*/
+    .ferritin_normal
+    {
+        padding: 70px 0;
+    }
+
+
+    .ferritin_normal .block_head
+    {
+        margin-bottom: 50px;
+    }
+
+    .ferritin_normal .block_head .desc
+    {
+        margin-top: 15px;
+    }
+
+
+    .ferritin_normal .values .title
+    {
+        line-height: 125%;
+
+        margin-bottom: 24px;
+    }
+
+
+    .ferritin_normal .values .swiper-button-next,
+    .ferritin_normal .values .swiper-button-prev
+    {
+        display: none;
+    }
+
+
+    .ferritin_normal .values .row > *
+    {
+        width: 100%;
+    }
+
+    .ferritin_normal .values .row > * + *
+    {
+        margin-top: 25px;
+    }
+
+
+    .ferritin_normal .values .item
+    {
+        padding: 25px 20px 20px;
+    }
+
+
+
+    /*---------------------
+        Ferritin causes
+    ---------------------*/
+    .ferritin_causes .block_head .desc
+    {
+        margin-top: 15px;
+    }
+
+
+
+    /*-----------------------
+        Ferritin symptoms
+    -----------------------*/
+    .ferritin_symptoms .block_title
+    {
+        line-height: 125%;
+
+        margin-bottom: 24px;
+    }
+
+
+    .ferritin_symptoms .row
+    {
+        margin-bottom: -20px;
+        margin-left: 0;
+    }
+
+    .ferritin_symptoms .row > *
+    {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+
+
+    .ferritin_symptoms .item
+    {
+        font-size: 15px;
+        line-height: 125%;
+    }
+
+
+    .ferritin_symptoms .item .icon img
+    {
+        width: 50px;
+        height: 50px;
+    }
+
+    .ferritin_symptoms .item .icon + *
+    {
+        width: calc(100% - 70px);
+    }
+
+
+
+    /*-------------------
+        Ferritin when
+    -------------------*/
+    .ferritin_when .information
+    {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+
+
+    /*-----------------------
+        Treatment methods
+    -----------------------*/
+    .treatment_methods
+    {
+        padding: 70px 0;
+    }
+
+
+    .treatment_methods .block_head .desc
+    {
+        margin-top: 15px;
+    }
+
+
+    .treatment_methods .section
+    {
+        margin-top: 50px;
+    }
+
+
+    .treatment_methods .block_title
+    {
+        line-height: 125%;
+
+        margin-bottom: 24px;
+    }
+
+
+    .treatment_methods .information
+    {
+        margin-right: -15px;
+        margin-left: -15px;
+        padding: 15px 15px 0 15px;
+    }
+
+
+    .treatment_methods .information .text_block
+    {
+        width: calc(100% - 30px);
+    }
+
+
+    .treatment_methods .information .exp
+    {
+        width: calc(100% + 30px);
+        max-width: calc(100% + 30px);
+        margin-right: -15px;
+        margin-left: -15px;
+        padding: 15px;
+    }
+
+
+
+    /*--------------------
+        Article author
+    --------------------*/
+    .article_author .data
+    {
+        position: relative;
+    }
+
+
+    .article_author .photo
+    {
+        margin-bottom: 20px;
+    }
+
+    .article_author .photo + *
+    {
+        width: 100%;
+    }
+
+
+
+    /*------------------
+        Bibliography
+    ------------------*/
+    .bibliography .list
+    {
+        font-size: 15px;
     }
 
 

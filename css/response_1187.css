@@ -4,17 +4,16 @@
     /*-------------------
         Global styles
     -------------------*/
-    :root
-    {
-        --font_size: 20px;
-        --font_size_title: 36px;
-    }
-
-
     html.custom_scroll ::-webkit-scrollbar
     {
         width: 5px;
         height: 5px;
+    }
+
+
+    .cont
+    {
+        padding: 0 28px;
     }
 
 
@@ -172,6 +171,12 @@
     }
 
 
+    .text_block .bg:after
+    {
+        width: 60px;
+    }
+
+
 
     /*-------------------
         First section
@@ -231,14 +236,12 @@
 
     .why_important .data .link
     {
-        margin-top: 60px;
+        margin-top: 30px;
     }
 
 
     .why_important .stats
     {
-        font-size: 18px;
-
         width: 250px;
         height: 250px;
         padding: 22px;
@@ -261,7 +264,7 @@
     --------------*/
     .symptoms
     {
-        padding: 130px 0 131px;
+        padding: 130px 0;
     }
 
 
@@ -293,7 +296,7 @@
 
     .symptoms .item .icon + *
     {
-        width: calc(100% - 84px);
+        width: calc(100% - 842x);
     }
 
 
@@ -315,15 +318,15 @@
     ---------------*/
     .influence .row
     {
-        margin-bottom: -29px;
-        margin-left: -29px;
+        margin-bottom: -30px;
+        margin-left: -30px;
     }
 
     .influence .row > *
     {
-        width: calc(33.333% - 29px);
-        margin-bottom: 29px;
-        margin-left: 29px;
+        width: calc(33.333% - 30px);
+        margin-bottom: 30px;
+        margin-left: 30px;
     }
 
 
@@ -364,9 +367,10 @@
         width: 554px;
     }
 
+
     .deficit .data .link
     {
-        margin-top: 60px;
+        margin-top: 30px;
     }
 
 
@@ -474,8 +478,6 @@
 
     .expert_opinion .big .text
     {
-        font-size: 18px;
-
         margin-top: 24px;
     }
 
@@ -539,25 +541,6 @@
     }
 
 
-    .expert_opinion .item .photo
-    {
-        width: 70px;
-        height: 70px;
-    }
-
-    .expert_opinion .item .name
-    {
-        width: calc(100% - 90px);
-        margin-bottom: 9px;
-    }
-
-
-    .expert_opinion .item .quote
-    {
-        padding-right: 22px;
-    }
-
-
     .expert_opinion .link
     {
         margin-top: 60px;
@@ -608,9 +591,7 @@
     .service_head
     {
         min-height: 591px;
-        margin-bottom: 130px;
-        padding-top: 153px;
-        padding-bottom: 153px;
+        padding-bottom: 85px;
     }
 
 
@@ -783,9 +764,16 @@
     }
 
 
+    .action_block .title
+    {
+        width: 490px;
+    }
+
+
     .action_block .test_btn
     {
-        margin-left: 63px;
+        margin-left: 103px;
+        padding: 18px 40px 17px;
     }
 
 
@@ -828,15 +816,15 @@
 
     .results .row
     {
-        margin-bottom: -34px;
-        margin-left: -34px;
+        margin-bottom: -24px;
+        margin-left: -24px;
     }
 
     .results .row > *
     {
-        width: calc(33.333% - 34px);
-        margin-bottom: 34px;
-        margin-left: 34px;
+        width: calc(33.333% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
     }
 
 
@@ -846,9 +834,9 @@
     }
 
 
-    .results .item .name
+    .results .item .name span
     {
-        font-size: 18px;
+        width: calc(100% - 50px);
     }
 
 
@@ -859,14 +847,12 @@
 
     .results .item .features .val
     {
-        font-size: 18px;
         line-height: 24px;
     }
 
 
     .results .exp
     {
-        width: 297px;
         padding: 0;
     }
 
@@ -940,8 +926,6 @@
 
     .test .total .exp
     {
-        font-size: 18px;
-
         width: 197px;
     }
 
@@ -1046,11 +1030,6 @@
     }
 
 
-    .lecture .video_link .title
-    {
-        font-size: 18px;
-    }
-
     .lecture .video_link .author
     {
         font-size: 12px;
@@ -1124,11 +1103,6 @@
         width: 596px;
     }
 
-    .role_iron .data .block_head .title br
-    {
-        display: block;
-    }
-
 
     .role_iron .text
     {
@@ -1171,6 +1145,7 @@
     .article_symptoms .message
     {
         width: 321px;
+        margin-right: -28px;
         padding: 75px 15px 50px;
     }
 
@@ -1373,6 +1348,12 @@
     }
 
 
+    .intravenous_iron .notice
+    {
+        margin-right: 0;
+    }
+
+
 
     /*----------
         Diet
@@ -1381,6 +1362,7 @@
     {
         padding: 0 28px;
     }
+
 
     .diet .block_title,
     .diet .block_desc
@@ -1507,7 +1489,7 @@
     .prevention .block_desc,
     .prevention .text_block
     {
-        width: 750px;
+        width: 810px;
     }
 
 
@@ -1521,6 +1503,338 @@
     {
         width: 810px;
         padding-right: 60px;
+    }
+
+    .prevention .exp:before
+    {
+        display: none;
+    }
+
+
+
+    /*----------------
+        Story info
+    ----------------*/
+    .story_info .breadcrumbs
+    {
+        margin-bottom: 45px;
+    }
+
+
+    .story_info .data + .author
+    {
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+
+    .story_info .data + .author .thumb
+    {
+        height: 320px;
+    }
+
+
+    .story_info .data
+    {
+        width: 528px;
+        max-width: calc(100% - 445px);
+        margin-top: 70px;
+        margin-bottom: 70px;
+        padding-left: 28px;
+    }
+
+    .story_info .author + .data
+    {
+        width: calc(100% - 445px);
+        max-width: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 80px;
+        padding: 0;
+    }
+
+
+    .story_info .title
+    {
+        font-size: 42px;
+
+        width: 393px;
+        max-width: 100%;
+    }
+
+
+    .story_info .desc
+    {
+        margin-top: 20px;
+    }
+
+
+    .story_info .link
+    {
+        margin-top: 32px;
+    }
+
+
+
+    /*-------------
+        Stories
+    -------------*/
+    .stories:after
+    {
+        top: -200px;
+
+        width: 454px;
+        height: 454px;
+        margin-right: -767px;
+    }
+
+
+    .stories .row
+    {
+        margin-bottom: -30px;
+        margin-left: -30px;
+    }
+
+    .stories .row > *
+    {
+        width: calc(33.333% - 30px);
+        margin-bottom: 30px;
+        margin-left: 30px;
+    }
+
+
+
+    /*----------------
+        Story data
+    ----------------*/
+    .story_data
+    {
+        padding-left: 28px;
+    }
+
+
+    .story_data .title
+    {
+        width: 552px;
+    }
+
+
+    .story_data .text_block
+    {
+        width: 750px;
+    }
+
+
+    .story_data .icon
+    {
+        top: 367px;
+
+        width: 310px;
+        height: 310px;
+        margin-right: -608px;
+    }
+
+    .story_data .icon img
+    {
+        height: 116px;
+    }
+
+
+
+    /*--------------------
+        Ferritin about
+    --------------------*/
+    .ferritin_about .data
+    {
+        width: calc(100% - 380px);
+    }
+
+
+    .ferritin_about .message
+    {
+        width: 320px;
+        margin-right: 0;
+        padding: 77px 20px 40px;
+
+        box-shadow: inset 0 0 0 4px #fff;
+    }
+
+
+
+    /*---------------------
+        Ferritin normal
+    ---------------------*/
+    .ferritin_normal
+    {
+        padding: 130px 0;
+    }
+
+
+    .ferritin_normal .values .title
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .ferritin_normal .values .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+    .ferritin_normal .values .row > *
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+    .ferritin_normal .values .item
+    {
+        padding: 25px 20px;
+    }
+
+
+    .ferritin_normal .values .item .name span
+    {
+        width: calc(100% - 50px);
+    }
+
+
+    .ferritin_normal .values .item .features > * + *
+    {
+        margin-top: 9px;
+    }
+
+    .ferritin_normal .values .item .features .val
+    {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+
+    .ferritin_normal .text_block
+    {
+        width: 750px;
+    }
+
+
+
+    /*---------------------
+        Ferritin causes
+    ---------------------*/
+    .ferritin_causes .text_block
+    {
+        width: 750px;
+    }
+
+
+
+    /*-----------------------
+        Ferritin symptoms
+    -----------------------*/
+    .ferritin_symptoms .block_title
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .ferritin_symptoms .item .icon img
+    {
+        width: 50px;
+        height: 50px;
+    }
+
+    .ferritin_symptoms .item .icon + *
+    {
+        width: calc(100% - 82px);
+    }
+
+
+
+    /*-------------------
+        Ferritin when
+    -------------------*/
+    .ferritin_when .information
+    {
+        background-position: -104px 50%;
+    }
+
+
+    .ferritin_when .information .title
+    {
+        width: 395px;
+    }
+
+    .ferritin_when .information .desc
+    {
+        width: calc(100% - 405px);
+        padding: 29px 49px 29px 61px;
+    }
+
+
+
+    /*-----------------------
+        Treatment methods
+    -----------------------*/
+    .treatment_methods
+    {
+        padding: 130px 0;
+    }
+
+
+    .treatment_methods .text_block
+    {
+        width: 750px;
+    }
+
+
+    .treatment_methods .information
+    {
+        margin-right: -28px;
+        margin-left: -28px;
+        padding: 50px;
+    }
+
+
+    .treatment_methods .information .text_block
+    {
+        width: 469px;
+    }
+
+
+    .treatment_methods .information .exp
+    {
+        right: -40px;
+
+        width: 348px;
+        padding: 30px 87px 30px 45px;
+    }
+
+
+
+    /*---------
+        FAQ
+    ---------*/
+    .faq .accordion_item + .accordion_item
+    {
+        margin-top: 40px;
+    }
+
+
+    .faq .accordion_item .text_block
+    {
+        width: 750px;
+    }
+
+
+
+    /*--------------------
+        Article author
+    --------------------*/
+    .article_author .data
+    {
+        padding: 40px;
     }
 
 

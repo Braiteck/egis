@@ -121,6 +121,23 @@ $(() => {
 		currentStep++
 		$('.test .progress .count .current').text(currentStep)
 		$('.test .progress .bar div').width(currentStep / totalQuestions * 100 + '%')
+
+		// Баллы
+		let points = 0
+
+		$('.test .answers label input:checked').each(function(){
+			points = points + parseInt($(this).val())
+		})
+
+		$('.test .total .value span').text(points)
+
+		if(points < 11){
+			$('.test .total .exp > *').hide()
+			$('.test .total .exp > *:first-child').show()
+		} else {
+			$('.test .total .exp > *').hide()
+			$('.test .total .exp > *:last-child').show()
+		}
 	})
 
 	$('.test .btns .prev_btn').click(function (e) {
@@ -133,6 +150,27 @@ $(() => {
 		currentStep = currentStep - 1
 		$('.test .progress .count .current').text(currentStep)
 		$('.test .progress .bar div').width(currentStep / totalQuestions * 100 + '%')
+	})
+
+
+	// Список литературы
+	$('.bibliography .spoler_btn').click(function (e) {
+		e.preventDefault()
+
+		let parent = $(this).closest('.bibliography')
+
+		parent.find('.list .hide').slideToggle(300)
+		$(this).toggleClass('active')
+	})
+
+
+	// Мнение специалистов - Видео
+	$('.expert_opinion .video .play_btn').click(function (e) {
+		e.preventDefault()
+
+		let parent = $(this).closest('.video')
+
+		parent.find('iframe').addClass('show')
 	})
 
 
@@ -158,7 +196,7 @@ $(() => {
 
 
 	// Моб. меню
-	$('header .menu_btn, header .menu .close_btn').click((e) => {
+	$('header .menu_btn, header .menu .close_btn, .overlay').click((e) => {
 		e.preventDefault()
 
 		$('.mob_header .mob_menu_btn').toggleClass('active')
@@ -194,17 +232,9 @@ $(() => {
 	$('body').on('click', '.accordion .accordion_item .head', function(e) {
 		e.preventDefault()
 
-		const $item      = $(this).closest('.accordion_item'),
-				$accordion = $(this).closest('.accordion')
+		const $item = $(this).closest('.accordion_item')
 
-		if ($item.hasClass('active')) {
-			$item.removeClass('active').find('.data').slideUp(300)
-		} else {
-			$accordion.find('.accordion_item').removeClass('active')
-			$accordion.find('.data').slideUp(300)
-
-			$item.addClass('active').find('.data').slideDown(300)
-		}
+		$item.toggleClass('active').find('.data').slideToggle(300)
 	})
 
 
@@ -285,6 +315,10 @@ $(window).on('load', () => {
 	// Как дефицит железа влияет на жизнь
 	initInfluenceSliders()
 
+	// Нормальный уровень ферритина
+	initFerritinNormalSliders()
+
+
 	// Выравнивание элементов в сетке
 	$('.expert_opinion .row').each(function () {
 		expertOpinionHeight($(this), parseInt($(this).css('--expert_opinion_count')))
@@ -323,6 +357,10 @@ $(window).on('resize', () => {
 		// Как дефицит железа влияет на жизнь
 		initInfluenceSliders()
 
+		// Нормальный уровень ферритина
+		initFerritinNormalSliders()
+
+
 		// Выравнивание элементов в сетке
 		$('.expert_opinion .row').each(function () {
 			expertOpinionHeight($(this), parseInt($(this).css('--expert_opinion_count')))
@@ -351,7 +389,7 @@ $(window).on('scroll', () => {
 resultsSliders = []
 
 function initResultsSliders() {
-	if (window.outerWidth < 1024 && window.outerWidth > 539) {
+	if ($(window).width() < 1024 && $(window).width() > 539) {
 		if ($('.results .row').length) {
 			$('.results .row > *').addClass('swiper-slide')
 			$('.results .row').addClass('swiper-wrapper').removeClass('row')
@@ -395,11 +433,59 @@ function initResultsSliders() {
 
 
 
+// Нормальный уровень ферритина
+ferritinNormalSliders = []
+
+function initFerritinNormalSliders() {
+	if ($(window).width() < 1024 && $(window).width() > 539) {
+		if ($('.ferritin_normal .values .row').length) {
+			$('.ferritin_normal .values .row > *').addClass('swiper-slide')
+			$('.ferritin_normal .values .row').addClass('swiper-wrapper').removeClass('row')
+
+			$('.ferritin_normal .values .swiper').each(function (i) {
+				$(this).addClass('ferritin_normal_s' + i)
+
+				let options = {
+					loop: false,
+					speed: 500,
+					watchSlidesProgress: true,
+					slideActiveClass: 'active',
+					slideVisibleClass: 'visible',
+					slidesPerView: 'auto',
+					navigation: {
+						nextEl: '.swiper-button-next',
+						prevEl: '.swiper-button-prev'
+					},
+					breakpoints: {
+						0: {
+							spaceBetween: 30
+						},
+						1024: {
+							spaceBetween: 40
+						}
+					}
+				}
+
+				ferritinNormalSliders.push(new Swiper('.ferritin_normal_s' + i, options))
+			})
+		}
+	} else {
+		ferritinNormalSliders.forEach(element => element.destroy(true, true))
+
+		ferritinNormalSliders = []
+
+		$('.ferritin_normal .values .swiper-wrapper').addClass('row').removeClass('swiper-wrapper')
+		$('.ferritin_normal .values .row > *').removeClass('swiper-slide')
+	}
+}
+
+
+
 // Статьи
 articlesSliders = []
 
 function initArticlesSliders() {
-	if (window.outerWidth > 539) {
+	if ($(window).width() > 539) {
 		if ($('.articles .row').length) {
 			$('.articles .row > *').addClass('swiper-slide')
 			$('.articles .row').addClass('swiper-wrapper').removeClass('row')
@@ -447,7 +533,7 @@ function initArticlesSliders() {
 influenceSliders = []
 
 function initInfluenceSliders() {
-	if (window.outerWidth < 1024) {
+	if ($(window).width() < 1024) {
 		if ($('.influence .row').length) {
 			$('.influence .row > *').addClass('swiper-slide')
 			$('.influence .row').addClass('swiper-wrapper').removeClass('row')
