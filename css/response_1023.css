@@ -1,21 +1,24 @@
 @media print,
-(max-width: 1023px) {
-
+(max-width: 1023px)
+{
     /*-------------------
         Global styles
     -------------------*/
-    :root {
+    :root
+    {
         --font_size: 18px;
         --font_size_title: 30px;
     }
 
 
     .block,
-    .block.min_m {
+    .block.min_m
+    {
         margin-bottom: 80px;
     }
 
-    .block.middle_m {
+    .block.middle_m
+    {
         margin-bottom: 50px;
     }
 
@@ -24,7 +27,8 @@
     /*--------------
         BG block
     --------------*/
-    .bg_block {
+    .bg_block
+    {
         padding: 90px 0;
     }
 
@@ -33,7 +37,8 @@
     /*------------
         Header
     ------------*/
-    header {
+    header
+    {
         padding: 12px 0;
     }
 
@@ -42,7 +47,8 @@
     /*-----------------
         Breadcrumbs
     -----------------*/
-    .breadcrumbs {
+    .breadcrumbs
+    {
         padding: 30px 0 0;
     }
 
@@ -51,27 +57,32 @@
     /*----------------
         Block head
     ----------------*/
-    .block_head {
+    .block_head
+    {
         margin-bottom: 40px;
     }
 
 
-    .block_head .icon.tablet_show {
+    .block_head .icon.tablet_show
+    {
         display: block;
     }
 
-    .block_head .icon {
+    .block_head .icon
+    {
         width: 54px;
         margin-right: 25px;
     }
 
-    .block_head .desc {
+    .block_head .desc
+    {
         margin-top: 20px;
     }
 
 
 
-    .block_head .link a {
+    .block_head .link a
+    {
         font-size: 14px;
 
         padding: 16px 35px;
@@ -82,61 +93,78 @@
     /*----------------
         Typography
     ----------------*/
-    .text_block {
+    .text_block
+    {
         line-height: 140%;
     }
 
 
-    .text_block>* {
+    .text_block > *
+    {
         margin-bottom: 24px;
     }
 
-    .text_block.min_offset>* {
+    .text_block.min_offset > *
+    {
         margin-bottom: 12px;
     }
 
 
-    .text_block ol li {
+    .text_block ol li
+    {
         padding-left: 68px;
     }
 
 
-    .text_block ul li {
+    .text_block ul li
+    {
         padding-left: 25px;
     }
 
-    .text_block ul li:before {
+    .text_block ul li:before
+    {
         top: 7px;
     }
 
 
-    .text_block sup {
+    .text_block sup
+    {
         font-size: 10px;
         line-height: 16px;
     }
 
 
-    .text_block .bg {
+    .text_block .bg
+    {
         padding-top: 24px;
         padding-bottom: 24px;
     }
 
-    .text_block .bg:after {
+    .text_block .bg.hide.tablet_show
+    {
+        display: block;
+    }
+
+    .text_block .bg:after
+    {
         width: 30px;
     }
 
-    .text_block .bg span {
+    .text_block .bg span
+    {
         width: 488px;
         max-width: calc(100% - 143px);
     }
 
 
-    .text_block ul.row {
+    .text_block ul.row
+    {
         margin-bottom: 0;
         margin-left: 0;
     }
 
-    .text_block ul.row li {
+    .text_block ul.row li
+    {
         width: 100%;
         margin-bottom: 25px;
         margin-left: 0;
@@ -147,24 +175,28 @@
     /*-------------------
         First section
     -------------------*/
-    .first_section {
+    .first_section
+    {
         padding: 100px 0 54px;
     }
 
 
-    .first_section .title {
+    .first_section .title
+    {
         font-size: 36px;
     }
 
 
-    .first_section .desc {
+    .first_section .desc
+    {
         font-size: 20px;
 
         margin-top: 10px;
     }
 
 
-    .first_section .actions {
+    .first_section .actions
+    {
         width: 320px;
         max-width: 100%;
         margin-top: 96px;
@@ -172,12 +204,14 @@
         margin-left: 0;
     }
 
-    .first_section .actions>*+* {
+    .first_section .actions > * + *
+    {
         margin-top: 14px !important;
     }
 
 
-    .first_section .actions .item {
+    .first_section .actions .item
+    {
         color: #000;
         line-height: 100%;
 
@@ -202,7 +236,8 @@
     }
 
 
-    .first_section .actions .icon {
+    .first_section .actions .icon
+    {
         width: 48px;
         height: 48px;
         margin: 0;
@@ -212,16 +247,19 @@
         background: #c997dd;
     }
 
-    .first_section .actions .icon+* {
+    .first_section .actions .icon + *
+    {
         width: calc(100% - 66px);
     }
 
-    .first_section .actions br {
+    .first_section .actions br
+    {
         display: none;
     }
 
 
-    .first_section .bg {
+    .first_section .bg
+    {
         object-position: 70% 100%;
     }
 
@@ -230,43 +268,51 @@
     /*-------------------
         Why important
     -------------------*/
-    .why_important {
+    .why_important
+    {
         padding: 0 28px;
     }
 
 
-    .why_important .block_head .icon {
+    .why_important .block_head .icon
+    {
         width: 54px;
     }
 
-    .why_important .block_head .title {
+    .why_important .block_head .title
+    {
         width: calc(100% - 79px);
     }
 
 
-    .why_important .data {
+    .why_important .data
+    {
         width: 100%;
     }
 
 
-    .why_important .data .sub_title {
+    .why_important .data .sub_title
+    {
         line-height: 140%;
     }
 
 
-    .why_important .mob_stats {
+    .why_important .mob_stats
+    {
         display: block;
     }
 
 
-    .why_important .data .link a {
+    .why_important .data .link a
+    {
         font-size: 14px;
 
         padding: 16px 35px;
     }
 
 
-    .why_important .stats {
+    .why_important .stats
+    {
         display: none;
     }
 
@@ -275,20 +321,24 @@
     /*--------------
         Symptoms
     --------------*/
-    .symptoms {
+    .symptoms
+    {
         padding: 80px 28px;
     }
 
 
-    .symptoms .block_head {
+    .symptoms .block_head
+    {
         margin-bottom: 40px;
     }
 
-    .symptoms .block_head .title {
+    .symptoms .block_head .title
+    {
         width: 100%;
     }
 
-    .symptoms .block_head .desc {
+    .symptoms .block_head .desc
+    {
         font-size: 20px;
         line-height: 125%;
 
@@ -297,57 +347,67 @@
     }
 
 
-    .symptoms .sub_title {
+    .symptoms .sub_title
+    {
         line-height: 125%;
     }
 
 
-    .symptoms .row {
+    .symptoms .row
+    {
         margin-bottom: -40px;
         margin-left: -40px;
     }
 
-    .symptoms .row>* {
+    .symptoms .row > *
+    {
         width: calc(50% - 40px);
         margin-bottom: 40px;
         margin-left: 40px;
     }
 
 
-    .symptoms .item {
+    .symptoms .item
+    {
         font-size: 17px;
         line-height: 140%;
     }
 
 
-    .symptoms .item .icon {
+    .symptoms .item .icon
+    {
         width: 54px;
         height: 54px;
     }
 
-    .symptoms .item .icon+* {
+    .symptoms .item .icon + *
+    {
         width: calc(100% - 74px);
     }
 
 
-    .symptoms .spoler_btn {
+    .symptoms .spoler_btn
+    {
         font-size: 14px;
 
         margin-top: 50px;
     }
 
-    .symptoms .spoler_btn div {
+    .symptoms .spoler_btn div
+    {
         padding: 0 50px;
     }
 
-    .symptoms .link a {
+    .symptoms .link a
+    {
         font-size: 14px;
 
         padding: 16px 35px;
     }
 
 
-    .symptoms .link {
+    .symptoms .link
+    {
         margin-top: 50px;
     }
 
@@ -356,31 +416,37 @@
     /*---------------
         Influence
     ---------------*/
-    .influence .block_head .title {
+    .influence .block_head .title
+    {
         width: 299px;
     }
 
 
-    .influence .swiper {
+    .influence .swiper
+    {
         padding-bottom: 36px;
     }
 
-    .influence .swiper-slide {
+    .influence .swiper-slide
+    {
         width: 300px;
     }
 
 
-    .influence .item .thumb {
+    .influence .item .thumb
+    {
         padding-bottom: 260px;
     }
 
 
-    .influence .item .title {
+    .influence .item .title
+    {
         display: none;
     }
 
 
-    .influence .item .info {
+    .influence .item .info
+    {
         position: relative;
 
         height: auto;
@@ -392,20 +458,23 @@
         background: none;
     }
 
-    .influence .item .info .sub_title {
+    .influence .item .info .sub_title
+    {
         font-size: 18px;
         line-height: 125%;
     }
 
 
-    .influence .item .info .desc {
+    .influence .item .info .desc
+    {
         margin-bottom: 15px;
 
         -webkit-line-clamp: 0;
     }
 
 
-    .influence .item .info .link a {
+    .influence .item .info .link a
+    {
         text-decoration: underline;
     }
 
@@ -414,34 +483,40 @@
     /*-------------
         Deficit
     -------------*/
-    .deficit {
+    .deficit
+    {
         padding: 0 28px;
     }
 
 
-    .deficit .block_head {
+    .deficit .block_head
+    {
         margin-bottom: 65px;
     }
 
-    .deficit .block_head .title {
+    .deficit .block_head .title
+    {
         width: 346px;
         margin-right: auto;
     }
 
 
-    .deficit .data .sub_title {
+    .deficit .data .sub_title
+    {
         line-height: 140%;
     }
 
 
-    .deficit .data .link a {
+    .deficit .data .link a
+    {
         font-size: 14px;
 
         padding: 16px 35px;
     }
 
 
-    .deficit .img {
+    .deficit .img
+    {
         display: none;
     }
 
@@ -450,36 +525,42 @@
     /*------------
         Yniron
     ------------*/
-    .yuniron .data {
+    .yuniron .data
+    {
         padding: 120px 0 79px;
     }
 
 
-    .yuniron .info {
+    .yuniron .info
+    {
         width: 484px;
         padding-right: 0;
     }
 
 
-    .yuniron .bottom {
+    .yuniron .bottom
+    {
         margin-top: 50px;
     }
 
 
-    .yuniron .test_btn {
+    .yuniron .test_btn
+    {
         font-size: 14px;
 
         padding: 9px 35px 9px 36px;
     }
 
 
-    .yuniron .bg {
+    .yuniron .bg
+    {
         left: -40px;
     }
 
 
 
-    .yuniron .hashtag {
+    .yuniron .hashtag
+    {
         font-size: 36px;
 
         padding: 35px;
@@ -490,37 +571,43 @@
     /*--------------------
         Expert opinion
     --------------------*/
-    .expert_opinion .big .doctor {
+    .expert_opinion .big .doctor
+    {
         width: 100%;
         margin-bottom: 32px;
     }
 
-    .expert_opinion .big .doctor .photo {
+    .expert_opinion .big .doctor .photo
+    {
         width: 160px;
         height: 160px;
         margin-bottom: 24px;
     }
 
-    .expert_opinion .big .doctor .desc {
+    .expert_opinion .big .doctor .desc
+    {
         font-size: 14px;
 
         margin-top: 16px;
     }
 
-    .expert_opinion .big .doctor+* {
+    .expert_opinion .big .doctor + *
+    {
         width: 100%;
 
         order: 3;
     }
 
 
-    .expert_opinion .big .swiper-button-prev {
+    .expert_opinion .big .swiper-button-prev
+    {
         right: 50%;
 
         margin-right: 120px;
     }
 
-    .expert_opinion .big .swiper-button-next {
+    .expert_opinion .big .swiper-button-next
+    {
         right: 0;
         left: 50%;
 
@@ -528,74 +615,87 @@
     }
 
 
-    .expert_opinion .big .text {
+    .expert_opinion .big .text
+    {
         font-size: 17px;
 
         width: 100%;
     }
 
 
-    .expert_opinion .carousel {
+    .expert_opinion .carousel
+    {
         margin-top: 60px;
         padding-bottom: 40px;
     }
 
-    .expert_opinion .carousel .swiper-slide {
+    .expert_opinion .carousel .swiper-slide
+    {
         width: 320px;
     }
 
     .expert_opinion .carousel .swiper-button-prev,
-    .expert_opinion .carousel .swiper-button-next {
+    .expert_opinion .carousel .swiper-button-next
+    {
         display: none;
     }
 
-    .expert_opinion .carousel .swiper-pagination {
+    .expert_opinion .carousel .swiper-pagination
+    {
         display: flex !important;
     }
 
 
-    .expert_opinion .item .title {
+    .expert_opinion .item .title
+    {
         margin-bottom: 20px;
     }
 
 
 
-    .expert_opinion .sub_title {
+    .expert_opinion .sub_title
+    {
         width: 544px;
         margin-bottom: 20px;
     }
 
 
-    .expert_opinion .video {
+    .expert_opinion .video
+    {
         margin-top: 60px;
     }
 
 
-    .expert_opinion .video .play_btn .icon {
+    .expert_opinion .video .play_btn .icon
+    {
         width: 58px;
         height: 58px;
     }
 
 
-    .expert_opinion .row {
+    .expert_opinion .row
+    {
         margin-top: 60px;
         margin-bottom: -30px;
         margin-left: -20px;
     }
 
-    .expert_opinion .row>* {
+    .expert_opinion .row > *
+    {
         width: calc(33.333% - 20px);
         margin-bottom: 30px;
         margin-left: 20px;
     }
 
 
-    .expert_opinion .item .desc {
+    .expert_opinion .item .desc
+    {
         padding-bottom: 20px;
     }
 
 
-    .expert_opinion .link a {
+    .expert_opinion .link a
+    {
         font-size: 14px;
 
         padding: 16px 35px;
@@ -606,25 +706,29 @@
     /*----------------------
         During pregnancy
     ----------------------*/
-    .during_pregnancy {
+    .during_pregnancy
+    {
         margin-bottom: 175px;
         padding-top: 58px;
     }
 
 
-    .during_pregnancy .desc {
+    .during_pregnancy .desc
+    {
         width: 514px;
     }
 
 
-    .during_pregnancy .articles {
+    .during_pregnancy .articles
+    {
         margin-top: 63px;
         margin-bottom: -124px;
         margin-left: -30px;
     }
 
 
-    .during_pregnancy .article {
+    .during_pregnancy .article
+    {
         width: 284px;
         max-width: calc(100% - 30px);
         margin-bottom: 30px;
@@ -632,30 +736,35 @@
         padding: 22px 20px 24px 20px;
     }
 
-    .during_pregnancy .article .btn {
+    .during_pregnancy .article .btn
+    {
         font-size: 14px;
 
         margin-top: 36px;
         padding: 16px 35px;
     }
 
-    .during_pregnancy .article .img {
+    .during_pregnancy .article .img
+    {
         right: -50px;
     }
 
 
-    .during_pregnancy .anemia {
+    .during_pregnancy .anemia
+    {
         width: calc(100% - 99px);
         margin-top: 40px;
         margin-left: -24px;
         padding: 20px 24px;
     }
 
-    .during_pregnancy .anemia:after {
+    .during_pregnancy .anemia:after
+    {
         display: none;
     }
 
-    .during_pregnancy .anemia br {
+    .during_pregnancy .anemia br
+    {
         display: none;
     }
 
@@ -664,29 +773,34 @@
     /*------------------
         Service head
     ------------------*/
-    .service_head {
+    .service_head
+    {
         min-height: 494px;
         padding-top: 46px;
         padding-bottom: 76px;
     }
 
 
-    .service_head .data {
+    .service_head .data
+    {
         width: 430px;
     }
 
-    .service_head .data .desc.middle_w {
+    .service_head .data .desc.middle_w
+    {
         width: 487px;
     }
 
 
-    .service_head .data .title {
+    .service_head .data .title
+    {
         font-size: 36px;
         line-height: 110%;
     }
 
 
-    .service_head .data .desc {
+    .service_head .data .desc
+    {
         font-size: 20px;
         line-height: 125%;
 
@@ -695,7 +809,8 @@
     }
 
 
-    .service_head .data .btn {
+    .service_head .data .btn
+    {
         font-size: 14px;
 
         margin-top: 38px;
@@ -703,7 +818,8 @@
     }
 
 
-    .service_head .anchors {
+    .service_head .anchors
+    {
         font-size: 14px;
         line-height: 125%;
 
@@ -712,7 +828,8 @@
 
 
     .service_head .anchors .row,
-    .service_head .anchors .row.alignleft {
+    .service_head .anchors .row.alignleft
+    {
         display: block;
         overflow: auto;
 
@@ -726,20 +843,23 @@
         scrollbar-width: thin !important;
     }
 
-    .service_head .anchors .row::-webkit-scrollbar {
+    .service_head .anchors .row::-webkit-scrollbar
+    {
         width: 0 !important;
         height: 0 !important;
 
         background-color: transparent !important;
     }
 
-    .service_head .anchors .row::-webkit-scrollbar-thumb {
+    .service_head .anchors .row::-webkit-scrollbar-thumb
+    {
         background-color: transparent !important;
     }
 
 
-    .service_head .anchors .row>*,
-    .service_head .anchors .row.alignleft>* {
+    .service_head .anchors .row > *,
+    .service_head .anchors .row.alignleft > *
+    {
         display: inline-block;
 
         max-width: none;
@@ -748,8 +868,9 @@
         vertical-align: top;
     }
 
-    .service_head .anchors .row>*+*,
-    .service_head .anchors .row.alignleft>*+* {
+    .service_head .anchors .row > * + *,
+    .service_head .anchors .row.alignleft > * + *
+    {
         margin-left: 36px;
     }
 
@@ -758,18 +879,21 @@
     /*-------------
         Why how
     -------------*/
-    .why_how {
+    .why_how
+    {
         padding: 0 28px;
     }
 
 
-    .why_how .text_block {
+    .why_how .text_block
+    {
         width: 100%;
         max-width: 100%;
     }
 
 
-    .why_how .info {
+    .why_how .info
+    {
         width: 399px;
         margin-top: 40px;
         margin-left: 0;
@@ -779,7 +903,8 @@
     }
 
 
-    .why_how .info .icon {
+    .why_how .info .icon
+    {
         top: 0;
         right: -40px;
         bottom: 0;
@@ -793,12 +918,14 @@
     }
 
 
-    .why_how .info .title {
+    .why_how .info .title
+    {
         line-height: 140%;
     }
 
 
-    .why_how .info .btn {
+    .why_how .info .btn
+    {
         font-size: 14px;
 
         margin-top: 16px;
@@ -810,7 +937,8 @@
     /*------------------
         Which doctor
     ------------------*/
-    .which_doctor .data {
+    .which_doctor .data
+    {
         width: calc(100% + 56px);
         margin-right: -28px;
         margin-left: -28px;
@@ -818,7 +946,8 @@
     }
 
 
-    .which_doctor .block_head {
+    .which_doctor .block_head
+    {
         width: 413px;
     }
 
@@ -827,18 +956,21 @@
     /*-----------------
         How prepare
     -----------------*/
-    .how_prepare {
+    .how_prepare
+    {
         padding: 0 28px;
     }
 
 
-    .how_prepare .text_block {
+    .how_prepare .text_block
+    {
         width: 100%;
         max-width: 100%;
     }
 
 
-    .how_prepare .video_link {
+    .how_prepare .video_link
+    {
         display: flex;
 
         width: 100%;
@@ -851,14 +983,16 @@
     }
 
 
-    .how_prepare .video_link .thumb {
+    .how_prepare .video_link .thumb
+    {
         width: 280px;
         height: 180px;
         margin: 0;
         padding: 0;
     }
 
-    .how_prepare .video_link .thumb+* {
+    .how_prepare .video_link .thumb + *
+    {
         width: calc(100% - 310px);
         padding-top: 20px;
     }
@@ -868,12 +1002,14 @@
     /*------------------
         Action block
     ------------------*/
-    .action_block {
+    .action_block
+    {
         padding: 80px 28px;
     }
 
 
-    .action_block .title {
+    .action_block .title
+    {
         font-size: 30px;
         line-height: 115%;
 
@@ -881,7 +1017,8 @@
     }
 
 
-    .action_block .test_btn {
+    .action_block .test_btn
+    {
         margin-left: auto;
     }
 
@@ -890,16 +1027,19 @@
     /*-----------------
         Preparation
     -----------------*/
-    .preparation {
+    .preparation
+    {
         padding: 0 28px;
     }
 
 
-    .preparation .block_head {
+    .preparation .block_head
+    {
         margin-bottom: 54px;
     }
 
-    .preparation .block_head .desc {
+    .preparation .block_head .desc
+    {
         font-size: 20px;
 
         width: 100%;
@@ -907,23 +1047,27 @@
     }
 
 
-    .preparation .row {
+    .preparation .row
+    {
         margin-bottom: -35px;
         margin-left: 0;
     }
 
-    .preparation .row>* {
+    .preparation .row > *
+    {
         width: 100%;
         margin-bottom: 35px;
         margin-left: 0;
     }
 
 
-    .preparation .item .icon {
+    .preparation .item .icon
+    {
         width: 54px;
     }
 
-    .preparation .item .icon+* {
+    .preparation .item .icon + *
+    {
         width: calc(100% - 81px);
     }
 
@@ -932,51 +1076,60 @@
     /*-------------
         Results
     -------------*/
-    .results {
+    .results
+    {
         padding: 80px 0 60px;
     }
 
 
-    .results .block_head {
+    .results .block_head
+    {
         margin-bottom: 52px;
     }
 
 
-    .results .swiper {
+    .results .swiper
+    {
         width: calc(100% + 56px);
         margin-right: -28px;
         margin-left: -28px;
         padding: 0 28px;
     }
 
-    .results .swiper-slide {
+    .results .swiper-slide
+    {
         width: 297px;
     }
 
     .results .swiper-button-next,
-    .results .swiper-button-prev {
+    .results .swiper-button-prev
+    {
         display: flex;
     }
 
 
-    .results .row {
+    .results .row
+    {
         margin-bottom: 0;
         margin-left: 0;
     }
 
-    .results .row>* {
+    .results .row > *
+    {
         width: 297px;
         margin-bottom: 0;
         margin-left: 0;
     }
 
 
-    .results .item {
+    .results .item
+    {
         padding: 20px;
     }
 
 
-    .results .exp {
+    .results .exp
+    {
         margin-top: 20px;
     }
 
@@ -985,18 +1138,21 @@
     /*-----------------------
         Treatment control
     -----------------------*/
-    .treatment_control {
+    .treatment_control
+    {
         padding: 0 28px;
     }
 
 
-    .treatment_control .text_block {
+    .treatment_control .text_block
+    {
         width: 100%;
         max-width: 100%;
     }
 
 
-    .treatment_control .video_link {
+    .treatment_control .video_link
+    {
         display: flex;
 
         width: 100%;
@@ -1009,14 +1165,16 @@
     }
 
 
-    .treatment_control .video_link .thumb {
+    .treatment_control .video_link .thumb
+    {
         width: 280px;
         height: 180px;
         margin: 0;
         padding: 0;
     }
 
-    .treatment_control .video_link .thumb+* {
+    .treatment_control .video_link .thumb + *
+    {
         width: calc(100% - 310px);
         padding-top: 20px;
     }
@@ -1026,12 +1184,14 @@
     /*----------
         Test
     ----------*/
-    .test {
+    .test
+    {
         padding: 80px 28px;
     }
 
 
-    .test .data {
+    .test .data
+    {
         width: 100%;
         margin-top: 0;
         margin-bottom: 52px;
@@ -1039,13 +1199,15 @@
     }
 
 
-    .test .data .title {
+    .test .data .title
+    {
         font-size: 30px;
         line-height: 115%;
     }
 
 
-    .test .data .desc {
+    .test .data .desc
+    {
         font-size: 20px;
         line-height: 120%;
 
@@ -1053,39 +1215,46 @@
     }
 
 
-    .test form {
+    .test form
+    {
         width: 100%;
         margin-right: 0;
     }
 
 
-    .test .question {
+    .test .question
+    {
         padding: 32px 50px;
     }
 
 
-    .test .answers {
+    .test .answers
+    {
         padding: 40px 50px;
     }
 
 
-    .test .btns {
+    .test .btns
+    {
         padding-top: 0;
 
         border: none;
     }
 
 
-    .test .total {
+    .test .total
+    {
         padding: 26px 50px;
     }
 
-    .test .total .exp {
+    .test .total .exp
+    {
         width: 256px;
     }
 
 
-    .test:before {
+    .test:before
+    {
         bottom: -302px;
 
         margin-left: -624px;
@@ -1096,22 +1265,26 @@
     /*--------------
         Articles
     --------------*/
-    .articles .swiper-slide {
+    .articles .swiper-slide
+    {
         width: 227px;
     }
 
 
-    .articles .article .thumb {
+    .articles .article .thumb
+    {
         margin-bottom: 18px;
     }
 
 
-    .articles .article .name {
+    .articles .article .name
+    {
         line-height: 125%;
     }
 
 
-    .articles .article .desc {
+    .articles .article .desc
+    {
         font-size: 14px;
         line-height: 130%;
 
@@ -1123,12 +1296,14 @@
     /*-----------------------
         Contraindications
     -----------------------*/
-    .contraindications {
+    .contraindications
+    {
         font-size: 20px;
     }
 
 
-    .contraindications span {
+    .contraindications span
+    {
         font-size: 37px;
     }
 
@@ -1137,12 +1312,14 @@
     /*-------------
         Lecture
     -------------*/
-    .lecture .block_head {
+    .lecture .block_head
+    {
         margin-bottom: 40px;
     }
 
 
-    .lecture .sub_title {
+    .lecture .sub_title
+    {
         font-size: 20px;
         line-height: 125%;
 
@@ -1151,31 +1328,37 @@
     }
 
 
-    .lecture .video {
+    .lecture .video
+    {
         margin-top: 60px;
     }
 
-    .lecture .video .play_btn .icon {
+    .lecture .video .play_btn .icon
+    {
         width: 58px;
         height: 58px;
     }
 
 
-    .lecture .videos {
+    .lecture .videos
+    {
         margin-top: 60px;
     }
 
-    .lecture .videos .sub_title {
+    .lecture .videos .sub_title
+    {
         margin-bottom: 40px;
     }
 
 
-    .lecture .videos .row {
+    .lecture .videos .row
+    {
         margin-bottom: -40px;
         margin-left: -44px;
     }
 
-    .lecture .videos .row>* {
+    .lecture .videos .row > *
+    {
         width: calc(50% - 44px);
         margin-bottom: 40px;
         margin-left: 44px;
@@ -1186,12 +1369,14 @@
     /*----------------
         Every 10th
     ----------------*/
-    .every_10th .data {
+    .every_10th .data
+    {
         background-position: -104px 50%;
     }
 
 
-    .every_10th .data .title {
+    .every_10th .data .title
+    {
         font-size: 24px;
 
         width: 254px;
@@ -1199,20 +1384,23 @@
     }
 
 
-    .every_10th .data .desc {
+    .every_10th .data .desc
+    {
         line-height: 140%;
 
         width: calc(100% - 264px);
         padding: 30px 30px 30px 54px;
     }
 
-    .every_10th .data .desc sup {
+    .every_10th .data .desc sup
+    {
         font-size: 10px;
         line-height: 16px;
     }
 
 
-    .every_10th .exp {
+    .every_10th .exp
+    {
         line-height: 140%;
 
         margin-top: 18px;
@@ -1223,35 +1411,41 @@
     /*---------------
         Role iron
     ---------------*/
-    .role_iron {
+    .role_iron
+    {
         padding-top: 90px;
         padding-bottom: 90px;
     }
 
 
-    .role_iron .data {
+    .role_iron .data
+    {
         width: 490px;
     }
 
 
-    .role_iron .data .block_head {
+    .role_iron .data .block_head
+    {
         margin-bottom: 15px;
     }
 
 
-    .role_iron .data .desc {
+    .role_iron .data .desc
+    {
         font-size: 20px;
     }
 
 
-    .role_iron .data .exp {
+    .role_iron .data .exp
+    {
         line-height: 140%;
 
         margin-top: 60px;
     }
 
 
-    .role_iron .text {
+    .role_iron .text
+    {
         font-size: var(--font_size);
         line-height: 140%;
 
@@ -1262,7 +1456,8 @@
         padding: 18px 56px;
     }
 
-    .role_iron .text:after {
+    .role_iron .text:after
+    {
         display: none;
     }
 
@@ -1271,41 +1466,48 @@
     /*----------------------
         Article symptoms
     ----------------------*/
-    .article_symptoms .block_head {
+    .article_symptoms .block_head
+    {
         width: 603px;
         margin-bottom: 60px;
     }
 
 
-    .article_symptoms .block_head .desc {
+    .article_symptoms .block_head .desc
+    {
         font-size: 20px;
 
         margin-top: 15px;
     }
 
-    .article_symptoms .block_head .desc br {
+    .article_symptoms .block_head .desc br
+    {
         display: none;
     }
 
 
-    .article_symptoms .row .items {
+    .article_symptoms .row .items
+    {
         width: 320px;
         max-width: calc(100% - 323px);
     }
 
-    .article_symptoms .row+.items {
+    .article_symptoms .row + .items
+    {
         margin-top: 50px;
     }
 
 
-    .article_symptoms .items .title {
+    .article_symptoms .items .title
+    {
         line-height: 125%;
 
         margin-bottom: 24px;
     }
 
 
-    .article_symptoms .message {
+    .article_symptoms .message
+    {
         line-height: 140%;
 
         width: 272px;
@@ -1313,7 +1515,8 @@
         padding: 24px 44px;
     }
 
-    .article_symptoms .message .icon {
+    .article_symptoms .message .icon
+    {
         top: 0;
         right: -40px;
         bottom: 0;
@@ -1324,42 +1527,50 @@
     }
 
 
-    .article_symptoms .items .row {
+    .article_symptoms .items .row
+    {
         margin-bottom: -24px;
         margin-left: -20px;
     }
 
-    .article_symptoms .items .row>* {
+    .article_symptoms .items .row > *
+    {
         width: calc(50% - 20px);
         margin-bottom: 24px;
         margin-left: 20px;
     }
 
 
-    .article_symptoms .items .item {
+    .article_symptoms .items .item
+    {
         line-height: 140%;
     }
 
-    .article_symptoms .items .item .icon {
+    .article_symptoms .items .item .icon
+    {
         width: 50px;
         height: 50px;
     }
 
-    .article_symptoms .items .item .icon+* {
+    .article_symptoms .items .item .icon + *
+    {
         width: calc(100% - 70px);
     }
 
-    .article_symptoms .items .item sup {
+    .article_symptoms .items .item sup
+    {
         font-size: 10px;
     }
 
 
-    .article_symptoms .text_block {
+    .article_symptoms .text_block
+    {
         width: 714px;
         margin-top: 50px;
     }
 
-    .article_symptoms .text_block .bg:after {
+    .article_symptoms .text_block .bg:after
+    {
         width: 30px;
     }
 
@@ -1368,55 +1579,65 @@
     /*-------------
         Reasons
     -------------*/
-    .reasons {
+    .reasons
+    {
         padding: 90px 28px;
     }
 
-    .reasons.no_bg {
+    .reasons.no_bg
+    {
         padding: 0;
     }
 
 
-    .reasons .block_head .title.min_w {
+    .reasons .block_head .title.min_w
+    {
         width: 541px;
     }
 
-    .reasons .block_head .desc {
+    .reasons .block_head .desc
+    {
         font-size: 20px;
 
         width: 490px;
         margin-top: 15px;
     }
 
-    .reasons .block_head .title.min_w+.desc {
+    .reasons .block_head .title.min_w + .desc
+    {
         width: 100%;
     }
 
 
-    .reasons .accordion_item+.accordion_item {
+    .reasons .accordion_item + .accordion_item
+    {
         margin-top: 40px;
     }
 
 
-    .reasons .accordion_item .head .icon img {
+    .reasons .accordion_item .head .icon img
+    {
         width: 50px;
         height: 50px;
     }
 
-    .reasons .accordion_item .head .title {
+    .reasons .accordion_item .head .title
+    {
         font-size: 24px;
 
         width: calc(100% - 70px);
     }
 
 
-    .reasons .accordion_item .data {
+    .reasons .accordion_item .data
+    {
         padding-right: 113px;
         padding-left: 70px;
     }
 
 
-    .reasons .accordion+.text_block {
+    .reasons .accordion + .text_block
+    {
         width: 100%;
         margin-top: 60px;
     }
@@ -1426,12 +1647,14 @@
     /*---------------
         Treatment
     ---------------*/
-    .treatment .block_head {
+    .treatment .block_head
+    {
         margin-bottom: 60px;
     }
 
 
-    .treatment .block_head .desc {
+    .treatment .block_head .desc
+    {
         font-size: 20px;
 
         width: 450px;
@@ -1439,16 +1662,19 @@
     }
 
 
-    .treatment .data {
+    .treatment .data
+    {
         padding: 30px;
     }
 
-    .treatment .data .text_block {
+    .treatment .data .text_block
+    {
         width: 490px;
     }
 
 
-    .treatment .exp {
+    .treatment .exp
+    {
         line-height: 140%;
 
         width: 602px;
@@ -1457,19 +1683,22 @@
 
 
 
-    .treatment .tableted {
+    .treatment .tableted
+    {
         margin-top: 60px;
     }
 
 
-    .treatment .tableted .title {
+    .treatment .tableted .title
+    {
         font-size: 24px;
 
         margin-bottom: 15px;
     }
 
 
-    .treatment .tableted .text {
+    .treatment .tableted .text
+    {
         font-size: 20px;
 
         width: 660px;
@@ -1477,22 +1706,26 @@
 
 
 
-    .treatment .combination {
+    .treatment .combination
+    {
         margin-top: 40px;
     }
 
-    .treatment .combination .title {
+    .treatment .combination .title
+    {
         width: 660px;
         margin-bottom: 18px;
     }
 
 
-    .treatment .combination ul {
+    .treatment .combination ul
+    {
         margin-bottom: -12px;
         margin-left: 0;
     }
 
-    .treatment .combination ul li {
+    .treatment .combination ul li
+    {
         line-height: 140%;
 
         width: 100%;
@@ -1501,62 +1734,72 @@
         padding-left: 25px;
     }
 
-    .treatment .combination ul li:before {
+    .treatment .combination ul li:before
+    {
         top: 8px;
     }
 
 
 
-    .treatment .information {
+    .treatment .information
+    {
         margin-top: 18px;
 
         background-position: -208px 50%;
     }
 
-    .treatment .information .title {
+    .treatment .information .title
+    {
         line-height: 140%;
 
         width: 254px;
         padding: 30px;
     }
 
-    .treatment .information .desc {
+    .treatment .information .desc
+    {
         line-height: 140%;
 
         width: calc(100% - 264px);
         padding: 55px 30px 55px 54px;
     }
 
-    .treatment .information .desc sup {
+    .treatment .information .desc sup
+    {
         font-size: 10px;
         line-height: 16px;
     }
 
 
 
-    .treatment .portability {
+    .treatment .portability
+    {
         margin-top: 40px;
     }
 
 
-    .treatment .portability .title {
+    .treatment .portability .title
+    {
         line-height: 140%;
 
         margin-bottom: 18px;
     }
 
     .treatment .portability .title,
-    .treatment .portability .text_block {
+    .treatment .portability .text_block
+    {
         width: 660px;
     }
 
 
 
-    .treatment .relieve_effects {
+    .treatment .relieve_effects
+    {
         margin-top: 40px;
     }
 
-    .treatment .relieve_effects .title {
+    .treatment .relieve_effects .title
+    {
         line-height: 140%;
 
         width: 660px;
@@ -1565,24 +1808,28 @@
 
 
 
-    .treatment .relieve_effects .row {
+    .treatment .relieve_effects .row
+    {
         margin-bottom: -20px;
         margin-left: -20px;
     }
 
-    .treatment .relieve_effects .row>* {
+    .treatment .relieve_effects .row > *
+    {
         width: calc(50% - 20px);
         margin-bottom: 20px;
         margin-left: 20px;
     }
 
 
-    .treatment .relieve_effects .item {
+    .treatment .relieve_effects .item
+    {
         min-height: 228px;
         padding: 24px;
     }
 
-    .treatment .relieve_effects .item .name {
+    .treatment .relieve_effects .item .name
+    {
         margin-bottom: 18px;
     }
 
@@ -1591,24 +1838,28 @@
     /*----------------------
         Intravenous iron
     ----------------------*/
-    .intravenous_iron .block_title {
+    .intravenous_iron .block_title
+    {
         font-size: 24px;
         line-height: 125%;
     }
 
-    .intravenous_iron .block_desc {
+    .intravenous_iron .block_desc
+    {
         font-size: 20px;
 
         margin-top: 15px;
     }
 
 
-    .intravenous_iron .data {
+    .intravenous_iron .data
+    {
         width: 377px;
     }
 
 
-    .intravenous_iron .notice {
+    .intravenous_iron .notice
+    {
         font-size: 16px;
         line-height: 150%;
 
@@ -1618,12 +1869,14 @@
     }
 
 
-    .intravenous_iron .side_effects {
+    .intravenous_iron .side_effects
+    {
         width: 660px;
         margin-top: 40px;
     }
 
-    .intravenous_iron .side_effects .title {
+    .intravenous_iron .side_effects .title
+    {
         margin-bottom: 18px;
     }
 
@@ -1632,29 +1885,34 @@
     /*----------
         Diet
     ----------*/
-    .diet .block_title {
+    .diet .block_title
+    {
         font-size: 24px;
     }
 
-    .diet .block_desc {
+    .diet .block_desc
+    {
         font-size: 20px;
 
         margin-top: 15px;
     }
 
 
-    .diet .information {
+    .diet .information
+    {
         margin-top: 40px;
         padding: 30px 30px 0;
     }
 
 
-    .diet .information .text_block {
+    .diet .information .text_block
+    {
         width: 500px;
     }
 
 
-    .diet .information .exp {
+    .diet .information .exp
+    {
         line-height: 140%;
 
         position: relative;
@@ -1671,11 +1929,13 @@
 
 
 
-    .diet .foods {
+    .diet .foods
+    {
         margin-top: 40px;
     }
 
-    .diet .foods .title {
+    .diet .foods .title
+    {
         margin-bottom: 18px;
     }
 
@@ -1684,12 +1944,14 @@
     /*--------------
         Criteria
     --------------*/
-    .criteria .block_title {
+    .criteria .block_title
+    {
         font-size: 24px;
     }
 
 
-    .criteria .block_desc {
+    .criteria .block_desc
+    {
         font-size: 20px;
 
         width: 547px;
@@ -1697,40 +1959,47 @@
     }
 
 
-    .criteria .key_criteria {
+    .criteria .key_criteria
+    {
         margin-top: 40px;
     }
 
 
-    .criteria .key_criteria .title {
+    .criteria .key_criteria .title
+    {
         font-size: 20px;
 
         margin-bottom: 18px;
     }
 
 
-    .criteria .key_criteria .row {
+    .criteria .key_criteria .row
+    {
         margin-bottom: -20px;
         margin-left: -20px;
     }
 
-    .criteria .key_criteria .row>* {
+    .criteria .key_criteria .row > *
+    {
         width: calc(50% - 20px);
         margin-bottom: 20px;
         margin-left: 20px;
     }
 
 
-    .criteria .key_criteria .item {
+    .criteria .key_criteria .item
+    {
         padding: 24px;
     }
 
-    .criteria .key_criteria .item .name {
+    .criteria .key_criteria .item .name
+    {
         margin-bottom: 18px;
     }
 
 
-    .criteria .key_criteria .text_block {
+    .criteria .key_criteria .text_block
+    {
         margin-top: 18px;
     }
 
@@ -1739,44 +2008,51 @@
     /*------------------
         Why not work
     ------------------*/
-    .why_not_work .block_title {
+    .why_not_work .block_title
+    {
         font-size: 24px;
 
         margin-bottom: 40px;
     }
 
-    .why_not_work .block_title sup {
+    .why_not_work .block_title sup
+    {
         font-size: 14px;
         line-height: 20px;
     }
 
 
-    .why_not_work .information {
+    .why_not_work .information
+    {
         margin-top: 18px;
 
         background-position: -164px 50%;
     }
 
-    .why_not_work .information .title {
+    .why_not_work .information .title
+    {
         line-height: 140%;
 
         width: 254px;
         padding: 30px;
     }
 
-    .why_not_work .information .desc {
+    .why_not_work .information .desc
+    {
         line-height: 140%;
 
         width: calc(100% - 264px);
         padding: 42px 30px 42px 54px;
     }
 
-    .why_not_work .information .desc br {
+    .why_not_work .information .desc br
+    {
         display: none;
     }
 
 
-    .why_not_work .information+.text_block {
+    .why_not_work .information + .text_block
+    {
         margin-top: 18px;
     }
 
@@ -1785,21 +2061,25 @@
     /*----------------
         Prevention
     ----------------*/
-    .prevention {
+    .prevention
+    {
         padding: 90px 28px;
     }
 
 
-    .prevention .block_head .title br {
+    .prevention .block_head .title br
+    {
         display: none;
     }
 
 
-    .prevention .block_title {
+    .prevention .block_title
+    {
         font-size: 24px;
     }
 
-    .prevention .block_desc {
+    .prevention .block_desc
+    {
         font-size: 20px;
 
         width: 547px;
@@ -1807,18 +2087,21 @@
     }
 
 
-    .prevention .text_block {
+    .prevention .text_block
+    {
         width: 660px;
         margin-top: 40px;
     }
 
 
-    .prevention .section {
+    .prevention .section
+    {
         margin-top: 60px;
     }
 
 
-    .prevention .exp {
+    .prevention .exp
+    {
         width: calc(100% + 52px);
         max-width: calc(100% + 52px);
         margin-top: 18px;
@@ -1831,11 +2114,13 @@
     /*----------------
         Story info
     ----------------*/
-    .story_info .author {
+    .story_info .author
+    {
         width: 304px;
     }
 
-    .story_info .data+.author {
+    .story_info .data + .author
+    {
         width: 270px;
         min-height: 0;
         margin-top: 40px;
@@ -1843,18 +2128,21 @@
     }
 
 
-    .story_info .data+.author .thumb {
+    .story_info .data + .author .thumb
+    {
         height: 284px;
     }
 
 
     .story_info .author .name,
-    .story_info .data+.author .name {
+    .story_info .data + .author .name
+    {
         padding: 30px 24px 24px;
     }
 
 
-    .story_info .data {
+    .story_info .data
+    {
         width: calc(100% - 310px);
         max-width: calc(100% - 310px);
         margin-top: 40px;
@@ -1862,24 +2150,28 @@
         padding-left: 30px;
     }
 
-    .story_info .author+.data {
+    .story_info .author + .data
+    {
         width: calc(100% - 364px);
         margin-left: 60px;
     }
 
 
-    .story_info .title {
+    .story_info .title
+    {
         font-size: 36px;
         line-height: 100%;
     }
 
-    .story_info .author+.data .title {
+    .story_info .author + .data .title
+    {
         font-size: 32px;
         line-height: 100%;
     }
 
 
-    .story_info .desc {
+    .story_info .desc
+    {
         color: var(--text_color);
         line-height: 140%;
 
@@ -1887,7 +2179,8 @@
     }
 
 
-    .story_info .link a {
+    .story_info .link a
+    {
         font-size: 14px;
         line-height: 16px;
 
@@ -1899,28 +2192,33 @@
     /*-------------
         Stories
     -------------*/
-    .stories:after {
+    .stories:after
+    {
         display: none;
     }
 
 
-    .stories .block_head {
+    .stories .block_head
+    {
         display: none;
     }
 
 
-    .stories .row>* {
+    .stories .row > *
+    {
         width: calc(50% - 30px);
     }
 
-    .stories .row>*:nth-child(6),
-    .stories .row>*:nth-child(7),
-    .stories .row>*:nth-child(8) {
+    .stories .row > *:nth-child(6),
+    .stories .row > *:nth-child(7),
+    .stories .row > *:nth-child(8)
+    {
         display: none;
     }
 
 
-    .stories .item .name {
+    .stories .item .name
+    {
         font-size: 20px;
     }
 
@@ -1929,17 +2227,20 @@
     /*----------------
         Story data
     ----------------*/
-    .story_data {
+    .story_data
+    {
         padding-left: 30px;
     }
 
 
-    .story_data .section~.section {
+    .story_data .section ~ .section
+    {
         margin-top: 60px;
     }
 
 
-    .story_data .title {
+    .story_data .title
+    {
         font-size: 30px;
 
         width: 547px;
@@ -1947,12 +2248,14 @@
     }
 
 
-    .story_data .text_block {
+    .story_data .text_block
+    {
         width: 547px;
     }
 
 
-    .story_data .icon {
+    .story_data .icon
+    {
         top: 358px;
 
         width: 194px;
@@ -1960,7 +2263,8 @@
         margin-right: -608px;
     }
 
-    .story_data .icon img {
+    .story_data .icon img
+    {
         height: 74px;
     }
 
@@ -1969,21 +2273,25 @@
     /*--------------------
         Ferritin about
     --------------------*/
-    .ferritin_about {
+    .ferritin_about
+    {
         padding: 0 28px;
     }
 
 
-    .ferritin_about .data {
+    .ferritin_about .data
+    {
         width: 100%;
     }
 
-    .ferritin_about .data .sub_title {
+    .ferritin_about .data .sub_title
+    {
         line-height: 140%;
     }
 
 
-    .ferritin_about .message {
+    .ferritin_about .message
+    {
         width: 399px;
         margin-top: 40px;
         margin-left: 0;
@@ -1992,7 +2300,8 @@
         box-shadow: inset 0 0 0 2px #fff;
     }
 
-    .ferritin_about .message .icon {
+    .ferritin_about .message .icon
+    {
         top: 0;
         right: -40px;
         bottom: 0;
@@ -2002,7 +2311,8 @@
         height: 73px;
     }
 
-    .ferritin_about .message {
+    .ferritin_about .message
+    {
         line-height: 140%;
     }
 
@@ -2011,75 +2321,88 @@
     /*---------------------
         Ferritin normal
     ---------------------*/
-    .ferritin_normal {
+    .ferritin_normal
+    {
         padding: 100px 28px;
     }
 
 
-    .ferritin_normal .block_head {
+    .ferritin_normal .block_head
+    {
         margin-bottom: 60px;
     }
 
-    .ferritin_normal .block_head .desc {
+    .ferritin_normal .block_head .desc
+    {
         font-size: 20px;
 
         width: 490px;
     }
 
 
-    .ferritin_normal .values .title {
+    .ferritin_normal .values .title
+    {
         font-size: 24px;
 
         margin-bottom: 30px;
     }
 
 
-    .ferritin_normal .values .swiper {
+    .ferritin_normal .values .swiper
+    {
         width: calc(100% + 56px);
         margin-right: -28px;
         margin-left: -28px;
         padding: 0 28px;
     }
 
-    .ferritin_normal .values .swiper-slide {
+    .ferritin_normal .values .swiper-slide
+    {
         width: 320px;
     }
 
     .ferritin_normal .values .swiper-button-next,
-    .ferritin_normal .values .swiper-button-prev {
+    .ferritin_normal .values .swiper-button-prev
+    {
         display: flex;
     }
 
 
-    .ferritin_normal .values .row {
+    .ferritin_normal .values .row
+    {
         margin-bottom: 0;
         margin-left: 0;
     }
 
-    .ferritin_normal .values .row>* {
+    .ferritin_normal .values .row > *
+    {
         width: 320px;
         margin-bottom: 0;
         margin-left: 0;
     }
 
 
-    .ferritin_normal .values .item {
+    .ferritin_normal .values .item
+    {
         padding: 20px;
     }
 
 
-    .ferritin_normal .section {
+    .ferritin_normal .section
+    {
         margin-top: 60px;
     }
 
-    .ferritin_normal .section .title {
+    .ferritin_normal .section .title
+    {
         font-size: 20px;
 
         margin-bottom: 18px;
     }
 
 
-    .ferritin_normal .text_block {
+    .ferritin_normal .text_block
+    {
         width: 714px;
     }
 
@@ -2088,31 +2411,37 @@
     /*---------------------
         Ferritin causes
     ---------------------*/
-    .ferritin_causes {
+    .ferritin_causes
+    {
         padding: 0 28px;
     }
 
 
-    .ferritin_causes .block_head {
+    .ferritin_causes .block_head
+    {
         margin-bottom: 50px;
     }
 
-    .ferritin_causes .block_head .desc {
+    .ferritin_causes .block_head .desc
+    {
         font-size: 20px;
 
         width: 490px;
     }
 
 
-    .ferritin_causes .text_block {
+    .ferritin_causes .text_block
+    {
         width: 714px;
     }
 
-    .ferritin_causes .text_block ul li+li {
+    .ferritin_causes .text_block ul li + li
+    {
         margin-top: 18px;
     }
 
-    .ferritin_causes .text_block .bg {
+    .ferritin_causes .text_block .bg
+    {
         margin-top: 32px;
         margin-bottom: 32px;
     }
@@ -2122,49 +2451,58 @@
     /*-----------------------
         Ferritin symptoms
     -----------------------*/
-    .ferritin_symptoms {
+    .ferritin_symptoms
+    {
         margin-top: 80px;
     }
 
 
-    .ferritin_symptoms .block_title {
+    .ferritin_symptoms .block_title
+    {
         font-size: 24px;
 
         margin-bottom: 30px;
     }
 
 
-    .ferritin_symptoms .row {
+    .ferritin_symptoms .row
+    {
         margin-left: -40px;
     }
 
-    .ferritin_symptoms .row>* {
+    .ferritin_symptoms .row > *
+    {
         width: calc(50% - 40px);
         margin-left: 40px;
     }
 
 
-    .ferritin_symptoms .row+.title {
+    .ferritin_symptoms .row + .title
+    {
         margin-top: 60px;
     }
 
 
-    .ferritin_symptoms .item .icon img {
+    .ferritin_symptoms .item .icon img
+    {
         width: 54px;
         height: 54px;
     }
 
-    .ferritin_symptoms .item .icon+* {
+    .ferritin_symptoms .item .icon + *
+    {
         width: calc(100% - 74px);
     }
 
 
-    .ferritin_symptoms .text_block {
+    .ferritin_symptoms .text_block
+    {
         margin-top: 40px;
     }
 
 
-    .ferritin_symptoms .title {
+    .ferritin_symptoms .title
+    {
         font-size: 20px;
 
         width: 100%;
@@ -2176,17 +2514,20 @@
     /*-------------------
         Ferritin when
     -------------------*/
-    .ferritin_when {
+    .ferritin_when
+    {
         padding: 0 28px;
     }
 
 
-    .ferritin_when .block_head {
+    .ferritin_when .block_head
+    {
         margin-bottom: 50px;
     }
 
 
-    .ferritin_when .information {
+    .ferritin_when .information
+    {
         width: calc(100% + 56px);
         margin-right: -28px;
         margin-left: -28px;
@@ -2195,20 +2536,23 @@
     }
 
 
-    .ferritin_when .information .title {
+    .ferritin_when .information .title
+    {
         width: 254px;
         padding: 30px;
     }
 
 
-    .ferritin_when .information .desc {
+    .ferritin_when .information .desc
+    {
         line-height: 140%;
 
         width: calc(100% - 264px);
         padding: 30px 30px 30px 54px;
     }
 
-    .ferritin_when .information .desc sup {
+    .ferritin_when .information .desc sup
+    {
         font-size: 10px;
         line-height: 16px;
     }
@@ -2218,38 +2562,45 @@
     /*-----------------------
         Treatment methods
     -----------------------*/
-    .treatment_methods {
+    .treatment_methods
+    {
         padding: 100px 28px;
     }
 
 
-    .treatment_methods .block_head .desc {
+    .treatment_methods .block_head .desc
+    {
         font-size: 20px;
     }
 
 
-    .treatment_methods .section {
+    .treatment_methods .section
+    {
         margin-top: 80px;
     }
 
 
-    .treatment_methods .text_block {
+    .treatment_methods .text_block
+    {
         width: 714px;
     }
 
 
-    .treatment_methods .information {
+    .treatment_methods .information
+    {
         margin-top: 40px;
         padding: 30px 30px 0;
     }
 
 
-    .treatment_methods .information .text_block {
+    .treatment_methods .information .text_block
+    {
         width: 500px;
     }
 
 
-    .treatment_methods .information .exp {
+    .treatment_methods .information .exp
+    {
         line-height: 140%;
 
         position: relative;
@@ -2265,7 +2616,8 @@
     }
 
 
-    .treatment_methods .block_title {
+    .treatment_methods .block_title
+    {
         font-size: 24px;
 
         margin-bottom: 30px;
@@ -2276,13 +2628,27 @@
     /*---------
         FAQ
     ---------*/
-    .faq .accordion_item .head .title {
-        font-size: 24px;
+    .faq .block_head
+    {
+        margin-bottom: 70px;
     }
 
 
-    .faq .accordion_item .text_block {
-        width: 714px;
+    .faq .accordion_item .head .title
+    {
+        font-size: 20px;
+    }
+
+
+    .faq .accordion_item .data.pad_t
+    {
+        padding-top: 20px;
+    }
+
+
+    .faq .accordion_item .text_block
+    {
+        width: 548px;
     }
 
 
@@ -2290,12 +2656,14 @@
     /*--------------------
         Article author
     --------------------*/
-    .article_author .data {
+    .article_author .data
+    {
         padding: 30px;
     }
 
 
-    .article_author .title {
+    .article_author .title
+    {
         font-size: 24px;
 
         margin-bottom: 18px;
@@ -2306,34 +2674,39 @@
     /*------------------------
         About deficit iron
     ------------------------*/
-    .about_deficit_iron .information {
+    .about_deficit_iron .information
+    {
         margin-bottom: 70px;
 
         background-position: -156px 50%;
     }
 
 
-    .about_deficit_iron .information .title {
+    .about_deficit_iron .information .title
+    {
         line-height: 140%;
 
         width: 254px;
         padding: 30px 41px;
     }
 
-    .about_deficit_iron .information .desc {
+    .about_deficit_iron .information .desc
+    {
         width: calc(100% - 264px);
         padding: 30px 30px 30px 54px;
     }
 
 
-    .about_deficit_iron .text_block {
+    .about_deficit_iron .text_block
+    {
         width: 100%;
 
         order: 2;
     }
 
 
-    .about_deficit_iron img {
+    .about_deficit_iron img
+    {
         width: 56px;
         margin-right: 0;
         margin-bottom: 40px;
@@ -2345,20 +2718,24 @@
     /*-------------------------
         Stages deficit iron
     -------------------------*/
-    .stages_deficit_iron .data {
+    .stages_deficit_iron .data
+    {
         width: 100%;
     }
 
 
-    .stages_deficit_iron .block_head {
+    .stages_deficit_iron .block_head
+    {
         margin-bottom: 60px;
     }
 
-    .stages_deficit_iron .block_head .title.min_w {
+    .stages_deficit_iron .block_head .title.min_w
+    {
         width: 660px;
     }
 
-    .stages_deficit_iron .block_head .desc {
+    .stages_deficit_iron .block_head .desc
+    {
         font-size: 18px;
 
         width: 520px;
@@ -2366,7 +2743,8 @@
     }
 
 
-    .stages_deficit_iron .items {
+    .stages_deficit_iron .items
+    {
         position: relative;
         top: 0;
         right: 0;
@@ -2382,16 +2760,19 @@
         justify-content: space-between;
     }
 
-    .stages_deficit_iron .items:before {
+    .stages_deficit_iron .items:before
+    {
         display: none;
     }
 
-    .stages_deficit_iron .items>*+* {
+    .stages_deficit_iron .items > * + *
+    {
         margin-top: 0;
     }
 
 
-    .stages_deficit_iron .items .item {
+    .stages_deficit_iron .items .item
+    {
         display: flex;
 
         width: 300px;
@@ -2410,39 +2791,46 @@
     }
 
 
-    .stages_deficit_iron .section+.section {
+    .stages_deficit_iron .section + .section
+    {
         margin-top: 70px;
     }
 
 
-    .stages_deficit_iron .stage+.stage {
+    .stages_deficit_iron .stage + .stage
+    {
         margin-top: 70px;
     }
 
 
     .stages_deficit_iron .stage .block_title,
     .stages_deficit_iron .stage .block_desc,
-    .stages_deficit_iron .stage .block_desc.big_w {
+    .stages_deficit_iron .stage .block_desc.big_w
+    {
         width: 100%;
     }
 
-    .stages_deficit_iron .stage .block_title {
+    .stages_deficit_iron .stage .block_title
+    {
         font-size: 28px;
     }
 
-    .stages_deficit_iron .stage .block_desc {
+    .stages_deficit_iron .stage .block_desc
+    {
         font-size: 20px;
     }
 
 
-    .stages_deficit_iron .stage .information {
+    .stages_deficit_iron .stage .information
+    {
         width: calc(100% + 56px);
 
         background-position: -92px 0;
     }
 
 
-    .stages_deficit_iron .stage .information .info {
+    .stages_deficit_iron .stage .information .info
+    {
         line-height: 140%;
 
         width: 293px;
@@ -2451,25 +2839,30 @@
         align-self: center;
     }
 
-    .stages_deficit_iron .stage .information .info br {
+    .stages_deficit_iron .stage .information .info br
+    {
         display: block;
     }
 
 
-    .stages_deficit_iron .stage .information .features {
+    .stages_deficit_iron .stage .information .features
+    {
         margin-top: 10px;
     }
 
-    .stages_deficit_iron .stage .information .features>* {
+    .stages_deficit_iron .stage .information .features > *
+    {
         line-height: 130%;
     }
 
-    .stages_deficit_iron .stage .information .features>*+* {
+    .stages_deficit_iron .stage .information .features > * + *
+    {
         margin-top: 5px;
     }
 
 
-    .stages_deficit_iron .stage .information .desc {
+    .stages_deficit_iron .stage .information .desc
+    {
         line-height: 140%;
 
         width: calc(100% - 303px);
@@ -2477,31 +2870,37 @@
     }
 
 
-    .stages_deficit_iron .stage .information.min_offset {
+    .stages_deficit_iron .stage .information.min_offset
+    {
         background-position: -212px 0;
     }
 
-    .stages_deficit_iron .stage .information.min_offset .info {
+    .stages_deficit_iron .stage .information.min_offset .info
+    {
         width: 254px;
         padding: 45px 30px;
     }
 
-    .stages_deficit_iron .stage .information.min_offset .desc {
+    .stages_deficit_iron .stage .information.min_offset .desc
+    {
         width: calc(100% - 264px);
         padding: 30px 30px 30px 54px;
     }
 
 
-    .stages_deficit_iron .stage .text_block {
+    .stages_deficit_iron .stage .text_block
+    {
         width: 100%;
     }
 
-    .stages_deficit_iron .stage .text_block+.text_block {
+    .stages_deficit_iron .stage .text_block + .text_block
+    {
         margin-top: 60px;
     }
 
 
-    .stages_deficit_iron .stage .result {
+    .stages_deficit_iron .stage .result
+    {
         line-height: 140%;
 
         width: calc(100% + 56px);
@@ -2510,56 +2909,67 @@
         padding: 50px 30px;
     }
 
-    .stages_deficit_iron .stage .result .text {
+    .stages_deficit_iron .stage .result .text
+    {
         width: 354px;
     }
 
-    .stages_deficit_iron .stage .result img {
+    .stages_deficit_iron .stage .result img
+    {
         object-position: 0 50%;
     }
 
 
-    .stages_deficit_iron .stats {
+    .stages_deficit_iron .stats
+    {
         width: 100%;
         margin-top: 70px;
     }
 
 
-    .stages_deficit_iron .stats .data {
+    .stages_deficit_iron .stats .data
+    {
         width: 100%;
         margin-left: 0;
     }
 
 
-    .stages_deficit_iron .stats .data .head {
+    .stages_deficit_iron .stats .data .head
+    {
         padding: 40px 19px 40px 27px;
     }
 
 
-    .stages_deficit_iron .stats .data .head .title {
+    .stages_deficit_iron .stats .data .head .title
+    {
         width: 504px;
         max-width: calc(100% - 106px);
     }
 
 
-    .stages_deficit_iron .stats .data .features {
+    .stages_deficit_iron .stats .data .features
+    {
         padding: 37px 27px;
     }
 
-    .stages_deficit_iron .stats .data .features+.features {
+    .stages_deficit_iron .stats .data .features + .features
+    {
         padding-top: 37px;
     }
 
-    .stages_deficit_iron .stats .data .features>* {
+    .stages_deficit_iron .stats .data .features > *
+    {
         line-height: 125%;
     }
 
-    .stages_deficit_iron .stats .data .features .label br {
+    .stages_deficit_iron .stats .data .features .label br
+    {
         display: none;
     }
 
 
-    .stages_deficit_iron .stats .list {
+    .stages_deficit_iron .stats .list
+    {
         display: flex;
 
         width: 100%;
@@ -2573,46 +2983,54 @@
     }
 
 
-    .stages_deficit_iron .stats .list>* {
+    .stages_deficit_iron .stats .list > *
+    {
         width: 287px;
         max-width: calc(50% - 30px);
     }
 
-    .stages_deficit_iron .stats .list>*+* {
+    .stages_deficit_iron .stats .list > * + *
+    {
         margin-top: 0;
         margin-left: 60px;
     }
 
 
-    .stages_deficit_iron .stats .list .exp {
+    .stages_deficit_iron .stats .list .exp
+    {
         font-size: 20px;
 
         margin-top: 5px;
     }
 
-    .stages_deficit_iron .stats .list .desc {
+    .stages_deficit_iron .stats .list .desc
+    {
         line-height: 140%;
     }
 
 
-    .stages_deficit_iron .symptoms .block_head {
+    .stages_deficit_iron .symptoms .block_head
+    {
         margin-bottom: 40px;
     }
 
-    .stages_deficit_iron .symptoms .block_head .title {
+    .stages_deficit_iron .symptoms .block_head .title
+    {
         font-size: 28px;
 
         width: 100%;
     }
 
-    .stages_deficit_iron .symptoms .block_head .desc {
+    .stages_deficit_iron .symptoms .block_head .desc
+    {
         font-size: 20px;
 
         width: 100%;
     }
 
 
-    .stages_deficit_iron .symptoms .text_block {
+    .stages_deficit_iron .symptoms .text_block
+    {
         width: 100%;
         margin-top: 40px;
     }
@@ -2622,12 +3040,14 @@
     /*-------------------
         Complications
     -------------------*/
-    .complications {
+    .complications
+    {
         padding: 80px 0;
     }
 
 
-    .complications .block_head .desc {
+    .complications .block_head .desc
+    {
         font-size: 20px;
         line-height: 125%;
 
@@ -2635,15 +3055,18 @@
     }
 
 
-    .complications .item {
+    .complications .item
+    {
         line-height: 140%;
     }
 
-    .complications .item .name {
+    .complications .item .name
+    {
         font-size: 20px;
     }
 
-    .complications .item .desc {
+    .complications .item .desc
+    {
         font-size: 17px;
     }
 
@@ -2652,11 +3075,13 @@
     /*----------------------
         Anemia treatment
     ----------------------*/
-    .anemia_treatment .block_head {
+    .anemia_treatment .block_head
+    {
         margin-bottom: 75px;
     }
 
-    .anemia_treatment .block_head .desc {
+    .anemia_treatment .block_head .desc
+    {
         font-size: 20px;
         line-height: 125%;
 
@@ -2664,18 +3089,21 @@
     }
 
 
-    .anemia_treatment .information {
+    .anemia_treatment .information
+    {
         width: calc(100% + 56px);
         margin-right: -28px;
         margin-left: -28px;
         padding: 30px 30px 0;
     }
 
-    .anemia_treatment .information .text_block {
+    .anemia_treatment .information .text_block
+    {
         width: 490px;
     }
 
-    .anemia_treatment .information .exp {
+    .anemia_treatment .information .exp
+    {
         position: relative;
         right: 0;
         bottom: 0;
@@ -2689,7 +3117,8 @@
     }
 
 
-    .anemia_treatment .sub_title {
+    .anemia_treatment .sub_title
+    {
         font-size: 28px;
 
         width: 100%;
@@ -2698,12 +3127,14 @@
     }
 
 
-    .anemia_treatment .data {
+    .anemia_treatment .data
+    {
         width: 100%;
     }
 
 
-    .anemia_treatment .data+.exp {
+    .anemia_treatment .data + .exp
+    {
         width: 100%;
         margin-top: 40px;
         margin-bottom: 0;
@@ -2711,7 +3142,8 @@
     }
 
 
-    .anemia_treatment .text_block {
+    .anemia_treatment .text_block
+    {
         width: 100%;
         margin-top: 40px;
     }
@@ -2721,11 +3153,13 @@
     /*-----------------------
         Tеreatment causes
     -----------------------*/
-    .tеreatment_causes {
+    .tеreatment_causes
+    {
         padding: 90px 28px;
     }
 
-    .tеreatment_causes:before {
+    .tеreatment_causes:before
+    {
         top: -68px;
 
         width: 395px;
@@ -2734,11 +3168,13 @@
     }
 
 
-    .tеreatment_causes .block_head {
+    .tеreatment_causes .block_head
+    {
         margin-bottom: 70px;
     }
 
-    .tеreatment_causes .block_head .desc {
+    .tеreatment_causes .block_head .desc
+    {
         font-size: 20px;
         line-height: 125%;
 
@@ -2746,7 +3182,8 @@
     }
 
 
-    .tеreatment_causes .sub_title {
+    .tеreatment_causes .sub_title
+    {
         font-size: 20px;
 
         width: 100%;
@@ -2757,11 +3194,13 @@
     /*------------------
         Prevention 2
     ------------------*/
-    .prevention2 .block_head {
+    .prevention2 .block_head
+    {
         margin-bottom: 20px;
     }
 
-    .prevention2 .block_head .desc {
+    .prevention2 .block_head .desc
+    {
         font-size: 20px;
         line-height: 140%;
 
@@ -2769,22 +3208,26 @@
     }
 
 
-    .prevention2 .mob_notice {
+    .prevention2 .mob_notice
+    {
         display: block;
     }
 
 
-    .prevention2 .data {
+    .prevention2 .data
+    {
         width: 100%;
     }
 
 
-    .prevention2 .notice {
+    .prevention2 .notice
+    {
         display: none;
     }
 
 
-    .prevention2 .text_block {
+    .prevention2 .text_block
+    {
         width: 100%;
     }
 
@@ -2793,11 +3236,13 @@
     /*------------------
         Symptom info
     ------------------*/
-    .symptom_info .block_head {
+    .symptom_info .block_head
+    {
         width: 100%;
     }
 
-    .symptom_info .block_head .desc {
+    .symptom_info .block_head .desc
+    {
         font-size: 20px;
         line-height: 140%;
     }
@@ -2807,25 +3252,29 @@
     /*--------------------
         Iron pregnancy
     --------------------*/
-    .iron_pregnancy .information {
+    .iron_pregnancy .information
+    {
         background-position: -104px 50%;
     }
 
 
-    .iron_pregnancy .information .title {
+    .iron_pregnancy .information .title
+    {
         line-height: 140%;
 
         width: 254px;
         padding: 30px;
     }
 
-    .iron_pregnancy .information .desc {
+    .iron_pregnancy .information .desc
+    {
         width: calc(100% - 264px);
         padding: 30px 30px 30px 50px;
     }
 
 
-    .iron_pregnancy .text_block {
+    .iron_pregnancy .text_block
+    {
         width: 100%;
     }
 
@@ -2834,42 +3283,50 @@
     /*----------------
         Hemoglobin
     ----------------*/
-    .hemoglobin {
+    .hemoglobin
+    {
         padding: 90px 28px;
     }
 
 
-    .hemoglobin .block_head {
+    .hemoglobin .block_head
+    {
         width: 100%;
         margin-bottom: 60px;
     }
 
-    .hemoglobin .block_head .desc {
+    .hemoglobin .block_head .desc
+    {
         font-size: 20px;
         line-height: 140%;
     }
 
 
-    .hemoglobin .schema .title {
+    .hemoglobin .schema .title
+    {
         font-size: 28px;
     }
 
     .hemoglobin .schema .data,
-    .hemoglobin .schema .image {
+    .hemoglobin .schema .image
+    {
         width: 100%;
     }
 
-    .hemoglobin .schema .image {
+    .hemoglobin .schema .image
+    {
         margin-top: 40px;
     }
 
 
-    .hemoglobin .schema+.text_block {
+    .hemoglobin .schema + .text_block
+    {
         margin-top: 80px;
     }
 
 
-    .hemoglobin .text_block {
+    .hemoglobin .text_block
+    {
         width: 100%;
         max-width: 100%;
     }
@@ -2879,32 +3336,38 @@
     /*-----------------
         What danger
     -----------------*/
-    .what_danger .section+.section {
+    .what_danger .section + .section
+    {
         margin-top: 80px;
     }
 
 
-    .what_danger .block_head {
+    .what_danger .block_head
+    {
         width: 100%;
         margin-bottom: 60px;
     }
 
-    .what_danger .block_head .desc {
+    .what_danger .block_head .desc
+    {
         font-size: 20px;
         line-height: 140%;
     }
 
 
-    .what_danger .row .text_block {
+    .what_danger .row .text_block
+    {
         width: calc(100% - 300px);
     }
 
-    .what_danger .row+.text_block {
+    .what_danger .row + .text_block
+    {
         margin-top: 60px;
     }
 
 
-    .what_danger .message {
+    .what_danger .message
+    {
         line-height: 140%;
 
         width: 272px;
@@ -2912,7 +3375,8 @@
         padding: 24px 44px;
     }
 
-    .what_danger .message .icon {
+    .what_danger .message .icon
+    {
         top: 0;
         right: -40px;
         bottom: 0;
@@ -2923,34 +3387,40 @@
     }
 
 
-    .what_danger .text_block ul.row {
+    .what_danger .text_block ul.row
+    {
         margin-left: -40px;
     }
 
-    .what_danger .text_block ul.row li {
+    .what_danger .text_block ul.row li
+    {
         width: calc(50% - 40px);
         margin-left: 40px;
     }
 
 
-    .what_danger .notice {
+    .what_danger .notice
+    {
         margin-top: 28px;
         padding: 60px 50px;
     }
 
-    .what_danger .notice .text_block {
+    .what_danger .notice .text_block
+    {
         width: 440px;
     }
 
 
-    .what_danger .section>.title {
+    .what_danger .section > .title
+    {
         font-size: 28px;
 
         width: 100%;
         margin-bottom: 32px;
     }
 
-    .what_danger .section>.desc {
+    .what_danger .section > .desc
+    {
         font-size: 20px;
 
         width: 100%;
@@ -2962,11 +3432,13 @@
     /*--------------------
         Iron diagnosis
     --------------------*/
-    .iron_diagnosis .block_title {
+    .iron_diagnosis .block_title
+    {
         font-size: 28px;
     }
 
-    .iron_diagnosis .block_desc {
+    .iron_diagnosis .block_desc
+    {
         font-size: 20px;
 
         width: 100%;
@@ -2974,60 +3446,72 @@
     }
 
 
-    .iron_diagnosis .accordion {
+    .iron_diagnosis .accordion
+    {
         margin-top: 60px;
     }
 
 
-    .iron_diagnosis .accordion_item+.accordion_item {
+    .iron_diagnosis .accordion_item + .accordion_item
+    {
         margin-top: 40px;
     }
 
 
-    .iron_diagnosis .accordion_item>.head .icon img {
+    .iron_diagnosis .accordion_item > .head .icon img
+    {
         width: 50px;
         height: 50px;
     }
 
-    .iron_diagnosis .accordion_item>.head .title {
+    .iron_diagnosis .accordion_item > .head .title
+    {
         font-size: 24px;
 
         width: calc(100% - 70px);
     }
 
-    .iron_diagnosis .accordion_item>.data {
+    .iron_diagnosis .accordion_item > .data
+    {
         padding-left: 70px;
     }
 
 
     .iron_diagnosis .stats .head,
-    .iron_diagnosis .stats .features {
+    .iron_diagnosis .stats .features
+    {
         padding: 24px 32px;
     }
 
-    .iron_diagnosis .stats .features>*+* {
+    .iron_diagnosis .stats .features > * + *
+    {
         margin-top: 20px;
     }
 
-    .iron_diagnosis .stats .features>* {
+    .iron_diagnosis .stats .features > *
+    {
         line-height: 125%;
     }
 
-    .iron_diagnosis .stats .features .label br {
+    .iron_diagnosis .stats .features .label br
+    {
         display: none;
     }
 
 
-    .iron_diagnosis .information {
+    .iron_diagnosis .information
+    {
         margin-top: 40px;
         padding: 30px 30px 0;
     }
 
-    .iron_diagnosis .information .text_block {
+    .iron_diagnosis .information .text_block
+    {
         width: 500px;
     }
 
-    .iron_diagnosis .information .exp {
+    .iron_diagnosis .information .exp
+    {
         line-height: 140%;
 
         position: relative;
@@ -3045,38 +3529,44 @@
 
 
     .iron_diagnosis .hepcidin,
-    .iron_diagnosis .hepcidin .section+.section {
+    .iron_diagnosis .hepcidin .section + .section
+    {
         margin-top: 80px;
     }
 
 
-    .iron_diagnosis .hepcidin .text_block {
+    .iron_diagnosis .hepcidin .text_block
+    {
         width: 100%;
     }
 
 
 
-    .iron_diagnosis .compensation .block_title {
+    .iron_diagnosis .compensation .block_title
+    {
         font-size: 28px;
 
         margin-bottom: 32px;
     }
 
-    .iron_diagnosis .compensation .block_desc {
+    .iron_diagnosis .compensation .block_desc
+    {
         width: 100%;
         margin-bottom: 60px;
     }
 
 
 
-    .iron_diagnosis .table_title {
+    .iron_diagnosis .table_title
+    {
         font-size: 20px;
 
         margin-bottom: 60px;
     }
 
 
-    .iron_diagnosis .table_wrap {
+    .iron_diagnosis .table_wrap
+    {
         width: calc(100% + 112px);
         max-width: calc(100% + 112px);
         margin-right: -56px;
@@ -3085,7 +3575,8 @@
         padding-bottom: 10px;
     }
 
-    .iron_diagnosis table {
+    .iron_diagnosis table
+    {
         width: 904px;
     }
 
@@ -3094,16 +3585,19 @@
     /*------------------------
         What danger excess
     ------------------------*/
-    .what_danger_excess {
+    .what_danger_excess
+    {
         padding: 90px 28px;
     }
 
 
-    .what_danger_excess .block_head {
+    .what_danger_excess .block_head
+    {
         margin-bottom: 60px;
     }
 
-    .what_danger_excess .block_head .desc {
+    .what_danger_excess .block_head .desc
+    {
         font-size: 20px;
 
         width: 100%;
@@ -3111,10 +3605,280 @@
 
 
 
+    /*---------------
+        About IDA
+    ---------------*/
+    .about_IDA .data
+    {
+        width: 545px;
+    }
+
+
+    .about_IDA .block_head
+    {
+        margin-bottom: 70px;
+    }
+
+    .about_IDA .block_head .desc
+    {
+        font-size: 20px;
+        line-height: 125%;
+    }
+
+
+    .about_IDA .exp
+    {
+        display: none;
+    }
+
+
+
+    /*--------------------
+        Prevalence IDA
+    --------------------*/
+    .prevalence_IDA
+    {
+        padding: 90px 28px;
+    }
+
+
+    .prevalence_IDA .block_head
+    {
+        margin-bottom: 70px;
+    }
+
+    .prevalence_IDA .block_head .desc
+    {
+        font-size: 20px;
+        line-height: 125%;
+    }
+
+
+    .prevalence_IDA > .bg
+    {
+        height: 768px;
+        margin-right: -579px;
+    }
+
+
+    .prevalence_IDA .block_head,
+    .prevalence_IDA .text_block
+    {
+        width: 596px;
+    }
+
+
+    .prevalence_IDA .exp
+    {
+        display: none;
+    }
+
+
+
+    /*-----------------
+        Reasons IDA
+    -----------------*/
+    .reasons_IDA .block_head
+    {
+        margin-bottom: 50px;
+    }
+
+    .reasons_IDA .block_head .title
+    {
+        width: 100%;
+    }
+
+    .reasons_IDA .block_head .desc
+    {
+        font-size: 20px;
+        line-height: 125%;
+
+        width: 100%;
+    }
+
+
+    .reasons_IDA .accordion_item .head .icon img
+    {
+        width: 50px;
+        height: 50px;
+    }
+
+    .reasons_IDA .accordion_item .head .title
+    {
+        font-size: 24px;
+
+        width: calc(100% - 70px);
+    }
+
+    .reasons_IDA .accordion_item .data
+    {
+        padding-right: 113px;
+        padding-left: 70px;
+    }
+
+
+
+    /*-------------------
+        Symptoms IDA
+    -------------------*/
+    .symptoms_IDA
+    {
+        padding: 90px 28px;
+    }
+
+
+    .symptoms_IDA .block_head
+    {
+        margin-bottom: 80px;
+    }
+
+    .symptoms_IDA .block_head .title.w_full
+    {
+        width: 100%;
+    }
+
+    .symptoms_IDA .block_head .desc
+    {
+        font-size: 20px;
+        line-height: 125%;
+
+        width: 100%;
+        margin-top: 20px;
+    }
+
+
+    .symptoms .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+    .symptoms_IDA .row > *
+    {
+        width: calc(50% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+
+    /*-------------------
+        Influence IDA
+    -------------------*/
+    .influence_IDA .block_head
+    {
+        margin-bottom: 70px;
+    }
+
+
+    .influence_IDA .information
+    {
+        margin-top: 70px;
+        padding: 50px 30px;
+    }
+
+    .influence_IDA .information + .text_block
+    {
+        margin-top: 70px;
+    }
+
+    .influence_IDA .information .text_block
+    {
+        width: 631px;
+    }
+
+
+
+    /*-------------------
+        Diagnostics IDA
+    -------------------*/
+    .diagnostics_IDA
+    {
+        padding: 90px 28px;
+    }
+
+
+    .diagnostics_IDA .block_head
+    {
+        margin-bottom: 70px;
+    }
+
+
+    .diagnostics_IDA .information
+    {
+        margin-top: 80px;
+        padding: 50px 30px;
+    }
+
+    .diagnostics_IDA .information .text_block
+    {
+        width: 490px;
+    }
+
+
+    .diagnostics_IDA .text_block ~ .text_block
+    {
+        margin-top: 80px;
+    }
+
+
+
+    /*-------------------
+        Treatment IDA
+    -------------------*/
+    .treatment_IDA .block_head
+    {
+        margin-bottom: 50px;
+    }
+
+
+
+    /*--------------
+        Form IDA
+    --------------*/
+    .form_IDA
+    {
+        padding: 90px 28px;
+    }
+
+
+    .form_IDA .block_head
+    {
+        margin-bottom: 70px;
+    }
+
+    .form_IDA .block_head .title
+    {
+        width: 100%;
+    }
+
+    .form_IDA .block_head .desc
+    {
+        font-size: 20px;
+        line-height: 125%;
+    }
+
+
+    .form_IDA .text_block
+    {
+        width: 100%;
+    }
+
+
+    .form_IDA .exp
+    {
+        margin-top: 32px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+
+
     /*------------
         Footer
     ------------*/
-    footer .text {
+    footer .text
+    {
         width: 100%;
         margin-top: 30px;
 

@@ -738,6 +738,17 @@
     }
 
 
+    .service_head .anchors .row.scroll > *
+    {
+        margin: 0 !important;
+    }
+
+    .service_head .anchors .row.scroll > * + *
+    {
+        margin-left: 52px !important;
+    }
+
+
 
     /*-------------
         Why how
@@ -1868,6 +1879,12 @@
     /*---------
         FAQ
     ---------*/
+    .faq
+    {
+        padding: 0 28px;
+    }
+
+
     .faq .accordion_item + .accordion_item
     {
         margin-top: 40px;
@@ -2460,6 +2477,232 @@
     .what_danger_excess
     {
         padding: 130px 28px;
+    }
+
+
+
+    /*---------------
+        About IDA
+    ---------------*/
+    .about_IDA
+    {
+        padding: 0 28px;
+    }
+
+
+    .about_IDA .data
+    {
+        width: 508px;
+    }
+
+
+    .about_IDA .exp
+    {
+        margin-top: 116px;
+        margin-right: -21px;
+        padding: 48px;
+    }
+
+
+
+    /*--------------------
+        Prevalence IDA
+    --------------------*/
+    .prevalence_IDA
+    {
+        padding: 130px 28px 140px;
+    }
+
+
+    .prevalence_IDA > .bg
+    {
+        min-width: 300px;
+        margin-right: -727px;
+    }
+
+
+    .prevalence_IDA .block_head,
+    .prevalence_IDA .text_block
+    {
+        width: 601px;
+    }
+
+
+    .prevalence_IDA .exp
+    {
+        margin-right: -644px;
+    }
+
+
+
+    /*-----------------
+        Reasons IDA
+    -----------------*/
+    .reasons_IDA
+    {
+        padding: 0 28px;
+    }
+
+
+    .reasons_IDA .block_head .title
+    {
+        width: 552px;
+    }
+
+
+    .reasons_IDA .block_head .desc
+    {
+        width: 797px;
+        margin-top: 20px;
+    }
+
+
+    .reasons_IDA .accordion
+    {
+        width: 100%;
+    }
+
+
+    .reasons_IDA .accordion_item .head .icon img
+    {
+        width: 61px;
+        height: 61px;
+    }
+
+    .reasons_IDA .accordion_item .head .title
+    {
+        width: calc(100% - 77px);
+    }
+
+    .reasons_IDA .accordion_item .data
+    {
+        padding-left: 77px;
+    }
+
+
+
+    /*-------------------
+        Symptoms IDA
+    -------------------*/
+    .symptoms_IDA
+    {
+        padding: 130px 28px;
+    }
+
+
+    .symptoms_IDA .block_head
+    {
+        margin-bottom: 80px;
+    }
+
+    .symptoms_IDA .block_head .title.w_full
+    {
+        width: 552px;
+        max-width: 100%;
+    }
+
+    .symptoms_IDA .block_head .desc
+    {
+        width: 797px;
+    }
+
+
+    .symptoms .row
+    {
+        margin-bottom: -25px;
+        margin-left: -35px;
+    }
+
+    .symptoms_IDA .row > *
+    {
+        width: calc(50% - 35px);
+        margin-bottom: 25px;
+        margin-left: 35px;
+    }
+
+
+
+    /*-------------------
+        Influence IDA
+    -------------------*/
+    .influence_IDA
+    {
+        padding: 0 28px;
+    }
+
+
+    .influence_IDA .information
+    {
+        margin-right: -28px;
+        margin-left: -28px;
+    }
+
+    .influence_IDA .information .text_block
+    {
+        width: 653px;
+        max-width: 100%;
+    }
+
+
+
+    /*-------------------
+        Diagnostics IDA
+    -------------------*/
+    .diagnostics_IDA
+    {
+        padding: 130px 28px;
+    }
+
+
+    .diagnostics_IDA .information
+    {
+        width: calc(100% + 56px);
+        margin-right: -28px;
+        margin-left: -28px;
+    }
+
+
+    .diagnostics_IDA .information .text_block
+    {
+        width: 653px;
+    }
+
+
+
+    /*-------------------
+        Treatment IDA
+    -------------------*/
+    .treatment_IDA
+    {
+        padding: 0 28px;
+    }
+
+
+
+    /*--------------
+        Form IDA
+    --------------*/
+    .form_IDA
+    {
+        padding: 130px 28px;
+    }
+
+
+    .form_IDA .block_head .title
+    {
+        width: 653px;
+    }
+
+
+    .form_IDA .text_block
+    {
+        width: 496px;
+    }
+
+
+    .form_IDA .exp
+    {
+        margin-right: -28px;
     }
 
 

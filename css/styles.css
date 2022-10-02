@@ -1688,7 +1688,7 @@ header .menu_btn .icon
 .text_block sup
 {
     font-size: 12px;
-    line-height: 20px;
+    line-height: 18px;
 
     display: inline-block;
 
@@ -1705,6 +1705,11 @@ header .menu_btn .icon
     padding: 32px 0;
 
     background: #f2e6f6;
+}
+
+.text_block .bg.hide
+{
+    display: none;
 }
 
 .text_block .bg:before,
@@ -2197,6 +2202,17 @@ header .menu_btn .icon
     width: calc(100% - 98px);
 
     align-self: center;
+}
+
+
+.symptoms .item sup
+{
+    font-size: 12px;
+    line-height: 18px;
+
+    display: inline-block;
+
+    vertical-align: top;
 }
 
 
@@ -7483,9 +7499,15 @@ header .menu_btn .icon
 /*---------
     FAQ
 ---------*/
+.faq .block_head
+{
+    margin-bottom: 80px;
+}
+
+
 .faq .accordion_item + .accordion_item
 {
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
 
@@ -7594,6 +7616,11 @@ header .menu_btn .icon
     display: none;
 
     padding: 8px 98px 0 0;
+}
+
+.faq .accordion_item .data.pad_t
+{
+    padding-top: 30px;
 }
 
 
@@ -9795,37 +9822,6 @@ header .menu_btn .icon
 /*---------------
     About IDA
 ---------------*/
-.about_IDA
-{
-    position: relative;
-    z-index: 3;
-
-    padding: 150px 0;
-}
-
-
-.about_IDA .cont
-{
-    position: relative;
-}
-
-
-.about_IDA .bg
-{
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 50%;
-
-    width: auto;
-    height: 100%;
-
-    transform: translateX(-50%);
-
-    object-fit: cover;
-}
-
-
 .about_IDA .data
 {
     width: 653px;
@@ -9835,7 +9831,7 @@ header .menu_btn .icon
 
 .about_IDA .block_head
 {
-    margin-bottom: 70px;
+    margin-bottom: 80px;
 }
 
 .about_IDA .block_head .desc
@@ -9854,23 +9850,109 @@ header .menu_btn .icon
     font-size: 16px;
     line-height: 145%;
 
+    display: flex;
+
+    width: 362px;
+    max-width: 100%;
+    height: 362px;
+    margin-top: 42px;
+    margin-right: -49px;
+    margin-left: auto;
+    padding: 40px;
+
+    text-align: center;
+
+    border: 4px solid #a67db6;
+    border-radius: 50%;
+    background: #f2e6f6;
+    box-shadow: inset 0 0 0 4px #fff;
+
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+/*--------------------
+    Prevalence IDA
+--------------------*/
+.prevalence_IDA
+{
+    position: relative;
+    z-index: 3;
+
+    padding: 150px 0 78px;
+
+    background: linear-gradient(90.17deg, #f9f9f9 .01%, #f7f7f7 66.53%, #f4f4f4 99.71%);
+}
+
+
+.prevalence_IDA > .bg
+{
     position: absolute;
-    right: -174px;
-    bottom: -90px;
+    z-index: -1;
+    right: 50%;
+    bottom: 0;
+
+    display: block;
+
+    min-width: 200px;
+    min-height: 200px;
+    margin-right: -840px;
+}
+
+
+.prevalence_IDA .block_head
+{
+    width: 653px;
+    max-width: 100%;
+    margin-bottom: 80px;
+}
+
+.prevalence_IDA .block_head .desc
+{
+    color: #000;
+    font-size: 24px;
+    line-height: 125%;
+
+    margin-top: 20px;
+}
+
+
+.prevalence_IDA .text_block
+{
+    width: 653px;
+    max-width: 100%;
+}
+
+
+.prevalence_IDA .exp
+{
+    color: #792582;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 160%;
+
+    position: absolute;
+    z-index: 3;
+    right: 50%;
+    bottom: 161px;
 
     width: 470px;
-    max-width: 100%;
+    margin-right: -720px;
     padding: 30px 151px 30px 48px;
 
     background: rgba(237, 226, 255, .8);
 
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(2.5px);
 }
 
-.about_IDA .exp sup
+.prevalence_IDA .exp sup
 {
     font-size: 10px;
-    line-height: 14px;
+    line-height: 16px;
 
     display: inline-block;
 
@@ -9879,66 +9961,9 @@ header .menu_btn .icon
 
 
 
-/*--------------------
-    Prevalence IDA
---------------------*/
-.prevalence_IDA .block_head
-{
-    margin-bottom: 80px;
-}
-
-
-.prevalence_IDA .text_block
-{
-    width: 790px;
-    max-width: 100%;
-}
-
-
-.prevalence_IDA .stats
-{
-    width: 348px;
-    max-width: 100%;
-    margin-right: -60px;
-    margin-left: auto;
-
-    align-self: center;
-}
-
-
-.prevalence_IDA .stats .val
-{
-    color: #000;
-    font-size: 32px;
-    font-weight: 500;
-    line-height: 100%;
-}
-
-.prevalence_IDA .stats .name
-{
-    color: #626262;
-    line-height: 125%;
-}
-
-.prevalence_IDA .stats .desc
-{
-    color: #626262;
-    font-size: 16px;
-    line-height: 160%;
-
-    margin-top: 20px;
-}
-
-
-
 /*-----------------
     Reasons IDA
 -----------------*/
-.reasons_IDA .block_head
-{
-    margin-bottom: 80px;
-}
-
 .reasons_IDA .block_head .title
 {
     width: 804px;
@@ -9954,13 +9979,13 @@ header .menu_btn .icon
 
     width: 848px;
     max-width: 100%;
-    margin-top: 20px;
+    margin-top: 80px;
 }
 
 
 .reasons_IDA .accordion
 {
-    width: 899px;
+    width: 945px;
     max-width: 100%;
 }
 
@@ -10121,14 +10146,241 @@ header .menu_btn .icon
 }
 
 
+.symptoms_IDA .section + .section
+{
+    margin-top: 80px;
+}
+
+
+.symptoms_IDA .section .title
+{
+    color: #792582;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 115%;
+
+    margin-bottom: 32px;
+}
+
+
+.symptoms_IDA .row
+{
+    margin-bottom: -25px;
+}
+
+.symptoms_IDA .row > *
+{
+    width: calc(50% - 52px);
+    margin-bottom: 25px;
+}
+
+
 
 /*-------------------
     Influence IDA
 -------------------*/
+.influence_IDA .block_head
+{
+    margin-bottom: 80px;
+}
+
+.influence_IDA .block_head .title
+{
+    width: 653px;
+    max-width: 100%;
+}
+
+
 .influence_IDA .text_block
 {
     width: 848px;
     max-width: 100%;
+}
+
+
+.influence_IDA .information
+{
+    position: relative;
+    z-index: 3;
+
+    margin-top: 80px;
+    padding: 80px 62px;
+}
+
+.influence_IDA .information + .text_block
+{
+    margin-top: 80px;
+}
+
+.influence_IDA .information .text_block
+{
+    width: 682px;
+    max-width: 100%;
+}
+
+.influence_IDA .information .bg
+{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+
+/*-------------------
+    Diagnostics IDA
+-------------------*/
+.diagnostics_IDA
+{
+    padding: 150px 0;
+
+    background: #f9f9f9;
+}
+
+
+.diagnostics_IDA .block_head
+{
+    margin-bottom: 80px;
+}
+
+.diagnostics_IDA .block_head .title
+{
+    width: 653px;
+    max-width: 100%;
+}
+
+
+.diagnostics_IDA .text_block
+{
+    width: 848px;
+    max-width: 100%;
+}
+
+.diagnostics_IDA .text_block ~ .text_block
+{
+    margin-top: 100px;
+}
+
+
+.diagnostics_IDA .information
+{
+    position: relative;
+    z-index: 3;
+
+    width: calc(100% + 60px);
+    margin: 100px -30px 0;
+    padding: 80px 80px 80px 62px;
+
+    background: #ddd;
+}
+
+
+.diagnostics_IDA .information .text_block
+{
+    width: 682px;
+    max-width: 100%;
+}
+
+
+.diagnostics_IDA .information .bg
+{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+
+/*-------------------
+    Treatment IDA
+-------------------*/
+.treatment_IDA .block_head
+{
+    margin-bottom: 80px;
+}
+
+.treatment_IDA .block_head .title
+{
+    width: 774px;
+    max-width: 100%;
+}
+
+
+.treatment_IDA .text_block
+{
+    width: 848px;
+    max-width: 100%;
+}
+
+
+
+/*--------------
+    Form IDA
+--------------*/
+.form_IDA
+{
+    padding: 150px 0;
+
+    background: #f9f9f9;
+}
+
+
+.form_IDA .block_head
+{
+    margin-bottom: 80px;
+}
+
+.form_IDA .block_head .title
+{
+    width: 694px;
+    max-width: 100%;
+}
+
+.form_IDA .block_head .desc
+{
+    color: #000;
+    font-size: 24px;
+    line-height: 125%;
+
+    width: 848px;
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+
+.form_IDA .text_block
+{
+    width: 694px;
+    max-width: 100%;
+}
+
+
+.form_IDA .exp
+{
+    color: #792582;
+    font-size: 16px;
+    line-height: 150%;
+
+    width: 360px;
+    max-width: 100%;
+    margin-right: -35px;
+    margin-left: auto;
+    padding: 30px;
+
+    border-radius: 20px;
+    background: #f2e6f6;
 }
 
 
