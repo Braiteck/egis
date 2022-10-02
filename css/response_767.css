@@ -11,6 +11,7 @@
 
 
     .block,
+    .block.min_m,
     .block.middle_m
     {
         margin-bottom: 70px;
@@ -32,6 +33,16 @@
         font-size: 14px;
 
         padding: 14px 32px;
+    }
+
+
+
+    /*--------------
+        BG block
+    --------------*/
+    .bg_block
+    {
+        padding: 70px 0;
     }
 
 
@@ -125,6 +136,28 @@
     }
 
 
+    .text_block h3
+    {
+        font-size: 28px;
+    }
+
+    .text_block h4
+    {
+        font-size: 20px;
+    }
+
+    .text_block h4 br
+    {
+        display: none;
+    }
+
+
+    .text_block * + h3
+    {
+        margin-top: 60px;
+    }
+
+
     .text_block ol li
     {
         padding-left: 68px;
@@ -133,7 +166,38 @@
 
     .text_block ul li:before
     {
-        top: 7px;
+        top: 6px;
+    }
+
+
+    .text_block .bg span
+    {
+        width: 100%;
+        max-width: calc(100% - 72px);
+    }
+
+    .text_block .bg .icon
+    {
+        width: 42px;
+        margin-right: 0;
+    }
+
+
+    .text_block .signs .row
+    {
+        margin-left: 0;
+    }
+
+    .text_block .signs .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .text_block .signs .name
+    {
+        margin-bottom: 20px;
     }
 
 
@@ -241,6 +305,15 @@
     }
 
 
+    .symptoms .sub_title
+    {
+        font-size: 20px;
+        line-height: 125%;
+
+        margin-bottom: 24px;
+    }
+
+
     .symptoms .row
     {
         margin-bottom: -30px;
@@ -314,8 +387,8 @@
     {
         display: -webkit-box;
         overflow-y: hidden;
-        -webkit-box-orient: vertical;
 
+        -webkit-box-orient: vertical;
         -webkit-line-clamp: 7;
     }
 
@@ -610,14 +683,14 @@
         display: block;
 
         width: calc(50% - 20px);
-        margin-bottom: 20px;
-        margin-left: 20px;
+        margin-bottom: 20px !important;
+        margin-left: 20px !important;
     }
 
     .service_head .anchors .row > * + *,
     .service_head .anchors .row.alignleft > * + *
     {
-        margin-left: 20px;
+        margin-left: 20px !important;
     }
 
 
@@ -1063,6 +1136,27 @@
     }
 
 
+    .test .result .information
+    {
+        width: 263px;
+    }
+
+    .test .result .information .title
+    {
+        font-size: 25px;
+    }
+
+    .test .result .information .btn
+    {
+        display: none;
+    }
+
+    .test .result .information .mob_btn
+    {
+        display: inline-block;
+    }
+
+
 
     /*--------------
         Articles
@@ -1282,16 +1376,23 @@
 
     .reasons .block_head .desc
     {
-        font-size: 20px;
+        font-size: 18px;
 
         width: 100%;
     }
 
 
+    .reasons .accordion_item .head .title span
+    {
+        line-height: 140%;
+    }
+
+
     .reasons .accordion_item .data
     {
+        padding-top: 20px;
         padding-right: 0;
-        padding-left: 0;
+        padding-left: 70px;
     }
 
 
@@ -1647,14 +1748,14 @@
 
     .story_info .data
     {
-        order: 2;
-
         width: 100%;
         max-width: 100%;
         margin-top: 40px;
         margin-bottom: 0;
         margin-left: 0;
         padding: 0;
+
+        order: 2;
     }
 
     .story_info .title
@@ -1975,5 +2076,856 @@
     .article_author .photo + *
     {
         width: calc(100% - 74px);
+    }
+
+
+
+    /*------------------------
+        About deficit iron
+    ------------------------*/
+    .about_deficit_iron
+    {
+        padding: 0;
+    }
+
+
+    .about_deficit_iron .information
+    {
+        margin-right: 0;
+        margin-bottom: 60px;
+        margin-left: 0;
+
+        background: none;
+    }
+
+
+    .about_deficit_iron .information .title
+    {
+        width: 100%;
+        padding: 24px;
+
+        background: #792582;
+    }
+
+    .about_deficit_iron .information .desc
+    {
+        width: 100%;
+        padding: 24px;
+
+        background: #a67db6;
+    }
+
+
+    .about_deficit_iron img
+    {
+        width: 45px;
+        margin-bottom: 20px;
+    }
+
+
+
+    /*-------------------------
+        Stages deficit iron
+    -------------------------*/
+    .stages_deficit_iron
+    {
+        padding: 0;
+    }
+
+
+    .stages_deficit_iron .block_head .title.min_w,
+    .stages_deficit_iron .block_head .desc
+    {
+        width: 100%;
+    }
+
+
+    .stages_deficit_iron .items
+    {
+        display: block;
+    }
+
+
+    .stages_deficit_iron .items > * + *
+    {
+        margin-top: 40px;
+    }
+
+
+    .stages_deficit_iron .items .item
+    {
+        width: 100%;
+        height: auto;
+        padding: 0;
+
+        text-align: left;
+
+        border-radius: 0;
+        background: none;
+
+        align-content: flex-start;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .stages_deficit_iron .items .icon,
+    .stages_deficit_iron .items .icon img
+    {
+        width: 44px;
+        height: 44px;
+        margin: 0;
+    }
+
+    .stages_deficit_iron .items .icon + *
+    {
+        width: calc(100% - 64px);
+    }
+
+
+    .stages_deficit_iron .section + .section
+    {
+        margin-top: 70px;
+    }
+
+
+    .stages_deficit_iron .stage + .stage
+    {
+        margin-top: 60px;
+    }
+
+
+    .stages_deficit_iron .stage .block_title
+    {
+        font-size: 22px;
+    }
+
+    .stages_deficit_iron .stage .block_desc
+    {
+        font-size: 18px;
+    }
+
+
+    .stages_deficit_iron .stage .information
+    {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+
+        background: none;
+    }
+
+
+    .stages_deficit_iron .stage .information .info,
+    .stages_deficit_iron .stage .information.min_offset .info
+    {
+        width: 100%;
+        padding: 24px;
+
+        background: #792582;
+    }
+
+    .stages_deficit_iron .stage .information .title br
+    {
+        display: none;
+    }
+
+    .stages_deficit_iron .stage .information .features
+    {
+        margin-top: 30px;
+    }
+
+    .stages_deficit_iron .stage .information .desc,
+    .stages_deficit_iron .stage .information.min_offset .desc
+    {
+        width: 100%;
+        padding: 24px;
+
+        background: #a67db6;
+    }
+
+
+    .stages_deficit_iron .stage .result
+    {
+        overflow: hidden;
+
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+        padding: 0;
+
+        background: none;
+    }
+
+    .stages_deficit_iron .stage .result .text
+    {
+        width: 100%;
+        padding: 24px;
+    }
+
+    .stages_deficit_iron .stage .result img
+    {
+        position: relative;
+
+        width: 150%;
+        height: auto;
+    }
+
+
+    .stages_deficit_iron .stats
+    {
+        margin-top: 60px;
+    }
+
+
+    .stages_deficit_iron .stats .data .head
+    {
+        padding: 17px 27px;
+    }
+
+
+    .stages_deficit_iron .stats .data .head .title
+    {
+        font-size: 16px;
+        line-height: 130%;
+
+        width: 100%;
+        max-width: calc(100% - 44px);
+    }
+
+    .stages_deficit_iron .stats .data .head .icon
+    {
+        width: 24px;
+    }
+
+
+    .stages_deficit_iron .stats .data .features
+    {
+        padding: 17px 27px;
+    }
+
+    .stages_deficit_iron .stats .data .features + .features
+    {
+        padding-top: 17px;
+    }
+
+
+    .stages_deficit_iron .stats .list
+    {
+        margin-top: 60px;
+    }
+
+
+    .stages_deficit_iron .stats .list > *
+    {
+        width: calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+
+    .stages_deficit_iron .stats .list > * + *
+    {
+        margin-left: 40px;
+    }
+
+
+    .stages_deficit_iron .stats .list .val
+    {
+        font-size: 20px;
+        line-height: 125%;
+    }
+
+    .stages_deficit_iron .stats .list .exp
+    {
+        font-size: 16px;
+        line-height: 125%;
+    }
+
+    .stages_deficit_iron .stats .list .desc
+    {
+        font-size: 14px;
+        line-height: 140%;
+    }
+
+
+    .stages_deficit_iron .symptoms .block_head .title
+    {
+        font-size: 22px;
+        line-height: 115%;
+    }
+
+    .stages_deficit_iron .symptoms .block_head .desc
+    {
+        font-size: 18px;
+    }
+
+
+
+    /*-------------------
+        Complications
+    -------------------*/
+    .complications
+    {
+        padding: 70px 0;
+    }
+
+
+    .complications .block_head .desc
+    {
+        font-size: 18px;
+
+        width: 100%;
+    }
+
+
+    .complications .row
+    {
+        margin-bottom: -40px;
+        margin-left: 0;
+    }
+
+    .complications .row > *
+    {
+        width: 100%;
+        margin-bottom: 40px;
+        margin-left: 0;
+    }
+
+
+
+    /*----------------------
+        Anemia treatment
+    ----------------------*/
+    .anemia_treatment
+    {
+        padding: 0;
+    }
+
+
+    .anemia_treatment .block_head
+    {
+        margin-bottom: 20px;
+    }
+
+    .anemia_treatment .block_head .desc
+    {
+        font-size: 18px;
+    }
+
+
+    .anemia_treatment .information
+    {
+        overflow: hidden;
+
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+        padding: 0;
+    }
+
+    .anemia_treatment .information .bg
+    {
+        position: relative;
+
+        width: 200%;
+        height: auto;
+        margin-left: -100%;
+    }
+
+    .anemia_treatment .information .text_block
+    {
+        width: 100%;
+        padding: 24px;
+    }
+
+    .anemia_treatment .information .exp
+    {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 0;
+        margin-right: 0;
+        margin-left: 0;
+        padding: 24px;
+    }
+
+
+    .anemia_treatment .sub_title
+    {
+        font-size: 22px;
+
+        margin-top: 60px;
+        margin-bottom: 40px;
+    }
+
+
+    .anemia_treatment .items .icon
+    {
+        width: 50px;
+        height: 50px;
+    }
+
+    .anemia_treatment .items .icon + *
+    {
+        width: calc(100% - 65px);
+    }
+
+    .anemia_treatment .items .name
+    {
+        font-size: 20px;
+
+        padding: 0;
+    }
+
+    .anemia_treatment .items .desc
+    {
+        line-height: 140%;
+    }
+
+
+    .anemia_treatment .data + .exp
+    {
+        font-size: 14px;
+        line-height: 125%;
+
+        padding: 20px;
+    }
+
+
+    .anemia_treatment .text_block
+    {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+
+
+    /*-----------------------
+        Tеreatment causes
+    -----------------------*/
+    .tеreatment_causes
+    {
+        padding: 70px 0;
+    }
+
+    .tеreatment_causes:before
+    {
+        display: none;
+    }
+
+
+    .tеreatment_causes .block_head
+    {
+        margin-bottom: 60px;
+    }
+
+    .tеreatment_causes .block_head .desc
+    {
+        font-size: 18px;
+    }
+
+
+    .tеreatment_causes .sub_title
+    {
+        font-size: 18px;
+
+        margin-bottom: 20px;
+    }
+
+
+
+    /*------------------
+        Prevention 2
+    ------------------*/
+    .prevention2
+    {
+        padding: 0;
+    }
+
+
+    .prevention2 .block_head .desc
+    {
+        font-size: 18px;
+
+        width: 100%;
+    }
+
+
+
+    /*------------------
+        Symptom info
+    ------------------*/
+    .symptom_info .block_head .desc
+    {
+        font-size: 18px;
+        line-height: 125%;
+    }
+
+
+
+    /*--------------------
+        Iron pregnancy
+    --------------------*/
+    .iron_pregnancy
+    {
+        padding: 0;
+    }
+
+
+    .iron_pregnancy .information
+    {
+        width: calc(100% + 30px);
+        margin-right: -15px;
+        margin-bottom: 40px;
+        margin-left: -15px;
+
+        background: none;
+    }
+
+    .iron_pregnancy .information .title
+    {
+        width: 100%;
+        padding: 24px;
+
+        background: #792582;
+    }
+
+    .iron_pregnancy .information .desc
+    {
+        width: 100%;
+        padding: 24px;
+
+        background: #a67db6;
+    }
+
+
+
+    /*----------------
+        Hemoglobin
+    ----------------*/
+    .hemoglobin
+    {
+        padding: 70px 0;
+    }
+
+
+    .hemoglobin .block_head
+    {
+        margin-bottom: 50px;
+    }
+
+    .hemoglobin .block_head .desc
+    {
+        font-size: 18px;
+        line-height: 125%;
+    }
+
+
+    .hemoglobin .schema .title
+    {
+        font-size: 22px;
+    }
+
+
+    .hemoglobin .schema + .text_block
+    {
+        margin-top: 60px;
+    }
+
+
+
+    /*-----------------
+        What danger
+    -----------------*/
+    .what_danger
+    {
+        padding: 0;
+    }
+
+
+    .what_danger .section + .section
+    {
+        margin-top: 60px;
+    }
+
+
+    .what_danger .block_head
+    {
+        margin-bottom: 50px;
+    }
+
+    .what_danger .block_head .desc
+    {
+        font-size: 18px;
+        line-height: 125%;
+    }
+
+
+    .what_danger .row .text_block
+    {
+        width: 100%;
+    }
+
+    .what_danger .row + .text_block
+    {
+        margin-top: 50px;
+    }
+
+
+    .what_danger .message
+    {
+        width: 100%;
+        margin-top: 40px;
+        margin-right: 31px;
+    }
+
+
+    .what_danger .text_block ul.row
+    {
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+
+    .what_danger .text_block ul.row li
+    {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+
+
+    .what_danger .notice
+    {
+        width: calc(100% + 30px);
+        margin-top: 32px;
+        margin-right: -15px;
+        margin-left: -15px;
+        padding: 50px 30px;
+    }
+
+    .what_danger .notice .text_block
+    {
+        width: 360px;
+    }
+
+
+    .what_danger .section > .title
+    {
+        font-size: 22px;
+    }
+
+    .what_danger .section > .desc
+    {
+        font-size: 18px;
+    }
+
+
+
+    /*--------------------
+        Iron diagnosis
+    --------------------*/
+    .iron_diagnosis
+    {
+        padding: 0;
+    }
+
+
+    .iron_diagnosis .block_title
+    {
+        font-size: 22px;
+    }
+
+    .iron_diagnosis .block_desc
+    {
+        font-size: 18px;
+    }
+
+
+    .iron_diagnosis .accordion
+    {
+        margin-top: 60px;
+    }
+
+
+    .iron_diagnosis .accordion_item + .accordion_item
+    {
+        margin-top: 40px;
+    }
+
+
+    .iron_diagnosis .accordion_item > .head
+    {
+        padding-right: 76px;
+    }
+
+    .iron_diagnosis .accordion_item .head .title
+    {
+        font-size: 20px;
+    }
+
+    .iron_diagnosis .accordion_item > .head .title span
+    {
+        font-size: 18px;
+        line-height: 140%;
+    }
+
+
+    .iron_diagnosis .accordion_item .data
+    {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .iron_diagnosis .accordion_item .text_block
+    {
+        width: 100%;
+    }
+
+
+    .iron_diagnosis .stats .head
+    {
+        padding: 16px 20px;
+    }
+
+
+    .iron_diagnosis .stats .head .title
+    {
+        font-size: 16px;
+        line-height: 130%;
+
+        width: 100%;
+        max-width: calc(100% - 44px);
+    }
+
+    .iron_diagnosis .stats .head .icon
+    {
+        width: 24px;
+    }
+
+
+    .iron_diagnosis .stats .features
+    {
+        padding: 16px 20px;
+    }
+
+    .iron_diagnosis .stats .features + .features
+    {
+        padding-top: 17px;
+    }
+
+    .iron_diagnosis .stats .features .val
+    {
+        font-size: 18px;
+    }
+
+
+    .iron_diagnosis .information
+    {
+        overflow: hidden;
+
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+        padding: 0;
+    }
+
+    .iron_diagnosis .information .bg
+    {
+        position: relative;
+
+        width: 200%;
+        height: auto;
+        margin-left: -100%;
+    }
+
+    .iron_diagnosis .information .text_block
+    {
+        width: 100%;
+        padding: 24px;
+    }
+
+    .iron_diagnosis .information .exp
+    {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 0;
+        margin-right: 0;
+        margin-left: 0;
+        padding: 24px;
+    }
+
+
+
+    .iron_diagnosis .hepcidin,
+    .iron_diagnosis .hepcidin .section + .section
+    {
+        margin-top: 60px;
+    }
+
+
+
+    .iron_diagnosis .compensation .block_title
+    {
+        font-size: 22px;
+    }
+
+    .iron_diagnosis .compensation .block_desc
+    {
+        margin-bottom: 50px;
+    }
+
+
+
+    .iron_diagnosis .table_title
+    {
+        font-size: 18px;
+
+        margin-bottom: 50px;
+    }
+
+
+    .iron_diagnosis .table_wrap
+    {
+        width: calc(100% + 60px);
+        max-width: calc(100% + 60px);
+        margin-right: -30px;
+        margin-left: -30px;
+        padding: 0 30px 10px;
+    }
+
+
+    .iron_diagnosis table th,
+    .iron_diagnosis table td
+    {
+        padding: 20px;
+    }
+
+    .iron_diagnosis table td b
+    {
+        font-size: 18px;
+    }
+
+
+    .iron_diagnosis .compensation
+    {
+        margin-top: 80px;
+    }
+
+
+
+    /*------------------------
+        What danger excess
+    ------------------------*/
+    .what_danger_excess
+    {
+        padding: 70px 0;
+    }
+
+
+    .what_danger_excess .block_head
+    {
+        margin-bottom: 50px;
+    }
+
+    .what_danger_excess .block_head .desc
+    {
+        font-size: 18px;
     }
 }

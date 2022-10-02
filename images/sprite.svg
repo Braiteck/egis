@@ -1,9 +1,7 @@
 <svg width="0" height="0" class="hidden">
-  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 18" id="ic_arr_hor">
-    <path d="M1.125 9H22.125M22.125 9L14.125 1M22.125 9L14.125 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
-  </symbol>
-  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 8" id="ic_arr_ver">
-    <path d="M1 1L6.29289 6.29289C6.68342 6.68342 7.31658 6.68342 7.70711 6.29289L13 1" stroke="currentColor" stroke-linecap="round" fill="none"></path>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" id="ic_close2">
+    <line x1="9.41421" y1="9" x2="25.6777" y2="25.2635" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"></line>
+    <line x1="9" y1="25.2635" x2="25.2635" y2="9.00006" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"></line>
   </symbol>
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 26" id="ic_check">
     <path d="M23.4248 9.48006C23.7978 10.5852 24 11.769 24 13C24 19.0751 19.0751 24 13 24C6.92487 24 2 19.0751 2 13C2 6.92487 6.92487 2 13 2C14.8313 2 16.5581 2.44751 18.0769 3.23913" stroke="currentColor" stroke-opacity="0.55" stroke-width="2" stroke-linecap="round" fill="none"></path>
@@ -12,6 +10,12 @@
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21" id="ic_close">
     <rect x="2.12109" width="26" height="3" transform="rotate(45 2.12109 0)" fill="currentColor"></rect>
     <rect width="26" height="3" transform="matrix(-0.707107 0.707107 0.707107 0.707107 18.5059 0)" fill="currentColor"></rect>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 8" id="ic_arr_ver">
+    <path d="M1 1L6.29289 6.29289C6.68342 6.68342 7.31658 6.68342 7.70711 6.29289L13 1" stroke="currentColor" stroke-linecap="round" fill="none"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 18" id="ic_arr_hor">
+    <path d="M1.125 9H22.125M22.125 9L14.125 1M22.125 9L14.125 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
   </symbol>
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 20" id="ic_menu">
     <rect y="0.5" width="26" height="3" fill="currentColor"></rect>

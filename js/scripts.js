@@ -125,18 +125,18 @@ $(() => {
 		// Баллы
 		let points = 0
 
-		$('.test .answers label input:checked').each(function(){
+		$('.test .answers label input:checked').each(function () {
 			points = points + parseInt($(this).val())
 		})
 
-		$('.test .total .value span').text(points)
+		$('.test .total .value span, .test .result .information .value span').text(points)
 
-		if(points < 11){
-			$('.test .total .exp > *').hide()
-			$('.test .total .exp > *:first-child').show()
+		if (points < 11) {
+			$('.test .total .exp > *, .test .result .information .title2').hide()
+			$('.test .total .exp > *:first-child, .test .result .information .title').show()
 		} else {
-			$('.test .total .exp > *').hide()
-			$('.test .total .exp > *:last-child').show()
+			$('.test .total .exp > *, .test .result .information .title').hide()
+			$('.test .total .exp > *:last-child, .test .result .information .title2').show()
 		}
 	})
 
@@ -150,6 +150,30 @@ $(() => {
 		currentStep = currentStep - 1
 		$('.test .progress .count .current').text(currentStep)
 		$('.test .progress .bar div').width(currentStep / totalQuestions * 100 + '%')
+	})
+
+	$('.test .btns .finish_btn').click(function (e) {
+		e.preventDefault()
+
+		$('.test .result').toggleClass('show')
+	})
+
+	$('.test .result .close_btn').click(function (e) {
+		e.preventDefault()
+
+		$('.test .result').toggleClass('show')
+
+		// Reset
+		let currentStep = 1
+
+		$('.test .progress .count .current').text(currentStep)
+		$('.test .progress .bar div').width(currentStep / totalQuestions * 100 + '%')
+		$('.test .total .value span, .test .result .information .value span').text('0')
+
+		$('.test .total .exp > *, .test .step').hide()
+		$('.test .step:first').fadeIn(300)
+
+		$('.test form').get(0).reset()
 	})
 
 
@@ -229,7 +253,7 @@ $(() => {
 
 
 	// Аккордион
-	$('body').on('click', '.accordion .accordion_item .head', function(e) {
+	$('body').on('click', '.accordion .accordion_item .head', function (e) {
 		e.preventDefault()
 
 		const $item = $(this).closest('.accordion_item')
@@ -584,7 +608,7 @@ function expertOpinionHeight(context, step) {
 	let start = 0,
 		finish = step,
 		$items = context.find('.item')
-	
+
 	$items.height('auto')
 	$items.find('.desc, .quote, .quote > *:first').height('auto')
 

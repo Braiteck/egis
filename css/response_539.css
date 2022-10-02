@@ -9,7 +9,9 @@
     }
 
 
-    .block
+    .block,
+    .block.min_m,
+    .block.middle_m
     {
         margin-bottom: 50px;
     }
@@ -81,6 +83,17 @@
     }
 
 
+    .text_block h3
+    {
+        font-size: 22px;
+    }
+
+    .text_block h4
+    {
+        font-size: 18px;
+    }
+
+
     .text_block ol li
     {
         padding-left: 53px;
@@ -107,9 +120,33 @@
     }
 
 
-    .text_block ul li:before
+    .text_block .signs .row
     {
-        top: 5px;
+        margin-bottom: -15px;
+    }
+
+    .text_block .signs .row > *
+    {
+        margin-bottom: 15px;
+        padding: 24px;
+    }
+
+
+    .text_block .signs .name
+    {
+        font-size: 18px;
+    }
+
+
+    .text_block .signs ul li
+    {
+        font-size: 15px;
+        line-height: 140%;
+    }
+
+    .text_block .signs ul li:before
+    {
+        top: 9px;
     }
 
 
@@ -224,6 +261,12 @@
     }
 
 
+    .symptoms .sub_title
+    {
+        font-size: 18px;
+    }
+
+
     .symptoms .row
     {
         margin-bottom: -24px;
@@ -282,8 +325,8 @@
     {
         display: -webkit-box;
         overflow-y: hidden;
-        -webkit-box-orient: vertical;
 
+        -webkit-box-orient: vertical;
         -webkit-line-clamp: 7;
     }
 
@@ -567,15 +610,15 @@
     .service_head .anchors .row.alignleft > *
     {
         width: 100%;
-        margin-bottom: 0;
-        margin-left: 0;
+        margin-bottom: 0 !important;
+        margin-left: 0 !important;
     }
 
     .service_head .anchors .row > * + *,
     .service_head .anchors .row.alignleft > * + *
     {
-        margin-top: 23px;
-        margin-left: 0;
+        margin-top: 20px !important;
+        margin-left: 0 !important;
     }
 
 
@@ -936,6 +979,23 @@
     .test:before
     {
         display: none;
+    }
+
+
+    .test .result .close_btn
+    {
+        top: 20px;
+        right: 20px;
+    }
+
+    .test .result .information
+    {
+        width: 223px;
+    }
+
+    .test .result .information .title
+    {
+        font-size: 22px;
     }
 
 
