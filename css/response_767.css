@@ -1,19 +1,17 @@
 @media print,
-(max-width: 767px)
-{
+(max-width: 767px) {
+
     /*-------------------
         Global styles
     -------------------*/
-    .cont
-    {
+    .cont {
         padding: 0 30px;
     }
 
 
     .block,
     .block.min_m,
-    .block.middle_m
-    {
+    .block.middle_m {
         margin-bottom: 70px;
     }
 
@@ -22,14 +20,12 @@
     /*---------------
         Load more
     ---------------*/
-    .load_more
-    {
+    .load_more {
         margin-top: 40px;
     }
 
 
-    .load_more .btn
-    {
+    .load_more .btn {
         font-size: 14px;
 
         padding: 14px 32px;
@@ -40,8 +36,7 @@
     /*--------------
         BG block
     --------------*/
-    .bg_block
-    {
+    .bg_block {
         padding: 70px 0;
     }
 
@@ -50,22 +45,19 @@
     /*------------
         Header
     ------------*/
-    header
-    {
+    header {
         padding: 14px 0;
     }
 
 
 
-    header .logo img
-    {
+    header .logo img {
         width: 80px;
     }
 
 
 
-    header .test_btn
-    {
+    header .test_btn {
         font-size: 12px;
         line-height: 15px;
 
@@ -74,15 +66,13 @@
         box-shadow: 0 8px 19px rgba(148, 110, 163, .53);
     }
 
-    header .test_btn .icon
-    {
+    header .test_btn .icon {
         display: none;
     }
 
 
 
-    header .menu_btn
-    {
+    header .menu_btn {
         margin-left: 29px;
     }
 
@@ -91,8 +81,7 @@
     /*-----------------
         Breadcrumbs
     -----------------*/
-    .breadcrumbs
-    {
+    .breadcrumbs {
         padding: 33px 0;
     }
 
@@ -101,27 +90,23 @@
     /*----------------
         Block head
     ----------------*/
-    .block_head
-    {
+    .block_head {
         margin-bottom: 30px;
     }
 
 
-    .block_head .desc
-    {
+    .block_head .desc {
         margin-top: 20px;
     }
 
 
-    .block_head .icon
-    {
+    .block_head .icon {
         width: 42px;
         margin-right: 20px;
     }
 
 
-    .block_head .link
-    {
+    .block_head .link {
         display: none;
     }
 
@@ -130,74 +115,79 @@
     /*----------------
         Typography
     ----------------*/
-    .text_block
-    {
+    .text_block {
         line-height: 130%;
     }
 
 
-    .text_block h3
-    {
+    .text_block h3 {
         font-size: 28px;
     }
 
-    .text_block h4
-    {
+    .text_block h4 {
         font-size: 20px;
     }
 
-    .text_block h4 br
-    {
+    .text_block h4 br {
         display: none;
     }
 
 
-    .text_block * + h3
-    {
+    .text_block *+h3 {
         margin-top: 60px;
     }
 
 
-    .text_block ol li
-    {
+    .text_block ol li {
         padding-left: 68px;
     }
 
 
-    .text_block ul li:before
-    {
+    .text_block ul li:before {
         top: 6px;
     }
 
 
-    .text_block .bg span
-    {
+    .text_block .bg span {
         width: 100%;
         max-width: calc(100% - 72px);
     }
 
-    .text_block .bg .icon
-    {
+    .text_block .bg .icon {
         width: 42px;
         margin-right: 0;
     }
 
 
-    .text_block .signs .row
-    {
+    .text_block .signs .row {
         margin-left: 0;
     }
 
-    .text_block .signs .row > *
-    {
+    .text_block .signs .row>* {
         width: 100%;
         margin-left: 0;
     }
 
 
-    .text_block .signs .name
-    {
+    .text_block .signs .name {
         margin-bottom: 20px;
+    }
+
+
+    .text_block .products {
+        width: 100%;
+        margin-top: 28px;
+        margin-bottom: 28px;
+    }
+
+
+    .text_block .products .icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .text_block .products .icon+* {
+        width: calc(100% - 68px);
     }
 
 
@@ -205,45 +195,38 @@
     /*-------------------
         First section
     -------------------*/
-    .first_section
-    {
+    .first_section {
         padding: 52px 0 34px;
     }
 
 
-    .first_section .title
-    {
+    .first_section .title {
         font-size: 30px;
     }
 
 
-    .first_section .desc
-    {
+    .first_section .desc {
         font-size: 18px;
     }
 
 
-    .first_section .actions
-    {
+    .first_section .actions {
         width: 299px;
         margin-top: 30px;
     }
 
 
-    .first_section .actions .icon
-    {
+    .first_section .actions .icon {
         width: 44px;
         height: 44px;
     }
 
-    .first_section .actions .icon + *
-    {
+    .first_section .actions .icon+* {
         width: calc(100% - 54px);
     }
 
 
-    .first_section .bg
-    {
+    .first_section .bg {
         object-position: 70% 100%;
     }
 
@@ -252,31 +235,26 @@
     /*-------------------
         Why important
     -------------------*/
-    .why_important
-    {
+    .why_important {
         padding: 0;
     }
 
 
-    .why_important .block_head .icon
-    {
+    .why_important .block_head .icon {
         width: 42px;
     }
 
-    .why_important .block_head .title
-    {
+    .why_important .block_head .title {
         width: calc(100% - 62px);
     }
 
 
-    .why_important .data .link a
-    {
+    .why_important .data .link a {
         padding: 14px 40px;
     }
 
 
-    .why_important .mob_stats
-    {
+    .why_important .mob_stats {
         padding: 10px 20px;
     }
 
@@ -285,19 +263,16 @@
     /*--------------
         Symptoms
     --------------*/
-    .symptoms
-    {
+    .symptoms {
         padding: 80px 0;
     }
 
 
-    .symptoms .block_head .title
-    {
+    .symptoms .block_head .title {
         width: 255px;
     }
 
-    .symptoms .block_head .desc
-    {
+    .symptoms .block_head .desc {
         font-size: 18px;
 
         width: 408px;
@@ -305,56 +280,52 @@
     }
 
 
-    .symptoms .sub_title
-    {
+    .symptoms .sub_title {
         font-size: 20px;
         line-height: 125%;
 
         margin-bottom: 24px;
     }
 
+    .symptoms .sub_title br {
+        display: none;
+    }
 
-    .symptoms .row
-    {
+
+    .symptoms .row {
         margin-bottom: -30px;
         margin-left: -22px;
     }
 
-    .symptoms .row > *
-    {
+    .symptoms .row>* {
         width: calc(50% - 22px);
         margin-bottom: 30px;
         margin-left: 22px;
     }
 
 
-    .symptoms .item
-    {
+    .symptoms .item {
         font-size: 15px;
         line-height: 125%;
     }
 
 
-    .symptoms .item .icon
-    {
+    .symptoms .item .icon {
         width: 42px;
         height: 42px;
     }
 
-    .symptoms .item .icon + *
-    {
+    .symptoms .item .icon+* {
         width: calc(100% - 52px);
     }
 
 
-    .symptoms .spoler_btn div
-    {
+    .symptoms .spoler_btn div {
         padding: 0 40px;
     }
 
 
-    .symptoms .link a
-    {
+    .symptoms .link a {
         font-size: 14px;
 
         padding: 14px 40px;
@@ -365,26 +336,22 @@
     /*---------------
         Influence
     ---------------*/
-    .influence .swiper-slide
-    {
+    .influence .swiper-slide {
         width: 290px;
     }
 
 
-    .influence .item .thumb
-    {
+    .influence .item .thumb {
         padding-bottom: 260px;
     }
 
 
-    .influence .item .title
-    {
+    .influence .item .title {
         padding: 31px 20px 34px;
     }
 
 
-    .influence .item .info .desc
-    {
+    .influence .item .info .desc {
         display: -webkit-box;
         overflow-y: hidden;
 
@@ -393,8 +360,7 @@
     }
 
 
-    .influence .mob_link
-    {
+    .influence .mob_link {
         display: block;
     }
 
@@ -403,20 +369,17 @@
     /*-------------
         Deficit
     -------------*/
-    .deficit
-    {
+    .deficit {
         padding: 0;
     }
 
 
-    .deficit .block_head
-    {
+    .deficit .block_head {
         margin-bottom: 44px;
     }
 
 
-    .deficit .data .link a
-    {
+    .deficit .data .link a {
         font-size: 14px;
 
         padding: 14px 40px;
@@ -427,47 +390,40 @@
     /*------------
         Yniron
     ------------*/
-    .yuniron .data
-    {
+    .yuniron .data {
         padding: 56px 9px 39px;
     }
 
 
-    .yuniron .info
-    {
+    .yuniron .info {
         width: 320px;
     }
 
 
-    .yuniron .bottom
-    {
+    .yuniron .bottom {
         margin-top: 32px;
     }
 
 
-    .yuniron .test_btn
-    {
+    .yuniron .test_btn {
         padding: 7px 20px 7px 15px;
     }
 
 
-    .yuniron .exp
-    {
+    .yuniron .exp {
         font-size: 12px;
 
         margin-left: 22px;
     }
 
 
-    .yuniron .bg
-    {
+    .yuniron .bg {
         left: 0;
     }
 
 
 
-    .yuniron .hashtag
-    {
+    .yuniron .hashtag {
         font-size: 30px;
 
         padding: 30px;
@@ -478,19 +434,16 @@
     /*--------------------
         Expert opinion
     --------------------*/
-    .expert_opinion .big .doctor
-    {
+    .expert_opinion .big .doctor {
         margin-bottom: 24px;
     }
 
-    .expert_opinion .big .text
-    {
+    .expert_opinion .big .text {
         font-size: 16px;
     }
 
 
-    .expert_opinion .sub_title
-    {
+    .expert_opinion .sub_title {
         font-size: 20px;
         line-height: 125%;
 
@@ -498,40 +451,34 @@
     }
 
 
-    .expert_opinion .video
-    {
+    .expert_opinion .video {
         margin-top: 50px;
     }
 
 
-    .expert_opinion .row
-    {
+    .expert_opinion .row {
         margin-top: 50px;
         margin-bottom: -50px;
         margin-left: 0;
     }
 
-    .expert_opinion .row > *
-    {
+    .expert_opinion .row>* {
         width: 100%;
         margin-bottom: 50px;
         margin-left: 0;
     }
 
-    .expert_opinion .row .item
-    {
+    .expert_opinion .row .item {
         height: auto !important;
     }
 
 
-    .expert_opinion .item .desc
-    {
+    .expert_opinion .item .desc {
         margin-bottom: 20px;
     }
 
 
-    .expert_opinion .link a
-    {
+    .expert_opinion .link a {
         padding: 14px 40px;
     }
 
@@ -540,29 +487,25 @@
     /*----------------------
         During pregnancy
     ----------------------*/
-    .during_pregnancy
-    {
+    .during_pregnancy {
         margin-bottom: 117px;
         padding-top: 85px;
     }
 
 
-    .during_pregnancy .desc
-    {
+    .during_pregnancy .desc {
         width: 100%;
     }
 
 
-    .during_pregnancy .articles
-    {
+    .during_pregnancy .articles {
         margin-top: 40px;
         margin-bottom: -55px;
         margin-left: -20px;
     }
 
 
-    .during_pregnancy .article
-    {
+    .during_pregnancy .article {
         width: calc(50% - 20px);
         max-width: calc(100% - 20px);
         margin-bottom: 20px;
@@ -570,33 +513,28 @@
         padding: 30px 20px;
     }
 
-    .during_pregnancy .article .title
-    {
+    .during_pregnancy .article .title {
         font-size: 16px;
     }
 
-    .during_pregnancy .article .btn
-    {
+    .during_pregnancy .article .btn {
         margin-top: 30px;
         padding: 10px 40px;
     }
 
-    .during_pregnancy .article .img
-    {
+    .during_pregnancy .article .img {
         right: -10px;
     }
 
 
-    .during_pregnancy .anemia
-    {
+    .during_pregnancy .anemia {
         width: 100%;
         margin-left: 0;
         padding: 16px 20px;
     }
 
 
-    .during_pregnancy .bg
-    {
+    .during_pregnancy .bg {
         display: none;
     }
 
@@ -605,8 +543,7 @@
     /*------------------
         Service head
     ------------------*/
-    .service_head
-    {
+    .service_head {
         overflow: visible;
 
         min-height: 428px;
@@ -616,28 +553,24 @@
     }
 
 
-    .service_head .breadcrumbs
-    {
+    .service_head .breadcrumbs {
         top: 100%;
     }
 
 
     .service_head .data,
     .service_head .data.tablet_big,
-    .service_head .data .desc.middle_w
-    {
+    .service_head .data .desc.middle_w {
         width: 356px;
     }
 
 
-    .service_head .data .title
-    {
+    .service_head .data .title {
         font-size: 30px;
     }
 
 
-    .service_head .data .desc
-    {
+    .service_head .data .desc {
         font-size: 18px;
         line-height: 110%;
 
@@ -646,8 +579,7 @@
     }
 
 
-    .service_head .data .btn
-    {
+    .service_head .data .btn {
         font-size: 14px;
 
         margin-top: 34px;
@@ -657,15 +589,13 @@
     }
 
 
-    .service_head .anchors
-    {
+    .service_head .anchors {
         padding: 25px 0;
     }
 
 
     .service_head .anchors .row,
-    .service_head .anchors .row.alignleft
-    {
+    .service_head .anchors .row.alignleft {
         display: flex;
         overflow: visible;
 
@@ -677,9 +607,8 @@
     }
 
 
-    .service_head .anchors .row > *,
-    .service_head .anchors .row.alignleft > *
-    {
+    .service_head .anchors .row>*,
+    .service_head .anchors .row.alignleft>* {
         display: block;
 
         width: calc(50% - 20px);
@@ -687,15 +616,13 @@
         margin-left: 20px !important;
     }
 
-    .service_head .anchors .row > * + *,
-    .service_head .anchors .row.alignleft > * + *
-    {
+    .service_head .anchors .row>*+*,
+    .service_head .anchors .row.alignleft>*+* {
         margin-left: 20px !important;
     }
 
 
-    .service_head .anchors .btn
-    {
+    .service_head .anchors .btn {
         font-size: 14px;
         line-height: 125%;
     }
@@ -705,14 +632,12 @@
     /*-------------
         Why how
     -------------*/
-    .why_how
-    {
+    .why_how {
         padding: 0;
     }
 
 
-    .why_how .info
-    {
+    .why_how .info {
         margin-top: 30px;
     }
 
@@ -721,8 +646,7 @@
     /*------------------
         Which doctor
     ------------------*/
-    .which_doctor .data
-    {
+    .which_doctor .data {
         width: calc(100% + 64px);
         margin-right: -32px;
         margin-left: -32px;
@@ -730,14 +654,12 @@
     }
 
 
-    .which_doctor .block_head
-    {
+    .which_doctor .block_head {
         width: 290px;
     }
 
 
-    .which_doctor .bg
-    {
+    .which_doctor .bg {
         left: -60px;
 
         display: none;
@@ -745,8 +667,7 @@
         min-width: 200px;
     }
 
-    .which_doctor .mob_bg
-    {
+    .which_doctor .mob_bg {
         display: block;
     }
 
@@ -755,33 +676,28 @@
     /*-----------------
         How prepare
     -----------------*/
-    .how_prepare
-    {
+    .how_prepare {
         padding: 0;
     }
 
 
-    .how_prepare .video_link
-    {
+    .how_prepare .video_link {
         margin-top: 34px;
     }
 
 
-    .how_prepare .video_link .thumb
-    {
+    .how_prepare .video_link .thumb {
         width: 213px;
         height: 137px;
     }
 
 
-    .how_prepare .video_link .thumb .icon
-    {
+    .how_prepare .video_link .thumb .icon {
         width: 47px;
         height: 47px;
     }
 
-    .how_prepare .video_link .thumb .icon:after
-    {
+    .how_prepare .video_link .thumb .icon:after {
         left: 4px;
 
         width: 20px;
@@ -793,20 +709,17 @@
     }
 
 
-    .how_prepare .video_link .thumb + *
-    {
+    .how_prepare .video_link .thumb+* {
         width: calc(100% - 233px);
         padding-top: 10px;
     }
 
 
-    .how_prepare .video_link .title
-    {
+    .how_prepare .video_link .title {
         font-size: 16px;
     }
 
-    .how_prepare .video_link .author
-    {
+    .how_prepare .video_link .author {
         font-size: 14px;
     }
 
@@ -815,14 +728,12 @@
     /*------------------
         Action block
     ------------------*/
-    .action_block
-    {
+    .action_block {
         padding: 40px 0;
     }
 
 
-    .action_block .title
-    {
+    .action_block .title {
         font-size: 25px;
         line-height: 125%;
 
@@ -830,16 +741,14 @@
     }
 
 
-    .action_block .test_btn
-    {
+    .action_block .test_btn {
         font-size: 12px;
         line-height: 125%;
 
         padding: 14px 21px 15px;
     }
 
-    .action_block .test_btn .icon
-    {
+    .action_block .test_btn .icon {
         display: none;
     }
 
@@ -848,19 +757,16 @@
     /*-----------------
         Preparation
     -----------------*/
-    .preparation
-    {
+    .preparation {
         padding: 0;
     }
 
 
-    .preparation .block_head
-    {
+    .preparation .block_head {
         margin-bottom: 30px;
     }
 
-    .preparation .block_head .desc
-    {
+    .preparation .block_head .desc {
         font-size: 18px;
         line-height: 125%;
 
@@ -868,31 +774,26 @@
     }
 
 
-    .preparation .row
-    {
+    .preparation .row {
         margin-bottom: -30px;
     }
 
-    .preparation .row > *
-    {
+    .preparation .row>* {
         margin-bottom: 30px;
     }
 
 
-    .preparation .item
-    {
+    .preparation .item {
         font-size: 16px;
         line-height: 140%;
     }
 
 
-    .preparation .item .icon
-    {
+    .preparation .item .icon {
         width: 42px;
     }
 
-    .preparation .item .icon + *
-    {
+    .preparation .item .icon+* {
         width: calc(100% - 62px);
     }
 
@@ -901,87 +802,75 @@
     /*-------------
         Results
     -------------*/
-    .results
-    {
+    .results {
         padding: 70px 0 50px;
     }
 
 
-    .results .block_head
-    {
+    .results .block_head {
         margin-bottom: 37px;
     }
 
-    .results .block_head .title
-    {
+    .results .block_head .title {
         font-size: 25px;
     }
 
 
-    .results .swiper
-    {
+    .results .swiper {
         width: calc(100% + 64px);
         margin-right: -32px;
         margin-left: -32px;
         padding: 0 32px;
     }
 
-    .results .swiper-slide
-    {
+    .results .swiper-slide {
         width: 260px;
     }
 
     .results .swiper-button-next,
-    .results .swiper-button-prev
-    {
+    .results .swiper-button-prev {
         display: none !important;
     }
 
 
-    .results .item
-    {
+    .results .item {
+        height: auto;
+        min-height: 0;
         padding: 30px 20px 25px;
     }
 
 
-    .results .item .name
-    {
+    .results .item .name {
         font-size: 16px;
         line-height: 130%;
 
         margin-bottom: 20px;
     }
 
-    .results .item .name span
-    {
+    .results .item .name span {
         width: calc(100% - 44px);
     }
 
-    .results .item .icon
-    {
+    .results .item .icon {
         width: 24px;
         height: 35px;
     }
 
 
-    .results .item .features > *
-    {
+    .results .item .features>* {
         font-size: 14px;
     }
 
-    .results .item .features > * + *
-    {
+    .results .item .features>*+* {
         margin-top: 4px;
     }
 
-    .results .item .features .val
-    {
+    .results .item .features .val {
         font-size: 16px;
     }
 
 
-    .results .exp
-    {
+    .results .exp {
         font-size: 12px;
         line-height: 120%;
 
@@ -993,40 +882,34 @@
     /*-----------------------
         Treatment control
     -----------------------*/
-    .treatment_control
-    {
+    .treatment_control {
         padding: 0;
     }
 
 
-    .treatment_control .text_block
-    {
+    .treatment_control .text_block {
         width: 100%;
         max-width: 100%;
     }
 
 
-    .treatment_control .video_link
-    {
+    .treatment_control .video_link {
         margin-top: 34px;
     }
 
 
-    .treatment_control .video_link .thumb
-    {
+    .treatment_control .video_link .thumb {
         width: 213px;
         height: 137px;
     }
 
 
-    .treatment_control .video_link .thumb .icon
-    {
+    .treatment_control .video_link .thumb .icon {
         width: 47px;
         height: 47px;
     }
 
-    .treatment_control .video_link .thumb .icon:after
-    {
+    .treatment_control .video_link .thumb .icon:after {
         left: 4px;
 
         width: 20px;
@@ -1038,20 +921,17 @@
     }
 
 
-    .treatment_control .video_link .thumb + *
-    {
+    .treatment_control .video_link .thumb+* {
         width: calc(100% - 233px);
         padding-top: 10px;
     }
 
 
-    .treatment_control .video_link .title
-    {
+    .treatment_control .video_link .title {
         font-size: 16px;
     }
 
-    .treatment_control .video_link .author
-    {
+    .treatment_control .video_link .author {
         font-size: 14px;
     }
 
@@ -1060,21 +940,18 @@
     /*----------
         Test
     ----------*/
-    .test
-    {
+    .test {
         padding: 70px 0;
     }
 
 
-    .test .data
-    {
+    .test .data {
         margin-bottom: 45px;
         padding: 0 28px;
     }
 
 
-    .test .data .pre_title
-    {
+    .test .data .pre_title {
         font-size: 12px;
         line-height: 24px;
 
@@ -1082,8 +959,7 @@
     }
 
 
-    .test .data .title
-    {
+    .test .data .title {
         font-size: 25px;
         line-height: 125%;
 
@@ -1092,38 +968,32 @@
     }
 
 
-    .test .data .desc
-    {
+    .test .data .desc {
         font-size: 17px;
         line-height: 130%;
     }
 
 
-    .test .question
-    {
+    .test .question {
         padding: 32px 35px;
     }
 
 
-    .test .answers
-    {
+    .test .answers {
         padding: 40px 45px;
     }
 
-    .test .answers .field + .field
-    {
+    .test .answers .field+.field {
         margin-top: 18px;
     }
 
 
-    .test .total
-    {
+    .test .total {
         padding: 26px 35px;
     }
 
 
-    .test:before
-    {
+    .test:before {
         top: -58px;
         right: 50%;
         bottom: auto;
@@ -1136,23 +1006,19 @@
     }
 
 
-    .test .result .information
-    {
+    .test .result .information {
         width: 263px;
     }
 
-    .test .result .information .title
-    {
+    .test .result .information .title {
         font-size: 25px;
     }
 
-    .test .result .information .btn
-    {
+    .test .result .information .btn {
         display: none;
     }
 
-    .test .result .information .mob_btn
-    {
+    .test .result .information .mob_btn {
         display: inline-block;
     }
 
@@ -1161,8 +1027,7 @@
     /*--------------
         Articles
     --------------*/
-    .articles .swiper-slide
-    {
+    .articles .swiper-slide {
         width: 229px;
     }
 
@@ -1171,15 +1036,13 @@
     /*-----------------------
         Contraindications
     -----------------------*/
-    .contraindications
-    {
+    .contraindications {
         font-size: 13px;
         line-height: 102%;
     }
 
 
-    .contraindications span
-    {
+    .contraindications span {
         font-size: 24px;
         line-height: 90%;
     }
@@ -1189,32 +1052,27 @@
     /*-------------
         Lecture
     -------------*/
-    .lecture
-    {
+    .lecture {
         padding: 80px 0;
     }
 
 
-    .lecture .videos .row
-    {
+    .lecture .videos .row {
         margin-left: -24px;
     }
 
-    .lecture .videos .row > *
-    {
+    .lecture .videos .row>* {
         width: calc(50% - 24px);
         margin-left: 24px;
     }
 
 
-    .lecture .video_link .thumb .icon
-    {
+    .lecture .video_link .thumb .icon {
         width: 47px;
         height: 47px;
     }
 
-    .lecture .video_link .thumb .icon:after
-    {
+    .lecture .video_link .thumb .icon:after {
         left: 4px;
 
         width: 20px;
@@ -1230,8 +1088,7 @@
     /*----------------
         Every 10th
     ----------------*/
-    .every_10th .data
-    {
+    .every_10th .data {
         margin-right: -15px;
         margin-left: -15px;
 
@@ -1239,8 +1096,7 @@
     }
 
 
-    .every_10th .data .title
-    {
+    .every_10th .data .title {
         width: 100%;
         padding: 24px;
 
@@ -1250,23 +1106,20 @@
     }
 
 
-    .every_10th .data .desc
-    {
+    .every_10th .data .desc {
         width: 100%;
         padding: 24px;
 
         background: #a67db6;
     }
 
-    .every_10th .data .desc sup
-    {
+    .every_10th .data .desc sup {
         font-size: 10px;
         line-height: 16px;
     }
 
 
-    .every_10th .exp
-    {
+    .every_10th .exp {
         padding: 0 15px;
     }
 
@@ -1275,8 +1128,7 @@
     /*---------------
         Role iron
     ---------------*/
-    .role_iron
-    {
+    .role_iron {
         padding-top: 70px;
         padding-right: 0;
         padding-bottom: 0;
@@ -1284,25 +1136,21 @@
     }
 
 
-    .role_iron .data
-    {
+    .role_iron .data {
         width: 100%;
     }
 
 
-    .role_iron .data .block_head
-    {
+    .role_iron .data .block_head {
         margin-bottom: 15px;
     }
 
-    .role_iron .data .desc
-    {
+    .role_iron .data .desc {
         width: 397px;
     }
 
 
-    .role_iron .text
-    {
+    .role_iron .text {
         width: calc(100% + 60px);
         max-width: calc(100% + 60px);
         margin-top: 18px;
@@ -1316,49 +1164,42 @@
     /*----------------------
         Article symptoms
     ----------------------*/
-    .article_symptoms
-    {
+    .article_symptoms {
         padding: 0;
     }
 
 
-    .article_symptoms .block_head
-    {
+    .article_symptoms .block_head {
         width: 100%;
     }
 
 
-    .article_symptoms .row .items
-    {
+    .article_symptoms .row .items {
         width: 100%;
         max-width: 100%;
     }
 
 
-    .article_symptoms .message
-    {
+    .article_symptoms .message {
         width: 100%;
         margin-top: 40px;
         margin-right: 31px;
     }
 
 
-    .article_symptoms .items .row
-    {
+    .article_symptoms .items .row {
         margin-bottom: -18px;
         margin-left: 0;
     }
 
-    .article_symptoms .items .row > *
-    {
+    .article_symptoms .items .row>* {
         width: 100%;
         margin-bottom: 18px;
         margin-left: 0;
     }
 
 
-    .article_symptoms .text_block
-    {
+    .article_symptoms .text_block {
         width: 100%;
         margin-top: 40px;
     }
@@ -1368,28 +1209,24 @@
     /*-------------
         Reasons
     -------------*/
-    .reasons
-    {
+    .reasons {
         padding: 70px 0;
     }
 
 
-    .reasons .block_head .desc
-    {
+    .reasons .block_head .desc {
         font-size: 18px;
 
         width: 100%;
     }
 
 
-    .reasons .accordion_item .head .title span
-    {
+    .reasons .accordion_item .head .title span {
         line-height: 140%;
     }
 
 
-    .reasons .accordion_item .data
-    {
+    .reasons .accordion_item .data {
         padding-top: 20px;
         padding-right: 0;
         padding-left: 70px;
@@ -1400,15 +1237,13 @@
     /*---------------
         Treatment
     ---------------*/
-    .treatment
-    {
+    .treatment {
         padding-right: 0;
         padding-left: 0;
     }
 
 
-    .treatment .block_head .desc
-    {
+    .treatment .block_head .desc {
         font-size: 20px;
 
         width: 100%;
@@ -1416,52 +1251,45 @@
     }
 
 
-    .treatment .data
-    {
+    .treatment .data {
         margin-right: -30px;
         margin-left: -30px;
     }
 
-    .treatment .data .text_block
-    {
+    .treatment .data .text_block {
         width: 100%;
     }
 
 
 
-    .treatment .information
-    {
+    .treatment .information {
         margin-right: -30px;
         margin-left: -30px;
 
         background: none;
     }
 
-    .treatment .information .title
-    {
+    .treatment .information .title {
         width: 100%;
         padding: 24px;
 
         background: #792582;
     }
 
-    .treatment .information .desc
-    {
+    .treatment .information .desc {
         width: 100%;
         padding: 24px;
 
         background: #a67db6;
     }
 
-    .treatment .information .desc sup
-    {
+    .treatment .information .desc sup {
         font-size: 10px;
         line-height: 16px;
     }
 
 
-    .treatment .relieve_effects .row
-    {
+    .treatment .relieve_effects .row {
         display: block;
         overflow: auto;
 
@@ -1475,22 +1303,19 @@
         scrollbar-width: thin !important;
     }
 
-    .treatment .relieve_effects .row::-webkit-scrollbar
-    {
+    .treatment .relieve_effects .row::-webkit-scrollbar {
         width: 6px !important;
         height: 6px !important;
 
         background-color: #ede2ff !important;
     }
 
-    .treatment .relieve_effects .row::-webkit-scrollbar-thumb
-    {
+    .treatment .relieve_effects .row::-webkit-scrollbar-thumb {
         background-color: #a67db6 !important;
     }
 
 
-    .treatment .relieve_effects .row > *
-    {
+    .treatment .relieve_effects .row>* {
         display: inline-block;
 
         width: 300px;
@@ -1501,14 +1326,12 @@
         white-space: normal;
     }
 
-    .treatment .relieve_effects .row > * + *
-    {
+    .treatment .relieve_effects .row>*+* {
         margin-left: 16px;
     }
 
 
-    .treatment .relieve_effects .item
-    {
+    .treatment .relieve_effects .item {
         min-height: 280px;
     }
 
@@ -1517,27 +1340,23 @@
     /*----------------------
         Intravenous iron
     ----------------------*/
-    .intravenous_iron
-    {
+    .intravenous_iron {
         padding: 0;
     }
 
 
-    .intravenous_iron .data
-    {
+    .intravenous_iron .data {
         width: 100%;
     }
 
 
-    .intravenous_iron .notice
-    {
+    .intravenous_iron .notice {
         margin-top: 18px;
         margin-left: 0;
     }
 
 
-    .intravenous_iron .side_effects
-    {
+    .intravenous_iron .side_effects {
         width: 100%;
     }
 
@@ -1546,21 +1365,18 @@
     /*----------
         Diet
     ----------*/
-    .diet
-    {
+    .diet {
         padding: 0;
     }
 
 
-    .diet .information
-    {
+    .diet .information {
         margin-right: -30px;
         margin-left: -30px;
     }
 
 
-    .diet .information .text_block
-    {
+    .diet .information .text_block {
         width: calc(100% - 60px);
     }
 
@@ -1569,26 +1385,22 @@
     /*--------------
         Criteria
     --------------*/
-    .criteria
-    {
+    .criteria {
         padding: 0;
     }
 
 
-    .criteria .block_desc
-    {
+    .criteria .block_desc {
         width: 100%;
     }
 
 
-    .criteria .key_criteria
-    {
+    .criteria .key_criteria {
         margin-top: 40px;
     }
 
 
-    .criteria .key_criteria .row
-    {
+    .criteria .key_criteria .row {
         display: block;
         overflow: auto;
 
@@ -1602,22 +1414,19 @@
         scrollbar-width: thin !important;
     }
 
-    .criteria .key_criteria .row::-webkit-scrollbar
-    {
+    .criteria .key_criteria .row::-webkit-scrollbar {
         width: 6px !important;
         height: 6px !important;
 
         background-color: #ede2ff !important;
     }
 
-    .criteria .key_criteria .row::-webkit-scrollbar-thumb
-    {
+    .criteria .key_criteria .row::-webkit-scrollbar-thumb {
         background-color: #a67db6 !important;
     }
 
 
-    .criteria .key_criteria .row > *
-    {
+    .criteria .key_criteria .row>* {
         display: inline-block;
 
         width: 300px;
@@ -1628,14 +1437,12 @@
         white-space: normal;
     }
 
-    .criteria .key_criteria .row > * + *
-    {
+    .criteria .key_criteria .row>*+* {
         margin-left: 16px;
     }
 
 
-    .criteria .key_criteria .item
-    {
+    .criteria .key_criteria .item {
         min-height: 300px;
     }
 
@@ -1644,30 +1451,26 @@
     /*------------------
         Why not work
     ------------------*/
-    .why_not_work
-    {
+    .why_not_work {
         padding: 0;
     }
 
 
-    .why_not_work .information
-    {
+    .why_not_work .information {
         margin-right: -30px;
         margin-left: -30px;
 
         background: none;
     }
 
-    .why_not_work .information .title
-    {
+    .why_not_work .information .title {
         width: 100%;
         padding: 24px;
 
         background: #792582;
     }
 
-    .why_not_work .information .desc
-    {
+    .why_not_work .information .desc {
         width: 100%;
         padding: 24px;
 
@@ -1679,26 +1482,22 @@
     /*----------------
         Prevention
     ----------------*/
-    .prevention
-    {
+    .prevention {
         padding: 70px 0;
     }
 
 
-    .prevention .block_desc
-    {
+    .prevention .block_desc {
         width: 100%;
     }
 
 
-    .prevention .section
-    {
+    .prevention .section {
         margin-top: 100px;
     }
 
 
-    .prevention .exp
-    {
+    .prevention .exp {
         width: calc(100% + 30px);
         max-width: calc(100% + 30px);
         margin-right: -30px;
@@ -1711,43 +1510,36 @@
     /*----------------
         Story info
     ----------------*/
-    .story_info .breadcrumbs
-    {
+    .story_info .breadcrumbs {
         margin-bottom: 0;
     }
 
 
-    .story_info .author
-    {
+    .story_info .author {
         width: 100%;
     }
 
-    .story_info .data + .author,
-    .story_info .author + .data
-    {
+    .story_info .data+.author,
+    .story_info .author+.data {
         width: 100%;
         margin: 0;
     }
 
-    .story_info .author + .data
-    {
+    .story_info .author+.data {
         margin-top: 40px;
     }
 
 
-    .story_info .author .name
-    {
+    .story_info .author .name {
         padding: 15px;
     }
 
-    .story_info .data + .author .name
-    {
+    .story_info .data+.author .name {
         padding: 24px;
     }
 
 
-    .story_info .data
-    {
+    .story_info .data {
         width: 100%;
         max-width: 100%;
         margin-top: 40px;
@@ -1758,8 +1550,7 @@
         order: 2;
     }
 
-    .story_info .title
-    {
+    .story_info .title {
         font-size: 30px;
 
         width: 100%;
@@ -1770,13 +1561,11 @@
     /*-------------
         Stories
     -------------*/
-    .stories .row
-    {
+    .stories .row {
         margin-left: 0;
     }
 
-    .stories .row > *
-    {
+    .stories .row>* {
         width: 100%;
         margin-left: 0;
     }
@@ -1786,26 +1575,22 @@
     /*----------------
         Story data
     ----------------*/
-    .story_data
-    {
+    .story_data {
         padding-left: 0;
     }
 
 
-    .story_data .title
-    {
+    .story_data .title {
         width: 100%;
     }
 
 
-    .story_data .text_block
-    {
+    .story_data .text_block {
         width: 100%;
     }
 
 
-    .story_data .icon
-    {
+    .story_data .icon {
         position: relative;
         top: 0;
         right: 0;
@@ -1815,8 +1600,7 @@
         margin: 60px auto;
     }
 
-    .story_data .icon img
-    {
+    .story_data .icon img {
         height: 86px;
     }
 
@@ -1825,14 +1609,12 @@
     /*--------------------
         Ferritin about
     --------------------*/
-    .ferritin_about
-    {
+    .ferritin_about {
         padding: 0;
     }
 
 
-    .ferritin_about .message
-    {
+    .ferritin_about .message {
         margin-top: 30px;
     }
 
@@ -1841,19 +1623,16 @@
     /*---------------------
         Ferritin normal
     ---------------------*/
-    .ferritin_normal
-    {
+    .ferritin_normal {
         padding: 80px 0;
     }
 
 
-    .ferritin_normal .block_head
-    {
+    .ferritin_normal .block_head {
         margin-bottom: 50px;
     }
 
-    .ferritin_normal .block_head .desc
-    {
+    .ferritin_normal .block_head .desc {
         font-size: 18px;
 
         width: 408px;
@@ -1865,19 +1644,16 @@
     /*---------------------
         Ferritin causes
     ---------------------*/
-    .ferritin_causes
-    {
+    .ferritin_causes {
         padding: 0;
     }
 
 
-    .ferritin_causes .block_head
-    {
+    .ferritin_causes .block_head {
         margin-bottom: 50px;
     }
 
-    .ferritin_causes .block_head .desc
-    {
+    .ferritin_causes .block_head .desc {
         font-size: 18px;
 
         width: 408px;
@@ -1885,8 +1661,7 @@
     }
 
 
-    .ferritin_causes .text_block .bg
-    {
+    .ferritin_causes .text_block .bg {
         margin-top: 20px;
         margin-bottom: 20px;
     }
@@ -1896,55 +1671,47 @@
     /*-----------------------
         Ferritin symptoms
     -----------------------*/
-    .ferritin_symptoms
-    {
+    .ferritin_symptoms {
         margin-top: 80px;
     }
 
 
-    .ferritin_symptoms .block_title
-    {
+    .ferritin_symptoms .block_title {
         font-size: 24px;
 
         margin-bottom: 30px;
     }
 
 
-    .ferritin_symptoms .row
-    {
+    .ferritin_symptoms .row {
         margin-bottom: -20px;
         margin-left: -22px;
     }
 
-    .ferritin_symptoms .row > *
-    {
+    .ferritin_symptoms .row>* {
         width: calc(50% - 22px);
         margin-bottom: 20px;
         margin-left: 22px;
     }
 
 
-    .ferritin_symptoms .item
-    {
+    .ferritin_symptoms .item {
         font-size: 15px;
         line-height: 125%;
     }
 
 
-    .ferritin_symptoms .item .icon img
-    {
+    .ferritin_symptoms .item .icon img {
         width: 42px;
         height: 42px;
     }
 
-    .ferritin_symptoms .item .icon + *
-    {
+    .ferritin_symptoms .item .icon+* {
         width: calc(100% - 52px);
     }
 
 
-    .ferritin_symptoms .item sup
-    {
+    .ferritin_symptoms .item sup {
         font-size: 8px;
         line-height: 14px;
     }
@@ -1954,14 +1721,12 @@
     /*-------------------
         Ferritin when
     -------------------*/
-    .ferritin_when
-    {
+    .ferritin_when {
         padding: 0;
     }
 
 
-    .ferritin_when .information
-    {
+    .ferritin_when .information {
         width: calc(100% + 30px);
         margin-top: 40px;
         margin-right: -15px;
@@ -1971,8 +1736,7 @@
     }
 
 
-    .ferritin_when .information .title
-    {
+    .ferritin_when .information .title {
         width: 100%;
         padding: 24px;
 
@@ -1982,16 +1746,14 @@
     }
 
 
-    .ferritin_when .information .desc
-    {
+    .ferritin_when .information .desc {
         width: 100%;
         padding: 24px;
 
         background: #a67db6;
     }
 
-    .ferritin_when .information .desc sup
-    {
+    .ferritin_when .information .desc sup {
         font-size: 10px;
         line-height: 16px;
     }
@@ -2001,14 +1763,12 @@
     /*-----------------------
         Treatment methods
     -----------------------*/
-    .treatment_methods
-    {
+    .treatment_methods {
         padding: 80px 0;
     }
 
 
-    .treatment_methods .block_head .desc
-    {
+    .treatment_methods .block_head .desc {
         font-size: 18px;
 
         width: 408px;
@@ -2017,21 +1777,18 @@
     }
 
 
-    .treatment_methods .section
-    {
+    .treatment_methods .section {
         margin-top: 60px;
     }
 
 
-    .treatment_methods .information
-    {
+    .treatment_methods .information {
         margin-top: 30px;
         margin-right: -30px;
         margin-left: -30px;
     }
 
-    .treatment_methods .information .text_block
-    {
+    .treatment_methods .information .text_block {
         width: calc(100% - 60px);
     }
 
@@ -2040,42 +1797,35 @@
     /*---------
         FAQ
     ---------*/
-    .faq
-    {
+    .faq {
         padding: 0;
     }
 
 
-    .faq .block_head
-    {
+    .faq .block_head {
         margin-bottom: 60px;
     }
 
 
-    .faq .accordion_item + .accordion_item
-    {
+    .faq .accordion_item+.accordion_item {
         margin-top: 40px;
     }
 
 
-    .faq .accordion_item .head
-    {
+    .faq .accordion_item .head {
         padding-right: 78px;
     }
 
-    .faq .accordion_item .head .title
-    {
+    .faq .accordion_item .head .title {
         font-size: 20px;
     }
 
 
-    .faq .accordion_item .data
-    {
+    .faq .accordion_item .data {
         padding-right: 0;
     }
 
-    .faq .accordion_item .text_block
-    {
+    .faq .accordion_item .text_block {
         width: 100%;
     }
 
@@ -2084,14 +1834,12 @@
     /*--------------------
         Article author
     --------------------*/
-    .article_author .data
-    {
+    .article_author .data {
         padding: 24px;
     }
 
 
-    .article_author .photo + *
-    {
+    .article_author .photo+* {
         width: calc(100% - 74px);
     }
 
@@ -2100,14 +1848,12 @@
     /*------------------------
         About deficit iron
     ------------------------*/
-    .about_deficit_iron
-    {
+    .about_deficit_iron {
         padding: 0;
     }
 
 
-    .about_deficit_iron .information
-    {
+    .about_deficit_iron .information {
         margin-right: 0;
         margin-bottom: 60px;
         margin-left: 0;
@@ -2116,16 +1862,14 @@
     }
 
 
-    .about_deficit_iron .information .title
-    {
+    .about_deficit_iron .information .title {
         width: 100%;
         padding: 24px;
 
         background: #792582;
     }
 
-    .about_deficit_iron .information .desc
-    {
+    .about_deficit_iron .information .desc {
         width: 100%;
         padding: 24px;
 
@@ -2133,8 +1877,7 @@
     }
 
 
-    .about_deficit_iron img
-    {
+    .about_deficit_iron img {
         width: 45px;
         margin-bottom: 20px;
     }
@@ -2144,33 +1887,28 @@
     /*-------------------------
         Stages deficit iron
     -------------------------*/
-    .stages_deficit_iron
-    {
+    .stages_deficit_iron {
         padding: 0;
     }
 
 
     .stages_deficit_iron .block_head .title.min_w,
-    .stages_deficit_iron .block_head .desc
-    {
+    .stages_deficit_iron .block_head .desc {
         width: 100%;
     }
 
 
-    .stages_deficit_iron .items
-    {
+    .stages_deficit_iron .items {
         display: block;
     }
 
 
-    .stages_deficit_iron .items > * + *
-    {
+    .stages_deficit_iron .items>*+* {
         margin-top: 40px;
     }
 
 
-    .stages_deficit_iron .items .item
-    {
+    .stages_deficit_iron .items .item {
         width: 100%;
         height: auto;
         padding: 0;
@@ -2186,44 +1924,37 @@
     }
 
     .stages_deficit_iron .items .icon,
-    .stages_deficit_iron .items .icon img
-    {
+    .stages_deficit_iron .items .icon img {
         width: 44px;
         height: 44px;
         margin: 0;
     }
 
-    .stages_deficit_iron .items .icon + *
-    {
+    .stages_deficit_iron .items .icon+* {
         width: calc(100% - 64px);
     }
 
 
-    .stages_deficit_iron .section + .section
-    {
+    .stages_deficit_iron .section+.section {
         margin-top: 70px;
     }
 
 
-    .stages_deficit_iron .stage + .stage
-    {
+    .stages_deficit_iron .stage+.stage {
         margin-top: 60px;
     }
 
 
-    .stages_deficit_iron .stage .block_title
-    {
+    .stages_deficit_iron .stage .block_title {
         font-size: 22px;
     }
 
-    .stages_deficit_iron .stage .block_desc
-    {
+    .stages_deficit_iron .stage .block_desc {
         font-size: 18px;
     }
 
 
-    .stages_deficit_iron .stage .information
-    {
+    .stages_deficit_iron .stage .information {
         width: 100%;
         margin-right: 0;
         margin-left: 0;
@@ -2233,27 +1964,23 @@
 
 
     .stages_deficit_iron .stage .information .info,
-    .stages_deficit_iron .stage .information.min_offset .info
-    {
+    .stages_deficit_iron .stage .information.min_offset .info {
         width: 100%;
         padding: 24px;
 
         background: #792582;
     }
 
-    .stages_deficit_iron .stage .information .title br
-    {
+    .stages_deficit_iron .stage .information .title br {
         display: none;
     }
 
-    .stages_deficit_iron .stage .information .features
-    {
+    .stages_deficit_iron .stage .information .features {
         margin-top: 30px;
     }
 
     .stages_deficit_iron .stage .information .desc,
-    .stages_deficit_iron .stage .information.min_offset .desc
-    {
+    .stages_deficit_iron .stage .information.min_offset .desc {
         width: 100%;
         padding: 24px;
 
@@ -2261,8 +1988,7 @@
     }
 
 
-    .stages_deficit_iron .stage .result
-    {
+    .stages_deficit_iron .stage .result {
         overflow: hidden;
 
         width: 100%;
@@ -2273,14 +1999,12 @@
         background: none;
     }
 
-    .stages_deficit_iron .stage .result .text
-    {
+    .stages_deficit_iron .stage .result .text {
         width: 100%;
         padding: 24px;
     }
 
-    .stages_deficit_iron .stage .result img
-    {
+    .stages_deficit_iron .stage .result img {
         position: relative;
 
         width: 150%;
@@ -2288,20 +2012,17 @@
     }
 
 
-    .stages_deficit_iron .stats
-    {
+    .stages_deficit_iron .stats {
         margin-top: 60px;
     }
 
 
-    .stages_deficit_iron .stats .data .head
-    {
+    .stages_deficit_iron .stats .data .head {
         padding: 17px 27px;
     }
 
 
-    .stages_deficit_iron .stats .data .head .title
-    {
+    .stages_deficit_iron .stats .data .head .title {
         font-size: 16px;
         line-height: 130%;
 
@@ -2309,68 +2030,57 @@
         max-width: calc(100% - 44px);
     }
 
-    .stages_deficit_iron .stats .data .head .icon
-    {
+    .stages_deficit_iron .stats .data .head .icon {
         width: 24px;
     }
 
 
-    .stages_deficit_iron .stats .data .features
-    {
+    .stages_deficit_iron .stats .data .features {
         padding: 17px 27px;
     }
 
-    .stages_deficit_iron .stats .data .features + .features
-    {
+    .stages_deficit_iron .stats .data .features+.features {
         padding-top: 17px;
     }
 
 
-    .stages_deficit_iron .stats .list
-    {
+    .stages_deficit_iron .stats .list {
         margin-top: 60px;
     }
 
 
-    .stages_deficit_iron .stats .list > *
-    {
+    .stages_deficit_iron .stats .list>* {
         width: calc(50% - 20px);
         max-width: calc(50% - 20px);
     }
 
-    .stages_deficit_iron .stats .list > * + *
-    {
+    .stages_deficit_iron .stats .list>*+* {
         margin-left: 40px;
     }
 
 
-    .stages_deficit_iron .stats .list .val
-    {
+    .stages_deficit_iron .stats .list .val {
         font-size: 20px;
         line-height: 125%;
     }
 
-    .stages_deficit_iron .stats .list .exp
-    {
+    .stages_deficit_iron .stats .list .exp {
         font-size: 16px;
         line-height: 125%;
     }
 
-    .stages_deficit_iron .stats .list .desc
-    {
+    .stages_deficit_iron .stats .list .desc {
         font-size: 14px;
         line-height: 140%;
     }
 
 
-    .stages_deficit_iron .symptoms .block_head .title
-    {
+    .stages_deficit_iron .symptoms .block_head .title {
         font-size: 22px;
         line-height: 115%;
     }
 
-    .stages_deficit_iron .symptoms .block_head .desc
-    {
+    .stages_deficit_iron .symptoms .block_head .desc {
         font-size: 18px;
     }
 
@@ -2379,28 +2089,24 @@
     /*-------------------
         Complications
     -------------------*/
-    .complications
-    {
+    .complications {
         padding: 70px 0;
     }
 
 
-    .complications .block_head .desc
-    {
+    .complications .block_head .desc {
         font-size: 18px;
 
         width: 100%;
     }
 
 
-    .complications .row
-    {
+    .complications .row {
         margin-bottom: -40px;
         margin-left: 0;
     }
 
-    .complications .row > *
-    {
+    .complications .row>* {
         width: 100%;
         margin-bottom: 40px;
         margin-left: 0;
@@ -2411,25 +2117,21 @@
     /*----------------------
         Anemia treatment
     ----------------------*/
-    .anemia_treatment
-    {
+    .anemia_treatment {
         padding: 0;
     }
 
 
-    .anemia_treatment .block_head
-    {
+    .anemia_treatment .block_head {
         margin-bottom: 20px;
     }
 
-    .anemia_treatment .block_head .desc
-    {
+    .anemia_treatment .block_head .desc {
         font-size: 18px;
     }
 
 
-    .anemia_treatment .information
-    {
+    .anemia_treatment .information {
         overflow: hidden;
 
         width: 100%;
@@ -2438,8 +2140,7 @@
         padding: 0;
     }
 
-    .anemia_treatment .information .bg
-    {
+    .anemia_treatment .information .bg {
         position: relative;
 
         width: 200%;
@@ -2447,14 +2148,12 @@
         margin-left: -100%;
     }
 
-    .anemia_treatment .information .text_block
-    {
+    .anemia_treatment .information .text_block {
         width: 100%;
         padding: 24px;
     }
 
-    .anemia_treatment .information .exp
-    {
+    .anemia_treatment .information .exp {
         width: 100%;
         max-width: 100%;
         margin-top: 0;
@@ -2464,8 +2163,7 @@
     }
 
 
-    .anemia_treatment .sub_title
-    {
+    .anemia_treatment .sub_title {
         font-size: 22px;
 
         margin-top: 60px;
@@ -2473,32 +2171,27 @@
     }
 
 
-    .anemia_treatment .items .icon
-    {
+    .anemia_treatment .items .icon {
         width: 50px;
         height: 50px;
     }
 
-    .anemia_treatment .items .icon + *
-    {
+    .anemia_treatment .items .icon+* {
         width: calc(100% - 65px);
     }
 
-    .anemia_treatment .items .name
-    {
+    .anemia_treatment .items .name {
         font-size: 20px;
 
         padding: 0;
     }
 
-    .anemia_treatment .items .desc
-    {
+    .anemia_treatment .items .desc {
         line-height: 140%;
     }
 
 
-    .anemia_treatment .data + .exp
-    {
+    .anemia_treatment .data+.exp {
         font-size: 14px;
         line-height: 125%;
 
@@ -2506,8 +2199,7 @@
     }
 
 
-    .anemia_treatment .text_block
-    {
+    .anemia_treatment .text_block {
         width: 100%;
         margin-top: 40px;
     }
@@ -2517,30 +2209,25 @@
     /*-----------------------
         Tеreatment causes
     -----------------------*/
-    .tеreatment_causes
-    {
+    .tеreatment_causes {
         padding: 70px 0;
     }
 
-    .tеreatment_causes:before
-    {
+    .tеreatment_causes:before {
         display: none;
     }
 
 
-    .tеreatment_causes .block_head
-    {
+    .tеreatment_causes .block_head {
         margin-bottom: 60px;
     }
 
-    .tеreatment_causes .block_head .desc
-    {
+    .tеreatment_causes .block_head .desc {
         font-size: 18px;
     }
 
 
-    .tеreatment_causes .sub_title
-    {
+    .tеreatment_causes .sub_title {
         font-size: 18px;
 
         margin-bottom: 20px;
@@ -2551,14 +2238,12 @@
     /*------------------
         Prevention 2
     ------------------*/
-    .prevention2
-    {
+    .prevention2 {
         padding: 0;
     }
 
 
-    .prevention2 .block_head .desc
-    {
+    .prevention2 .block_head .desc {
         font-size: 18px;
 
         width: 100%;
@@ -2569,8 +2254,7 @@
     /*------------------
         Symptom info
     ------------------*/
-    .symptom_info .block_head .desc
-    {
+    .symptom_info .block_head .desc {
         font-size: 18px;
         line-height: 125%;
     }
@@ -2580,14 +2264,12 @@
     /*--------------------
         Iron pregnancy
     --------------------*/
-    .iron_pregnancy
-    {
+    .iron_pregnancy {
         padding: 0;
     }
 
 
-    .iron_pregnancy .information
-    {
+    .iron_pregnancy .information {
         width: calc(100% + 30px);
         margin-right: -15px;
         margin-bottom: 40px;
@@ -2596,16 +2278,14 @@
         background: none;
     }
 
-    .iron_pregnancy .information .title
-    {
+    .iron_pregnancy .information .title {
         width: 100%;
         padding: 24px;
 
         background: #792582;
     }
 
-    .iron_pregnancy .information .desc
-    {
+    .iron_pregnancy .information .desc {
         width: 100%;
         padding: 24px;
 
@@ -2617,32 +2297,27 @@
     /*----------------
         Hemoglobin
     ----------------*/
-    .hemoglobin
-    {
+    .hemoglobin {
         padding: 70px 0;
     }
 
 
-    .hemoglobin .block_head
-    {
+    .hemoglobin .block_head {
         margin-bottom: 50px;
     }
 
-    .hemoglobin .block_head .desc
-    {
+    .hemoglobin .block_head .desc {
         font-size: 18px;
         line-height: 125%;
     }
 
 
-    .hemoglobin .schema .title
-    {
+    .hemoglobin .schema .title {
         font-size: 22px;
     }
 
 
-    .hemoglobin .schema + .text_block
-    {
+    .hemoglobin .schema+.text_block {
         margin-top: 60px;
     }
 
@@ -2651,65 +2326,55 @@
     /*-----------------
         What danger
     -----------------*/
-    .what_danger
-    {
+    .what_danger {
         padding: 0;
     }
 
 
-    .what_danger .section + .section
-    {
+    .what_danger .section+.section {
         margin-top: 60px;
     }
 
 
-    .what_danger .block_head
-    {
+    .what_danger .block_head {
         margin-bottom: 50px;
     }
 
-    .what_danger .block_head .desc
-    {
+    .what_danger .block_head .desc {
         font-size: 18px;
         line-height: 125%;
     }
 
 
-    .what_danger .row .text_block
-    {
+    .what_danger .row .text_block {
         width: 100%;
     }
 
-    .what_danger .row + .text_block
-    {
+    .what_danger .row+.text_block {
         margin-top: 50px;
     }
 
 
-    .what_danger .message
-    {
+    .what_danger .message {
         width: 100%;
         margin-top: 40px;
         margin-right: 31px;
     }
 
 
-    .what_danger .text_block ul.row
-    {
+    .what_danger .text_block ul.row {
         margin-bottom: 0;
         margin-left: 0;
     }
 
-    .what_danger .text_block ul.row li
-    {
+    .what_danger .text_block ul.row li {
         width: 100%;
         margin-bottom: 20px;
         margin-left: 0;
     }
 
 
-    .what_danger .notice
-    {
+    .what_danger .notice {
         width: calc(100% + 30px);
         margin-top: 32px;
         margin-right: -15px;
@@ -2717,19 +2382,17 @@
         padding: 50px 30px;
     }
 
-    .what_danger .notice .text_block
-    {
+
+    .what_danger .notice .text_block {
         width: 360px;
     }
 
 
-    .what_danger .section > .title
-    {
+    .what_danger .section>.title {
         font-size: 22px;
     }
 
-    .what_danger .section > .desc
-    {
+    .what_danger .section>.desc {
         font-size: 18px;
     }
 
@@ -2738,72 +2401,60 @@
     /*--------------------
         Iron diagnosis
     --------------------*/
-    .iron_diagnosis
-    {
+    .iron_diagnosis {
         padding: 0;
     }
 
 
-    .iron_diagnosis .block_title
-    {
+    .iron_diagnosis .block_title {
         font-size: 22px;
     }
 
-    .iron_diagnosis .block_desc
-    {
+    .iron_diagnosis .block_desc {
         font-size: 18px;
     }
 
 
-    .iron_diagnosis .accordion
-    {
+    .iron_diagnosis .accordion {
         margin-top: 60px;
     }
 
 
-    .iron_diagnosis .accordion_item + .accordion_item
-    {
+    .iron_diagnosis .accordion_item+.accordion_item {
         margin-top: 40px;
     }
 
 
-    .iron_diagnosis .accordion_item > .head
-    {
+    .iron_diagnosis .accordion_item>.head {
         padding-right: 76px;
     }
 
-    .iron_diagnosis .accordion_item .head .title
-    {
+    .iron_diagnosis .accordion_item .head .title {
         font-size: 20px;
     }
 
-    .iron_diagnosis .accordion_item > .head .title span
-    {
+    .iron_diagnosis .accordion_item>.head .title span {
         font-size: 18px;
         line-height: 140%;
     }
 
 
-    .iron_diagnosis .accordion_item .data
-    {
+    .iron_diagnosis .accordion_item .data {
         padding-right: 0;
         padding-left: 0;
     }
 
-    .iron_diagnosis .accordion_item .text_block
-    {
+    .iron_diagnosis .accordion_item .text_block {
         width: 100%;
     }
 
 
-    .iron_diagnosis .stats .head
-    {
+    .iron_diagnosis .stats .head {
         padding: 16px 20px;
     }
 
 
-    .iron_diagnosis .stats .head .title
-    {
+    .iron_diagnosis .stats .head .title {
         font-size: 16px;
         line-height: 130%;
 
@@ -2811,30 +2462,25 @@
         max-width: calc(100% - 44px);
     }
 
-    .iron_diagnosis .stats .head .icon
-    {
+    .iron_diagnosis .stats .head .icon {
         width: 24px;
     }
 
 
-    .iron_diagnosis .stats .features
-    {
+    .iron_diagnosis .stats .features {
         padding: 16px 20px;
     }
 
-    .iron_diagnosis .stats .features + .features
-    {
+    .iron_diagnosis .stats .features+.features {
         padding-top: 17px;
     }
 
-    .iron_diagnosis .stats .features .val
-    {
+    .iron_diagnosis .stats .features .val {
         font-size: 18px;
     }
 
 
-    .iron_diagnosis .information
-    {
+    .iron_diagnosis .information {
         overflow: hidden;
 
         width: 100%;
@@ -2843,8 +2489,7 @@
         padding: 0;
     }
 
-    .iron_diagnosis .information .bg
-    {
+    .iron_diagnosis .information .bg {
         position: relative;
 
         width: 200%;
@@ -2852,14 +2497,12 @@
         margin-left: -100%;
     }
 
-    .iron_diagnosis .information .text_block
-    {
+    .iron_diagnosis .information .text_block {
         width: 100%;
         padding: 24px;
     }
 
-    .iron_diagnosis .information .exp
-    {
+    .iron_diagnosis .information .exp {
         width: 100%;
         max-width: 100%;
         margin-top: 0;
@@ -2871,35 +2514,30 @@
 
 
     .iron_diagnosis .hepcidin,
-    .iron_diagnosis .hepcidin .section + .section
-    {
+    .iron_diagnosis .hepcidin .section+.section {
         margin-top: 60px;
     }
 
 
 
-    .iron_diagnosis .compensation .block_title
-    {
+    .iron_diagnosis .compensation .block_title {
         font-size: 22px;
     }
 
-    .iron_diagnosis .compensation .block_desc
-    {
+    .iron_diagnosis .compensation .block_desc {
         margin-bottom: 50px;
     }
 
 
 
-    .iron_diagnosis .table_title
-    {
+    .iron_diagnosis .table_title {
         font-size: 18px;
 
         margin-bottom: 50px;
     }
 
 
-    .iron_diagnosis .table_wrap
-    {
+    .iron_diagnosis .table_wrap {
         width: calc(100% + 60px);
         max-width: calc(100% + 60px);
         margin-right: -30px;
@@ -2909,19 +2547,16 @@
 
 
     .iron_diagnosis table th,
-    .iron_diagnosis table td
-    {
+    .iron_diagnosis table td {
         padding: 20px;
     }
 
-    .iron_diagnosis table td b
-    {
+    .iron_diagnosis table td b {
         font-size: 18px;
     }
 
 
-    .iron_diagnosis .compensation
-    {
+    .iron_diagnosis .compensation {
         margin-top: 80px;
     }
 
@@ -2930,19 +2565,16 @@
     /*------------------------
         What danger excess
     ------------------------*/
-    .what_danger_excess
-    {
+    .what_danger_excess {
         padding: 70px 0;
     }
 
 
-    .what_danger_excess .block_head
-    {
+    .what_danger_excess .block_head {
         margin-bottom: 50px;
     }
 
-    .what_danger_excess .block_head .desc
-    {
+    .what_danger_excess .block_head .desc {
         font-size: 18px;
     }
 
@@ -2951,25 +2583,21 @@
     /*---------------
         About IDA
     ---------------*/
-    .about_IDA
-    {
+    .about_IDA {
         padding: 0;
     }
 
 
-    .about_IDA .data
-    {
+    .about_IDA .data {
         width: 100%;
     }
 
 
-    .about_IDA .block_head
-    {
+    .about_IDA .block_head {
         margin-bottom: 60px;
     }
 
-    .about_IDA .block_head .desc
-    {
+    .about_IDA .block_head .desc {
         font-size: 18px;
     }
 
@@ -2978,32 +2606,27 @@
     /*--------------------
         Prevalence IDA
     --------------------*/
-    .prevalence_IDA
-    {
+    .prevalence_IDA {
         padding: 70px 0;
     }
 
 
-    .prevalence_IDA .block_head
-    {
+    .prevalence_IDA .block_head {
         margin-bottom: 60px;
     }
 
-    .prevalence_IDA .block_head .desc
-    {
+    .prevalence_IDA .block_head .desc {
         font-size: 18px;
     }
 
 
-    .prevalence_IDA > .bg
-    {
+    .prevalence_IDA>.bg {
         display: none;
     }
 
 
     .prevalence_IDA .block_head,
-    .prevalence_IDA .text_block
-    {
+    .prevalence_IDA .text_block {
         width: 100%;
     }
 
@@ -3012,30 +2635,25 @@
     /*-----------------
         Reasons IDA
     -----------------*/
-    .reasons_IDA
-    {
+    .reasons_IDA {
         padding: 0;
     }
 
 
-    .reasons_IDA .block_head .desc
-    {
+    .reasons_IDA .block_head .desc {
         font-size: 18px;
     }
 
 
-    .reasons_IDA .accordion_item + .accordion_item
-    {
+    .reasons_IDA .accordion_item+.accordion_item {
         margin-top: 50px;
     }
 
-    .reasons_IDA .accordion_item .head .title
-    {
+    .reasons_IDA .accordion_item .head .title {
         font-size: 20px;
     }
 
-    .reasons_IDA .accordion_item .data
-    {
+    .reasons_IDA .accordion_item .data {
         padding-right: 0;
     }
 
@@ -3044,30 +2662,25 @@
     /*-------------------
         Symptoms IDA
     -------------------*/
-    .symptoms_IDA
-    {
+    .symptoms_IDA {
         padding: 70px 0;
     }
 
 
-    .symptoms_IDA .block_head
-    {
+    .symptoms_IDA .block_head {
         margin-bottom: 60px;
     }
 
-    .symptoms_IDA .block_head .desc
-    {
+    .symptoms_IDA .block_head .desc {
         font-size: 18px;
     }
 
 
-    .symptoms_IDA .section + .section
-    {
+    .symptoms_IDA .section+.section {
         margin-top: 50px;
     }
 
-    .symptoms_IDA .section .title
-    {
+    .symptoms_IDA .section .title {
         font-size: 22px;
 
         margin-bottom: 24px;
@@ -3078,20 +2691,17 @@
     /*-------------------
         Influence IDA
     -------------------*/
-    .influence_IDA
-    {
+    .influence_IDA {
         padding: 0;
     }
 
 
-    .influence_IDA .block_head
-    {
+    .influence_IDA .block_head {
         margin-bottom: 60px;
     }
 
 
-    .influence_IDA .information
-    {
+    .influence_IDA .information {
         width: calc(100% + 30px);
         margin-top: 60px;
         margin-right: -15px;
@@ -3099,13 +2709,11 @@
         padding: 50px 15px;
     }
 
-    .influence_IDA .information + .text_block
-    {
+    .influence_IDA .information+.text_block {
         margin-top: 60px;
     }
 
-    .influence_IDA .information .text_block
-    {
+    .influence_IDA .information .text_block {
         width: 532px;
     }
 
@@ -3114,31 +2722,26 @@
     /*-------------------
         Diagnostics IDA
     -------------------*/
-    .diagnostics_IDA
-    {
+    .diagnostics_IDA {
         padding: 70px 0;
     }
 
 
-    .diagnostics_IDA .block_head
-    {
+    .diagnostics_IDA .block_head {
         margin-bottom: 60px;
     }
 
 
-    .diagnostics_IDA .information
-    {
+    .diagnostics_IDA .information {
         margin-top: 70px;
     }
 
-    .diagnostics_IDA .information .text_block
-    {
+    .diagnostics_IDA .information .text_block {
         width: 412px;
     }
 
 
-    .diagnostics_IDA .text_block ~ .text_block
-    {
+    .diagnostics_IDA .text_block~.text_block {
         margin-top: 70px;
     }
 
@@ -3147,8 +2750,7 @@
     /*-------------------
         Treatment IDA
     -------------------*/
-    .treatment_IDA
-    {
+    .treatment_IDA {
         padding: 0;
     }
 
@@ -3157,25 +2759,248 @@
     /*--------------
         Form IDA
     --------------*/
-    .form_IDA
-    {
+    .form_IDA {
         padding: 70px 0;
     }
 
 
-    .form_IDA .block_head
-    {
+    .form_IDA .block_head {
         margin-bottom: 60px;
     }
 
-    .form_IDA .block_head .desc
-    {
+    .form_IDA .block_head .desc {
         font-size: 18px;
     }
 
 
-    .form_IDA .exp
-    {
+    .form_IDA .exp {
         width: 100%;
+    }
+
+
+
+    /*---------------------
+        About iron body
+    ---------------------*/
+    .about_iron_body {
+        padding: 0;
+    }
+
+
+    .about_iron_body .block_head {
+        margin-bottom: 50px;
+    }
+
+    .about_iron_body .block_head .desc {
+        font-size: 18px;
+    }
+
+
+    .about_iron_body .information {
+        width: calc(100% + 30px);
+        margin-right: -15px;
+        margin-left: -15px;
+
+        background-position: -80px 50%;
+    }
+
+
+    .about_iron_body .information .title {
+        width: 100%;
+        padding: 24px;
+
+        background: #792582;
+    }
+
+    .about_iron_body .information .desc {
+        width: 100%;
+        padding: 24px;
+
+        background: #a67db6;
+    }
+
+
+
+    /*--------------------------
+        Hemoglobin myoglobin
+    --------------------------*/
+    .hemoglobin_myoglobin {
+        padding: 70px 0;
+    }
+
+
+    .hemoglobin_myoglobin .block_head {
+        margin-bottom: 50px;
+    }
+
+    .hemoglobin_myoglobin .block_head .desc {
+        font-size: 18px;
+    }
+
+
+
+    /*-------------
+        Enzymes
+    -------------*/
+    .enzymes {
+        padding: 0;
+    }
+
+
+    .enzymes .block_title {
+        font-size: 22px;
+    }
+
+
+
+    /*--------------------------
+        Ferritin transferrin
+    --------------------------*/
+    .ferritin_transferrin {
+        padding: 0;
+    }
+
+
+    .ferritin_transferrin .block_title {
+        font-size: 22px;
+    }
+
+
+    .ferritin_transferrin .row .text_block {
+        width: 100%;
+    }
+
+    .ferritin_transferrin .row+.text_block {
+        margin-top: 50px;
+    }
+
+
+    .ferritin_transferrin .message {
+        width: 100%;
+        margin-top: 40px;
+        margin-right: 31px;
+    }
+
+
+    .ferritin_transferrin .information {
+        display: flex;
+        overflow: hidden;
+        flex-direction: column;
+
+        margin-right: 0;
+        margin-left: 0;
+        padding: 0;
+    }
+
+    .ferritin_transferrin .information .bg {
+        position: relative;
+
+        width: 200%;
+        margin-left: -100%;
+    }
+
+    .ferritin_transferrin .information .text_block {
+        width: 100%;
+        padding: 24px 0 0;
+
+        order: 2;
+    }
+
+
+
+    /*-----------
+        Norms
+    -----------*/
+    .norms {
+        padding: 70px 0;
+    }
+
+
+    .norms .block_head .title {
+        font-size: 22px;
+    }
+
+
+    .norms .item .features>* {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+
+    .norms .exp {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+
+
+    /*---------------------
+        Iron deficiency
+    ---------------------*/
+    .iron_deficiency {
+        padding: 0;
+    }
+
+
+    .iron_deficiency .block_head {
+        margin-bottom: 50px;
+    }
+
+    .iron_deficiency .block_head .desc {
+        font-size: 18px;
+    }
+
+
+    .iron_deficiency .action_block {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+
+    .iron_deficiency .text_block {
+        margin-top: 60px;
+    }
+
+
+
+    /*-----------------------
+        Iron preparations
+    -----------------------*/
+    .iron_preparations {
+        padding: 70px 0;
+    }
+
+
+    .iron_preparations .block_head {
+        width: 100%;
+    }
+
+    .iron_preparations .block_head .desc {
+        font-size: 18px;
+    }
+
+
+    .iron_preparations .notice {
+        margin: 40px auto 0;
+    }
+
+
+    .iron_preparations .text_block {
+        margin-top: 50px;
+    }
+
+
+
+    /*-----------------
+        Excess iron
+    -----------------*/
+    .excess_iron {
+        padding: 0;
+    }
+
+
+    .excess_iron .block_head .desc {
+        font-size: 18px;
     }
 }

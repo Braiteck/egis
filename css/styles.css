@@ -1026,6 +1026,11 @@ header .menu_btn .icon
     color: #792582;
 
     text-decoration: none;
+
+    background-image: linear-gradient(currentColor, currentColor);
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    background-size: 100% 1px;
 }
 
 .block_head .desc sup
@@ -1575,9 +1580,19 @@ header .menu_btn .icon
 .text_block a
 {
     color: #792582;
-    font-weight: 500;
 
     text-decoration: none;
+
+    background-image: linear-gradient(currentColor, currentColor);
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    background-size: 100% 1px;
+}
+
+.text_block a b,
+.text_block a strong
+{
+    font-weight: 500;
 }
 
 
@@ -1838,6 +1853,60 @@ header .menu_btn .icon
 .text_block .signs ul li + li
 {
     margin-top: 4px;
+}
+
+
+.text_block .products
+{
+    line-height: 24px;
+
+    width: 1140px;
+    margin-top: 55px;
+    margin-bottom: 55px;
+}
+
+
+.text_block .products .row
+{
+    margin-bottom: -48px;
+    margin-left: -48px;
+}
+
+.text_block .products .row > *
+{
+    display: flex;
+
+    width: calc(33.333% - 48px);
+    margin-bottom: 48px;
+    margin-left: 48px;
+
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+
+.text_block .products .icon
+{
+    width: 68px;
+    height: 68px;
+}
+
+.text_block .products .icon img
+{
+    display: block;
+
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.text_block .products .icon + *
+{
+    width: calc(100% - 98px);
+
+    align-self: center;
 }
 
 
@@ -4049,6 +4118,13 @@ header .menu_btn .icon
     background: #f8f8f8;
 }
 
+.results.no_bg
+{
+    padding: 0;
+
+    background: none;
+}
+
 
 .results .block_head
 {
@@ -4092,6 +4168,8 @@ header .menu_btn .icon
 
 .results .row > *
 {
+    position: relative;
+
     width: calc(33.333% - 40px);
     margin-bottom: 40px;
     margin-left: 40px;
@@ -4100,6 +4178,10 @@ header .menu_btn .icon
 
 .results .item
 {
+    height: 100%;
+    min-height: -moz-available;
+    min-height: -webkit-fill-available;
+    min-height:         fill-available;
     padding: 30px;
 
     border-radius: 20px;
@@ -10381,6 +10463,504 @@ header .menu_btn .icon
 
     border-radius: 20px;
     background: #f2e6f6;
+}
+
+
+
+/*---------------------
+    About iron body
+---------------------*/
+.about_iron_body .block_head
+{
+    width: 653px;
+    max-width: 100%;
+    margin-bottom: 80px;
+}
+
+.about_iron_body .block_head .desc
+{
+    color: #000;
+    font-size: 24px;
+    line-height: 125%;
+
+    margin-top: 20px;
+}
+
+
+.about_iron_body .information
+{
+    color: #fff;
+
+    display: flex;
+
+    margin-bottom: 50px;
+
+    background: url(../images/bg_every_10th.png) 0 0/cover no-repeat;
+
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+
+.about_iron_body .information .title
+{
+    font-weight: 500;
+    line-height: 160%;
+
+    display: block;
+
+    width: 450px;
+    max-width: 100%;
+    padding: 30px 56px;
+}
+
+
+.about_iron_body .information .desc
+{
+    color: #fff;
+    font-weight: 500;
+    line-height: 160%;
+
+    width: calc(100% - 460px);
+    margin-left: auto;
+    padding: 30px 56px 30px 96px;
+}
+
+.about_iron_body .information .desc sup
+{
+    font-size: 12px;
+    line-height: 18px;
+
+    display: inline-block;
+
+    vertical-align: top;
+}
+
+
+.about_iron_body .text_block
+{
+    width: 848px;
+    max-width: 100%;
+}
+
+
+
+/*--------------------------
+    Hemoglobin myoglobin
+--------------------------*/
+.hemoglobin_myoglobin
+{
+    padding: 150px 0;
+
+    background: #f9f9f9;
+}
+
+
+.hemoglobin_myoglobin .block_head
+{
+    width: 653px;
+    max-width: 100%;
+    margin-bottom: 80px;
+}
+
+.hemoglobin_myoglobin .block_head .desc
+{
+    color: #000;
+    font-size: 24px;
+    line-height: 125%;
+
+    margin-top: 20px;
+}
+
+
+
+/*-------------
+    Enzymes
+-------------*/
+.enzymes .block_title
+{
+    color: #792582;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 115%;
+
+    margin-bottom: 50px;
+}
+
+
+.enzymes .text_block
+{
+    width: 848px;
+    max-width: 100%;
+}
+
+
+
+/*--------------------------
+    Ferritin transferrin
+--------------------------*/
+.ferritin_transferrin .block_title
+{
+    color: #792582;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 115%;
+
+    width: 653px;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+
+
+.ferritin_transferrin .text_block
+{
+    width: 848px;
+    max-width: 100%;
+}
+
+.ferritin_transferrin .row .text_block
+{
+    width: 653px;
+    max-width: 100%;
+}
+
+.ferritin_transferrin .row + .text_block
+{
+    margin-top: 80px;
+}
+
+
+.ferritin_transferrin .message
+{
+    color: #792582;
+    line-height: 160%;
+
+    position: relative;
+
+    width: 382px;
+    max-width: 100%;
+    margin-top: -33px;
+    margin-right: -36px;
+    margin-left: auto;
+    padding: 70px 35px 52px 30px;
+
+    text-align: center;
+
+    border: 4px solid #a67db6;
+    border-radius: 28px;
+    background: #f2e6f6;
+    box-shadow: inset 0 0 0 4px #fff;
+}
+
+.ferritin_transferrin .message .icon
+{
+    position: absolute;
+    top: -49px;
+    right: 0;
+    left: 0;
+
+    display: block;
+
+    width: 95px;
+    height: 95px;
+    margin: auto;
+}
+
+.ferritin_transferrin .message .icon img
+{
+    display: block;
+
+    width: 100%;
+    height: 100%;
+}
+
+
+.ferritin_transferrin .information
+{
+    position: relative;
+    z-index: 3;
+
+    margin-top: 50px;
+    padding: 80px 68px;
+}
+
+.ferritin_transferrin .information .text_block
+{
+    width: 682px;
+    max-width: 100%;
+}
+
+.ferritin_transferrin .information .bg
+{
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: 100% 50%;
+}
+
+
+
+/*-----------
+    Norms
+-----------*/
+.norms
+{
+    padding: 150px 0;
+
+    background: #f9f9f9;
+}
+
+
+.norms .block_head
+{
+    margin-bottom: 80px;
+}
+
+
+.norms .item .features > *
+{
+    flex-wrap: nowrap;
+}
+
+.norms .item .features .label
+{
+    width: 100%;
+}
+
+.norms .item .features .val
+{
+    margin-left: 20px;
+
+    text-align: right;
+    white-space: nowrap;
+}
+
+
+.norms .exp
+{
+    color: #000;
+    font-size: 16px;
+    line-height: 150%;
+
+    position: absolute;
+    top: 100%;
+    left: 1px;
+
+    margin-top: 40px;
+    padding: 0;
+}
+
+
+
+/*---------------------
+    Iron deficiency
+---------------------*/
+.iron_deficiency .block_head
+{
+    width: 848px;
+    max-width: 100%;
+    margin-bottom: 80px;
+}
+
+.iron_deficiency .block_head .desc
+{
+    color: #000;
+    font-size: 24px;
+    line-height: 125%;
+
+    margin-top: 20px;
+}
+
+
+.iron_deficiency .action_block
+{
+    margin-top: 80px;
+}
+
+
+.iron_deficiency .text_block
+{
+    width: 848px;
+    max-width: 100%;
+    margin-top: 80px;
+}
+
+
+.iron_deficiency .results
+{
+    margin-top: 32px;
+}
+
+
+
+/*-----------------------
+    Iron preparations
+-----------------------*/
+.iron_preparations
+{
+    padding: 150px 0;
+
+    background: #f9f9f9;
+}
+
+
+.iron_preparations .block_head
+{
+    width: 653px;
+    max-width: 100%;
+    margin-bottom: 0;
+}
+
+.iron_preparations .block_head .desc
+{
+    color: #000;
+    font-size: 24px;
+    line-height: 125%;
+
+    margin-top: 20px;
+}
+
+
+.iron_preparations .notice
+{
+    color: #000;
+    line-height: 145%;
+
+    display: flex;
+
+    width: 288px;
+    max-width: 100%;
+    height: 288px;
+    margin-left: auto;
+    padding: 20px;
+
+    text-align: center;
+
+    border: 4px solid #a67db6;
+    border-radius: 50%;
+    background: #f2e6f6;
+    box-shadow: inset 0 0 0 4px #fff;
+
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.iron_preparations .notice .icon
+{
+    display: block;
+
+    margin: 0 auto 4px;
+}
+
+
+.iron_preparations .text_block
+{
+    width: 848px;
+    max-width: 100%;
+    margin-top: 100px;
+}
+
+
+.iron_preparations .information
+{
+    position: relative;
+    z-index: 3;
+
+    margin-top: 100px;
+    padding: 80px 80px 80px 62px;
+
+    background: #ddd;
+}
+
+
+.iron_preparations .information .text_block
+{
+    width: 591px;
+    max-width: 100%;
+    margin: 0;
+}
+
+
+.iron_preparations .information .exp
+{
+    color: #792582;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 145%;
+
+    position: absolute;
+    top: 80px;
+    right: -45px;
+
+    width: 470px;
+    max-width: 100%;
+    padding: 30px 151px 30px 48px;
+
+    background: rgba(237, 226, 255, .8);
+
+    backdrop-filter: blur(5px);
+}
+
+.iron_preparations .information .exp sup
+{
+    font-size: 10px;
+    line-height: 14px;
+
+    display: inline-block;
+
+    vertical-align: top;
+}
+
+
+.iron_preparations .information .bg
+{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+
+/*-----------------
+    Excess iron
+-----------------*/
+.excess_iron .block_head
+{
+    width: 848px;
+    max-width: 100%;
+}
+
+.excess_iron .block_head .desc
+{
+    color: #000;
+    font-size: 24px;
+    line-height: 125%;
+
+    margin-top: 20px;
+}
+
+
+.excess_iron .text_block
+{
+    width: 848px;
+    max-width: 100%;
 }
 
 

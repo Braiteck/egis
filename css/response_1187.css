@@ -211,6 +211,40 @@
     }
 
 
+    .text_block .products
+    {
+        width: calc(100vw - 56px);
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+
+    .text_block .products .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+    .text_block .products .row > *
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+    .text_block .products .icon
+    {
+        width: 60px;
+        height: 60px;
+    }
+
+    .text_block .products .icon + *
+    {
+        width: calc(100% - 80px);
+    }
+
+
 
     /*-------------------
         First section
@@ -2703,6 +2737,236 @@
     .form_IDA .exp
     {
         margin-right: -28px;
+    }
+
+
+
+    /*---------------------
+        About iron body
+    ---------------------*/
+    .about_iron_body
+    {
+        padding: 0 28px;
+    }
+
+
+    .about_iron_body .information
+    {
+        margin-right: -28px;
+        margin-left: -28px;
+
+        background-position: -56px 50%;
+    }
+
+    .about_iron_body .information .title
+    {
+        width: 395px;
+        padding: 30px 48px;
+    }
+
+    .about_iron_body .information .desc
+    {
+        width: calc(100% - 405px);
+        padding: 30px 30px 30px 61px;
+    }
+
+
+    .about_iron_body .text_block
+    {
+        width: 750px;
+    }
+
+
+
+    /*--------------------------
+        Hemoglobin myoglobin
+    --------------------------*/
+    .hemoglobin_myoglobin
+    {
+        padding: 130px 28px;
+    }
+
+
+
+    /*-------------
+        Enzymes
+    -------------*/
+    .enzymes
+    {
+        padding: 0 28px;
+    }
+
+
+    .enzymes .text_block
+    {
+        width: 750px;
+        max-width: 100%;
+    }
+
+
+
+    /*--------------------------
+        Ferritin transferrin
+    --------------------------*/
+    .ferritin_transferrin
+    {
+        padding: 0 28px;
+    }
+
+
+    .ferritin_transferrin .text_block
+    {
+        width: 750px;
+        max-width: 100%;
+    }
+
+    .ferritin_transferrin .row .text_block
+    {
+        width: 579px;
+    }
+
+
+    .ferritin_transferrin .message
+    {
+        width: 321px;
+        margin-right: -28px;
+        padding: 75px 15px 50px;
+    }
+
+
+    .ferritin_transferrin .information
+    {
+        margin-right: -28px;
+        margin-left: -28px;
+        padding: 50px;
+    }
+
+
+    .ferritin_transferrin .information .text_block
+    {
+        width: 653px;
+    }
+
+
+
+    /*-----------
+        Norms
+    -----------*/
+    .norms
+    {
+        padding: 130px 28px;
+    }
+
+
+    .norms .exp
+    {
+        font-size: 14px;
+        line-height: 140%;
+
+        margin-top: 24px;
+    }
+
+
+
+    /*---------------------
+        Iron deficiency
+    ---------------------*/
+    .iron_deficiency
+    {
+        padding: 0 28px;
+    }
+
+
+    .iron_deficiency .block_head,
+    .iron_deficiency .text_block
+    {
+        width: 750px;
+    }
+
+
+    .iron_deficiency .action_block
+    {
+        margin-right: -28px;
+        margin-left: -28px;
+    }
+
+
+
+    /*-----------------------
+        Iron preparations
+    -----------------------*/
+    .iron_preparations
+    {
+        padding: 130px 28px;
+    }
+
+
+    .iron_preparations .block_head
+    {
+        width: 644px;
+    }
+
+
+    .iron_preparations .notice
+    {
+        font-size: 17px;
+
+        width: 250px;
+        height: 250px;
+        margin-top: 0;
+        margin-right: -22px;
+        padding: 18px;
+    }
+
+    .iron_preparations .notice .icon
+    {
+        width: 10px;
+    }
+
+
+    .iron_preparations .text_block
+    {
+        width: 750px;
+    }
+
+
+    .iron_preparations .information
+    {
+        margin-right: -28px;
+        margin-left: -28px;
+        padding: 50px;
+    }
+
+
+    .iron_preparations .information .text_block
+    {
+        width: 540px;
+    }
+
+
+    .iron_preparations .information .exp
+    {
+        right: -40px;
+
+        width: 348px;
+        padding: 30px 87px 30px 45px;
+    }
+
+
+
+    /*-----------------
+        Excess iron
+    -----------------*/
+    .excess_iron
+    {
+        padding: 0 28px;
+    }
+
+
+    .excess_iron .block_head,
+    .excess_iron .text_block
+    {
+        width: 750px;
     }
 
 
